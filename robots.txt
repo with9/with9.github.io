@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://with9.github.io/sitemap.xml
