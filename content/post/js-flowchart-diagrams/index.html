@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.68.3" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>JS Flowchart Diagrams &middot; My New Hugo Site</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://example.org/"><h1>My New Hugo Site</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://example.org/">Home</a> </li>
+        <li><a href="/content/about/"> About </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2020. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>JS Flowchart Diagrams</h1>
+  <time datetime=2015-03-04T21:57:50&#43;0800 class="post-date">Wed, Mar 4, 2015</time>
+  <h2 id="usage">Usage</h2>
+<pre><code class="language-flow" data-lang="flow">st=&gt;start: Start|past:&gt;http://www.google.com[blank]
+e=&gt;end: End:&gt;http://www.google.com
+op1=&gt;operation: My Operation|past
+op2=&gt;operation: Stuff|current
+sub1=&gt;subroutine: My Subroutine|invalid
+cond=&gt;condition: Yes
+or No?|approved:&gt;http://www.google.com
+c2=&gt;condition: Good idea|rejected
+io=&gt;inputoutput: catch something...|request
+
+st-&gt;op1(right)-&gt;cond
+cond(yes, right)-&gt;c2
+cond(no)-&gt;sub1(left)-&gt;op1
+c2(yes)-&gt;io-&gt;e
+c2(no)-&gt;op2-&gt;e
+</code></pre><pre><code class="language-linenos=table" data-lang="linenos=table">```flow
+st=&gt;start: Start|past:&gt;http://www.google.com[blank]
+e=&gt;end: End:&gt;http://www.google.com
+op1=&gt;operation: My Operation|past
+op2=&gt;operation: Stuff|current
+sub1=&gt;subroutine: My Subroutine|invalid
+cond=&gt;condition: Yes
+or No?|approved:&gt;http://www.google.com
+c2=&gt;condition: Good idea|rejected
+io=&gt;inputoutput: catch something...|request
+
+st-&gt;op1(right)-&gt;cond
+cond(yes, right)-&gt;c2
+cond(no)-&gt;sub1(left)-&gt;op1
+c2(yes)-&gt;io-&gt;e
+c2(no)-&gt;op2-&gt;e
+```</code></pre>
+<h2 id="legacy-usage">Legacy Usage</h2>
+<pre><code class="language-flowchart" data-lang="flowchart">st=&gt;start: Start|past:&gt;http://www.google.com[blank]
+e=&gt;end: End:&gt;http://www.google.com
+op1=&gt;operation: My Operation|past
+op2=&gt;operation: Stuff|current
+sub1=&gt;subroutine: My Subroutine|invalid
+cond=&gt;condition: Yes
+or No?|approved:&gt;http://www.google.com
+c2=&gt;condition: Good idea|rejected
+io=&gt;inputoutput: catch something...|request
+
+st-&gt;op1(right)-&gt;cond
+cond(yes, right)-&gt;c2
+cond(no)-&gt;sub1(left)-&gt;op1
+c2(yes)-&gt;io-&gt;e
+c2(no)-&gt;op2-&gt;e
+</code></pre><pre><code>```flowchart
+st=&gt;start: Start|past:&gt;http://www.google.com[blank]
+e=&gt;end: End:&gt;http://www.google.com
+op1=&gt;operation: My Operation|past
+op2=&gt;operation: Stuff|current
+sub1=&gt;subroutine: My Subroutine|invalid
+cond=&gt;condition: Yes
+or No?|approved:&gt;http://www.google.com
+c2=&gt;condition: Good idea|rejected
+io=&gt;inputoutput: catch something...|request
+
+st-&gt;op1(right)-&gt;cond
+cond(yes, right)-&gt;c2
+cond(no)-&gt;sub1(left)-&gt;op1
+c2(yes)-&gt;io-&gt;e
+c2(no)-&gt;op2-&gt;e
+```
+</code></pre>
+<h2 id="configuration">Configuration</h2>
+<p>Configure for all home and regular pages:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">flowchartDiagrams</span>]
+  <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">true</span>
+  <span style="color:#a6e22e">options</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</code></pre></div><p>Configure for a single post in the front matter (<strong>Params in front matter have higher precedence</strong>):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">flowchartDiagrams</span>:
+  <span style="color:#66d9ef">enable</span>: <span style="color:#66d9ef">true</span>
+  <span style="color:#66d9ef">options</span>: <span style="color:#e6db74">&#34;{
+</span><span style="color:#e6db74">              &#39;x&#39;: 0,
+</span><span style="color:#e6db74">              &#39;y&#39;: 0,
+</span><span style="color:#e6db74">              &#39;line-width&#39;: 3,
+</span><span style="color:#e6db74">              &#39;line-length&#39;: 50,
+</span><span style="color:#e6db74">              &#39;text-margin&#39;: 10,
+</span><span style="color:#e6db74">              &#39;font-size&#39;: 14,
+</span><span style="color:#e6db74">              &#39;font-color&#39;: &#39;black&#39;,
+</span><span style="color:#e6db74">              &#39;line-color&#39;: &#39;black&#39;,
+</span><span style="color:#e6db74">              &#39;element-color&#39;: &#39;black&#39;,
+</span><span style="color:#e6db74">              &#39;fill&#39;: &#39;white&#39;,
+</span><span style="color:#e6db74">              &#39;yes-text&#39;: &#39;yes&#39;,
+</span><span style="color:#e6db74">              &#39;no-text&#39;: &#39;no&#39;,
+</span><span style="color:#e6db74">              &#39;arrow-end&#39;: &#39;block&#39;,
+</span><span style="color:#e6db74">              &#39;scale&#39;: 1,
+</span><span style="color:#e6db74">              &#39;i-am-a-comment-1&#39;: &#39;Do not use /​/!&#39;,
+</span><span style="color:#e6db74">              &#39;i-am-a-comment-2&#39;: &#39;style symbol types&#39;,
+</span><span style="color:#e6db74">              &#39;symbols&#39;: {
+</span><span style="color:#e6db74">                  &#39;start&#39;: {
+</span><span style="color:#e6db74">                    &#39;font-color&#39;: &#39;red&#39;,
+</span><span style="color:#e6db74">                    &#39;element-color&#39;: &#39;green&#39;,
+</span><span style="color:#e6db74">                    &#39;fill&#39;: &#39;yellow&#39;
+</span><span style="color:#e6db74">                  },
+</span><span style="color:#e6db74">                  &#39;end&#39;: {
+</span><span style="color:#e6db74">                      &#39;class&#39;: &#39;end-element&#39;
+</span><span style="color:#e6db74">                  }
+</span><span style="color:#e6db74">              },
+</span><span style="color:#e6db74">              &#39;i-am-a-comment-3&#39;: &#39;even flowstate support ;-)&#39;,
+</span><span style="color:#e6db74">              &#39;flowstate&#39;: {
+</span><span style="color:#e6db74">                &#39;request&#39;: {&#39;fill&#39;: &#39;blue&#39;}
+</span><span style="color:#e6db74">              }
+</span><span style="color:#e6db74">            }&#34;</span>
+</code></pre></div><p>See more information from <a href="https://github.com/adrai/flowchart.js">https://github.com/adrai/flowchart.js</a>.</p>
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>
