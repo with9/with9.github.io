@@ -6,10 +6,21 @@
     <description>Recent content on 生活和睡觉</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Apr 2020 08:54:56 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate>
     
 	<atom:link href="https://with9.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://with9.github.io/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>https://with9.github.io/about/</guid>
+      <description>Hugo is a static site engine written in Go.
+It makes use of a variety of open source projects including:
+ Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.</description>
+    </item>
     
     <item>
       <title>Archlinux迁移到LVM</title>
@@ -17,15 +28,6 @@
       <pubDate>Thu, 16 Apr 2020 09:10:18 +0800</pubDate>
       
       <guid>https://with9.github.io/post/hello/</guid>
-      <description>由于一开始各种诡异的折腾电脑方式,导致我系统的根目录在最后一个分区,并且快满了,无法扩容,因此就打算移动到前面的位置,并且直接迁移到lvm,</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://with9.github.io/about/</link>
-      <pubDate>Thu, 16 Apr 2020 08:54:56 +0800</pubDate>
-      
-      <guid>https://with9.github.io/about/</guid>
       <description>由于一开始各种诡异的折腾电脑方式,导致我系统的根目录在最后一个分区,并且快满了,无法扩容,因此就打算移动到前面的位置,并且直接迁移到lvm,</description>
     </item>
     
