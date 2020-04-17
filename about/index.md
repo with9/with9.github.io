@@ -1,13 +1,14 @@
 
-Hugo is a static site engine written in Go.
+# 关于我
+- with,1997年生
+- Email:dc198424601@outlook.com
+- ~~喜欢道家,道德经爱好者,目前背诵进度40%~~
+- Arch邪教成员
+- 喜欢宅系文化
+- 愿优雅而纯粹的活着
 
-
-It makes use of a variety of open source projects including:
-
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+# 关于本站
+- 记录一些杂事
+- 记录一些读后感
+- 偶尔翻译一些觉得很有意思的文章,顺便锻炼一下英语
 
