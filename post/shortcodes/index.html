@@ -16,8 +16,11 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="with" /><meta name="description" content="Admonition biu biu biu.
-1 2 3 4 5 6 7 8 9 10 11 12  {{% admonition note &amp;#34;I&amp;#39;m title!&amp;#34; false %}} biu biu biu. {{% admonition type=&amp;#34;note&amp;#34; title=&amp;#34;note&amp;#34; details=&amp;#34;true&amp;#34; %}} biu biu biu. {{% /admonition %}} {{% admonition example %}} Without title. {{% /admonition %}} {{% /admonition %}}   " /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="with" /><meta name="description" content="Admonition I&amp;#39;m title!
+biu biu biu.
+note biu biu biu.
+ Without title.
+  1 2 3 4 5 6 7 8 9 10 11 12  {{% admonition note &amp;#34;I&amp;#39;m title!&amp;#34; false %}} biu biu biu. {{% admonition type=&amp;#34;note&amp;#34; title=&amp;#34;note&amp;#34; details=&amp;#34;true&amp;#34; %}} biu biu biu. {{% /admonition %}} {{% admonition example %}} Without title. {{% /admonition %}} {{% /admonition %}}   " /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -42,11 +45,13 @@
 
 <meta property="og:title" content="Shortcodes" />
 <meta property="og:description" content="Admonition
-
+I&#39;m title!
 biu biu biu.
+note
+  biu biu biu.
 
 
-
+  Without title.
 
 
 
@@ -86,11 +91,13 @@ Without title.
 <meta property="article:modified_time" content="2018-02-01T18:01:23+08:00" />
 <meta itemprop="name" content="Shortcodes">
 <meta itemprop="description" content="Admonition
-
+I&#39;m title!
 biu biu biu.
+note
+  biu biu biu.
 
 
-
+  Without title.
 
 
 
@@ -126,18 +133,20 @@ Without title.
 ">
 <meta itemprop="datePublished" content="2016-08-30T16:01:23&#43;08:00" />
 <meta itemprop="dateModified" content="2018-02-01T18:01:23&#43;08:00" />
-<meta itemprop="wordCount" content="304">
+<meta itemprop="wordCount" content="338">
 
 
 
 <meta itemprop="keywords" content="shortcodes," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shortcodes"/>
 <meta name="twitter:description" content="Admonition
-
+I&#39;m title!
 biu biu biu.
+note
+  biu biu biu.
 
 
-
+  Without title.
 
 
 
@@ -244,7 +253,7 @@ Without title.
         <div class="post-category">
             <a href="/categories/shortcodes/"> shortcodes </a>
             </div>
-          <span class="more-meta"> 304 words </span>
+          <span class="more-meta"> 338 words </span>
           <span class="more-meta"> 2 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
@@ -272,13 +281,15 @@ Without title.
 </div>
     <div class="post-content">
       <h1 id="admonition">Admonition</h1>
-<!-- raw HTML omitted -->
+<div class="admonition note"><p class="admonition-title">I&#39;m title!</p>
 <p>biu biu biu.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<details class="admonition note"><summary class="admonition-title">note</summary>
+  <p>biu biu biu.</p>
+</details>
+<div class="admonition example">
+  <p>Without title.</p>
+</div>
+</div>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -309,9 +320,9 @@ Without title.
 {{% /admonition %}}
 </code></pre></td></tr></table>
 </div>
-</div><!-- raw HTML omitted -->
+</div><div class="admonition abstract"><p class="admonition-title">abstract</p>
 <p>biu biu biu.</p>
-<!-- raw HTML omitted -->
+</div>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -324,36 +335,36 @@ biu biu biu.
 {{% /admonition %}}
 </code></pre></td></tr></table>
 </div>
-</div><!-- raw HTML omitted -->
+</div><div class="admonition info"><p class="admonition-title">info</p>
 <p>biu biu biu.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</div>
+<div class="admonition tip"><p class="admonition-title">tip</p>
 <p>biu biu biu.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</div>
+<div class="admonition success"><p class="admonition-title">success</p>
 <p>biu biu biu.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</div>
+<div class="admonition question"><p class="admonition-title">question</p>
 <p>biu biu biu.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</div>
+<div class="admonition warning"><p class="admonition-title">warning</p>
 <p>biu biu biu.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</div>
+<div class="admonition failure"><p class="admonition-title">failure</p>
 <p>biu biu biu.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</div>
+<div class="admonition danger"><p class="admonition-title">danger</p>
 <p>biu biu biu.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</div>
+<div class="admonition bug"><p class="admonition-title">bug</p>
 <p>biu biu biu.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</div>
+<div class="admonition example"><p class="admonition-title">example</p>
 <p>biu biu biu.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</div>
+<div class="admonition quote"><p class="admonition-title">quote</p>
 <p>biu biu biu.</p>
-<!-- raw HTML omitted -->
+</div>
 <h1 id="center-right-left">center, right, left</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -397,18 +408,18 @@ biu biu biu.
 </div>
 </div><h2 id="default">default</h2>
 <p><img src="https://wx1.sinaimg.cn/small/006SToa6ly1fm07summ2gj30qo0qomzu.jpg" alt="img" title="img"></p>
-<!-- raw HTML omitted -->
+<div class='align-center'>
 <h2 id="center">center</h2>
 <p><img src="https://wx1.sinaimg.cn/small/006SToa6ly1fm07summ2gj30qo0qomzu.jpg" alt="img" title="img"></p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</div>
+<div class='align-right'>
 <h2 id="right">right</h2>
 <p><img src="https://wx1.sinaimg.cn/small/006SToa6ly1fm07summ2gj30qo0qomzu.jpg" alt="img" title="img"></p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</div>
+<div class='align-left'>
 <h2 id="left">left</h2>
 <p><img src="https://wx1.sinaimg.cn/small/006SToa6ly1fm07summ2gj30qo0qomzu.jpg" alt="img" title="img"></p>
-<!-- raw HTML omitted -->
+</div>
 <hr>
 <h2 id="figure-with-class">figure with class</h2>
 <div class="highlight"><div class="chroma">
@@ -425,10 +436,30 @@ biu biu biu.
 {{% figure class=&#34;left&#34; src=&#34;/path/to/img.gif&#34; title=&#34;left&#34; alt=&#34;img&#34; %}}
 </code></pre></td></tr></table>
 </div>
-</div><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</div><figure>
+    <img src="https://wx1.sinaimg.cn/small/006SToa6ly1fm07summ2gj30qo0qomzu.jpg"
+         alt="img"/> <figcaption>
+            <h4>default</h4>
+        </figcaption>
+</figure>
+<figure class="center">
+    <img src="https://wx1.sinaimg.cn/small/006SToa6ly1fm07summ2gj30qo0qomzu.jpg"
+         alt="img"/> <figcaption>
+            <h4>center</h4>
+        </figcaption>
+</figure>
+<figure class="right">
+    <img src="https://wx1.sinaimg.cn/small/006SToa6ly1fm07summ2gj30qo0qomzu.jpg"
+         alt="img"/> <figcaption>
+            <h4>right</h4>
+        </figcaption>
+</figure>
+<figure class="left">
+    <img src="https://wx1.sinaimg.cn/small/006SToa6ly1fm07summ2gj30qo0qomzu.jpg"
+         alt="img"/> <figcaption>
+            <h4>left</h4>
+        </figcaption>
+</figure>
 <hr>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -458,13 +489,29 @@ biu biu biu.
 {{% /center %}}
 </code></pre></td></tr></table>
 </div>
-</div><!-- raw HTML omitted -->
+</div><div class='align-center'>
 <h2 id="hybrid-in-center">hybrid in center</h2>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<figure>
+    <img src="https://wx1.sinaimg.cn/small/006SToa6ly1fm07summ2gj30qo0qomzu.jpg"
+         alt="img"/> <figcaption>
+            <h4>default</h4>
+        </figcaption>
+</figure>
+<figure class="right">
+    <img src="https://wx1.sinaimg.cn/small/006SToa6ly1fm07summ2gj30qo0qomzu.jpg"
+         alt="img"/> <figcaption>
+            <h4>right</h4>
+        </figcaption>
+</figure>
+<div class='align-left'>
+  <figure>
+    <img src="https://wx1.sinaimg.cn/small/006SToa6ly1fm07summ2gj30qo0qomzu.jpg"
+         alt="img"/> <figcaption>
+            <h4>default in left</h4>
+        </figcaption>
+</figure>
+</div>
+</div>
 <hr>
 <h1 id="music-163">Music 163</h1>
 <h2 id="params">Params</h2>
@@ -525,8 +572,11 @@ biu biu biu.
 </code></pre></td></tr></table>
 </div>
 </div><p>{{% music &ldquo;28196554&rdquo; %}}</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<style>
+.post-content img {
+  height: 64px;
+}
+</style>
     </div>
 
     <div class="post-copyright">
@@ -570,7 +620,7 @@ biu biu biu.
         id: '2016-08-30 16:01:23 \x2b0800 CST',
         title: 'Shortcodes',
         link: decodeURI(location.href),
-        desc: '\x3ch1 id=\x22admonition\x22\x3eAdmonition\x3c\/h1\x3e\n\x3c!-- raw HTML omitted --\x3e\n\x3cp\x3ebiu biu biu.\x3c\/p\x3e\n\x3c!-- raw HTML omitted --\x3e\n\x3c!-- raw HTML omitted --\x3e\n\x3c!-- raw HTML omitted --\x3e\n\x3c!-- raw HTML omitted --\x3e\n\x3c!-- raw HTML omitted --\x3e\n\x3cdiv class=\x22highlight\x22\x3e\x3cdiv class=\x22chroma\x22\x3e\n\x3ctable class=\x22lntable\x22\x3e\x3ctr\x3e\x3ctd class=\x22lntd\x22\x3e\n\x3cpre class=\x22chroma\x22\x3e\x3ccode\x3e\x3cspan class=\x22lnt\x22\x3e 1\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e 2\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e 3\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e 4\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e 5\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e 6\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e 7\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e 8\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e 9\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e10\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e11\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e12\n\x3c\/span\x3e\x3c\/code\x3e\x3c\/pre\x3e\x3c\/td\x3e\n\x3ctd class=\x22lntd\x22\x3e\n\x3cpre class=\x22chroma\x22\x3e\x3ccode class=\x22language-markdown\x22 data-lang=\x22markdown\x22\x3e{{% admonition note \x26#34;I\x26#39;m title!\x26#34; false %}}\nbiu biu biu.\n\n{{% admonition type=\x26#34;note\x26#34; title=\x26#34;note\x26#34; details=\x26#34;true\x26#34; %}}\nbiu biu biu.\n{{% \/admonition %}}\n\n{{% admonition example %}}\nWithout title.\n{{% \/admonition %}}\n\n{{% \/admonition %}}\n\x3c\/code\x3e\x3c\/pre\x3e\x3c\/td\x3e\x3c\/tr\x3e\x3c\/table\x3e\n\x3c\/div\x3e\n\x3c\/div\x3e',
+        desc: '\x3ch1 id=\x22admonition\x22\x3eAdmonition\x3c\/h1\x3e\n\x3cdiv class=\x22admonition note\x22\x3e\x3cp class=\x22admonition-title\x22\x3eI\x26#39;m title!\x3c\/p\x3e\n\x3cp\x3ebiu biu biu.\x3c\/p\x3e\n\x3cdetails class=\x22admonition note\x22\x3e\x3csummary class=\x22admonition-title\x22\x3enote\x3c\/summary\x3e\n  \x3cp\x3ebiu biu biu.\x3c\/p\x3e\n\x3c\/details\x3e\n\x3cdiv class=\x22admonition example\x22\x3e\n  \x3cp\x3eWithout title.\x3c\/p\x3e\n\x3c\/div\x3e\n\x3c\/div\x3e\n\x3cdiv class=\x22highlight\x22\x3e\x3cdiv class=\x22chroma\x22\x3e\n\x3ctable class=\x22lntable\x22\x3e\x3ctr\x3e\x3ctd class=\x22lntd\x22\x3e\n\x3cpre class=\x22chroma\x22\x3e\x3ccode\x3e\x3cspan class=\x22lnt\x22\x3e 1\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e 2\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e 3\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e 4\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e 5\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e 6\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e 7\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e 8\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e 9\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e10\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e11\n\x3c\/span\x3e\x3cspan class=\x22lnt\x22\x3e12\n\x3c\/span\x3e\x3c\/code\x3e\x3c\/pre\x3e\x3c\/td\x3e\n\x3ctd class=\x22lntd\x22\x3e\n\x3cpre class=\x22chroma\x22\x3e\x3ccode class=\x22language-markdown\x22 data-lang=\x22markdown\x22\x3e{{% admonition note \x26#34;I\x26#39;m title!\x26#34; false %}}\nbiu biu biu.\n\n{{% admonition type=\x26#34;note\x26#34; title=\x26#34;note\x26#34; details=\x26#34;true\x26#34; %}}\nbiu biu biu.\n{{% \/admonition %}}\n\n{{% admonition example %}}\nWithout title.\n{{% \/admonition %}}\n\n{{% \/admonition %}}\n\x3c\/code\x3e\x3c\/pre\x3e\x3c\/td\x3e\x3c\/tr\x3e\x3c\/table\x3e\n\x3c\/div\x3e\n\x3c\/div\x3e',
         owner: 'with9',
         repo: 'with9.github.io',
         oauth: {
