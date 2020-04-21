@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IT on 生活和睡觉.</title>
+    <link>https://with9.github.io/categories/it/</link>
+    <description>Recent content in IT on 生活和睡觉.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 16 Apr 2020 09:10:18 +0800</lastBuildDate>
+    
+	<atom:link href="https://with9.github.io/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Archlinux迁移到LVM</title>
+      <link>https://with9.github.io/post/hello/</link>
+      <pubDate>Thu, 16 Apr 2020 09:10:18 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/hello/</guid>
+      <description>由于一开始各种诡异的折腾电脑方式,导致我系统的根目录在最后一个分区,并且快满了,无法扩容,因此就打算移动到前面的位置,并且直接迁移到lvm,</description>
+    </item>
+    
+    <item>
+      <title>记一次arch升级图标滚挂的修复经历</title>
+      <link>https://with9.github.io/post/arch-icon-repair/</link>
+      <pubDate>Sun, 19 May 2019 16:08:21 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/arch-icon-repair/</guid>
+      <description>记录一下自己问题寻找和解决方法的过程</description>
+    </item>
+    
+    <item>
+      <title>linux下midi键盘的使用问题</title>
+      <link>https://with9.github.io/post/midi-config/</link>
+      <pubDate>Mon, 01 Oct 2018 15:50:28 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/midi-config/</guid>
+      <description>简单的记录一下里midi键盘的使用</description>
+    </item>
+    
+  </channel>
+</rss>
