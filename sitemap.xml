@@ -9,14 +9,21 @@
   </url>
   
   <url>
-    <loc>https://with9.github.io/to-do/</loc>
-    <lastmod>2020-04-20T23:37:24+08:00</lastmod>
+    <loc>https://with9.github.io/friends/</loc>
+    <lastmod>2020-04-23T00:37:16+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://with9.github.io/</loc>
+    <lastmod>2020-04-23T00:37:16+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://with9.github.io/to-do/</loc>
     <lastmod>2020-04-20T23:37:24+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
