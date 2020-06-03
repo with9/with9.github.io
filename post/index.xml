@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 生活和睡觉.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Apr 2020 01:38:15 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2020 17:48:04 +0800</lastBuildDate>
     
 	<atom:link href="https://with9.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[译]Linux 桌面是如何发展的?</title>
+      <link>https://with9.github.io/post/how-linux-desktop-grown/</link>
+      <pubDate>Wed, 03 Jun 2020 17:48:04 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/how-linux-desktop-grown/</guid>
+      <description>翻译自opensource的一篇文章,作者是: Jim Hall ,非常有趣,介绍了Linux桌面的发展历史.</description>
+    </item>
     
     <item>
       <title>川端康成的《岁岁年年》有感</title>
