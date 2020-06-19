@@ -66,7 +66,7 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=4937357&amp;auto=0&amp;he
       <description>&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/SL3Arch.png&#34; alt=&#34;  &#34;&gt;&lt;/p&gt;
 &lt;p&gt;仅个人折腾小记,实际操作有多出需要替换&lt;/p&gt;
 &lt;h2 id=&#34;系统迁移&#34;&gt;系统迁移&lt;/h2&gt;
-&lt;p&gt;由于资金不足, 购买的SL3容量不足以安装双系统, 因此grub-mkconfig -o /winefi/grub/grub.cfg我的做法是双硬盘双系统, 内置硬盘依然是win10, 外接硬盘为Arch.&lt;/p&gt;
+&lt;p&gt;由于资金不足, 购买的SL3容量不足以安装双系统, 因此我的做法是双硬盘双系统, 内置硬盘依然是win10, 外接硬盘为Arch.&lt;/p&gt;
 &lt;h3 id=&#34;刻录启动盘&#34;&gt;刻录启动盘&lt;/h3&gt;
 &lt;p&gt;网上教程应该很多, linux下直接dd命令即可, win下推荐rufus工具进行刻录. 有一个神器叫ventory也不错, 可以试试看.&lt;/p&gt;
 &lt;h3 id=&#34;分区&#34;&gt;分区&lt;/h3&gt;
