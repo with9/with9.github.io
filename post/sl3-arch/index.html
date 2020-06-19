@@ -49,7 +49,7 @@
 <meta itemprop="description" content="新的surface 到了，迫不及待的想着装上Arch，遇到了很多小问题，自己照着github上一个linux-surface项目勉强装上，现在作一个小记录。">
 <meta itemprop="datePublished" content="2020-06-19T15:34:00&#43;08:00" />
 <meta itemprop="dateModified" content="2020-06-19T15:34:00&#43;08:00" />
-<meta itemprop="wordCount" content="1071">
+<meta itemprop="wordCount" content="1108">
 
 
 
@@ -133,7 +133,7 @@
         <div class="post-category">
             <a href="/categories/it/"> IT </a>
             </div>
-          <span class="more-meta"> 1071 words </span>
+          <span class="more-meta"> 1108 words </span>
           <span class="more-meta"> 3 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
@@ -152,7 +152,13 @@
     </li>
     <li><a href="#安装准备工作">安装准备工作</a></li>
     <li><a href="#安装">安装</a></li>
-    <li><a href="#一些小问题">一些小问题</a></li>
+    <li><a href="#一些小问题">一些小问题</a>
+      <ul>
+        <li><a href="#reboot会卡死在开机logo画面">reboot会卡死在开机logo画面.</a></li>
+        <li><a href="#待机或睡眠后触摸屏无法使用">待机或睡眠后触摸屏无法使用</a></li>
+        <li><a href="#双系统时间不同步">双系统时间不同步</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -193,8 +199,8 @@
 </li>
 <li>
 <p>安装linux-surface</p>
-<ul>
-<li>
+</li>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -203,19 +209,15 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">pacman-key --add surface.asc
-pacman-key --finger 56C464BAAC421453
-pacman-key --lsign-key 56C464BAAC421453
-pacman -U linux-surface,linux-surface-headers相关文件
+<pre class="chroma"><code class="language-shell" data-lang="shell">    pacman-key --add surface.asc
+    pacman-key --finger 56C464BAAC421453
+    pacman-key --lsign-key 56C464BAAC421453
+    pacman -U linux-surface,linux-surface-headers相关文件
 </code></pre></td></tr></table>
 </div>
-</div></li>
+</div><ul>
+<li>然后就可以愉快的挂载ext4分区了</li>
 </ul>
-</li>
-<li>
-<p>然后就可以愉快的挂载ext4分区了</p>
-<ul>
-<li>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -223,23 +225,19 @@ pacman -U linux-surface,linux-surface-headers相关文件
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">mount /dev/sda2 /mnt
-mount /dev/sda1 /mnt/boot
-mount /dev/sda3 /mnt/home
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">    mount /dev/sda2 /mnt
+    mount /dev/sda1 /mnt/boot
+    mount /dev/sda3 /mnt/home
 </code></pre></td></tr></table>
 </div>
-</div></li>
+</div><ul>
 <li>
-<p>生成新的fstab文件</p>
-</li>
-<li>
-<p><code>genfstab -U /mnt  &gt; /mnt/etc/fstab</code></p>
-</li>
-</ul>
+<p>生成新的fstab文件<code>genfstab -U /mnt  &gt; /mnt/etc/fstab</code></p>
 </li>
 <li>
 <p>安装grub</p>
 <ul>
+<li>务必装在原win10的efi目录下, 否则会无法引导win10</li>
 <li>chroot <code>arch-chroot /mnt</code></li>
 <li>再一次安装linux-surface内核</li>
 <li>挂载内置硬盘的efi分区 <code>mount /dev/nvme0n1p1 /winefi</code></li>
@@ -252,16 +250,12 @@ mount /dev/sda3 /mnt/home
 <p>接着开机应该就会自动从grub进行引导了, 并且保留有windows boot loader选项方便直接进入windows系统.</p>
 <h2 id="一些小问题">一些小问题</h2>
 <p>至此,基本安装已经完成了,但是还存在一些小问题,linux-surface的wiki也大部分给出了解决方法.</p>
-<ul>
-<li>
-<p>reboot会卡死在开机logo画面.</p>
+<h3 id="reboot会卡死在开机logo画面">reboot会卡死在开机logo画面.</h3>
 <ul>
 <li>解决方法,grub.cfg文件中加入reboot=pci</li>
 <li>类似这样linux   /vmlinuz-linux-surface root=UUID=0329c27d-c10f-46da-bcf9-611c721de08e rw reboot=pci</li>
 </ul>
-</li>
-<li>
-<p>待机或睡眠后触摸屏无法使用</p>
+<h3 id="待机或睡眠后触摸屏无法使用">待机或睡眠后触摸屏无法使用</h3>
 <ul>
 <li>
 <p>原因是ipts相关模块挂载问题</p>
@@ -272,7 +266,7 @@ mount /dev/sda3 /mnt/home
 <li>
 <p>修改或新建/lib/systemd/system-sleep/sleep文件</p>
 </li>
-<li>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -288,22 +282,16 @@ mount /dev/sda3 /mnt/home
 <td class="lntd">
 <pre class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#!/bin/sh
 </span><span class="cp"></span><span class="k">case</span> <span class="nv">$1</span> in
- pre<span class="o">)</span>
-   modprobe -r mei
-   modprobe -r ipts
- post<span class="o">)</span>
-   modprobe mei
-   modprobe ipts
+  pre<span class="o">)</span>
+    modprobe -r mei
+    modprobe -r ipts
+  post<span class="o">)</span>
+    modprobe mei
+    modprobe ipts
 <span class="k">esac</span>
 </code></pre></td></tr></table>
 </div>
-</div></li>
-</ul>
-</li>
-<li>
-<p>双系统时间不同步</p>
-</li>
-</ul>
+</div><h3 id="双系统时间不同步">双系统时间不同步</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1

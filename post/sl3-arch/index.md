@@ -43,26 +43,25 @@ linux-surface仓库提前准备好linux-surface内核
 - 挂载磁盘的boot分区
 
 - 安装linux-surface
-  - ```shell
+```shell
     pacman-key --add surface.asc
     pacman-key --finger 56C464BAAC421453
     pacman-key --lsign-key 56C464BAAC421453
     pacman -U linux-surface,linux-surface-headers相关文件
-    ```
-  
+```
+
 - 然后就可以愉快的挂载ext4分区了
   
-  - ```
+```
     mount /dev/sda2 /mnt
     mount /dev/sda1 /mnt/boot
     mount /dev/sda3 /mnt/home
-    ```
-    
-  - 生成新的fstab文件
-  
-  - `genfstab -U /mnt  > /mnt/etc/fstab`
+```
+
+- 生成新的fstab文件`genfstab -U /mnt  > /mnt/etc/fstab`
   
 - 安装grub
+  - 务必装在原win10的efi目录下, 否则会无法引导win10
   - chroot `arch-chroot /mnt`
   - 再一次安装linux-surface内核
   - 挂载内置硬盘的efi分区 `mount /dev/nvme0n1p1 /winefi`
@@ -76,32 +75,32 @@ linux-surface仓库提前准备好linux-surface内核
 
 至此,基本安装已经完成了,但是还存在一些小问题,linux-surface的wiki也大部分给出了解决方法.
 
-- reboot会卡死在开机logo画面.
+### reboot会卡死在开机logo画面.
 
-  - 解决方法,grub.cfg文件中加入reboot=pci
-  - 类似这样linux   /vmlinuz-linux-surface root=UUID=0329c27d-c10f-46da-bcf9-611c721de08e rw reboot=pci
+- 解决方法,grub.cfg文件中加入reboot=pci
+- 类似这样linux   /vmlinuz-linux-surface root=UUID=0329c27d-c10f-46da-bcf9-611c721de08e rw reboot=pci
 
-- 待机或睡眠后触摸屏无法使用
+### 待机或睡眠后触摸屏无法使用
 
-  - 原因是ipts相关模块挂载问题
+- 原因是ipts相关模块挂载问题
 
-  - 通过sleep脚本可以解决
+- 通过sleep脚本可以解决
 
-  - 修改或新建/lib/systemd/system-sleep/sleep文件
+- 修改或新建/lib/systemd/system-sleep/sleep文件
 
-  - ```shell
-    #!/bin/sh
-    case $1 in
-     pre)
-       modprobe -r mei
-       modprobe -r ipts
-     post)
-       modprobe mei
-       modprobe ipts
-    esac
-    ```
+```shell
+#!/bin/sh
+case $1 in
+  pre)
+    modprobe -r mei
+    modprobe -r ipts
+  post)
+    modprobe mei
+    modprobe ipts
+esac
+```
 
-- 双系统时间不同步
+### 双系统时间不同步
 
 ```shell
 sudo timedatectl set-local-rtc 1

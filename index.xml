@@ -98,8 +98,8 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=4937357&amp;auto=0&amp;he
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;安装linux-surface&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -108,19 +108,15 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=4937357&amp;auto=0&amp;he
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;pacman-key --add surface.asc
-pacman-key --finger 56C464BAAC421453
-pacman-key --lsign-key 56C464BAAC421453
-pacman -U linux-surface,linux-surface-headers相关文件
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;    pacman-key --add surface.asc
+    pacman-key --finger 56C464BAAC421453
+    pacman-key --lsign-key 56C464BAAC421453
+    pacman -U linux-surface,linux-surface-headers相关文件
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;然后就可以愉快的挂载ext4分区了&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;然后就可以愉快的挂载ext4分区了&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -128,23 +124,19 @@ pacman -U linux-surface,linux-surface-headers相关文件
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;mount /dev/sda2 /mnt
-mount /dev/sda1 /mnt/boot
-mount /dev/sda3 /mnt/home
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;    mount /dev/sda2 /mnt
+    mount /dev/sda1 /mnt/boot
+    mount /dev/sda3 /mnt/home
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;生成新的fstab文件&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;genfstab -U /mnt  &amp;gt; /mnt/etc/fstab&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;生成新的fstab文件&lt;code&gt;genfstab -U /mnt  &amp;gt; /mnt/etc/fstab&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;安装grub&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;务必装在原win10的efi目录下, 否则会无法引导win10&lt;/li&gt;
 &lt;li&gt;chroot &lt;code&gt;arch-chroot /mnt&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;再一次安装linux-surface内核&lt;/li&gt;
 &lt;li&gt;挂载内置硬盘的efi分区 &lt;code&gt;mount /dev/nvme0n1p1 /winefi&lt;/code&gt;&lt;/li&gt;
@@ -157,16 +149,12 @@ mount /dev/sda3 /mnt/home
 &lt;p&gt;接着开机应该就会自动从grub进行引导了, 并且保留有windows boot loader选项方便直接进入windows系统.&lt;/p&gt;
 &lt;h2 id=&#34;一些小问题&#34;&gt;一些小问题&lt;/h2&gt;
 &lt;p&gt;至此,基本安装已经完成了,但是还存在一些小问题,linux-surface的wiki也大部分给出了解决方法.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;reboot会卡死在开机logo画面.&lt;/p&gt;
+&lt;h3 id=&#34;reboot会卡死在开机logo画面&#34;&gt;reboot会卡死在开机logo画面.&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;解决方法,grub.cfg文件中加入reboot=pci&lt;/li&gt;
 &lt;li&gt;类似这样linux   /vmlinuz-linux-surface root=UUID=0329c27d-c10f-46da-bcf9-611c721de08e rw reboot=pci&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;待机或睡眠后触摸屏无法使用&lt;/p&gt;
+&lt;h3 id=&#34;待机或睡眠后触摸屏无法使用&#34;&gt;待机或睡眠后触摸屏无法使用&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;原因是ipts相关模块挂载问题&lt;/p&gt;
@@ -177,7 +165,7 @@ mount /dev/sda3 /mnt/home
 &lt;li&gt;
 &lt;p&gt;修改或新建/lib/systemd/system-sleep/sleep文件&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -193,22 +181,16 @@ mount /dev/sda3 /mnt/home
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/sh
 &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$1&lt;/span&gt; in
- pre&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-   modprobe -r mei
-   modprobe -r ipts
- post&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-   modprobe mei
-   modprobe ipts
+  pre&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+    modprobe -r mei
+    modprobe -r ipts
+  post&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+    modprobe mei
+    modprobe ipts
 &lt;span class=&#34;k&#34;&gt;esac&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;双系统时间不同步&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/div&gt;&lt;h3 id=&#34;双系统时间不同步&#34;&gt;双系统时间不同步&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
