@@ -94,9 +94,11 @@ case $1 in
   pre)
     modprobe -r mei
     modprobe -r ipts
+    modprobe -r surface_sam_sid#可以防止touchpad无法双指右键
   post)
     modprobe mei
     modprobe ipts
+    modprobe surface_sam_sid
 esac
 ```
 
@@ -106,3 +108,18 @@ esac
 sudo timedatectl set-local-rtc 1
 sudo hwclock --systohc --localtime
 ```
+
+### DisableWhileTyping not work
+
+参考这个issue[Disable touchpad whilst typing does not work on SL3 Intel #67
+](https://github.com/linux-surface/linux-surface/issues/67)  
+新建文件/etc/libinput/local-overrides.quirks:  
+```shell
+# Matches both Surface Laptop keyboards as well as type covers.
+[Microsoft Surface Keyboard]
+MatchName=*Microsoft Surface * Keyboard*
+MatchDMIModalias=dmi:*svnMicrosoftCorporation:*
+AttrKeyboardIntegration=internal
+```
+`libinput list-devices`找到Keyboard的event序号,比如/dev/input/event10  
+执行命令`libinput quirks list /dev/input/event10`

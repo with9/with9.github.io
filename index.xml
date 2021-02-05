@@ -168,15 +168,17 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=4937357&amp;auto=0&amp;he
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/sh
@@ -184,9 +186,11 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=4937357&amp;auto=0&amp;he
   pre&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
     modprobe -r mei
     modprobe -r ipts
+    modprobe -r surface_sam_sid#可以防止touchpad无法双指右键
   post&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
     modprobe mei
     modprobe ipts
+    modprobe surface_sam_sid
 &lt;span class=&#34;k&#34;&gt;esac&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -201,7 +205,29 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=4937357&amp;auto=0&amp;he
 sudo hwclock --systohc --localtime
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;&lt;h3 id=&#34;disablewhiletyping-not-work&#34;&gt;DisableWhileTyping not work&lt;/h3&gt;
+&lt;p&gt;参考这个issue&lt;a href=&#34;https://github.com/linux-surface/linux-surface/issues/67&#34;&gt;Disable touchpad whilst typing does not work on SL3 Intel #67
+&lt;/a&gt;&lt;br&gt;
+新建文件/etc/libinput/local-overrides.quirks:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Matches both Surface Laptop keyboards as well as type covers.&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;Microsoft Surface Keyboard&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;MatchName&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;*Microsoft Surface * Keyboard*
+&lt;span class=&#34;nv&#34;&gt;MatchDMIModalias&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;dmi:*svnMicrosoftCorporation:*
+&lt;span class=&#34;nv&#34;&gt;AttrKeyboardIntegration&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;internal
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;code&gt;libinput list-devices&lt;/code&gt;找到Keyboard的event序号,比如/dev/input/event10&lt;br&gt;
+执行命令&lt;code&gt;libinput quirks list /dev/input/event10&lt;/code&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -364,7 +390,7 @@ sudo hwclock --systohc --localtime
 &lt;blockquote&gt;
 &lt;p&gt;GNOME 2 also used a taskbar concept but split the bar into two: a taskbar at the top of the screen to launch applications and respond to desktop alerts, and a taskbar at the bottom of the page to show running applications. On my own, I referred to the two taskbars as &amp;ldquo;things you can do&amp;rdquo; (top) and &amp;ldquo;things are you doing&amp;rdquo; (bottom). In addition to the streamlined user interface, GNOME also added an updated file manager called Nautilus, developed by Eazel.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;GNOME 2也使用了任务栏的概念，但是它将任务栏分成了两部分: 一个任务栏在屏幕顶端，显示桌面提醒; 另一个在页面的底部，显示正在运行的应用。 对我来说，我认为这两个任务栏分别是&amp;quot;你可以做的事&amp;rdquo;(顶部)和&amp;quot;你正在做的事&amp;rdquo;(底部)。 除了简化的用户界面外， GNOME还加入了最新的文件管理器——Nautilus， 该管理器由Eazel公司开发。&lt;/p&gt;
+&lt;p&gt;GNOME 2也使用了任务栏的概念，但是它将任务栏分成了两部分: 一个任务栏在屏幕顶端，显示桌面提醒; 另一个在页面的底部，显示正在运行的应用。 对我来说，我认为这两个任务栏分别是&amp;quot;你可以做的事&amp;quot;(顶部)和&amp;quot;你正在做的事&amp;quot;(底部)。 除了简化的用户界面外， GNOME还加入了最新的文件管理器——Nautilus， 该管理器由Eazel公司开发。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://opensource.com/sites/default/files/uploads/gnome26-fc2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;div class=&#39;align-center&#39;&gt;
 &lt;p&gt;&lt;strong&gt;GNOME 2.6.0 (2004) on Fedora Core 2 showing the Nautilus file manager (using a Fedora Core 2 theme)&lt;/strong&gt;&lt;/p&gt;
@@ -670,7 +696,7 @@ linux   /vmlinuz-linux &lt;span class=&#34;nv&#34;&gt;root&lt;/span&gt;&lt;span 
       <pubDate>Sun, 19 May 2019 16:08:21 +0800</pubDate>
       
       <guid>https://with9.github.io/post/arch-icon-repair/</guid>
-      <description>&lt;p&gt;&lt;del&gt;**置顶一下最后说的话:Arch大法好!**&lt;/del&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;del&gt;&lt;strong&gt;置顶一下最后说的话:Arch大法好!&lt;/strong&gt;&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;系统好久没有滚一下了,于是输入了&lt;code&gt;pacman -Syu&lt;/code&gt;滚了一下系统,有一些小冲突,没有特别在意的替换了,然后开机一开始一切顺利,就是图标出现了各种的问题,好多应用图标发生了丢失,变成了这个样子.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/arch-repair/1.png&#34; alt=&#34;  &#34;&gt;&lt;/p&gt;
 &lt;p&gt;一些应用是好的,一些丢失了,一开始我以为是因为图标包的问题,然后就下了几个其他的图标包,问题还是存在,而且应用完全没有用图标包,而是用了hicolor的原始图标,甚至有些图标包一使用桌面直接崩溃..&lt;/p&gt;
