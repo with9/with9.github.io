@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 生活和睡觉.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Jun 2020 15:34:00 +0800</lastBuildDate><atom:link href="https://with9.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Dec 2020 22:45:48 +0800</lastBuildDate><atom:link href="https://with9.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>zotero 写作小教程</title>
+      <link>https://with9.github.io/post/zotero-guide/</link>
+      <pubDate>Sun, 13 Dec 2020 22:45:48 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/zotero-guide/</guid>
+      <description>简单介绍一下zotero这个工具的使用方法</description>
+    </item>
+    
     <item>
       <title>Surface-Laptop3 安装Archlinux折腾小记</title>
       <link>https://with9.github.io/post/sl3-arch/</link>

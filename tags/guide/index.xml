@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>guide on 生活和睡觉.</title>
+    <link>https://with9.github.io/tags/guide/</link>
+    <description>Recent content in guide on 生活和睡觉.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 13 Dec 2020 22:45:48 +0800</lastBuildDate><atom:link href="https://with9.github.io/tags/guide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>zotero 写作小教程</title>
+      <link>https://with9.github.io/post/zotero-guide/</link>
+      <pubDate>Sun, 13 Dec 2020 22:45:48 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/zotero-guide/</guid>
+      <description>简单介绍一下zotero这个工具的使用方法</description>
+    </item>
+    
+  </channel>
+</rss>
