@@ -6,7 +6,7 @@
     <description>Recent content on 生活和睡觉.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Dec 2020 22:45:48 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 30 Mar 2021 18:21:04 +0800</lastBuildDate>
     
 	<atom:link href="https://with9.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -54,6 +54,41 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=4937357&amp;auto=0&amp;he
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SkillNeed</title>
+      <link>https://with9.github.io/temp/skillneed/</link>
+      <pubDate>Tue, 30 Mar 2021 18:21:04 +0800</pubDate>
+      
+      <guid>https://with9.github.io/temp/skillneed/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;HTML
+&lt;ul&gt;
+&lt;li&gt;明白基本的html语法,可以用html写简单的文档,插入图片,超链接等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PHP
+&lt;ul&gt;
+&lt;li&gt;基本语法,变量,循环,字符串拼接,链接SQL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SQL
+&lt;ul&gt;
+&lt;li&gt;可以从命令行创建数据库,表&lt;/li&gt;
+&lt;li&gt;设置主键,插入数据&lt;/li&gt;
+&lt;li&gt;select基本语法,可以通过like进行模糊查找&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;python
+&lt;ul&gt;
+&lt;li&gt;读取并处理简单的文本文件,其他语言也可&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;biopython的Entrez模块&lt;/em&gt;(大概了解即可)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;强烈安利学一下git,几十分钟,终身收益. 版本管理真的非常方便.&lt;/p&gt;
 </description>
     </item>
     
@@ -794,27 +829,6 @@ linux   /vmlinuz-linux &lt;span class=&#34;nv&#34;&gt;root&lt;/span&gt;&lt;span 
 &lt;p&gt;到这里,我感觉我终于发现了突破口,毫无疑问,一定和svg有所关系,于是网上寻找svg有关的包,发现有一个librsvg,猜测可能是系统更新的时候这个包因为冲突没有安装什么的,先直接pacman安装看看,结果居然它已经存在了,然后站在aur上中找到了librsvg-git的包,重新编译安装了下,注销一下重新登录,一切都修复啦..&lt;/p&gt;
 &lt;p&gt;最后截一张修复好了的图.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/arch-repair/9.png&#34; alt=&#34; &#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>linux下midi键盘的使用问题</title>
-      <link>https://with9.github.io/post/midi-config/</link>
-      <pubDate>Mon, 01 Oct 2018 15:50:28 +0800</pubDate>
-      
-      <guid>https://with9.github.io/post/midi-config/</guid>
-      <description>&lt;p&gt;最近打算把封印了快一年的midi键盘拿出来练下,拿出来才发现,我的系统换成了debian,还不知道要怎么链接midi键盘,果断网上搜索 关键词midi键盘 linux系统,,果然没有想freepiano这样子的傻瓜软件&amp;hellip;.结果看到一些教程,但是都不详细,就是说qsynth+jack+timidity+vmpk这几个配合起来,先不管了,首先先apt安装这些,发现大部分都是预装上的&amp;hellip;&lt;/p&gt;
-&lt;p&gt;下面讲一下我折腾了快两天得出来的经验教程,首先我们打开qjackctl软件,应该是一个控制音频接口的软件吧,一些教程讲这里直接点start,再打开vmpk就可以弹琴了,这是不行的,(我试过了,jack会报错..)&lt;/p&gt;
-&lt;p&gt;我们先什都不用管,接着打开vmpk,编辑里面链接,midi输入为我们的midi键盘,然后上面的允许midi thru转发到midi输入点上钩钩,然后确认&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/midi/1.png&#34; alt=&#34; &#34;&gt;&lt;/p&gt;
-&lt;p&gt;接着我们再回到qjckctl,点击connect,到标签的ALSA下面,将midi键盘的输入接到vmpk的输出(&lt;strong&gt;一定要在qsynth打开前接入,要不然会无法链接过去,原理不太清楚,我被这个坑了好久&lt;/strong&gt;).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/midi/2.png&#34; alt=&#34; &#34;&gt;&lt;/p&gt;
-&lt;p&gt;接着打开qsynth,点击setup,soundfonts(音源)打开我们下载好的音源,我的是freepats上面的kawai钢琴音源(要求sf2格式的,诸如sfz这些格式好像不可以),&lt;/p&gt;
-&lt;p&gt;然后保存设置,接着回到qjackctl,点击start,然后点击connect,标签切换到Audio,将fluidsynth链接到system的输入,再切换到ALSA,发现右边的输入接口多了一个fluidsynth,将它于vmpk的输出接口连在一起,&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/midi/4.png&#34; alt=&#34; &#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/midi/5.png&#34; alt=&#34; &#34;&gt;&lt;/p&gt;
-&lt;p&gt;大功告成,&lt;del&gt;可以开始练习啦&lt;/del&gt;.附全家福(雾)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/midi/6.png&#34; alt=&#34; &#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
