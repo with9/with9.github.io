@@ -11,3 +11,11 @@
   - *biopython的Entrez模块*(大概了解即可)
 
 强烈安利学一下git,几十分钟,终身收益. 版本管理真的非常方便.
+
+```shell
+cd /opt/lampp/htdocs/students/2020280......
+rm * -rf
+git clone https://gitee.com/with9/bioweb.git .
+chmod 755 ./ -Rv
+```
+
