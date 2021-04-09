@@ -19,3 +19,28 @@ git clone https://gitee.com/with9/bioweb.git .
 chmod 755 ./ -Rv
 ```
 
+
+
+
+
+```php
+<?php
+$dbhost = 'localhost';  // mysql服务器主机地址
+$dbuser = 's202028012215001';            // mysql用户名
+$dbpass = '215001';          // mysql用户名密码
+$dbname='s202028012215001';
+$conn = mysqli_connect($dbhost, $dbuser, $dbpass,$dbname);
+$sql="SELECT * FROM `s202028012215001`.`gid` WHERE CONVERT(`Name` USING utf8) LIKE '%".$_POST["like_name"]."%' ORDER BY `id`";
+// echo $sql;
+$res=mysqli_query($conn,$sql);
+while($myrow=mysqli_fetch_assoc($res)){
+    echo "<tr>";
+    echo "<td><a href='https://www.ncbi.nlm.nih.gov/gene/".$myrow['id']."'>".$myrow['id']."</a></td>";
+    echo "<td>".$myrow['Name']."</td>";
+    echo "<td>".$myrow['Annotation']."</td>";
+    echo "<td>".$myrow['taxid']."</td>";
+    echo "</tr>";
+}
+?>
+```
+

@@ -49,7 +49,7 @@
 <meta itemprop="name" content="SkillNeed">
 <meta itemprop="description" content="HTML 明白基本的html语法,可以用html写简单的文档,插入图片,超链接等 PHP 基本语法,变量,循环,字符串拼接,链接SQL SQL 可以从命令行创建数据"><meta itemprop="datePublished" content="2021-03-30T18:21:04&#43;08:00" />
 <meta itemprop="dateModified" content="2021-03-30T18:21:04&#43;08:00" />
-<meta itemprop="wordCount" content="202">
+<meta itemprop="wordCount" content="302">
 <meta itemprop="keywords" content="Linux,translate," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="SkillNeed"/>
 <meta name="twitter:description" content="HTML 明白基本的html语法,可以用html写简单的文档,插入图片,超链接等 PHP 基本语法,变量,循环,字符串拼接,链接SQL SQL 可以从命令行创建数据"/>
@@ -161,6 +161,48 @@ rm * -rf
 git clone https://gitee.com/with9/bioweb.git .
 chmod <span class="m">755</span> ./ -Rv
 </code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="o">&lt;?</span><span class="nx">php</span>
+<span class="nv">$dbhost</span> <span class="o">=</span> <span class="s1">&#39;localhost&#39;</span><span class="p">;</span>  <span class="c1">// mysql服务器主机地址
+</span><span class="c1"></span><span class="nv">$dbuser</span> <span class="o">=</span> <span class="s1">&#39;s202028012215001&#39;</span><span class="p">;</span>            <span class="c1">// mysql用户名
+</span><span class="c1"></span><span class="nv">$dbpass</span> <span class="o">=</span> <span class="s1">&#39;215001&#39;</span><span class="p">;</span>          <span class="c1">// mysql用户名密码
+</span><span class="c1"></span><span class="nv">$dbname</span><span class="o">=</span><span class="s1">&#39;s202028012215001&#39;</span><span class="p">;</span>
+<span class="nv">$conn</span> <span class="o">=</span> <span class="nx">mysqli_connect</span><span class="p">(</span><span class="nv">$dbhost</span><span class="p">,</span> <span class="nv">$dbuser</span><span class="p">,</span> <span class="nv">$dbpass</span><span class="p">,</span><span class="nv">$dbname</span><span class="p">);</span>
+<span class="nv">$sql</span><span class="o">=</span><span class="s2">&#34;SELECT * FROM `s202028012215001`.`gid` WHERE CONVERT(`Name` USING utf8) LIKE &#39;%&#34;</span><span class="o">.</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&#34;like_name&#34;</span><span class="p">]</span><span class="o">.</span><span class="s2">&#34;%&#39; ORDER BY `id`&#34;</span><span class="p">;</span>
+<span class="c1">// echo $sql;
+</span><span class="c1"></span><span class="nv">$res</span><span class="o">=</span><span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$conn</span><span class="p">,</span><span class="nv">$sql</span><span class="p">);</span>
+<span class="k">while</span><span class="p">(</span><span class="nv">$myrow</span><span class="o">=</span><span class="nx">mysqli_fetch_assoc</span><span class="p">(</span><span class="nv">$res</span><span class="p">)){</span>
+    <span class="k">echo</span> <span class="s2">&#34;&lt;tr&gt;&#34;</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s2">&#34;&lt;td&gt;&lt;a href=&#39;https://www.ncbi.nlm.nih.gov/gene/&#34;</span><span class="o">.</span><span class="nv">$myrow</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="o">.</span><span class="s2">&#34;&#39;&gt;&#34;</span><span class="o">.</span><span class="nv">$myrow</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="o">.</span><span class="s2">&#34;&lt;/a&gt;&lt;/td&gt;&#34;</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s2">&#34;&lt;td&gt;&#34;</span><span class="o">.</span><span class="nv">$myrow</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]</span><span class="o">.</span><span class="s2">&#34;&lt;/td&gt;&#34;</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s2">&#34;&lt;td&gt;&#34;</span><span class="o">.</span><span class="nv">$myrow</span><span class="p">[</span><span class="s1">&#39;Annotation&#39;</span><span class="p">]</span><span class="o">.</span><span class="s2">&#34;&lt;/td&gt;&#34;</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s2">&#34;&lt;td&gt;&#34;</span><span class="o">.</span><span class="nv">$myrow</span><span class="p">[</span><span class="s1">&#39;taxid&#39;</span><span class="p">]</span><span class="o">.</span><span class="s2">&#34;&lt;/td&gt;&#34;</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s2">&#34;&lt;/tr&gt;&#34;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span><span class="err">
+</span></code></pre></td></tr></table>
 </div>
 </div>
   </div>
