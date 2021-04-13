@@ -49,7 +49,7 @@
 <meta itemprop="name" content="SkillNeed">
 <meta itemprop="description" content="HTML 明白基本的html语法,可以用html写简单的文档,插入图片,超链接等 PHP 基本语法,变量,循环,字符串拼接,链接SQL SQL 可以从命令行创建数据"><meta itemprop="datePublished" content="2021-03-30T18:21:04&#43;08:00" />
 <meta itemprop="dateModified" content="2021-03-30T18:21:04&#43;08:00" />
-<meta itemprop="wordCount" content="302">
+<meta itemprop="wordCount" content="533">
 <meta itemprop="keywords" content="Linux,translate," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="SkillNeed"/>
 <meta name="twitter:description" content="HTML 明白基本的html语法,可以用html写简单的文档,插入图片,超链接等 PHP 基本语法,变量,循环,字符串拼接,链接SQL SQL 可以从命令行创建数据"/>
@@ -204,7 +204,131 @@ chmod <span class="m">755</span> ./ -Rv
 <span class="cp">?&gt;</span><span class="err">
 </span></code></pre></td></tr></table>
 </div>
+</div><p>Our website:html+css+php+MySQL</p>
+<p>1.Get summary of Gene from Entrez through biopython</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pymysql</span>
+<span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">Entrez</span>
+<span class="n">dbhost</span> <span class="o">=</span> <span class="s2">&#34;localhost&#34;</span>
+<span class="n">dbuser</span> <span class="o">=</span> <span class="s2">&#34;xxxxxxxx&#34;</span>
+<span class="n">dbpasswd</span> <span class="o">=</span> <span class="s2">&#34;xxxxxx&#34;</span>
+<span class="n">dbname</span><span class="o">=</span><span class="s2">&#34;xxxxxx&#34;</span>
+<span class="n">Entrez</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="s2">&#34;xxxxxxx@outlook.com&#34;</span>     <span class="c1"># Always tell NCBI who you are</span>
+<span class="n">handle</span><span class="o">=</span><span class="n">Entrez</span><span class="o">.</span><span class="n">esearch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&#34;Gene&#34;</span><span class="p">,</span><span class="n">term</span><span class="o">=</span><span class="s2">&#34;txid3702[Organism:noexp]&#34;</span><span class="p">,</span><span class="n">retmax</span><span class="o">=</span><span class="mi">100000</span><span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+<span class="n">idlists</span><span class="o">=</span><span class="n">record</span><span class="p">[</span><span class="s2">&#34;IdList&#34;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">gid</span> <span class="ow">in</span> <span class="n">idlists</span><span class="p">:</span>
+    <span class="n">net_handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&#34;Gene&#34;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">gid</span><span class="p">),</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&#34;text&#34;</span><span class="p">)</span>
+    <span class="n">out_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;result.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;a&#34;</span><span class="p">)</span>
+    <span class="n">out_handle</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">net_handle</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+    <span class="n">out_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">net_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;saved </span><span class="si">%s</span><span class="s2">&#34;</span><span class="o">%</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">gid</span><span class="p">)))</span>
+
+</code></pre></td></tr></table>
 </div>
+</div><p>2.Use python script to read the result and insert into SQL</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># one streip to read ncbi gene summary</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">pymysql</span>
+<span class="n">FileName</span><span class="o">=</span><span class="s2">&#34;/home/with9/Documents/bioinformatic/biopython/gene_result4577.txt&#34;</span>
+<span class="n">Taxid</span><span class="o">=</span><span class="mi">4577</span>
+<span class="n">dbhost</span> <span class="o">=</span> <span class="s2">&#34;localhost&#34;</span>
+<span class="n">dbuser</span> <span class="o">=</span> <span class="s2">&#34;xxxxxx&#34;</span>
+<span class="n">dbpasswd</span> <span class="o">=</span> <span class="s2">&#34;xxxxxx&#34;</span>
+<span class="n">dbname</span><span class="o">=</span><span class="s2">&#34;xxxxxx&#34;</span>
+<span class="n">db</span> <span class="o">=</span> <span class="n">pymysql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="n">dbhost</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="n">dbuser</span><span class="p">,</span><span class="n">password</span><span class="o">=</span><span class="n">dbpasswd</span><span class="p">,</span> <span class="n">database</span><span class="o">=</span><span class="n">dbname</span><span class="p">)</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">FileName</span><span class="p">,</span> <span class="s2">&#34;r&#34;</span><span class="p">)</span><span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">one_gene</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">one_g</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">line</span> <span class="o">!=</span> <span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">:</span>
+            <span class="n">one_gene</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">one_gene</span><span class="p">:</span>
+                <span class="n">one_g</span><span class="p">[</span><span class="s2">&#34;Name&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">one_gene</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&#34;.&#34;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+                <span class="n">one_g</span><span class="p">[</span><span class="s2">&#34;Taxid&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">Taxid</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">one_gene</span><span class="p">:</span>
+                    <span class="n">simple_split</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&#34;:&#34;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">simple_split</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;ID&#34;</span><span class="p">:</span>
+                        <span class="n">one_g</span><span class="p">[</span><span class="s2">&#34;ID&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">simple_split</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                    <span class="k">elif</span> <span class="n">simple_split</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;Annotation&#34;</span><span class="p">:</span>
+                <span class="n">sql</span> <span class="o">=</span> <span class="s1">&#39;insert into gid(id,`Name`,`Annotation`,taxid) values(&#39;</span> <span class="o">+</span> \
+                    <span class="n">one_g</span><span class="p">[</span><span class="s2">&#34;ID&#34;</span><span class="p">]</span><span class="o">+</span><span class="s2">&#34;,&#39;&#34;</span><span class="o">+</span><span class="n">one_g</span><span class="p">[</span><span class="s2">&#34;Name&#34;</span><span class="p">]</span><span class="o">+</span><span class="s2">&#34;&#39;,&#39;&#34;</span> <span class="o">+</span> \
+                    <span class="n">one_g</span><span class="p">[</span><span class="s2">&#34;Annotation&#34;</span><span class="p">]</span><span class="o">+</span><span class="s2">&#34;&#39;,&#34;</span><span class="o">+</span><span class="n">one_g</span><span class="p">[</span><span class="s2">&#34;Taxid&#34;</span><span class="p">]</span><span class="o">+</span><span class="s2">&#34;)&#34;</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">sql</span><span class="p">)</span>
+                    <span class="n">db</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+                <span class="k">except</span><span class="p">:</span>
+                    <span class="n">db</span><span class="o">.</span><span class="n">rollback</span><span class="p">()</span>
+            <span class="n">one_gene</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">db</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>3.update data and build up this website</p>
+
   </div>
 </article>
         </div>
