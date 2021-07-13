@@ -6,7 +6,16 @@
     <description>Recent content in Linux on 生活和睡觉.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 30 Mar 2021 18:21:04 +0800</lastBuildDate><atom:link href="https://with9.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Jul 2021 03:03:03 +0800</lastBuildDate><atom:link href="https://with9.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>纯文本写作，随写随引</title>
+      <link>https://with9.github.io/post/zotero-cite/</link>
+      <pubDate>Wed, 14 Jul 2021 03:03:03 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/zotero-cite/</guid>
+      <description>介绍一下如何利用zotero及其插件在纯文本写作下随写随引</description>
+    </item>
+    
     <item>
       <title>SkillNeed</title>
       <link>https://with9.github.io/temp/m3/</link>

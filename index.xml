@@ -6,7 +6,7 @@
     <description>Recent content on 生活和睡觉.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 30 Mar 2021 18:21:04 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 14 Jul 2021 03:03:03 +0800</lastBuildDate>
     
 	<atom:link href="https://with9.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -54,6 +54,240 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=4937357&amp;auto=0&amp;he
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>纯文本写作，随写随引</title>
+      <link>https://with9.github.io/post/zotero-cite/</link>
+      <pubDate>Wed, 14 Jul 2021 03:03:03 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/zotero-cite/</guid>
+      <description>&lt;p&gt;之前介绍了一个文献管理软件(Zotero)，我们可以自由自在的在word中引用和写作。但是我们没有办法很好的在纯文本写作的情况下随写随引。作为一个markdown重度爱好者来说，什么都要在word上写是不可忍受的。&lt;/p&gt;
+&lt;h2 id=&#34;简单的引用&#34;&gt;简单的引用&lt;/h2&gt;
+&lt;p&gt;markdown写作中，我们可以在需要引用的地方加上&lt;code&gt;[^1]&lt;/code&gt;，然后在文章末尾添加&lt;code&gt;[^1]: 这是一个尾注&lt;/code&gt;，在zotero里面配置好引用样式，然后利用快捷键&lt;code&gt;Ctrl+Shift+C&lt;/code&gt;拷贝到剪贴板，然后粘贴到尾注部分就可以实现一条简单的引用了。&lt;/p&gt;
+&lt;!-- ![](/img/.zotero_and_latex/Screenshot_20210714_010708.png)
+
+![](/img/.zotero_and_latex/image-20210714011314627.png) --&gt;
+&lt;table&gt;&lt;tr&gt;
+&lt;td&gt;&lt;img src=https://with9.github.io/img/.zotero_and_latex/Screenshot_20210714_010708.png &gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=https://with9.github.io/img/.zotero_and_latex/image-20210714011314627.png &gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;h2 id=&#34;bibtex文献管理库&#34;&gt;bibtex文献管理库&lt;/h2&gt;
+&lt;p&gt;随便写一些小随笔的时候这样进行文献引用还行，但是一旦涉及到较多文献，或者我们的文章需要反复修改的时候，这样的简单引用就会带来一些问题，比如无法自动编号，没有办法很方便的修改引用文献样式等等，这个时候就是pandoc的用武之地了。pandoc可以实现各种文档格式之间的转换，比如markdown转word，markdown转pdf等等，pandoc还可以支持bibtex文献库的引用。bibtex是latex写作中的文献管理库的文件，这是bibtex文件中的某一条文献的内容。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;@article&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;2018zhongguo2xingtangniaobingfangzhizhinan,
+  title = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;中国2型糖尿病防治指南(2017年版)&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
+  date = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;2018&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
+  journaltitle = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;中国实用内科杂志&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
+  volume = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;38&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
+  pages = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;292--344&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
+  issn = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;1005-2194&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
+  abstract = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\&amp;amp;&lt;/span&gt;lt;正&lt;span class=&#34;k&#34;&gt;\&amp;amp;&lt;/span&gt;gt;1前言40年来,随着我国人口老龄化与生活方式的
+变化,糖尿病从少见病变成一个流行病,糖尿病患病率从1980年的0.67&lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt;飙升至2013年的10.4&lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt;。相应地,科学技术的发展也带来我们对糖尿病的认识和诊疗上
+的进步,血糖监测方面从只能在医院检测血糖,发展到持续葡萄糖监测、甚至无
+创血糖监测,治疗方面从只有磺脲类、双胍类和人胰岛素等种类很少的降糖药,
+到目前拥有二肽基肽酶IV(DPP-4)抑&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
+  file = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;/home/with9/Zotero/storage/TZ5DP3Q4/2018&lt;span class=&#34;nb&#34;&gt;_&lt;/span&gt;中国2型糖尿病防治
+指南(2017年版).pdf&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
+  keywords = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;2型糖尿病,guideline,type 2 diabetes,指南&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
+  langid = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;中文;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
+  number = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;04&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;首先是&lt;code&gt;@article{key}&lt;/code&gt;说明了这是一篇论文，花括号里面是这条文献的citation-key。接下来是一些详细信息，比如标题，作者，摘要，发表年份等等。我们在需要引用的地方添加&lt;code&gt;[@2018zhongguo2xingtangniaobingfangzhizhinan]&lt;/code&gt;就行了，接着利用pandoc将markdown转换为word就行了。下面是一个具体的pandoc命令。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;pandoc --cite --csl&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;/bib/nature.csl --bibliography&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;/bib/my.bib test4.md -o test4.docx
+&lt;span class=&#34;c1&#34;&gt;#--cite --csl=后面接引用格式文件。&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;#--bibliography后面接我们的bibtex文献管理器&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;#然后是mardkdown文件test4.md -o 接输出文件名称&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;大概效果是这样。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/.zotero_and_latex/image-20210714013748389.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;better-bibtex-for-zotero&#34;&gt;better-bibtex for zotero&lt;/h2&gt;
+&lt;p&gt;是不是感觉更加麻烦了，bibtex文件要怎么获得，cls文件又是啥。这里就要zoteo的登场啦，首先我们要安装一个插件&lt;a href=&#34;https://retorque.re/zotero-better-bibtex/&#34;&gt;BETTER BIBTEX FOR ZOTERO&lt;/a&gt;，登录官网，下载zotero-better-bibtex-n.n.n.xpi文件到本地，然后打开zotero，点击工具，插件，从文件安装插件，选择下载好的xpi文件就好了。重启zotero后，可以看到每个文献都自动分配了一个citation-key。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/.zotero_and_latex/image-20210714015052778.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;打开首选项的better bibtex，可以对此插件进行一定的配置，推荐将key的格式改成和谷歌学术的一致。 &lt;code&gt;[auth:lower][year][veryshorttitle:lower]&lt;/code&gt;，接下来选择文献库，导出格式选择better-bibtex，勾选keep update，这就是我们的bib文献管理库文件啦。至于csl文件，可以网上找，也可以直接用zotero的，路径在zotero文件夹的style下面。然后对一开始的pandoc命令起个别名就可以开心的写作啦。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; pandocn &lt;span class=&#34;s1&#34;&gt;&amp;#39;pandoc --cite --csl=$HOME/bib/nature.csl --bibliography=$HOME/bib/my.bib&amp;#39;&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;#之后就可以这样调用啦&lt;/span&gt;
+pandocn A.md -o A.docx
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;!-- ![](/img/.zotero_and_latex/image-20210714015412520.png)
+
+![](/img/.zotero_and_latex/image-20210714015848499.png) --&gt;
+&lt;table&gt;&lt;tr&gt;
+&lt;td&gt;&lt;img src=https://with9.github.io/img/.zotero_and_latex/image-20210714015412520.png &gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=https://with9.github.io/img/.zotero_and_latex/image-20210714015848499.png &gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;p&gt;我们现在写作是比之前方便了一丢丢，但是citation-key要怎么弄呢，难道我们要手动复制吗？当然不用。官网上有一个vim引用的脚本。我们简单的查看一下。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;k&#34;&gt;function&lt;/span&gt;! ZoteroCite&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt;
+  &lt;span class=&#34;s2&#34;&gt;&amp;#34; pick a format based on the filetype (customize at will)
+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;  let format = &amp;amp;filetype =~ &amp;#39;.*tex&amp;#39; ? &amp;#39;citep&amp;#39; : &amp;#39;pandoc&amp;#39;
+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;  let api_call = &amp;#39;http://127.0.0.1:23119/better-bibtex/cayw?format=&amp;#39;.format.&amp;#39;&amp;amp;brackets=1&amp;#39;
+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;  let ref = system(&amp;#39;curl -s &amp;#39;.shellescape(api_call))
+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;  return ref
+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;endfunction
+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;noremap &amp;lt;leader&amp;gt;z &amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;ZoteroCite&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt;&amp;lt;CR&amp;gt;p
+inoremap &amp;lt;C-z&amp;gt; &amp;lt;C-r&amp;gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;ZoteroCite&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt;&amp;lt;CR&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;可以看到实际上执行的命令就是&lt;code&gt;curl -s 某个网站&lt;/code&gt;，我们直接在shell中运行一下，跳出一个框框，就和我们在word上面写作没有什么区别。选择好引用的文献后，点击ok。可以看到输出了一个文献的key，那么利用xdotool 和xclip就可以写一个随处引用的小脚本啦。&lt;/p&gt;
+&lt;!-- ![](/img/.zotero_and_latex/image-20210714021119575.png)
+
+![](/img/.zotero_and_latex/image-20210714021312563.png) --&gt;
+&lt;table&gt;&lt;tr&gt;
+&lt;td&gt;&lt;img src=https://with9.github.io/img/.zotero_and_latex/image-20210714021119575.png &gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=https://with9.github.io/img/.zotero_and_latex/image-20210714021312563.png &gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash -e
+&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;chars&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -s &lt;span class=&#34;s1&#34;&gt;&amp;#39;http://127.0.0.1:23119/better-bibtex/cayw?format=pandoc&amp;amp;brackets=1&amp;#39;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -n &lt;span class=&#34;nv&#34;&gt;$chars&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; xclip -selection clipboard &lt;span class=&#34;c1&#34;&gt;#获取key并存在剪切板里面&lt;/span&gt;
+sleep 0.4
+&lt;span class=&#34;c1&#34;&gt;# xdotool type  &amp;#34;$chars&amp;#34; #一开始试着直接打出来，如果目前是中文输入法的话就会出现一些糟糕的情况，比如「@溜018基于包大豆inzucexuk]，所以选择用粘贴版来处理&lt;/span&gt;
+
+xdotool key ctrl+v &lt;span class=&#34;c1&#34;&gt;#进行粘贴&lt;/span&gt;
+copyq remove &lt;span class=&#34;c1&#34;&gt;#我的剪切板管理器，可以无视&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;一些补充&#34;&gt;一些补充&lt;/h2&gt;
+&lt;p&gt;接着介绍一下typora的妙用，Typora是一个很不错的markdown文本编辑器，最近发现它的导出可以自定义命令，利用它我们可以实现一些简单的功能，比如自定义导出的pandoc命令。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;pandoc --cite --csl&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;/bib/nature.csl --bibliography&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;/bib/my.bib &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;currentFileFullName&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; -o &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;currentFileName&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;.docx &lt;span class=&#34;c1&#34;&gt;#定义导出命令，导出到本地同名的docx文件&lt;/span&gt;
+bash &lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;/my_shell/typorashell/diary &lt;span class=&#34;c1&#34;&gt;#是复制模板md文件生成每天的日记模板，下面是diary脚本&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;cur_date&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;`date +%Y-%m-%d`&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;filename&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/Documents/Obsidian/Notes/Diary/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$cur_date&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;.md&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;dirayname&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/Documents/Obsidian/Notes/模板/DiaryEx.md&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[[&lt;/span&gt; ! -e &lt;span class=&#34;nv&#34;&gt;$filename&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
+    cp &lt;span class=&#34;nv&#34;&gt;$dirayname&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$filename&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;最后是修改导出的docx模板，pandoc的文档中提到，pandoc导出成docx文件的时候默认会选择&lt;code&gt;$HOME/.pandoc/reference.docx &lt;/code&gt;文件作为模板，也就是说这里面定义的样式是什么，生成的文件就按什么样式，我们可以在这个文件里面定义好我们的样式，当然pandoc也支持&lt;code&gt;--reference-docx reference.docx &lt;/code&gt;参数来临时选择模板。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;pandoc --print-default-data-file reference.docx &amp;gt; reference.docx &lt;span class=&#34;c1&#34;&gt;#在默认路径下没有看到 reference.docx时候可以通过这个命令来生成。&lt;/span&gt;
+pandoc --reference-docx reference.docx A.md -o A.docx#临时调用模板
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;太长不看&#34;&gt;太长不看&lt;/h2&gt;
+&lt;p&gt;最后总结一下流程（致太长不看）——此脚本只适用于linux，win应该有类似的，没有研究过&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;下载安装better-bibtex插件，简单配置后导出文献库。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;找到style文件&lt;code&gt;Zotero/styles/*.csl&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编写xclip，xdotool脚本，也可以直接复制我写的。并绑定桌面快捷键。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash -e
+&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;chars&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -s &lt;span class=&#34;s1&#34;&gt;&amp;#39;http://127.0.0.1:23119/better-bibtex/cayw?format=pandoc&amp;amp;brackets=1&amp;#39;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -n &lt;span class=&#34;nv&#34;&gt;$chars&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; xclip -selection clipboard 
+sleep 0.4
+xdotool key ctrl+v 
+copyq remove 
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在需要引用的地方按快捷键，选择引用文献&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;用pandoc命令将markdown文件转换为docx文件&lt;code&gt;pandoc --cite --csl=你的csl文件路径.csl --bibliography=你的文献库路径.bib A.md -o A.docx&lt;/code&gt;(推荐定义一个别名，typora可以自定义导出命令)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
@@ -1043,161 +1277,6 @@ Teeworlds认识的大佬, 用的是ArchLinux&lt;br&gt;
 &lt;p&gt;其中父亲葬礼上山崎老人送了一幅字画，“生死事大，无常迅速”，舍弃生死才是一种大解脱，川端康成具有一种佛教生死观，作品里面很多地方都有提示，这也某种程度上暗示了最后他自杀的结局。&lt;/p&gt;
 &lt;p&gt;这本书以前的翻译叫做《日兮月兮》，有一种日日如此月月恒常之意，松子母亲曾经在家里地位十分底下，如奴隶一般，而在两个继子去世后，父亲才重新开始珍视松子母亲，这个时候母亲选择了与继子的大学同学绀野私奔，对一种自由的迷乱向往，后来父亲去世，母亲对父亲的死产生愧疚，绀野对此产生了嫉妒，导致与亲生女儿松子见面都要十分小心翼翼，加之之前私奔的风评，镰仓对于母亲就像是一个地狱之墙一般，母亲又一次落入的悲剧的深渊，最后与绀野分开，与女儿相依为命。女儿松子的命运也十分悲惨，开始遭到宗广的抛弃，后来又遭到他的纠缠，最后宗广的自杀,成为了松子一生无法摆脱锁链，松子在旅社做的恶梦，似乎也在暗示松子的命运。母亲私奔造成父亲死亡，松子离去造成宗广的身亡，死者给予生者的力量是可怕的。&lt;/p&gt;
 &lt;p&gt;第二年同样的一场茶会，但是去的人与之前已经发生了太多的变化了。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Archlinux迁移到LVM</title>
-      <link>https://with9.github.io/post/hello/</link>
-      <pubDate>Thu, 16 Apr 2020 09:10:18 +0800</pubDate>
-      
-      <guid>https://with9.github.io/post/hello/</guid>
-      <description>&lt;p&gt;由于一开始各种诡异的折腾电脑方式,导致我系统的根目录在最后一个分区,并且快满了,无法扩容,因此就打算移动到前面的位置,并且直接迁移到lvm,一劳永逸.&lt;/p&gt;
-&lt;p&gt;本文是个人用来记录的日志,里面有一些自己踩到的坑,与大家分享一下,讲的不是很全面,如果想要照着迁移的话,最起码要可以照着wiki独立安装archlinux系统
-&lt;img src=&#34;https://with9.github.io/img/56866134_p0.jpg&#34; alt=&#34; &#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;提前准备&#34;&gt;提前准备&lt;/h2&gt;
-&lt;p&gt;制作u盘启动盘,命令&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;dd &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;./archlinux.iso &lt;span class=&#34;nv&#34;&gt;of&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/dev/sdb
-&lt;span class=&#34;c1&#34;&gt;#将iso文件内容写入u盘,制作启动盘&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;用分区工具先空出合适的空间,推荐gparted,一个很简单的分区工具.
-准备就绪,重启从u盘启动系统&lt;/p&gt;
-&lt;h2 id=&#34;lvm分区&#34;&gt;lvm分区&lt;/h2&gt;
-&lt;h3 id=&#34;创建物理卷&#34;&gt;创建物理卷&lt;/h3&gt;
-&lt;p&gt;用合适的分区工具对之前留下的空白区域新建分区,分区格式为Linux LVM.
-然后在刚刚创建的分区里面创建物理卷(PV)&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;pvcreate /dev/sda6 
-pvdisplay#可以用该命令列出已经创建的物理卷
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;创建卷组&#34;&gt;创建卷组&lt;/h3&gt;
-&lt;p&gt;在刚刚创建的物理卷上创建卷组(VG)&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;vgcreate vg00 /dev/sda6 &lt;span class=&#34;c1&#34;&gt;#此命令利用sda6分区创建一个名称为vg00的卷组&lt;/span&gt;
-vgextend vg00 /dev/sda5 &lt;span class=&#34;c1&#34;&gt;#此命令可以将vg00卷组扩展到其他物理卷&lt;/span&gt;
-vgdisplay &lt;span class=&#34;c1&#34;&gt;#列出已经创建的卷组&lt;/span&gt;
-vgcreate vg00 /dev/sda6 /dev/sda5 &lt;span class=&#34;c1&#34;&gt;#也可以用此命令直接在多个物理卷的一个卷组&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;创建逻辑卷lv&#34;&gt;创建逻辑卷(LV)&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;lvcreate -L &amp;lt;卷大小&amp;gt; &amp;lt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;卷组名&amp;gt; -n &amp;lt;卷名&amp;gt; #命令格式如此
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;eg. lvcreate -L 60G vg00 -n lvroot #在vg00卷组中创建名称为lvroot的逻辑卷,大小为60G
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;lvcreate -l +100%FREE vg00 -n lvhome #将vg00卷组剩余容量全部给lvhome逻辑卷.
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;系统迁移&#34;&gt;系统迁移&lt;/h3&gt;
-&lt;p&gt;接着将原root分区的内容直接写入新的分区,dd命令是直接以非常简单的方式把输入端的内容完全写到复制端,如果是分区的话,那么是把整个分区内容写入输入端,而不是文件,因此新创建的root逻辑卷必须要比原root分区大,不只是比已用空间大.比如原root分区大小为60G,使用不到10G,依然会读取60G的内容写入新的逻辑卷.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;dd &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; /dev/sda7 &lt;span class=&#34;nv&#34;&gt;of&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/dev/vg00/lvroot &lt;span class=&#34;c1&#34;&gt;#将原root分区内容写入新的root分区&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;此命令过后lvroot分区内容会和旧root分区一模一样,挂载后运行&lt;code&gt;df -h &lt;/code&gt;命令,你会发现和旧分区大小一模一样,无论我们分了多少空间给新的root分区,文件系统都会识别为旧root分区的大小,我们用resize2fs命令来调整文件系统的大小,使得其达到逻辑卷的大小.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;resize2fs /dev/vg00/lvroot
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;挂载root分区到/mnt boot分区到/mnt/boot,并从u盘系统切换到新的系统&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;mount /dev/vg00/lvroot /mnt
-mount /dev/sda1 /mnt/boot
-arch-chroot /mnt
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;配置mkinitcpio&#34;&gt;配置mkinitcpio&lt;/h3&gt;
-&lt;p&gt;修改mkinitcpio文件,因为你的根文件系统基于LVM，需要启用适当的&lt;a href=&#34;https://wiki.archlinux.org/index.php/Mkinitcpio&#34;&gt;mkinitcpio&lt;/a&gt;钩子，否则系统可能无法启动。&lt;/p&gt;
-&lt;p&gt;修改配置文件,添加systemd和sd-lvm2两个钩子&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;/etc/mkinitcpio.conf
-&lt;span class=&#34;nv&#34;&gt;HOOKS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=(&lt;/span&gt;base *systemd* ... block *sd-lvm2* filesystems&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-
-mkinitcpio -P &lt;span class=&#34;c1&#34;&gt;#重新生成initramfs&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;修改fstab文件,将根目录挂载到新分区.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;/etc/fstab
-&lt;span class=&#34;c1&#34;&gt;# /dev/mapper/vg00-lvroot UUID=299cd25f-28f7-4a5f-bea8-0afa2e017f67&lt;/span&gt;
-/dev/mapper/vg00-lvroot /               ext4            rw,relatime     &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;修改引导文件&#34;&gt;修改引导文件&lt;/h3&gt;
-&lt;p&gt;重新生成grub引导文件&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;grub-mkconfig -o /boot/grub/grub.cfg
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;由于lvm下的thin_check问题,导致默认的10s rootdelay会不够,还没有找到新的root分区前就会报错,我们修改rootdelay ,在这行的最后添加&lt;code&gt;rootdelay=60&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;/boot/grub/grub.cfg
-&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt;    &lt;span class=&#34;s1&#34;&gt;&amp;#39;Loading Linux linux ...&amp;#39;&lt;/span&gt;
-linux   /vmlinuz-linux &lt;span class=&#34;nv&#34;&gt;root&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/dev/mapper/vg00-lvroot rw  quiet *rootdelay&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;60*
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;推出chroot环境,重启就行了,如果电脑上有为win系统的话,此时是无法找到的,并且还会找到旧的root分区系统,可以格式化也可以留着并且新建boot目录(注意,不是作为grub引导的分区),并安装内核,重启后再次运行&lt;code&gt;grub-mkconfig&lt;/code&gt;命令&lt;/p&gt;
 </description>
     </item>
     
