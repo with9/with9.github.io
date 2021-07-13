@@ -49,7 +49,7 @@
 <meta itemprop="name" content="纯文本写作，随写随引">
 <meta itemprop="description" content="介绍一下如何利用zotero及其插件在纯文本写作下随写随引"><meta itemprop="datePublished" content="2021-07-14T03:03:03&#43;08:00" />
 <meta itemprop="dateModified" content="2021-07-14T03:03:03&#43;08:00" />
-<meta itemprop="wordCount" content="2806">
+<meta itemprop="wordCount" content="2837">
 <meta itemprop="keywords" content="guide,Linux,zotero,pandoc," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="纯文本写作，随写随引"/>
 <meta name="twitter:description" content="介绍一下如何利用zotero及其插件在纯文本写作下随写随引"/>
@@ -130,7 +130,7 @@
         <div class="post-category">
             <a href="/categories/it/"> IT </a>
             </div>
-          <span class="more-meta"> 2806 words </span>
+          <span class="more-meta"> 2837 words </span>
           <span class="more-meta"> 6 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
@@ -151,7 +151,17 @@
   </div>
 </div>
     <div class="post-content">
-      <p>之前介绍了一个文献管理软件(Zotero)，我们可以自由自在的在word中引用和写作。但是我们没有办法很好的在纯文本写作的情况下随写随引。作为一个markdown重度爱好者来说，什么都要在word上写是不可忍受的。</p>
+      <p><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>  <iframe style="max-width: 100%"
+class="music163"
+frameborder="no"
+border="0"
+marginwidth="0"
+marginheight="0"
+width="330"
+height="86"
+src="//music.163.com/outchain/player?type=2&id=26111634&auto=0&height=66">
+</iframe></p>
+<p>之前介绍了一个文献管理软件(Zotero)，我们可以自由自在的在word中引用和写作。但是我们没有办法很好的在纯文本写作的情况下随写随引。作为一个markdown重度爱好者来说，什么都要在word上写是不可忍受的。</p>
 <h2 id="简单的引用">简单的引用</h2>
 <p>markdown写作中，我们可以在需要引用的地方加上<code>[^1]</code>，然后在文章末尾添加<code>[^1]: 这是一个尾注</code>，在zotero里面配置好引用样式，然后利用快捷键<code>Ctrl+Shift+C</code>拷贝到剪贴板，然后粘贴到尾注部分就可以实现一条简单的引用了。</p>
 <!-- ![](/img/.zotero_and_latex/Screenshot_20210714_010708.png)
@@ -376,6 +386,14 @@ copyq remove
 <p>用pandoc命令将markdown文件转换为docx文件<code>pandoc --cite --csl=你的csl文件路径.csl --bibliography=你的文献库路径.bib A.md -o A.docx</code>(推荐定义一个别名，typora可以自定义导出命令)</p>
 </li>
 </ol>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>蝉在叫，人坏掉(&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 
     </div>
 

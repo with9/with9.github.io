@@ -1,3 +1,5 @@
+[^1]{{% music id="26111634" auto="0" %}}
+
 之前介绍了一个文献管理软件(Zotero)，我们可以自由自在的在word中引用和写作。但是我们没有办法很好的在纯文本写作的情况下随写随引。作为一个markdown重度爱好者来说，什么都要在word上写是不可忍受的。
 
 ## 简单的引用
@@ -157,3 +159,5 @@ pandoc --reference-docx reference.docx A.md -o A.docx#临时调用模板
 1. 在需要引用的地方按快捷键，选择引用文献
 
 1. 用pandoc命令将markdown文件转换为docx文件`pandoc --cite --csl=你的csl文件路径.csl --bibliography=你的文献库路径.bib A.md -o A.docx`(推荐定义一个别名，typora可以自定义导出命令)
+
+[^1]: 蝉在叫，人坏掉(

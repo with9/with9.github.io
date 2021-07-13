@@ -79,34 +79,6 @@
   </url>
   
   <url>
-    <loc>https://with9.github.io/temp/m3/</loc>
-    <lastmod>2021-03-30T18:21:04+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/temp/skillneed/</loc>
-    <lastmod>2021-03-30T18:21:04+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/temp/</loc>
-    <lastmod>2021-03-30T18:21:04+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/tags/translate/</loc>
-    <lastmod>2021-03-30T18:21:04+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://with9.github.io/tags/records/</loc>
     <lastmod>2021-02-05T12:34:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -135,15 +107,15 @@
   </url>
   
   <url>
-    <loc>https://with9.github.io/friends/</loc>
-    <lastmod>2020-04-23T00:37:16+08:00</lastmod>
+    <loc>https://with9.github.io/tags/translate/</loc>
+    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://with9.github.io/to-do/</loc>
-    <lastmod>2020-04-20T23:37:24+08:00</lastmod>
+    <loc>https://with9.github.io/friends/</loc>
+    <lastmod>2020-04-23T00:37:16+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
