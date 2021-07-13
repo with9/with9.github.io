@@ -6,13 +6,13 @@
 
 markdown写作中，我们可以在需要引用的地方加上`[^1]`，然后在文章末尾添加`[^1]: 这是一个尾注`，在zotero里面配置好引用样式，然后利用快捷键`Ctrl+Shift+C`拷贝到剪贴板，然后粘贴到尾注部分就可以实现一条简单的引用了。
 
-<!-- ![](/img/.zotero_and_latex/Screenshot_20210714_010708.png)
+<!-- ![](/img/zotero_and_latex/Screenshot_20210714_010708.png)
 
-![](/img/.zotero_and_latex/image-20210714011314627.png) -->
+![](/img/zotero_and_latex/image-20210714011314627.png) -->
 
 <table><tr>
-<td><img src=/img/.zotero_and_latex/Screenshot_20210714_010708.png ></td>
-<td><img src=/img/.zotero_and_latex/image-20210714011314627.png ></td>
+<td><img src=/img/zotero_and_latex/Screenshot_20210714_010708.png ></td>
+<td><img src=/img/zotero_and_latex/image-20210714011314627.png ></td>
 </tr></table>
 
 ## bibtex文献管理库
@@ -50,13 +50,13 @@ pandoc --cite --csl=$HOME/bib/nature.csl --bibliography=$HOME/bib/my.bib test4.m
 ```
 大概效果是这样。
 
-![](/img/.zotero_and_latex/image-20210714013748389.png)
+![](/img/zotero_and_latex/image-20210714013748389.png)
 
 ## better-bibtex for zotero
 
 是不是感觉更加麻烦了，bibtex文件要怎么获得，cls文件又是啥。这里就要zoteo的登场啦，首先我们要安装一个插件[BETTER BIBTEX FOR ZOTERO](https://retorque.re/zotero-better-bibtex/)，登录官网，下载zotero-better-bibtex-n.n.n.xpi文件到本地，然后打开zotero，点击工具，插件，从文件安装插件，选择下载好的xpi文件就好了。重启zotero后，可以看到每个文献都自动分配了一个citation-key。
 
-![](/img/.zotero_and_latex/image-20210714015052778.png)
+![](/img/zotero_and_latex/image-20210714015052778.png)
 
 打开首选项的better bibtex，可以对此插件进行一定的配置，推荐将key的格式改成和谷歌学术的一致。 `[auth:lower][year][veryshorttitle:lower]`，接下来选择文献库，导出格式选择better-bibtex，勾选keep update，这就是我们的bib文献管理库文件啦。至于csl文件，可以网上找，也可以直接用zotero的，路径在zotero文件夹的style下面。然后对一开始的pandoc命令起个别名就可以开心的写作啦。
 
@@ -68,13 +68,13 @@ pandocn A.md -o A.docx
 
 
 
-<!-- ![](/img/.zotero_and_latex/image-20210714015412520.png)
+<!-- ![](/img/zotero_and_latex/image-20210714015412520.png)
 
-![](/img/.zotero_and_latex/image-20210714015848499.png) -->
+![](/img/zotero_and_latex/image-20210714015848499.png) -->
 
 <table><tr>
-<td><img src=/img/.zotero_and_latex/image-20210714015412520.png ></td>
-<td><img src=/img/.zotero_and_latex/image-20210714015848499.png ></td>
+<td><img src=/img/zotero_and_latex/image-20210714015412520.png ></td>
+<td><img src=/img/zotero_and_latex/image-20210714015848499.png ></td>
 </tr></table>
 
 我们现在写作是比之前方便了一丢丢，但是citation-key要怎么弄呢，难道我们要手动复制吗？当然不用。官网上有一个vim引用的脚本。我们简单的查看一下。
@@ -94,13 +94,13 @@ inoremap <C-z> <C-r>=ZoteroCite()<CR>
 
 可以看到实际上执行的命令就是`curl -s 某个网站`，我们直接在shell中运行一下，跳出一个框框，就和我们在word上面写作没有什么区别。选择好引用的文献后，点击ok。可以看到输出了一个文献的key，那么利用xdotool 和xclip就可以写一个随处引用的小脚本啦。
 
-<!-- ![](/img/.zotero_and_latex/image-20210714021119575.png)
+<!-- ![](/img/zotero_and_latex/image-20210714021119575.png)
 
-![](/img/.zotero_and_latex/image-20210714021312563.png) -->
+![](/img/zotero_and_latex/image-20210714021312563.png) -->
 
 <table><tr>
-<td><img src=/img/.zotero_and_latex/image-20210714021119575.png ></td>
-<td><img src=/img/.zotero_and_latex/image-20210714021312563.png ></td>
+<td><img src=/img/zotero_and_latex/image-20210714021119575.png ></td>
+<td><img src=/img/zotero_and_latex/image-20210714021312563.png ></td>
 </tr></table>
 
 ```bash
