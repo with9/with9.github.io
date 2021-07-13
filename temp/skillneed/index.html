@@ -16,14 +16,16 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="with" /><meta name="description" content="HTML 明白基本的html语法,可以用html写简单的文档,插入图片,超链接等 PHP 基本语法,变量,循环,字符串拼接,链接SQL SQL 可以从命令行创建数据" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="with" /><meta name="description" content="Our website:html&#43;css&#43;php&#43;MySQL
+1.Get summary of Gene from Entrez through biopython
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  import pymysql from Bio import Entrez dbhost = &amp;#34;localhost&amp;#34; dbuser = &amp;#34;xxxxxxxx&amp;#34; dbpasswd = &amp;#34;xxxxxx&amp;#34; dbname=&amp;#34;xxxxxx&amp;#34; Entrez.email = &amp;#34;xxxxxxx@outlook.com&amp;#34; # Always tell NCBI who you are handle=Entrez.esearch(db=&amp;#34;Gene&amp;#34;,term=&amp;#34;txid3702[Organism:noexp]&amp;#34;,retmax=100000) record = Entrez.read(handle) idlists=record[&amp;#34;IdList&amp;#34;] for gid in idlists: net_handle = Entrez.efetch(db=&amp;#34;Gene&amp;#34;, id=str(gid), retmode=&amp;#34;text&amp;#34;) out_handle = open(&amp;#34;result." /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.82.0 with theme even" />
+<meta name="generator" content="Hugo 0.84.0 with theme even" />
 
 
 <link rel="canonical" href="https://with9.github.io/temp/skillneed/" />
@@ -35,24 +37,30 @@
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-<link href="https://with9.github.io/sass/main.min.8bd997cdaff26ec7f2a8ce33c87d95a0e56509a2cc6a53c431cbfe13d932a289.css" rel="stylesheet">
+<link href="https://with9.github.io/sass/main.min.59fa635b67756aca024504fc61290d3c91e6332e773ecac116201a132e599ac0.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="SkillNeed" />
-<meta property="og:description" content="HTML 明白基本的html语法,可以用html写简单的文档,插入图片,超链接等 PHP 基本语法,变量,循环,字符串拼接,链接SQL SQL 可以从命令行创建数据" />
+<meta property="og:description" content="Our website:html&#43;css&#43;php&#43;MySQL
+1.Get summary of Gene from Entrez through biopython
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  import pymysql from Bio import Entrez dbhost = &#34;localhost&#34; dbuser = &#34;xxxxxxxx&#34; dbpasswd = &#34;xxxxxx&#34; dbname=&#34;xxxxxx&#34; Entrez.email = &#34;xxxxxxx@outlook.com&#34; # Always tell NCBI who you are handle=Entrez.esearch(db=&#34;Gene&#34;,term=&#34;txid3702[Organism:noexp]&#34;,retmax=100000) record = Entrez.read(handle) idlists=record[&#34;IdList&#34;] for gid in idlists: net_handle = Entrez.efetch(db=&#34;Gene&#34;, id=str(gid), retmode=&#34;text&#34;) out_handle = open(&#34;result." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://with9.github.io/temp/skillneed/" /><meta property="article:section" content="temp" />
 <meta property="article:published_time" content="2021-03-30T18:21:04&#43;08:00" />
 <meta property="article:modified_time" content="2021-03-30T18:21:04&#43;08:00" />
 
 <meta itemprop="name" content="SkillNeed">
-<meta itemprop="description" content="HTML 明白基本的html语法,可以用html写简单的文档,插入图片,超链接等 PHP 基本语法,变量,循环,字符串拼接,链接SQL SQL 可以从命令行创建数据"><meta itemprop="datePublished" content="2021-03-30T18:21:04&#43;08:00" />
+<meta itemprop="description" content="Our website:html&#43;css&#43;php&#43;MySQL
+1.Get summary of Gene from Entrez through biopython
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  import pymysql from Bio import Entrez dbhost = &#34;localhost&#34; dbuser = &#34;xxxxxxxx&#34; dbpasswd = &#34;xxxxxx&#34; dbname=&#34;xxxxxx&#34; Entrez.email = &#34;xxxxxxx@outlook.com&#34; # Always tell NCBI who you are handle=Entrez.esearch(db=&#34;Gene&#34;,term=&#34;txid3702[Organism:noexp]&#34;,retmax=100000) record = Entrez.read(handle) idlists=record[&#34;IdList&#34;] for gid in idlists: net_handle = Entrez.efetch(db=&#34;Gene&#34;, id=str(gid), retmode=&#34;text&#34;) out_handle = open(&#34;result."><meta itemprop="datePublished" content="2021-03-30T18:21:04&#43;08:00" />
 <meta itemprop="dateModified" content="2021-03-30T18:21:04&#43;08:00" />
-<meta itemprop="wordCount" content="533">
+<meta itemprop="wordCount" content="231">
 <meta itemprop="keywords" content="Linux,translate," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="SkillNeed"/>
-<meta name="twitter:description" content="HTML 明白基本的html语法,可以用html写简单的文档,插入图片,超链接等 PHP 基本语法,变量,循环,字符串拼接,链接SQL SQL 可以从命令行创建数据"/>
+<meta name="twitter:description" content="Our website:html&#43;css&#43;php&#43;MySQL
+1.Get summary of Gene from Entrez through biopython
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  import pymysql from Bio import Entrez dbhost = &#34;localhost&#34; dbuser = &#34;xxxxxxxx&#34; dbpasswd = &#34;xxxxxx&#34; dbname=&#34;xxxxxx&#34; Entrez.email = &#34;xxxxxxx@outlook.com&#34; # Always tell NCBI who you are handle=Entrez.esearch(db=&#34;Gene&#34;,term=&#34;txid3702[Organism:noexp]&#34;,retmax=100000) record = Entrez.read(handle) idlists=record[&#34;IdList&#34;] for gid in idlists: net_handle = Entrez.efetch(db=&#34;Gene&#34;, id=str(gid), retmode=&#34;text&#34;) out_handle = open(&#34;result."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -122,89 +130,7 @@
         <div id="content" class="content">
           <article class="post">
   <div class="post-content">
-    <ul>
-<li>HTML
-<ul>
-<li>明白基本的html语法,可以用html写简单的文档,插入图片,超链接等</li>
-</ul>
-</li>
-<li>PHP
-<ul>
-<li>基本语法,变量,循环,字符串拼接,链接SQL</li>
-</ul>
-</li>
-<li>SQL
-<ul>
-<li>可以从命令行创建数据库,表</li>
-<li>设置主键,插入数据</li>
-<li>select基本语法,可以通过like进行模糊查找</li>
-</ul>
-</li>
-<li>python
-<ul>
-<li>读取并处理简单的文本文件,其他语言也可</li>
-<li><em>biopython的Entrez模块</em>(大概了解即可)</li>
-</ul>
-</li>
-</ul>
-<p>强烈安利学一下git,几十分钟,终身收益. 版本管理真的非常方便.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> /opt/lampp/htdocs/students/2020280....../homework1
-rm * -rf
-git clone https://gitee.com/with9/bioweb.git .
-chmod <span class="m">755</span> ./ -Rv
-</code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-php" data-lang="php"><span class="o">&lt;?</span><span class="nx">php</span>
-<span class="nv">$dbhost</span> <span class="o">=</span> <span class="s1">&#39;localhost&#39;</span><span class="p">;</span>  <span class="c1">// mysql服务器主机地址
-</span><span class="c1"></span><span class="nv">$dbuser</span> <span class="o">=</span> <span class="s1">&#39;s202028012215001&#39;</span><span class="p">;</span>            <span class="c1">// mysql用户名
-</span><span class="c1"></span><span class="nv">$dbpass</span> <span class="o">=</span> <span class="s1">&#39;215001&#39;</span><span class="p">;</span>          <span class="c1">// mysql用户名密码
-</span><span class="c1"></span><span class="nv">$dbname</span><span class="o">=</span><span class="s1">&#39;s202028012215001&#39;</span><span class="p">;</span>
-<span class="nv">$conn</span> <span class="o">=</span> <span class="nx">mysqli_connect</span><span class="p">(</span><span class="nv">$dbhost</span><span class="p">,</span> <span class="nv">$dbuser</span><span class="p">,</span> <span class="nv">$dbpass</span><span class="p">,</span><span class="nv">$dbname</span><span class="p">);</span>
-<span class="nv">$sql</span><span class="o">=</span><span class="s2">&#34;SELECT * FROM `s202028012215001`.`gid` WHERE CONVERT(`Name` USING utf8) LIKE &#39;%&#34;</span><span class="o">.</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&#34;like_name&#34;</span><span class="p">]</span><span class="o">.</span><span class="s2">&#34;%&#39; ORDER BY `id`&#34;</span><span class="p">;</span>
-<span class="c1">// echo $sql;
-</span><span class="c1"></span><span class="nv">$res</span><span class="o">=</span><span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$conn</span><span class="p">,</span><span class="nv">$sql</span><span class="p">);</span>
-<span class="k">while</span><span class="p">(</span><span class="nv">$myrow</span><span class="o">=</span><span class="nx">mysqli_fetch_assoc</span><span class="p">(</span><span class="nv">$res</span><span class="p">)){</span>
-    <span class="k">echo</span> <span class="s2">&#34;&lt;tr&gt;&#34;</span><span class="p">;</span>
-    <span class="k">echo</span> <span class="s2">&#34;&lt;td&gt;&lt;a href=&#39;https://www.ncbi.nlm.nih.gov/gene/&#34;</span><span class="o">.</span><span class="nv">$myrow</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="o">.</span><span class="s2">&#34;&#39;&gt;&#34;</span><span class="o">.</span><span class="nv">$myrow</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="o">.</span><span class="s2">&#34;&lt;/a&gt;&lt;/td&gt;&#34;</span><span class="p">;</span>
-    <span class="k">echo</span> <span class="s2">&#34;&lt;td&gt;&#34;</span><span class="o">.</span><span class="nv">$myrow</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]</span><span class="o">.</span><span class="s2">&#34;&lt;/td&gt;&#34;</span><span class="p">;</span>
-    <span class="k">echo</span> <span class="s2">&#34;&lt;td&gt;&#34;</span><span class="o">.</span><span class="nv">$myrow</span><span class="p">[</span><span class="s1">&#39;Annotation&#39;</span><span class="p">]</span><span class="o">.</span><span class="s2">&#34;&lt;/td&gt;&#34;</span><span class="p">;</span>
-    <span class="k">echo</span> <span class="s2">&#34;&lt;td&gt;&#34;</span><span class="o">.</span><span class="nv">$myrow</span><span class="p">[</span><span class="s1">&#39;taxid&#39;</span><span class="p">]</span><span class="o">.</span><span class="s2">&#34;&lt;/td&gt;&#34;</span><span class="p">;</span>
-    <span class="k">echo</span> <span class="s2">&#34;&lt;/tr&gt;&#34;</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="cp">?&gt;</span><span class="err">
-</span></code></pre></td></tr></table>
-</div>
-</div><p>Our website:html+css+php+MySQL</p>
+    <p>Our website:html+css+php+MySQL</p>
 <p>1.Get summary of Gene from Entrez through biopython</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -244,7 +170,7 @@ chmod <span class="m">755</span> ./ -Rv
     <span class="n">out_handle</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">net_handle</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
     <span class="n">out_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">net_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;saved </span><span class="si">%s</span><span class="s2">&#34;</span><span class="o">%</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">gid</span><span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;saved </span><span class="si">%s</span><span class="s2">&#34;</span><span class="o">%</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">gid</span><span class="p">)))</span>
 
 </code></pre></td></tr></table>
 </div>
@@ -340,7 +266,7 @@ chmod <span class="m">755</span> ./ -Rv
         id: '2021-03-30 18:21:04 \u002b0800 CST',
         title: 'SkillNeed',
         link: decodeURI(location.href),
-        desc: 'HTML 明白基本的html语法,可以用html写简单的文档,插入图片,超链接等 PHP 基本语法,变量,循环,字符串拼接,链接SQL SQL 可以从命令行创建数据',
+        desc: 'Our website:html\u002bcss\u002bphp\u002bMySQL\n1.Get summary of Gene from Entrez through biopython\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  import pymysql from Bio import Entrez dbhost = \u0026#34;localhost\u0026#34; dbuser = \u0026#34;xxxxxxxx\u0026#34; dbpasswd = \u0026#34;xxxxxx\u0026#34; dbname=\u0026#34;xxxxxx\u0026#34; Entrez.email = \u0026#34;xxxxxxx@outlook.com\u0026#34; # Always tell NCBI who you are handle=Entrez.esearch(db=\u0026#34;Gene\u0026#34;,term=\u0026#34;txid3702[Organism:noexp]\u0026#34;,retmax=100000) record = Entrez.read(handle) idlists=record[\u0026#34;IdList\u0026#34;] for gid in idlists: net_handle = Entrez.efetch(db=\u0026#34;Gene\u0026#34;, id=str(gid), retmode=\u0026#34;text\u0026#34;) out_handle = open(\u0026#34;result.',
         owner: 'with9',
         repo: 'with9.github.io',
         oauth: {

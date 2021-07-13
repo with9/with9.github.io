@@ -9,11 +9,22 @@
     <lastBuildDate>Tue, 30 Mar 2021 18:21:04 +0800</lastBuildDate><atom:link href="https://with9.github.io/categories/it/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SkillNeed</title>
+      <link>https://with9.github.io/temp/m3/</link>
+      <pubDate>Tue, 30 Mar 2021 18:21:04 +0800</pubDate>
+      
+      <guid>https://with9.github.io/temp/m3/</guid>
+      <description>#课程笔记 #植物学 #研一 M1载体构建和遗传转换方法 转基因作物 贡献 增加作物产率 节约,保护 环境 缓解贫困 减少co2,欧盟 载体 质粒,噬菌体,人工染色</description>
+    </item>
+    
+    <item>
+      <title>SkillNeed</title>
       <link>https://with9.github.io/temp/skillneed/</link>
       <pubDate>Tue, 30 Mar 2021 18:21:04 +0800</pubDate>
       
       <guid>https://with9.github.io/temp/skillneed/</guid>
-      <description>HTML 明白基本的html语法,可以用html写简单的文档,插入图片,超链接等 PHP 基本语法,变量,循环,字符串拼接,链接SQL SQL 可以从命令行创建数据</description>
+      <description>Our website:html+css+php+MySQL
+1.Get summary of Gene from Entrez through biopython
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  import pymysql from Bio import Entrez dbhost = &amp;#34;localhost&amp;#34; dbuser = &amp;#34;xxxxxxxx&amp;#34; dbpasswd = &amp;#34;xxxxxx&amp;#34; dbname=&amp;#34;xxxxxx&amp;#34; Entrez.email = &amp;#34;xxxxxxx@outlook.com&amp;#34; # Always tell NCBI who you are handle=Entrez.esearch(db=&amp;#34;Gene&amp;#34;,term=&amp;#34;txid3702[Organism:noexp]&amp;#34;,retmax=100000) record = Entrez.read(handle) idlists=record[&amp;#34;IdList&amp;#34;] for gid in idlists: net_handle = Entrez.efetch(db=&amp;#34;Gene&amp;#34;, id=str(gid), retmode=&amp;#34;text&amp;#34;) out_handle = open(&amp;#34;result.</description>
     </item>
     
     <item>

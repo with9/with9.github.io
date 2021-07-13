@@ -50,10 +50,306 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=4937357&amp;auto=0&amp;he
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;素晴日的插曲,非常感人的故事(&lt;strong&gt;这是真的&lt;/strong&gt;),&lt;del&gt;强烈推荐萌新去玩&lt;/del&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;素晴日的插曲,非常感人的故事(&lt;strong&gt;这是真的&lt;/strong&gt;),&lt;del&gt;强烈推荐萌新去玩&lt;/del&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SkillNeed</title>
+      <link>https://with9.github.io/temp/m3/</link>
+      <pubDate>Tue, 30 Mar 2021 18:21:04 +0800</pubDate>
+      
+      <guid>https://with9.github.io/temp/m3/</guid>
+      <description>&lt;p&gt;#课程笔记 #植物学 #研一&lt;/p&gt;
+&lt;h1 id=&#34;m1载体构建和遗传转换方法&#34;&gt;M1载体构建和遗传转换方法&lt;/h1&gt;
+&lt;p&gt;转基因作物&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;贡献
+&lt;ul&gt;
+&lt;li&gt;增加作物产率&lt;/li&gt;
+&lt;li&gt;节约,保护&lt;/li&gt;
+&lt;li&gt;环境&lt;/li&gt;
+&lt;li&gt;缓解贫困&lt;/li&gt;
+&lt;li&gt;减少co2,欧盟&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;载体&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;质粒,噬菌体,人工染色体&lt;/li&gt;
+&lt;li&gt;克隆载体,表达载体&lt;/li&gt;
+&lt;li&gt;插入基因和标签要在同一个阅读框内,否则会移码突变&lt;/li&gt;
+&lt;li&gt;农杆菌&lt;/li&gt;
+&lt;li&gt;TNDA整合特点
+&lt;ul&gt;
+&lt;li&gt;插入随机,优先到转录活跃区段&lt;/li&gt;
+&lt;li&gt;常导致缺失,到位,重复等突变&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;植物病毒载体
+&lt;ul&gt;
+&lt;li&gt;用于生成外源蛋白&lt;/li&gt;
+&lt;li&gt;抗原展示系统&lt;/li&gt;
+&lt;li&gt;多肽表达系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;质体转化
+&lt;ul&gt;
+&lt;li&gt;一般指代叶绿体转化,母性遗传,减少转基因逃逸&lt;/li&gt;
+&lt;li&gt;半自主性,减少对植物细胞整体的毒性&lt;/li&gt;
+&lt;li&gt;重复序列作为边界可以实现同源重组精确整合,多顺贩子表达&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;启动子选择
+&lt;ul&gt;
+&lt;li&gt;组成型启动子&lt;/li&gt;
+&lt;li&gt;特异性启动子,特定部位或者特定时期表达的启动子&lt;/li&gt;
+&lt;li&gt;诱导型启动子 收到诱导会表达的启动子&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;m2植物基因组研究&#34;&gt;M2植物基因组研究&lt;/h1&gt;
+&lt;h2 id=&#34;功能基因鉴定&#34;&gt;功能基因鉴定&lt;/h2&gt;
+&lt;p&gt;表型-&amp;gt;功能 正向遗传学&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;突变
+&lt;ul&gt;
+&lt;li&gt;Ds-插入系统,
+&lt;ul&gt;
+&lt;li&gt;转座子:基因陷阱,增强子陷阱&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TDNA插入突变体
+&lt;ul&gt;
+&lt;li&gt;tair网站,NASC&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;克隆基因:调控框,转录克隆,酵母双杂&lt;/p&gt;
+&lt;p&gt;QTL&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通过检测分子标记和QTL之间的距离(重组频率)来定位QTL对应位置.&lt;/li&gt;
+&lt;li&gt;F2极端性状组进行测序,DNA池(QTL-seq技术)&lt;/li&gt;
+&lt;li&gt;mutmap,通过计算SNP的概率来确定突变位点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;GWAS&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;以连锁不平衡性为基础,定位性状和基因的关系&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;泛基因组&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;核心基因组,群体内都有的基因&lt;/li&gt;
+&lt;li&gt;core,==dispensable==, &amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;m3基因功能研究&#34;&gt;M3:基因功能研究&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;格物致知&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;组学的发展方便了基因功能的研究&lt;/li&gt;
+&lt;li&gt;遗传和变异,生物的基本问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;研究方法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;计算机预测
+&lt;ul&gt;
+&lt;li&gt;基因功能,蛋白质结构域,同源性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;基因表达
+&lt;ul&gt;
+&lt;li&gt;mRNA
+&lt;ul&gt;
+&lt;li&gt;qRT-PCR(检测cDNA峰度)&lt;/li&gt;
+&lt;li&gt;cDNA&lt;/li&gt;
+&lt;li&gt;RNA-seq&lt;/li&gt;
+&lt;li&gt;Northen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;蛋白质
+&lt;ul&gt;
+&lt;li&gt;Western&lt;/li&gt;
+&lt;li&gt;融合蛋白表达&lt;/li&gt;
+&lt;li&gt;免疫荧光检测&lt;/li&gt;
+&lt;li&gt;蛋白芯片&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;突变体分析
+&lt;ul&gt;
+&lt;li&gt;正向遗传学
+&lt;ul&gt;
+&lt;li&gt;产生突变体,进行表型筛选
+&lt;ul&gt;
+&lt;li&gt;DS,诱导&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;定位基因&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;反向遗传学
+&lt;ul&gt;
+&lt;li&gt;已知序列,制作突变体
+&lt;ul&gt;
+&lt;li&gt;RNAi,基因编辑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;蛋白质互作
+&lt;ul&gt;
+&lt;li&gt;BiFC&lt;/li&gt;
+&lt;li&gt;酵母双杂&lt;/li&gt;
+&lt;li&gt;Co-IP&lt;/li&gt;
+&lt;li&gt;共交联质谱&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;蛋白质-DNA互作
+&lt;ul&gt;
+&lt;li&gt;用于研究转录因子&lt;/li&gt;
+&lt;li&gt;凝胶阻滞 (重,跑得慢)&lt;/li&gt;
+&lt;li&gt;酵母单杂交&lt;/li&gt;
+&lt;li&gt;ChIP
+&lt;ul&gt;
+&lt;li&gt;体内研究&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;模式植物&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;拟南芥&lt;/li&gt;
+&lt;li&gt;水稻&lt;/li&gt;
+&lt;li&gt;&amp;hellip;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;m4-遗传标记&#34;&gt;M4 遗传标记&lt;/h1&gt;
+&lt;p&gt;类型:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;形态标记&lt;/li&gt;
+&lt;li&gt;细胞标记&lt;/li&gt;
+&lt;li&gt;生化标记&lt;/li&gt;
+&lt;li&gt;分子标记(DNA标记)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;分子标记&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基于southern杂交的分子标记
+&lt;ul&gt;
+&lt;li&gt;RFLP&lt;/li&gt;
+&lt;li&gt;小卫星DNA标记&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PCR技术的分子标记
+&lt;ul&gt;
+&lt;li&gt;RAPD：随机扩增多态性DNA标记&lt;/li&gt;
+&lt;li&gt;AFLP：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SNP
+&lt;ul&gt;
+&lt;li&gt;基因分型&lt;/li&gt;
+&lt;li&gt;SNP分型
+&lt;ul&gt;
+&lt;li&gt;基于测序技术的SNP分型 （套峰）&lt;/li&gt;
+&lt;li&gt;基于酶切&lt;/li&gt;
+&lt;li&gt;基于等位基因特异性杂交&lt;/li&gt;
+&lt;li&gt;SnaPshot 小测序&lt;/li&gt;
+&lt;li&gt;高分辨率熔解&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;m5基因编辑&#34;&gt;M5基因编辑&lt;/h1&gt;
+&lt;p&gt;手术箱&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DNA识别因子
+&lt;ul&gt;
+&lt;li&gt;锌指蛋白
+&lt;ul&gt;
+&lt;li&gt;不足&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TALE类蛋白
+&lt;ul&gt;
+&lt;li&gt;TALEN技术&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CRISPR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;核酸内切酶&lt;/li&gt;
+&lt;li&gt;DNA修复机制&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CRISPR&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;原理&lt;/li&gt;
+&lt;li&gt;包括&lt;/li&gt;
+&lt;li&gt;危机
+&lt;ul&gt;
+&lt;li&gt;脱靶&lt;/li&gt;
+&lt;li&gt;潜在致癌&lt;/li&gt;
+&lt;li&gt;破坏染色体稳定性&lt;/li&gt;
+&lt;li&gt;免疫反应&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;遗传发育所会议报告&lt;/p&gt;
+&lt;h1 id=&#34;文献分享&#34;&gt;文献分享&lt;/h1&gt;
+&lt;h2 id=&#34;gwas鉴定水稻新基因&#34;&gt;GWAS鉴定水稻新基因&lt;/h2&gt;
+&lt;p&gt;背景&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;全基因组关联分析&lt;/li&gt;
+&lt;li&gt;GWAS的发展历程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;问题&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$r^2$值是什么&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;植物三维基因组结构&#34;&gt;植物三维基因组结构&lt;/h2&gt;
+&lt;p&gt;背景&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;什么是三维基因组学&lt;/li&gt;
+&lt;li&gt;染色体疆域&lt;/li&gt;
+&lt;li&gt;染色体构象:不同植物的染色体构象不太相同&lt;/li&gt;
+&lt;li&gt;染色体臂相互作用&lt;/li&gt;
+&lt;li&gt;拓扑相关结构域&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;小麦ms5基因-雄性不育&#34;&gt;小麦ms5基因 雄性不育&lt;/h2&gt;
+&lt;p&gt;背景&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;花粉败育&lt;/li&gt;
+&lt;li&gt;雄性不育&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;结果&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ms5a表型&lt;/li&gt;
+&lt;li&gt;定位ms5a&lt;/li&gt;
+&lt;li&gt;TaMs5
+&lt;ul&gt;
+&lt;li&gt;转录蛋白质序列进行对比&lt;/li&gt;
+&lt;li&gt;将序列转回去,进行猜想验证&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;hrm&#34;&gt;HRM&lt;/h2&gt;
+&lt;p&gt;应用&lt;/p&gt;
+&lt;p&gt;工作流&lt;/p&gt;
+&lt;p&gt;优点&lt;/p&gt;
+&lt;p&gt;缺点&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;容易鉴定颠换，其他不太好鉴定&lt;/li&gt;
+&lt;li&gt;精度不高&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -63,89 +359,7 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=4937357&amp;auto=0&amp;he
       <pubDate>Tue, 30 Mar 2021 18:21:04 +0800</pubDate>
       
       <guid>https://with9.github.io/temp/skillneed/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;HTML
-&lt;ul&gt;
-&lt;li&gt;明白基本的html语法,可以用html写简单的文档,插入图片,超链接等&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PHP
-&lt;ul&gt;
-&lt;li&gt;基本语法,变量,循环,字符串拼接,链接SQL&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SQL
-&lt;ul&gt;
-&lt;li&gt;可以从命令行创建数据库,表&lt;/li&gt;
-&lt;li&gt;设置主键,插入数据&lt;/li&gt;
-&lt;li&gt;select基本语法,可以通过like进行模糊查找&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;python
-&lt;ul&gt;
-&lt;li&gt;读取并处理简单的文本文件,其他语言也可&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;biopython的Entrez模块&lt;/em&gt;(大概了解即可)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;强烈安利学一下git,几十分钟,终身收益. 版本管理真的非常方便.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; /opt/lampp/htdocs/students/2020280....../homework1
-rm * -rf
-git clone https://gitee.com/with9/bioweb.git .
-chmod &lt;span class=&#34;m&#34;&gt;755&lt;/span&gt; ./ -Rv
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;php&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;$dbhost&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;localhost&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;// mysql服务器主机地址
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$dbuser&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;s202028012215001&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;            &lt;span class=&#34;c1&#34;&gt;// mysql用户名
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$dbpass&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;215001&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;          &lt;span class=&#34;c1&#34;&gt;// mysql用户名密码
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$dbname&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;s202028012215001&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;$conn&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;mysqli_connect&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$dbhost&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$dbuser&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$dbpass&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$dbname&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;$sql&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;SELECT * FROM `s202028012215001`.`gid` WHERE CONVERT(`Name` USING utf8) LIKE &amp;#39;%&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$_POST&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;like_name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;%&amp;#39; ORDER BY `id`&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;// echo $sql;
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$res&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;mysqli_query&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$conn&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$sql&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;while&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$myrow&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;mysqli_fetch_assoc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$res&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)){&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;tr&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;td&amp;gt;&amp;lt;a href=&amp;#39;https://www.ncbi.nlm.nih.gov/gene/&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$myrow&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;id&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#39;&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$myrow&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;id&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;td&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$myrow&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Name&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;/td&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;td&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$myrow&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Annotation&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;/td&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;td&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$myrow&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;taxid&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;/td&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;/tr&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;span class=&#34;cp&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Our website:html+css+php+MySQL&lt;/p&gt;
+      <description>&lt;p&gt;Our website:html+css+php+MySQL&lt;/p&gt;
 &lt;p&gt;1.Get summary of Gene from Entrez through biopython&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -185,7 +399,7 @@ chmod &lt;span class=&#34;m&#34;&gt;755&lt;/span&gt; ./ -Rv
     &lt;span class=&#34;n&#34;&gt;out_handle&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;write&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;net_handle&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;read&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt;
     &lt;span class=&#34;n&#34;&gt;out_handle&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;close&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
     &lt;span class=&#34;n&#34;&gt;net_handle&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;close&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;saved &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;%s&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;gid&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt;
+    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;saved &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;%s&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;gid&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -347,7 +561,7 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=527479&amp;auto=0&amp;hei
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;顺便安利一下天国的minori社作品Eden的插曲 &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;顺便安利一下天国的minori社作品Eden的插曲&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -984,31 +1198,6 @@ linux   /vmlinuz-linux &lt;span class=&#34;nv&#34;&gt;root&lt;/span&gt;&lt;span 
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;推出chroot环境,重启就行了,如果电脑上有为win系统的话,此时是无法找到的,并且还会找到旧的root分区系统,可以格式化也可以留着并且新建boot目录(注意,不是作为grub引导的分区),并安装内核,重启后再次运行&lt;code&gt;grub-mkconfig&lt;/code&gt;命令&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>记一次arch升级图标滚挂的修复经历</title>
-      <link>https://with9.github.io/post/arch-icon-repair/</link>
-      <pubDate>Sun, 19 May 2019 16:08:21 +0800</pubDate>
-      
-      <guid>https://with9.github.io/post/arch-icon-repair/</guid>
-      <description>&lt;p&gt;&lt;del&gt;&lt;strong&gt;置顶一下最后说的话:Arch大法好!&lt;/strong&gt;&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;系统好久没有滚一下了,于是输入了&lt;code&gt;pacman -Syu&lt;/code&gt;滚了一下系统,有一些小冲突,没有特别在意的替换了,然后开机一开始一切顺利,就是图标出现了各种的问题,好多应用图标发生了丢失,变成了这个样子.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/arch-repair/1.png&#34; alt=&#34;  &#34;&gt;&lt;/p&gt;
-&lt;p&gt;一些应用是好的,一些丢失了,一开始我以为是因为图标包的问题,然后就下了几个其他的图标包,问题还是存在,而且应用完全没有用图标包,而是用了hicolor的原始图标,甚至有些图标包一使用桌面直接崩溃..&lt;/p&gt;
-&lt;p&gt;首先,我以为是用户配置的问题,就把.config文件夹重新命名了下,发现还是一样的问题,而且切换某些图标包后,无法进入桌面,终端修改后才可以进入,明显不是简单的用户配置的问题.&lt;/p&gt;
-&lt;p&gt;我还试着用了下之前备份的更目录的icons覆盖这个目录,发现也没有用.
-没有办法,我先试试看编辑.desktop可不可以修复单独的一个应用问题..,没有找到网易云的图标,随便网上下了个,似乎成功了&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/arch-repair/2.png&#34; alt=&#34;  &#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/arch-repair/3.png&#34; alt=&#34;  &#34;&gt;&lt;img src=&#34;https://with9.github.io/img/arch-repair/4.png&#34; alt=&#34;  &#34;&gt;&lt;/p&gt;
-&lt;p&gt;就在我屈服于此,打算一个一个把常用的应用都手动修复下,在修复tim的时候,通过cuttlefish找到了电脑里面存在的svg图标(顺便吐槽一下这个图标预览器自己图标也丢失了&amp;hellip;&amp;hellip;.),并没有像之前的网易云那样直接被修复.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/arch-repair/7.png&#34; alt=&#34;  &#34;&gt;&lt;/p&gt;
-&lt;p&gt;当时很困惑,我顺着打开了&lt;code&gt;/usr/share/icons/hicolor&lt;/code&gt;文件夹,发现凡是png格式的应用图标都可以显示,而svg格式的应用图标都无法正常显示
-&lt;img src=&#34;https://with9.github.io/img/arch-repair/8.png&#34; alt=&#34;  &#34;&gt;&lt;/p&gt;
-&lt;p&gt;到这里,我感觉我终于发现了突破口,毫无疑问,一定和svg有所关系,于是网上寻找svg有关的包,发现有一个librsvg,猜测可能是系统更新的时候这个包因为冲突没有安装什么的,先直接pacman安装看看,结果居然它已经存在了,然后站在aur上中找到了librsvg-git的包,重新编译安装了下,注销一下重新登录,一切都修复啦..&lt;/p&gt;
-&lt;p&gt;最后截一张修复好了的图.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/arch-repair/9.png&#34; alt=&#34; &#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
