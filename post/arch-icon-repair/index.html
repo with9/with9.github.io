@@ -200,25 +200,23 @@
     </footer>
   </article>
         </div>
-        <div id="comments-gitment"></div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.min.css" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.min.js" crossorigin="anonymous"></script>
+        <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
-      var gitment = new Gitment({
+      var gitalk = new Gitalk({
         id: '2019-05-19 16:08:21 \u002b0800 CST',
         title: '记一次arch升级图标滚挂的修复经历',
-        link: decodeURI(location.href),
-        desc: '记录一下自己问题寻找和解决方法的过程',
-        owner: 'with9',
+        clientID: '27bf7867e6bf8c9bd64d',
+        clientSecret: '9892a31bd3d6e5ca6e0f255ae3c4b2c761b33595',
         repo: 'with9.github.io',
-        oauth: {
-          client_id: 'd301ad535036d629ead2',
-          client_secret: 'ce3a6c2b94fa309997fd07b5edada417e7541c03'
-        }
+        owner: 'with9',
+        admin: ['with9'],
+        body: decodeURI(location.href)
       });
-      gitment.render('comments-gitment');
+      gitalk.render('gitalk-container');
     </script>
-    <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
 
   
 
