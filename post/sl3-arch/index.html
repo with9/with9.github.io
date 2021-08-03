@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.84.0 with theme even" />
+<meta name="generator" content="Hugo 0.86.0 with theme even" />
 
 
 <link rel="canonical" href="https://with9.github.io/post/sl3-arch/" />
@@ -43,12 +43,12 @@
 <meta property="og:description" content="新的surface 到了，迫不及待的想着装上Arch，遇到了很多小问题，自己照着github上一个linux-surface项目勉强装上，现在作一个小记录。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://with9.github.io/post/sl3-arch/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2020-06-19T15:34:00&#43;08:00" />
-<meta property="article:modified_time" content="2021-02-05T12:34:00&#43;08:00" />
+<meta property="article:published_time" content="2020-06-19T15:34:00+08:00" />
+<meta property="article:modified_time" content="2021-02-05T12:34:00+08:00" />
 
 <meta itemprop="name" content="Surface-Laptop3 安装Archlinux折腾小记">
-<meta itemprop="description" content="新的surface 到了，迫不及待的想着装上Arch，遇到了很多小问题，自己照着github上一个linux-surface项目勉强装上，现在作一个小记录。"><meta itemprop="datePublished" content="2020-06-19T15:34:00&#43;08:00" />
-<meta itemprop="dateModified" content="2021-02-05T12:34:00&#43;08:00" />
+<meta itemprop="description" content="新的surface 到了，迫不及待的想着装上Arch，遇到了很多小问题，自己照着github上一个linux-surface项目勉强装上，现在作一个小记录。"><meta itemprop="datePublished" content="2020-06-19T15:34:00+08:00" />
+<meta itemprop="dateModified" content="2021-02-05T12:34:00+08:00" />
 <meta itemprop="wordCount" content="1310">
 <meta itemprop="keywords" content="records,Linux," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Surface-Laptop3 安装Archlinux折腾小记"/>
@@ -201,13 +201,13 @@
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">    pacman-key --add surface.asc
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">    pacman-key --add surface.asc
     pacman-key --finger 56C464BAAC421453
     pacman-key --lsign-key 56C464BAAC421453
     pacman -U linux-surface,linux-surface-headers相关文件
@@ -218,12 +218,12 @@
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">    mount /dev/sda2 /mnt
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">    mount /dev/sda2 /mnt
     mount /dev/sda1 /mnt/boot
     mount /dev/sda3 /mnt/home
 </code></pre></td></tr></table>
@@ -267,7 +267,7 @@
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -280,7 +280,7 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#!/bin/sh
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#!/bin/sh
 </span><span class="cp"></span><span class="k">case</span> <span class="nv">$1</span> in
   pre<span class="o">)</span>
     modprobe -r mei
@@ -296,11 +296,11 @@
 </div><h3 id="双系统时间不同步">双系统时间不同步</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">sudo timedatectl set-local-rtc <span class="m">1</span>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo timedatectl set-local-rtc <span class="m">1</span>
 sudo hwclock --systohc --localtime
 </code></pre></td></tr></table>
 </div>
@@ -310,14 +310,14 @@ sudo hwclock --systohc --localtime
 新建文件/etc/libinput/local-overrides.quirks:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># Matches both Surface Laptop keyboards as well as type covers.</span>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># Matches both Surface Laptop keyboards as well as type covers.</span>
 <span class="o">[</span>Microsoft Surface Keyboard<span class="o">]</span>
 <span class="nv">MatchName</span><span class="o">=</span>*Microsoft Surface * Keyboard*
 <span class="nv">MatchDMIModalias</span><span class="o">=</span>dmi:*svnMicrosoftCorporation:*

@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.84.0 with theme even" />
+<meta name="generator" content="Hugo 0.86.0 with theme even" />
 
 
 <link rel="canonical" href="https://with9.github.io/post/hello/" />
@@ -43,12 +43,12 @@
 <meta property="og:description" content="本文是个人用来记录的日志,里面有一些自己踩到的坑,与大家分享一下,讲的不是很全面,如果想要照着迁移的话,最起码要可以照着wiki独立安装archlinux系统" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://with9.github.io/post/hello/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2020-04-16T09:10:18&#43;08:00" />
-<meta property="article:modified_time" content="2020-04-16T09:10:18&#43;08:00" />
+<meta property="article:published_time" content="2020-04-16T09:10:18+08:00" />
+<meta property="article:modified_time" content="2020-04-16T09:10:18+08:00" />
 
 <meta itemprop="name" content="Archlinux迁移到LVM">
-<meta itemprop="description" content="本文是个人用来记录的日志,里面有一些自己踩到的坑,与大家分享一下,讲的不是很全面,如果想要照着迁移的话,最起码要可以照着wiki独立安装archlinux系统"><meta itemprop="datePublished" content="2020-04-16T09:10:18&#43;08:00" />
-<meta itemprop="dateModified" content="2020-04-16T09:10:18&#43;08:00" />
+<meta itemprop="description" content="本文是个人用来记录的日志,里面有一些自己踩到的坑,与大家分享一下,讲的不是很全面,如果想要照着迁移的话,最起码要可以照着wiki独立安装archlinux系统"><meta itemprop="datePublished" content="2020-04-16T09:10:18+08:00" />
+<meta itemprop="dateModified" content="2020-04-16T09:10:18+08:00" />
 <meta itemprop="wordCount" content="1378">
 <meta itemprop="keywords" content="Linux,records," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Archlinux迁移到LVM"/>
@@ -164,11 +164,11 @@
 <p>制作u盘启动盘,命令</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">dd <span class="k">if</span><span class="o">=</span>./archlinux.iso <span class="nv">of</span><span class="o">=</span>/dev/sdb
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">dd <span class="k">if</span><span class="o">=</span>./archlinux.iso <span class="nv">of</span><span class="o">=</span>/dev/sdb
 <span class="c1">#将iso文件内容写入u盘,制作启动盘</span>
 </code></pre></td></tr></table>
 </div>
@@ -180,11 +180,11 @@
 然后在刚刚创建的分区里面创建物理卷(PV)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">pvcreate /dev/sda6 
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">pvcreate /dev/sda6 
 pvdisplay#可以用该命令列出已经创建的物理卷
 </code></pre></td></tr></table>
 </div>
@@ -192,13 +192,13 @@ pvdisplay#可以用该命令列出已经创建的物理卷
 <p>在刚刚创建的物理卷上创建卷组(VG)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">vgcreate vg00 /dev/sda6 <span class="c1">#此命令利用sda6分区创建一个名称为vg00的卷组</span>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">vgcreate vg00 /dev/sda6 <span class="c1">#此命令利用sda6分区创建一个名称为vg00的卷组</span>
 vgextend vg00 /dev/sda5 <span class="c1">#此命令可以将vg00卷组扩展到其他物理卷</span>
 vgdisplay <span class="c1">#列出已经创建的卷组</span>
 vgcreate vg00 /dev/sda6 /dev/sda5 <span class="c1">#也可以用此命令直接在多个物理卷的一个卷组</span>
@@ -207,12 +207,12 @@ vgcreate vg00 /dev/sda6 /dev/sda5 <span class="c1">#也可以用此命令直接�
 </div><h3 id="创建逻辑卷lv">创建逻辑卷(LV)</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">lvcreate -L &lt;卷大小&gt; &lt;<span class="s2">&#34;卷组名&gt; -n &lt;卷名&gt; #命令格式如此
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">lvcreate -L &lt;卷大小&gt; &lt;<span class="s2">&#34;卷组名&gt; -n &lt;卷名&gt; #命令格式如此
 </span><span class="s2">eg. lvcreate -L 60G vg00 -n lvroot #在vg00卷组中创建名称为lvroot的逻辑卷,大小为60G
 </span><span class="s2">lvcreate -l +100%FREE vg00 -n lvhome #将vg00卷组剩余容量全部给lvhome逻辑卷.
 </span></code></pre></td></tr></table>
@@ -221,30 +221,30 @@ vgcreate vg00 /dev/sda6 /dev/sda5 <span class="c1">#也可以用此命令直接�
 <p>接着将原root分区的内容直接写入新的分区,dd命令是直接以非常简单的方式把输入端的内容完全写到复制端,如果是分区的话,那么是把整个分区内容写入输入端,而不是文件,因此新创建的root逻辑卷必须要比原root分区大,不只是比已用空间大.比如原root分区大小为60G,使用不到10G,依然会读取60G的内容写入新的逻辑卷.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">dd <span class="k">if</span> <span class="o">=</span> /dev/sda7 <span class="nv">of</span><span class="o">=</span>/dev/vg00/lvroot <span class="c1">#将原root分区内容写入新的root分区</span>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">dd <span class="k">if</span> <span class="o">=</span> /dev/sda7 <span class="nv">of</span><span class="o">=</span>/dev/vg00/lvroot <span class="c1">#将原root分区内容写入新的root分区</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>此命令过后lvroot分区内容会和旧root分区一模一样,挂载后运行<code>df -h </code>命令,你会发现和旧分区大小一模一样,无论我们分了多少空间给新的root分区,文件系统都会识别为旧root分区的大小,我们用resize2fs命令来调整文件系统的大小,使得其达到逻辑卷的大小.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">resize2fs /dev/vg00/lvroot
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">resize2fs /dev/vg00/lvroot
 </code></pre></td></tr></table>
 </div>
 </div><p>挂载root分区到/mnt boot分区到/mnt/boot,并从u盘系统切换到新的系统</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">mount /dev/vg00/lvroot /mnt
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">mount /dev/vg00/lvroot /mnt
 mount /dev/sda1 /mnt/boot
 arch-chroot /mnt
 </code></pre></td></tr></table>
@@ -254,13 +254,13 @@ arch-chroot /mnt
 <p>修改配置文件,添加systemd和sd-lvm2两个钩子</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">/etc/mkinitcpio.conf
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">/etc/mkinitcpio.conf
 <span class="nv">HOOKS</span><span class="o">=(</span>base *systemd* ... block *sd-lvm2* filesystems<span class="o">)</span>
 
 mkinitcpio -P <span class="c1">#重新生成initramfs</span>
@@ -269,12 +269,12 @@ mkinitcpio -P <span class="c1">#重新生成initramfs</span>
 </div><p>修改fstab文件,将根目录挂载到新分区.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">/etc/fstab
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">/etc/fstab
 <span class="c1"># /dev/mapper/vg00-lvroot UUID=299cd25f-28f7-4a5f-bea8-0afa2e017f67</span>
 /dev/mapper/vg00-lvroot /               ext4            rw,relatime     <span class="m">0</span> <span class="m">1</span>
 </code></pre></td></tr></table>
@@ -283,21 +283,21 @@ mkinitcpio -P <span class="c1">#重新生成initramfs</span>
 <p>重新生成grub引导文件</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">grub-mkconfig -o /boot/grub/grub.cfg
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">grub-mkconfig -o /boot/grub/grub.cfg
 </code></pre></td></tr></table>
 </div>
 </div><p>由于lvm下的thin_check问题,导致默认的10s rootdelay会不够,还没有找到新的root分区前就会报错,我们修改rootdelay ,在这行的最后添加<code>rootdelay=60</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">/boot/grub/grub.cfg
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">/boot/grub/grub.cfg
 <span class="nb">echo</span>    <span class="s1">&#39;Loading Linux linux ...&#39;</span>
 linux   /vmlinuz-linux <span class="nv">root</span><span class="o">=</span>/dev/mapper/vg00-lvroot rw  quiet *rootdelay<span class="o">=</span>60*
 </code></pre></td></tr></table>
