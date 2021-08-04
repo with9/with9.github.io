@@ -240,3 +240,143 @@ Escherichia coli K-12,55,1.100
 
 ```
 
+## snakemake脚本
+
+```python
+#输入工作环境
+~/D/t/o/snake_test➜ tree ./
+./
+├── data
+│   └── 1.fastq
+├── names_scientific
+├── nucl_gb.accession2taxid.gz
+└── snakefile
+--------------------------------------------------------------------------------------------
+
+rule all:
+    input: "out/points.csv"
+
+
+rule get_sample:
+    input: "data/1.fastq"
+    output: "data/myfile.fa"
+    shell: "cat {input} | head -n 20000 | awk '{{if(NR%4==1){{print \">\"$1}}else if(NR%4==2){{print $0}}}}'|sed 's/@//' > {output}"
+
+
+rule to_blast:
+    input: rules.get_sample.output
+    output: "out/out.xml"
+    shell: "blastn -query {input} -out {output} -max_target_seqs 1 -outfmt 5 -db ~/usb/blastn/nt.00/nt.00 -num_threads 2 -evalue 1e-5"
+
+rule one_csv:
+    input:  "out/out.xml"
+    output: "out/one_csv.csv" 
+    run:
+        import xml.etree.ElementTree as ET
+        import csv
+        import os
+
+        def readonexml(fid:int):
+            # if fid<10:
+            #     xmlfile="xml/out0{}.xml".format(fid)
+            #     csvfile="csv/out0{}.csv".format(fid)
+            # else:
+            #     xmlfile="xml/out{}.xml".format(fid)
+            #     csvfile="csv/out{}.csv".format(fid)
+            xmlfile="out/out.xml"
+            csvfile="out/one_csv.csv"
+            tree = ET.parse(xmlfile)
+            root = tree.getroot()
+            hits=root.findall('.//Hit')
+
+            with open(csvfile,'w',newline="")as f:
+                csv_writer = csv.writer(f)
+                csv_writer.writerow(["Hit_id","Hit_def","Hit_accession"])
+
+                for hit in hits:
+                    hit_id=hit.find('Hit_id').text
+                    hit_def=hit.find('Hit_def').text
+                    hit_accession=hit.find('Hit_accession').text
+                    csv_writer.writerow([hit_id,hit_def,hit_accession])
+
+        readonexml(0)
+
+
+rule find_id:
+    input: "out/one_csv.csv"
+    output: "out/Tid_result.csv"
+    run: 
+        import pandas as pd
+        import os
+        df=pd.read_csv('out/one_csv.csv')
+        with open('Hitacession.csv','w')as f:
+            name_df=df['Hit_accession'].value_counts()
+            name_df.to_csv(f)
+            
+
+        df=pd.read_csv('Hitacession.csv')
+        df['tax_id']=0
+        tids=[]
+        for index,row in df.iterrows():
+            hit_accession=row[0]
+            cmd="rga '"+hit_accession+"' -g 'nucl_gb.accession2taxid.gz'|awk '{print$3}'"
+            tid=os.popen(cmd).read().split('\n')[0]
+            print(tid)
+            tids.append(tid)
+
+        df['tax_id']=tids
+        df.to_csv('out/Tid_result.csv')
+
+rule two_csv:
+    input: "out/Tid_result.csv"
+    output: "out/two_csv.csv"
+    run: 
+        import xml.etree.ElementTree as ET
+        import csv
+        import os
+
+        def readonexml(fid:int):
+            # if fid<10:
+            #     xmlfile="xml/out0{}.xml".format(fid)
+            #     csvfile="csv/out0{}.csv".format(fid)
+            # else:
+            #     xmlfile="xml/out{}.xml".format(fid)
+            #     csvfile="csv/out{}.csv".format(fid)
+            xmlfile="out/out.xml"
+            csvfile="out/two_csv.csv"
+            tree = ET.parse(xmlfile)
+            root = tree.getroot()
+            hits=root.findall('.//Hit')
+
+            with open(csvfile,'w',newline="")as f:
+                csv_writer = csv.writer(f)
+                csv_writer.writerow(["Hit_id","Hit_def","Hit_accession","taxonomy_id","scientific_name"])
+
+                for hit in hits:
+                    hit_id=hit.find('Hit_id').text
+                    hit_def=hit.find('Hit_def').text
+                    hit_accession=hit.find('Hit_accession').text
+                    cmd="grep '{}' out/Tid_result.csv |cut -d , -f 4".format(hit_accession)
+                    taxonomy_id=os.popen(cmd).read().split('\n')[0]
+                    print(taxonomy_id)
+                    cmd2="grep ':{}' names_scientific |cut -d \| -f 2".format(taxonomy_id)
+                    scientific_name=os.popen(cmd2).read().split('\t')[1]
+                    csv_writer.writerow([hit_id,hit_def,hit_accession,taxonomy_id,scientific_name])
+        readonexml(0)
+
+rule get_points:
+    input: "out/two_csv.csv"
+    output: "out/points.csv"
+    run: 
+        import pandas as pd
+        df=pd.read_csv('out/two_csv.csv')
+        with open('temp_with_name.csv','w')as f:
+            name_df=df['scientific_name'].value_counts()
+            name_df.to_csv(f)
+        df=pd.read_csv('temp_with_name.csv')
+        df['points']=df['scientific_name']/5000*100
+        df=df.set_axis(["scientific_name","hits","points"],axis=1)
+        with open("out/points.csv","w")as f:
+            df.to_csv(f,float_format='%.3f',index=False)
+```
+
