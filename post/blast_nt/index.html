@@ -44,12 +44,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://with9.github.io/post/blast_nt/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-08-03T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-08-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-05T00:00:00+00:00" />
 
 <meta itemprop="name" content="利用blast对测序数据进行污染情况估计">
 <meta itemprop="description" content="一个简单的小流程,利用blast来统计测序数据的污染情况。"><meta itemprop="datePublished" content="2021-08-03T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2021-08-03T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1799">
+<meta itemprop="dateModified" content="2021-08-05T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1822">
 <meta itemprop="keywords" content="guide,Bio," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="利用blast对测序数据进行污染情况估计"/>
 <meta name="twitter:description" content="一个简单的小流程,利用blast来统计测序数据的污染情况。"/>
@@ -130,7 +130,7 @@
         <div class="post-category">
             <a href="/categories/bio/"> Bio </a>
             </div>
-          <span class="more-meta"> 1799 words </span>
+          <span class="more-meta"> 1822 words </span>
           <span class="more-meta"> 4 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
@@ -189,11 +189,15 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">python down.py&gt;down
 aria2c --input<span class="o">=</span>down <span class="c1">#进行下载</span>
 <span class="c1">#分别解压</span>
+mkdir all
+ls nt*/* <span class="p">|</span>xargs -i ln <span class="o">{}</span> all/ <span class="c1">#建立硬链接到同一个目录</span>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="物种名与基因id对应数据库下载">物种名与基因id对应数据库下载</h3>
@@ -328,7 +332,7 @@ CAGGCGAAAGCCGCGGCGGTAAAAGTCCACGCTGACGCGCCCGGTACGTTTTATTGCGGATGTAAAATTAACTGGCAGGG
 TGTATCTGAATCCGCAAGATTGCAGCGTGATTAATGATGAAGCGCTGAATCGTATTATCGCCGTAGGCCACCAGCATCATCTGAACGTTGTCGGCTGGAACCCGGGACCGGCGCTTTCAGTTAGCATGGGCGACATGCCGGATGATGGCTACAAACCATTGGTTGGGTAGAAAAGGCCTACGGCTTCGGAACGGCAAAAGGGAACAAAAGGGAAACTGCCACACCTGGCGAATC
 
 <span class="c1">#进行blastn 并将结果保存为xml格式</span>
-blastn -query myfile.fa -out xml/out00.xml -max_target_seqs <span class="m">1</span> -outfmt <span class="m">5</span> -db ~/usb/blastn/nt.00/nt.00 -num_threads <span class="m">2</span> -evalue 1e-5
+blastn -query myfile.fa -out xml/out00.xml -max_target_seqs <span class="m">1</span> -outfmt <span class="m">5</span> -db ~/usb/blastn/all/nt -num_threads <span class="m">8</span> -evalue 1e-5
 
 <span class="c1">#---head out00.xml</span>
 &lt;?xml <span class="nv">version</span><span class="o">=</span><span class="s2">&#34;1.0&#34;</span>?&gt;
@@ -769,7 +773,7 @@ blastn -query myfile.fa -out xml/out00.xml -max_target_seqs <span class="m">1</s
 <span class="n">rule</span> <span class="n">to_blast</span><span class="p">:</span>
     <span class="nb">input</span><span class="p">:</span> <span class="n">rules</span><span class="o">.</span><span class="n">get_sample</span><span class="o">.</span><span class="n">output</span>
     <span class="n">output</span><span class="p">:</span> <span class="s2">&#34;out/out.xml&#34;</span>
-    <span class="n">shell</span><span class="p">:</span> <span class="s2">&#34;blastn -query </span><span class="si">{input}</span><span class="s2"> -out </span><span class="si">{output}</span><span class="s2"> -max_target_seqs 1 -outfmt 5 -db ~/usb/blastn/nt.00/nt.00 -num_threads 2 -evalue 1e-5&#34;</span>
+    <span class="n">shell</span><span class="p">:</span> <span class="s2">&#34;blastn -query </span><span class="si">{input}</span><span class="s2"> -out </span><span class="si">{output}</span><span class="s2"> -max_target_seqs 1 -outfmt 5 -db ~/usb/blastn/all/nt -num_threads 8 -evalue 1e-5&#34;</span>
 
 <span class="n">rule</span> <span class="n">one_csv</span><span class="p">:</span>
     <span class="nb">input</span><span class="p">:</span>  <span class="s2">&#34;out/out.xml&#34;</span>
@@ -894,7 +898,7 @@ blastn -query myfile.fa -out xml/out00.xml -max_target_seqs <span class="m">1</s
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2021-08-03
+        2021-08-05
         
     </span>
   </p>

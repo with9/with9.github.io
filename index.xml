@@ -98,11 +98,15 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=4937357&amp;auto=0&amp;he
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;python down.py&amp;gt;down
 aria2c --input&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;down &lt;span class=&#34;c1&#34;&gt;#进行下载&lt;/span&gt;
 &lt;span class=&#34;c1&#34;&gt;#分别解压&lt;/span&gt;
+mkdir all
+ls nt*/* &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;xargs -i ln &lt;span class=&#34;o&#34;&gt;{}&lt;/span&gt; all/ &lt;span class=&#34;c1&#34;&gt;#建立硬链接到同一个目录&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;物种名与基因id对应数据库下载&#34;&gt;物种名与基因id对应数据库下载&lt;/h3&gt;
@@ -237,7 +241,7 @@ CAGGCGAAAGCCGCGGCGGTAAAAGTCCACGCTGACGCGCCCGGTACGTTTTATTGCGGATGTAAAATTAACTGGCAGGG
 TGTATCTGAATCCGCAAGATTGCAGCGTGATTAATGATGAAGCGCTGAATCGTATTATCGCCGTAGGCCACCAGCATCATCTGAACGTTGTCGGCTGGAACCCGGGACCGGCGCTTTCAGTTAGCATGGGCGACATGCCGGATGATGGCTACAAACCATTGGTTGGGTAGAAAAGGCCTACGGCTTCGGAACGGCAAAAGGGAACAAAAGGGAAACTGCCACACCTGGCGAATC
 
 &lt;span class=&#34;c1&#34;&gt;#进行blastn 并将结果保存为xml格式&lt;/span&gt;
-blastn -query myfile.fa -out xml/out00.xml -max_target_seqs &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; -outfmt &lt;span class=&#34;m&#34;&gt;5&lt;/span&gt; -db ~/usb/blastn/nt.00/nt.00 -num_threads &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; -evalue 1e-5
+blastn -query myfile.fa -out xml/out00.xml -max_target_seqs &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; -outfmt &lt;span class=&#34;m&#34;&gt;5&lt;/span&gt; -db ~/usb/blastn/all/nt -num_threads &lt;span class=&#34;m&#34;&gt;8&lt;/span&gt; -evalue 1e-5
 
 &lt;span class=&#34;c1&#34;&gt;#---head out00.xml&lt;/span&gt;
 &amp;lt;?xml &lt;span class=&#34;nv&#34;&gt;version&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;1.0&amp;#34;&lt;/span&gt;?&amp;gt;
@@ -678,7 +682,7 @@ blastn -query myfile.fa -out xml/out00.xml -max_target_seqs &lt;span class=&#34;
 &lt;span class=&#34;n&#34;&gt;rule&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;to_blast&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
     &lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rules&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get_sample&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;output&lt;/span&gt;
     &lt;span class=&#34;n&#34;&gt;output&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;out/out.xml&amp;#34;&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;shell&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blastn -query &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{input}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; -out &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{output}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; -max_target_seqs 1 -outfmt 5 -db ~/usb/blastn/nt.00/nt.00 -num_threads 2 -evalue 1e-5&amp;#34;&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;shell&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blastn -query &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{input}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; -out &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{output}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; -max_target_seqs 1 -outfmt 5 -db ~/usb/blastn/all/nt -num_threads 8 -evalue 1e-5&amp;#34;&lt;/span&gt;
 
 &lt;span class=&#34;n&#34;&gt;rule&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;one_csv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
     &lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;  &lt;span class=&#34;s2&#34;&gt;&amp;#34;out/out.xml&amp;#34;&lt;/span&gt;

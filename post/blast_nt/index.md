@@ -24,6 +24,8 @@ for i in range(42):
 python down.py>down
 aria2c --input=down #进行下载
 #分别解压
+mkdir all
+ls nt*/* |xargs -i ln {} all/ #建立硬链接到同一个目录
 ```
 
 ### 物种名与基因id对应数据库下载
@@ -87,7 +89,7 @@ CAGGCGAAAGCCGCGGCGGTAAAAGTCCACGCTGACGCGCCCGGTACGTTTTATTGCGGATGTAAAATTAACTGGCAGGG
 TGTATCTGAATCCGCAAGATTGCAGCGTGATTAATGATGAAGCGCTGAATCGTATTATCGCCGTAGGCCACCAGCATCATCTGAACGTTGTCGGCTGGAACCCGGGACCGGCGCTTTCAGTTAGCATGGGCGACATGCCGGATGATGGCTACAAACCATTGGTTGGGTAGAAAAGGCCTACGGCTTCGGAACGGCAAAAGGGAACAAAAGGGAAACTGCCACACCTGGCGAATC
 
 #进行blastn 并将结果保存为xml格式
-blastn -query myfile.fa -out xml/out00.xml -max_target_seqs 1 -outfmt 5 -db ~/usb/blastn/nt.00/nt.00 -num_threads 2 -evalue 1e-5
+blastn -query myfile.fa -out xml/out00.xml -max_target_seqs 1 -outfmt 5 -db ~/usb/blastn/all/nt -num_threads 8 -evalue 1e-5
 
 #---head out00.xml
 <?xml version="1.0"?>
@@ -266,7 +268,7 @@ rule get_sample:
 rule to_blast:
     input: rules.get_sample.output
     output: "out/out.xml"
-    shell: "blastn -query {input} -out {output} -max_target_seqs 1 -outfmt 5 -db ~/usb/blastn/nt.00/nt.00 -num_threads 2 -evalue 1e-5"
+    shell: "blastn -query {input} -out {output} -max_target_seqs 1 -outfmt 5 -db ~/usb/blastn/all/nt -num_threads 8 -evalue 1e-5"
 
 rule one_csv:
     input:  "out/out.xml"
