@@ -6,7 +6,7 @@
     <description>Recent content on 生活和睡觉.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Nov 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://with9.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -58,9 +58,148 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=4937357&amp;auto=0&amp;he
     </item>
     
     <item>
+      <title>oneko 一个小桌宠的折腾记录</title>
+      <link>https://with9.github.io/post/oneko/</link>
+      <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://with9.github.io/post/oneko/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/oneko/Peek%202021-11-10%2015-48.gif&#34; alt=&#34;Peek 2021-11-10 15-48&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;oneko介绍&#34;&gt;oneko介绍&lt;/h2&gt;
+&lt;p&gt;最近在aur上看到一个有些时间了的桌宠项目&lt;a href=&#34;https://github.com/tie/oneko&#34;&gt;Oneko&lt;/a&gt;,下过来编译运行后会有一直小猫追着你的鼠标跑,很可爱&lt;/p&gt;
+&lt;p&gt;除了小猫以外还有很多其他的角色,追击模式也有很多种,可以让一直跟着或者呆在窗口最上面,具体使用请查阅手册&lt;code&gt;man oneko&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;安装也很简单,直接aur上安装就行&lt;code&gt;paru -S oneko&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;调整大小&#34;&gt;调整大小&lt;/h2&gt;
+&lt;p&gt;但是有个大问题,就是它太小了,对于现在动不动就是2k,4k的显示器来说,默认的32x32pixe的图片实在是太小了,有没有什么办法让它变得更大一点呢,下面分享一下我折腾的过程.&lt;/p&gt;
+&lt;p&gt;首先我们要获得软件源代码,可以直接去官网下载,修改源代码后进行编译安装. 不过makepkg提供了一个更加简单的方式,可以直接修改编译后将其打包为pacman的软件包.&lt;/p&gt;
+&lt;h3 id=&#34;简单介绍makepkg的用法&#34;&gt;简单介绍makepkg的用法&lt;/h3&gt;
+&lt;p&gt;makepkg是Arch系统的一个命令工具,用于软件包自动编译,运行时需要有一个PKGBUILD文件,PKGBUILD本质是一个shell脚本,记录软件包的一些信息和编译步骤.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;makepkg -Si &lt;span class=&#34;c1&#34;&gt;#编译并安装&lt;/span&gt;
+makepkg -o &lt;span class=&#34;c1&#34;&gt;#仅解压缩源代码&lt;/span&gt;
+makepkg -e &lt;span class=&#34;c1&#34;&gt;#仅编译并打包(不解压和下载源代码)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;遇到需要修改源代码的软件,我一般的流程是先解压,修改后编译并打包,测试没有问题后再利用pacman进行安装.&lt;/p&gt;
+&lt;h3 id=&#34;源代码获取并修改&#34;&gt;源代码获取并修改&lt;/h3&gt;
+&lt;p&gt;如果是aur安装的话,源代码一般已经下载到本地了.对于paru来说,下载的编译脚本是在&lt;code&gt;$HOME/.cache/paru/clone/&lt;/code&gt;下,我们进入oneko的地址,底下应该是一个PKGBUILD文件和源码压缩包,首先&lt;code&gt;makepkg -o&lt;/code&gt;进行解压,默认情况下,源代码会解压到src文件夹下,观察src下有一个&lt;code&gt;oneko.h&lt;/code&gt;头文件,根据经验来看,这个文件里应该会有图片尺寸等参数,果然让我找到了类似的定义&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#define BITMAP_WIDTH        32
+&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;
+&lt;span class=&#34;cp&#34;&gt;#define BITMAP_HEIGHT       32
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;先把其中的32都改为50,然后回到PKGBUILD所在目录,运行&lt;code&gt;makepkg -ef&lt;/code&gt;进行编译,确实变大了,但是图片出大问题了.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/oneko/image-20211110160219235.png&#34; alt=&#34;image-20211110160219235&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这一坨是啥😂.. 看来单纯的改定义是不行的,我们还需要修改图片的尺寸. 图片在&lt;code&gt;bitmap&lt;/code&gt; 和&lt;code&gt;bitmasks&lt;/code&gt;两个文件夹下面,都是32x32的xbm格式图片,用vim打开的话可以看到类似这样的内容,关于xbm格式的详细内容可以参考&lt;a href=&#34;https://zhuanlan.zhihu.com/p/358945096&#34;&gt;这篇文章&lt;/a&gt;,大致上一个十六进制字节代表一个2x2的方格的排列情况(2^4).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#define up1_bsd_mask_width 32
+&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;#define up1_bsd_mask_height 32
+&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;char&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;up1_bsd_mask_bits&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+ &lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x06&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x30&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x07&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x70&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x80&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x03&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xe0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xc0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x03&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xe0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+ &lt;span class=&#34;mh&#34;&gt;0x01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xc0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xfb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xef&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xc0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xc0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xc0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+ &lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x80&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x80&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x7f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+ &lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x7f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x7f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x7f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xfe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x3f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+ &lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xfc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x1f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xfc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x1f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xfe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x3f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x7f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+ &lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x7f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x80&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x7f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x80&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xbf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x80&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+ &lt;span class=&#34;mh&#34;&gt;0x3f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x01&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x3f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x02&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xfc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x3f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0xfc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x3f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+ &lt;span class=&#34;mh&#34;&gt;0xf8&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x7f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x40&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x7f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x40&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x3e&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x28&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+ &lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x18&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x38&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;可以自己编写脚本进行缩放,也可以利用GIMP等图片软件进行编辑后覆盖,我选择后者.选择缩放到50像素后覆盖原文件.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/oneko/image-20211110160754713.png&#34; alt=&#34;image-20211110160754713&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;利用gimp的bimp插件进行批处理&#34;&gt;利用GIMP的BIMP插件进行批处理&lt;/h3&gt;
+&lt;p&gt;另一个问题来了,图片这么多,难道要我们手动一个一个的进行修改吗,一番搜索后发现一个很不错的GIMP插件,&lt;a href=&#34;https://alessandrofrancesconi.it/projects/bimp/&#34;&gt;BIMP&lt;/a&gt;,可以批处理一些简单的动作,AUR上也有这个包,安装后就可以在文件那一栏运行该插件.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/oneko/image-20211110161404357.png&#34; alt=&#34;image-20211110161404357&#34;&gt;&lt;/p&gt;
+&lt;p&gt;然后把导出的图片覆盖掉原来的图片,继续编译,不出意外,编译报错了..&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/oneko/image-20211110161637885.png&#34; alt=&#34;image-20211110161637885&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;调整导出图片的格式&#34;&gt;调整导出图片的格式&lt;/h3&gt;
+&lt;p&gt;分析一下导出的图片,发现格式定义上和源文件有出入,丢失了部分内容,还好丢失的部分内容可以从文件名上获得,编写一个小的fish脚本利用sed来处理这一步&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//导出后的格式
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;#define _width 50
+&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;#define _height 50
+&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;#define _x_hot 0
+&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;#define _y_hot 0
+&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;unsigned&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;char&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_bits&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{.....};&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;___________________________________________&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;//源文件内容
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;#define up2_tomoyo_mask_width 32
+&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;#define up2_tomoyo_mask_height 32
+&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;unsigned&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;char&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;up2_tomoyo_mask_bits&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{......}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; i in &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;ls *.xbm&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;    &amp;gt;
+    &lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; filename &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;basename &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt; .xbm&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+    sed -i &lt;span class=&#34;s2&#34;&gt;&amp;#34;s/define\ _height/define\ &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$filename&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;\_height/g&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;
+    sed -i &lt;span class=&#34;s2&#34;&gt;&amp;#34;s/define\ _width/define\ &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$filename&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;\_width/g&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;
+    sed -i &lt;span class=&#34;s1&#34;&gt;&amp;#39;/_x_hot/d&amp;#39;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;
+    sed -i &lt;span class=&#34;s1&#34;&gt;&amp;#39;/_y_hot/d&amp;#39;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;
+    sed -i &lt;span class=&#34;s2&#34;&gt;&amp;#34;s/char\ _bits/char\ &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$filename&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;\_bits/g&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;接着再进行编译&lt;code&gt;makepkg -ef&lt;/code&gt; 并安装&lt;code&gt;pacman -U xxxxx.zst&lt;/code&gt;就可以开心的玩耍啦.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>利用blast对测序数据进行污染情况估计</title>
       <link>https://with9.github.io/post/blast_nt/</link>
-      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://with9.github.io/post/blast_nt/</guid>
       <description>&lt;p&gt;一般二代调研中需要判断一下测序样品的污染情况，主要的原理就是对样品的测序数据随机抽取并进行blast，分析reads的来源情况，从而判断样品污染情况。&lt;/p&gt;
@@ -1736,31 +1875,6 @@ linux   /vmlinuz-linux &lt;span class=&#34;nv&#34;&gt;root&lt;/span&gt;&lt;span 
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;推出chroot环境,重启就行了,如果电脑上有为win系统的话,此时是无法找到的,并且还会找到旧的root分区系统,可以格式化也可以留着并且新建boot目录(注意,不是作为grub引导的分区),并安装内核,重启后再次运行&lt;code&gt;grub-mkconfig&lt;/code&gt;命令&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>记一次arch升级图标滚挂的修复经历</title>
-      <link>https://with9.github.io/post/arch-icon-repair/</link>
-      <pubDate>Sun, 19 May 2019 16:08:21 +0800</pubDate>
-      
-      <guid>https://with9.github.io/post/arch-icon-repair/</guid>
-      <description>&lt;p&gt;&lt;del&gt;&lt;strong&gt;置顶一下最后说的话:Arch大法好!&lt;/strong&gt;&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;系统好久没有滚一下了,于是输入了&lt;code&gt;pacman -Syu&lt;/code&gt;滚了一下系统,有一些小冲突,没有特别在意的替换了,然后开机一开始一切顺利,就是图标出现了各种的问题,好多应用图标发生了丢失,变成了这个样子.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/arch-repair/1.png&#34; alt=&#34;  &#34;&gt;&lt;/p&gt;
-&lt;p&gt;一些应用是好的,一些丢失了,一开始我以为是因为图标包的问题,然后就下了几个其他的图标包,问题还是存在,而且应用完全没有用图标包,而是用了hicolor的原始图标,甚至有些图标包一使用桌面直接崩溃..&lt;/p&gt;
-&lt;p&gt;首先,我以为是用户配置的问题,就把.config文件夹重新命名了下,发现还是一样的问题,而且切换某些图标包后,无法进入桌面,终端修改后才可以进入,明显不是简单的用户配置的问题.&lt;/p&gt;
-&lt;p&gt;我还试着用了下之前备份的更目录的icons覆盖这个目录,发现也没有用.
-没有办法,我先试试看编辑.desktop可不可以修复单独的一个应用问题..,没有找到网易云的图标,随便网上下了个,似乎成功了&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/arch-repair/2.png&#34; alt=&#34;  &#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/arch-repair/3.png&#34; alt=&#34;  &#34;&gt;&lt;img src=&#34;https://with9.github.io/img/arch-repair/4.png&#34; alt=&#34;  &#34;&gt;&lt;/p&gt;
-&lt;p&gt;就在我屈服于此,打算一个一个把常用的应用都手动修复下,在修复tim的时候,通过cuttlefish找到了电脑里面存在的svg图标(顺便吐槽一下这个图标预览器自己图标也丢失了&amp;hellip;&amp;hellip;.),并没有像之前的网易云那样直接被修复.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/arch-repair/7.png&#34; alt=&#34;  &#34;&gt;&lt;/p&gt;
-&lt;p&gt;当时很困惑,我顺着打开了&lt;code&gt;/usr/share/icons/hicolor&lt;/code&gt;文件夹,发现凡是png格式的应用图标都可以显示,而svg格式的应用图标都无法正常显示
-&lt;img src=&#34;https://with9.github.io/img/arch-repair/8.png&#34; alt=&#34;  &#34;&gt;&lt;/p&gt;
-&lt;p&gt;到这里,我感觉我终于发现了突破口,毫无疑问,一定和svg有所关系,于是网上寻找svg有关的包,发现有一个librsvg,猜测可能是系统更新的时候这个包因为冲突没有安装什么的,先直接pacman安装看看,结果居然它已经存在了,然后站在aur上中找到了librsvg-git的包,重新编译安装了下,注销一下重新登录,一切都修复啦..&lt;/p&gt;
-&lt;p&gt;最后截一张修复好了的图.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/arch-repair/9.png&#34; alt=&#34; &#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
