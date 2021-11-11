@@ -64,15 +64,30 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=4937357&amp;auto=0&amp;he
       
       <guid>https://with9.github.io/post/oneko/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/oneko/Peek%202021-11-10%2015-48.gif&#34; alt=&#34;Peek 2021-11-10 15-48&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;oneko介绍&#34;&gt;oneko介绍&lt;/h2&gt;
-&lt;p&gt;最近在aur上看到一个有些时间了的桌宠项目&lt;a href=&#34;https://github.com/tie/oneko&#34;&gt;Oneko&lt;/a&gt;,下过来编译运行后会有一直小猫追着你的鼠标跑,很可爱&lt;/p&gt;
-&lt;p&gt;除了小猫以外还有很多其他的角色,追击模式也有很多种,可以让一直跟着或者呆在窗口最上面,具体使用请查阅手册&lt;code&gt;man oneko&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;安装也很简单,直接aur上安装就行&lt;code&gt;paru -S oneko&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;调整大小&#34;&gt;调整大小&lt;/h2&gt;
-&lt;p&gt;但是有个大问题,就是它太小了,对于现在动不动就是2k,4k的显示器来说,默认的32x32pixe的图片实在是太小了,有没有什么办法让它变得更大一点呢,下面分享一下我折腾的过程.&lt;/p&gt;
-&lt;p&gt;首先我们要获得软件源代码,可以直接去官网下载,修改源代码后进行编译安装. 不过makepkg提供了一个更加简单的方式,可以直接修改编译后将其打包为pacman的软件包.&lt;/p&gt;
+&lt;h2 id=&#34;oneko-介绍&#34;&gt;oneko 介绍&lt;/h2&gt;
+&lt;p&gt;最近在 aur 上看到一个&lt;del&gt;有些时间了&lt;/del&gt;相当老的桌宠项目&lt;a href=&#34;http://www.daidouji.com/oneko/&#34;&gt;Oneko&lt;/a&gt;，下过来编译运行后会有一直小猫追着你的鼠标跑，很可爱很好玩。&lt;/p&gt;
+&lt;p&gt;除了小猫以外还有很多其他的角色，追击模式也有很多种，可以让一直跟着或者呆在窗口最上面，具体使用请查阅手册&lt;code&gt;man oneko&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;安装也很简单，直接利用aurhelper安装就行&lt;code&gt;paru|yay -S oneko&lt;/code&gt;。使用起来也很简单，直接运行oneko就行。&lt;/p&gt;
+&lt;h3 id=&#34;一些命令参数例子&#34;&gt;一些命令参数例子&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;oneko 
+oneko -sakura &lt;span class=&#34;c1&#34;&gt;#用小樱代替原来的猫&lt;/span&gt;
+oneko -sakura -bg white -tofocus &lt;span class=&#34;c1&#34;&gt;#颜色为白色，且不跟踪鼠标，而是在当前聚焦的窗口的上方&lt;/span&gt;
+oneko -sakura -bg white -time &lt;span class=&#34;m&#34;&gt;100000&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#动作的时间设置为100000微秒，越小意味着反应越快，(足够小可以瞬移&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;调整大小&#34;&gt;调整大小&lt;/h2&gt;
+&lt;p&gt;一切正常，但是有个大问题，就是它太小了,对于现在动不动就是2k,4k分辨率的显示器来说,默认的32x32像素点的图片实在是太小了，有没有什么办法让它变得更大一点呢，下面分享一下我折腾的过程。&lt;/p&gt;
+&lt;p&gt;首先我们要获得软件源代码，可以直接去官网下载，修改源代码后进行编译安装。 &lt;code&gt;makepkg&lt;/code&gt;则提供了一个更加简单的方式，可以直接修改编译并将其打包为&lt;code&gt;pacman&lt;/code&gt;的软件包。&lt;/p&gt;
 &lt;h3 id=&#34;简单介绍makepkg的用法&#34;&gt;简单介绍makepkg的用法&lt;/h3&gt;
-&lt;p&gt;makepkg是Arch系统的一个命令工具,用于软件包自动编译,运行时需要有一个PKGBUILD文件,PKGBUILD本质是一个shell脚本,记录软件包的一些信息和编译步骤.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;makepkg&lt;/code&gt;是 Arch 系统的一个命令工具，用于软件包自动编译，运行时需要有一个&lt;code&gt;PKGBUILD&lt;/code&gt;文件，&lt;code&gt;PKGBUILD&lt;/code&gt;本质是一个 shell 脚本,记录软件包的一些信息和编译步骤。下面是一些常用的命令(需要切换到 PKGBUILD 所在目录)。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -80,14 +95,14 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=4937357&amp;auto=0&amp;he
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;makepkg -Si &lt;span class=&#34;c1&#34;&gt;#编译并安装&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;makepkg -si &lt;span class=&#34;c1&#34;&gt;#编译并安装&lt;/span&gt;
 makepkg -o &lt;span class=&#34;c1&#34;&gt;#仅解压缩源代码&lt;/span&gt;
 makepkg -e &lt;span class=&#34;c1&#34;&gt;#仅编译并打包(不解压和下载源代码)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;遇到需要修改源代码的软件,我一般的流程是先解压,修改后编译并打包,测试没有问题后再利用pacman进行安装.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;遇到需要修改源代码的软件，我一般的流程是先解压，修改后编译并打包，测试没有问题后再利用 pacman 进行安装。&lt;/p&gt;
 &lt;h3 id=&#34;源代码获取并修改&#34;&gt;源代码获取并修改&lt;/h3&gt;
-&lt;p&gt;如果是aur安装的话,源代码一般已经下载到本地了.对于paru来说,下载的编译脚本是在&lt;code&gt;$HOME/.cache/paru/clone/&lt;/code&gt;下,我们进入oneko的地址,底下应该是一个PKGBUILD文件和源码压缩包,首先&lt;code&gt;makepkg -o&lt;/code&gt;进行解压,默认情况下,源代码会解压到src文件夹下,观察src下有一个&lt;code&gt;oneko.h&lt;/code&gt;头文件,根据经验来看,这个文件里应该会有图片尺寸等参数,果然让我找到了类似的定义&lt;/p&gt;
+&lt;p&gt;如果是利用&lt;a href=&#34;https://wiki.archlinux.org/title/AUR_helpers_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)&#34;&gt;aurhelper&lt;/a&gt;进行安装的话，源代码一般已经下载到本地了。对于&lt;code&gt;paru&lt;/code&gt;来说，下载的编译脚本是在&lt;code&gt;$HOME/.cache/paru/clone/&lt;/code&gt;下，对于&lt;code&gt;yay&lt;/code&gt;来说则是在&lt;code&gt;$HOME/.cache/yay/pkg/&lt;/code&gt;，我们进入oneko所在的目录，底下应该是一个&lt;code&gt;PKGBUILD&lt;/code&gt;文件和源码压缩包，首先&lt;code&gt;makepkg -o&lt;/code&gt;进行解压，默认情况下，源代码会解压到&lt;code&gt;src&lt;/code&gt;文件夹下,观察 src 下有一个&lt;code&gt;oneko.h&lt;/code&gt;头文件,根据经验,这个文件里应该会有图片尺寸等参数，果然我们可以找到类似的定义。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -100,9 +115,9 @@ makepkg -e &lt;span class=&#34;c1&#34;&gt;#仅编译并打包(不解压和下载
 &lt;span class=&#34;cp&#34;&gt;#define BITMAP_HEIGHT       32
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;先把其中的32都改为50,然后回到PKGBUILD所在目录,运行&lt;code&gt;makepkg -ef&lt;/code&gt;进行编译,确实变大了,但是图片出大问题了.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;先把其中的32都改为50，然后回到&lt;code&gt;PKGBUILD&lt;/code&gt;所在目录，运行&lt;code&gt;makepkg -ef&lt;/code&gt;进行编译，确实变大了，但是图片出大问题了。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/oneko/image-20211110160219235.png&#34; alt=&#34;image-20211110160219235&#34;&gt;&lt;/p&gt;
-&lt;p&gt;这一坨是啥😂.. 看来单纯的改定义是不行的,我们还需要修改图片的尺寸. 图片在&lt;code&gt;bitmap&lt;/code&gt; 和&lt;code&gt;bitmasks&lt;/code&gt;两个文件夹下面,都是32x32的xbm格式图片,用vim打开的话可以看到类似这样的内容,关于xbm格式的详细内容可以参考&lt;a href=&#34;https://zhuanlan.zhihu.com/p/358945096&#34;&gt;这篇文章&lt;/a&gt;,大致上一个十六进制字节代表一个2x2的方格的排列情况(2^4).&lt;/p&gt;
+&lt;p&gt;这一坨是啥 😂.. 看来单纯的改定义是不行的，我们还需要修改图片的尺寸。 图片在&lt;code&gt;bitmap&lt;/code&gt; 和&lt;code&gt;bitmasks&lt;/code&gt;两个文件夹下面，都是 32x32 的 xbm 格式图片，用&lt;code&gt;vim&lt;/code&gt;等文本编辑器打开的话可以看到类似这样的内容,关于&lt;a href=&#34;https://en.wikipedia.org/wiki/X_BitMap&#34;&gt;xbm格式&lt;/a&gt;的详细内容可以参考&lt;a href=&#34;https://zhuanlan.zhihu.com/p/358945096&#34;&gt;这篇文章&lt;/a&gt;,大致上一个十六进制字节代表一个 2x2 的方格的排列情况(2^4)。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -133,15 +148,15 @@ makepkg -e &lt;span class=&#34;c1&#34;&gt;#仅编译并打包(不解压和下载
  &lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x18&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x38&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mh&#34;&gt;0x00&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;可以自己编写脚本进行缩放,也可以利用GIMP等图片软件进行编辑后覆盖,我选择后者.选择缩放到50像素后覆盖原文件.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;可以自己编写脚本进行缩放，也可以利用&lt;a href=&#34;https://www.gimp.org/&#34;&gt;GIMP&lt;/a&gt;等图片编辑软件进行编辑后覆盖原文件，我选择后者。选择缩放到50像素后覆盖原文件。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/oneko/image-20211110160754713.png&#34; alt=&#34;image-20211110160754713&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;利用gimp的bimp插件进行批处理&#34;&gt;利用GIMP的BIMP插件进行批处理&lt;/h3&gt;
-&lt;p&gt;另一个问题来了,图片这么多,难道要我们手动一个一个的进行修改吗,一番搜索后发现一个很不错的GIMP插件,&lt;a href=&#34;https://alessandrofrancesconi.it/projects/bimp/&#34;&gt;BIMP&lt;/a&gt;,可以批处理一些简单的动作,AUR上也有这个包,安装后就可以在文件那一栏运行该插件.&lt;/p&gt;
+&lt;h3 id=&#34;利用-gimp-的-bimp-插件进行批处理&#34;&gt;利用 GIMP 的 BIMP 插件进行批处理&lt;/h3&gt;
+&lt;p&gt;另一个问题来了，图片这么多，难道要我们手动一个一个的进行修改吗，一番搜索后发现一个很不错的GIMP插件，&lt;a href=&#34;https://alessandrofrancesconi.it/projects/bimp/&#34;&gt;BIMP&lt;/a&gt;，可以批处理一些简单的动作，&lt;a href=&#34;https://aur.archlinux.org/packages/gimp-plugin-bimp/&#34;&gt;AUR上也有这个包&lt;/a&gt;，安装后就可以在文件那一栏运行该插件。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/oneko/image-20211110161404357.png&#34; alt=&#34;image-20211110161404357&#34;&gt;&lt;/p&gt;
-&lt;p&gt;然后把导出的图片覆盖掉原来的图片,继续编译,不出意外,编译报错了..&lt;/p&gt;
+&lt;p&gt;然后我们把导出的图片覆盖掉原来的图片，继续编译，&lt;del&gt;开始祈祷&lt;/del&gt;不出意外，编译报错了..&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/oneko/image-20211110161637885.png&#34; alt=&#34;image-20211110161637885&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;调整导出图片的格式&#34;&gt;调整导出图片的格式&lt;/h3&gt;
-&lt;p&gt;分析一下导出的图片,发现格式定义上和源文件有出入,丢失了部分内容,还好丢失的部分内容可以从文件名上获得,编写一个小的fish脚本利用sed来处理这一步&lt;/p&gt;
+&lt;p&gt;分析一下导出的图片，发现格式定义上和源文件有出入，丢失了部分内容，还好丢失的部分内容可以从文件名上获得，编写一个小的&lt;a href=&#34;https://fishshell.com/&#34;&gt;fish&lt;/a&gt;脚本利用&lt;code&gt;sed&lt;/code&gt;来处理这一步。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -172,27 +187,31 @@ makepkg -e &lt;span class=&#34;c1&#34;&gt;#仅编译并打包(不解压和下载
 &lt;/div&gt;
 &lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; i in &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;ls *.xbm&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;    &amp;gt;
-    &lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; filename &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;basename &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt; .xbm&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-    sed -i &lt;span class=&#34;s2&#34;&gt;&amp;#34;s/define\ _height/define\ &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$filename&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;\_height/g&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;
-    sed -i &lt;span class=&#34;s2&#34;&gt;&amp;#34;s/define\ _width/define\ &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$filename&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;\_width/g&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;
-    sed -i &lt;span class=&#34;s1&#34;&gt;&amp;#39;/_x_hot/d&amp;#39;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;
-    sed -i &lt;span class=&#34;s1&#34;&gt;&amp;#39;/_y_hot/d&amp;#39;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;
-    sed -i &lt;span class=&#34;s2&#34;&gt;&amp;#34;s/char\ _bits/char\ &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$filename&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;\_bits/g&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#! /usr/bin/fish
+&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; i in &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;find -name &lt;span class=&#34;s2&#34;&gt;&amp;#34;*.xbm&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+	&lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; filename &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;basename &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt; .xbm&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+	sed -i &lt;span class=&#34;s2&#34;&gt;&amp;#34;s/define\ _height/define\ &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$filename&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;\_height/g&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;
+	sed -i &lt;span class=&#34;s2&#34;&gt;&amp;#34;s/define\ _width/define\ &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$filename&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;\_width/g&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;
+	sed -i &lt;span class=&#34;s1&#34;&gt;&amp;#39;/_x_hot/d&amp;#39;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;
+	sed -i &lt;span class=&#34;s1&#34;&gt;&amp;#39;/_y_hot/d&amp;#39;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;
+	sed -i &lt;span class=&#34;s2&#34;&gt;&amp;#34;s/char\ _bits/char\ &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$filename&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;\_bits/g&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;
 end
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;接着再进行编译&lt;code&gt;makepkg -ef&lt;/code&gt; 并安装&lt;code&gt;pacman -U xxxxx.zst&lt;/code&gt;就可以开心的玩耍啦.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;接着再进行编译&lt;code&gt;makepkg -ef&lt;/code&gt; 并安装&lt;code&gt;pacman -U xxxxx.zst&lt;/code&gt;后就可以开心的玩耍啦。&lt;/p&gt;
 </description>
     </item>
     
