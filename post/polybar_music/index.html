@@ -49,7 +49,7 @@
 <meta itemprop="name" content="通过polybar控制多媒体">
 <meta itemprop="description" content="记录一次简单定制化polybar的折腾记录"><meta itemprop="datePublished" content="2021-12-16T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-12-16T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1218">
+<meta itemprop="wordCount" content="1242">
 <meta itemprop="keywords" content="guide,records," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="通过polybar控制多媒体"/>
 <meta name="twitter:description" content="记录一次简单定制化polybar的折腾记录"/>
@@ -130,7 +130,7 @@
         <div class="post-category">
             <a href="/categories/it/"> IT </a>
             </div>
-          <span class="more-meta"> 1218 words </span>
+          <span class="more-meta"> 1242 words </span>
           <span class="more-meta"> 3 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
@@ -149,7 +149,18 @@
   </div>
 </div>
     <div class="post-content">
-      <h2 id="polybar简单介绍">polybar简单介绍</h2>
+        <iframe style="max-width: 100%"
+      class="music163"
+      frameborder="no"
+      border="0"
+      marginwidth="0"
+      marginheight="0"
+      width="330"
+      height="86"
+      src="//music.163.com/outchain/player?type=2&id=28918133&auto=0&height=66">
+    </iframe>
+中森明菜的恶女,安利一下(
+<h2 id="polybar简单介绍">polybar简单介绍</h2>
 <p><a href="https://polybar.github.io/">polybar</a>是一个可以简单进行自定义的状态栏工具,通过各模块进行组合,可定制性非常强.这是我东拼西凑的一个样子😁</p>
 <p><img src="/img/polybar_music/Screenshot_20211216_205158.png" alt="Screenshot_20211216_205158"></p>
 <p><img src="/img/polybar_music/image-20211216205419967.png" alt="image-20211216205419967"></p>
@@ -215,7 +226,7 @@ click-right<span class="o">=</span>....
 <p>而且不只是一两个程序,很多的软件播放音乐,甚至firefox观看视频,这里都会显示出来,说明背后应该有一套统一的协议.那我们如果了解kde connect是如何工作的,不就可以把这个模块完善的更棒吗?</p>
 <p>又是一番搜索,看到ubuntu论坛的这个<a href="https://askubuntu.com/questions/1046143/media-players-kde-connect-multimedia-control">问题</a>,题主本意是想知道如何让mpv播放的音乐被kde connect识别,第一个回答就很有帮助</p>
 <p><img src="/img/polybar_music/image-20211216212629748.png" alt="image-20211216212629748"></p>
-<p>原来只要是走MPRIS协议的程序就可以被KDE connect识别,<a href="https://specifications.freedesktop.org/mpris-spec/latest/">MPRIS</a>希望提供一套统一的API接口来管理所有的媒体播放器. <a href="https://wiki.archlinux.org/title/MPRIS">ArchlinuxWiki</a>上介绍了一些与MPRIS进行通讯的前端工具,一眼看中了<a href="https://github.com/altdesktop/playerctl">playerctrl</a>,主要感觉他的操作简单直接.</p>
+<p>原来只要是走MPRIS协议的程序就可以被KDE connect识别,<a href="https://specifications.freedesktop.org/mpris-spec/latest/">MPRIS</a>希望提供一套统一的API接口来管理所有的媒体播放器. <a href="https://wiki.archlinux.org/title/MPRIS">ArchlinuxWiki</a>上介绍了一些与MPRIS进行通讯的工具,一眼看中了<a href="https://github.com/altdesktop/playerctl">playerctrl</a>,主要感觉他的操作简单直接.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -262,6 +273,16 @@ format-foreground<span class="o">=</span> <span class="c1">#3399ff</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>最后的效果是这样的<img src="/img/polybar_music/image-20211216215156056.png" alt="image-20211216215156056"></p>
+<p>参考链接</p>
+<p>[1]:<a href="https://polybar.github.io">https://polybar.github.io/</a></p>
+<p>[2]:<a href="https://www.pixiv.net/artworks/89075761">https://www.pixiv.net/artworks/89075761</a></p>
+<p>[3]:<a href="https://github.com/polybar/polybar-scripts">https://github.com/polybar/polybar-scripts</a></p>
+<p>[4]:<a href="https://unix.stackexchange.com/questions/342404/getting-just-the-application-name-from-wmctrl-l">https://unix.stackexchange.com/questions/342404/getting-just-the-application-name-from-wmctrl-l</a></p>
+<p>[5]:<a href="https://userbase.kde.org/KDEConnect/zh-hans">https://userbase.kde.org/KDEConnect/zh-hans</a></p>
+<p>[6]:<a href="https://askubuntu.com/questions/1046143/media-players-kde-connect-multimedia-control">https://askubuntu.com/questions/1046143/media-players-kde-connect-multimedia-control</a></p>
+<p>[7]:<a href="https://specifications.freedesktop.org/mpris-spec/latest/">https://specifications.freedesktop.org/mpris-spec/latest/</a></p>
+<p>[8]:<a href="https://wiki.archlinux.org/title/MPRIS">https://wiki.archlinux.org/title/MPRIS</a></p>
+<p>[9]:<a href="https://github.com/altdesktop/playerctl">https://github.com/altdesktop/playerctl</a></p>
 
     </div>
 

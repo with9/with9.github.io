@@ -1,3 +1,5 @@
+{{% music id="28918133" auto="0" %}}
+中森明菜的恶女,安利一下(
 
 ## polybar简单介绍
 
@@ -62,7 +64,7 @@ click-right=....
 
 ![image-20211216212629748](/img/polybar_music/image-20211216212629748.png)
 
-原来只要是走MPRIS协议的程序就可以被KDE connect识别,[MPRIS](https://specifications.freedesktop.org/mpris-spec/latest/)希望提供一套统一的API接口来管理所有的媒体播放器. [ArchlinuxWiki](https://wiki.archlinux.org/title/MPRIS)上介绍了一些与MPRIS进行通讯的前端工具,一眼看中了[playerctrl](https://github.com/altdesktop/playerctl),主要感觉他的操作简单直接.
+原来只要是走MPRIS协议的程序就可以被KDE connect识别,[MPRIS](https://specifications.freedesktop.org/mpris-spec/latest/)希望提供一套统一的API接口来管理所有的媒体播放器. [ArchlinuxWiki](https://wiki.archlinux.org/title/MPRIS)上介绍了一些与MPRIS进行通讯的工具,一眼看中了[playerctrl](https://github.com/altdesktop/playerctl),主要感觉他的操作简单直接.
 
 ```shell
 ~➜ playerctl metadata --format '{{artist}}-{{title}}---{{album}}'
@@ -89,3 +91,25 @@ format-foreground= #3399ff
 ```
 
 最后的效果是这样的![image-20211216215156056](/img/polybar_music/image-20211216215156056.png)
+
+
+
+参考链接
+
+\[1\]:[https://polybar.github.io/](https://polybar.github.io)
+
+\[2\]:[https://www.pixiv.net/artworks/89075761](https://www.pixiv.net/artworks/89075761)
+
+\[3\]:[https://github.com/polybar/polybar-scripts](https://github.com/polybar/polybar-scripts)
+
+\[4\]:[https://unix.stackexchange.com/questions/342404/getting-just-the-application-name-from-wmctrl-l](https://unix.stackexchange.com/questions/342404/getting-just-the-application-name-from-wmctrl-l)
+
+\[5\]:[https://userbase.kde.org/KDEConnect/zh-hans](https://userbase.kde.org/KDEConnect/zh-hans)
+
+\[6\]:[https://askubuntu.com/questions/1046143/media-players-kde-connect-multimedia-control](https://askubuntu.com/questions/1046143/media-players-kde-connect-multimedia-control)
+
+\[7\]:[https://specifications.freedesktop.org/mpris-spec/latest/](https://specifications.freedesktop.org/mpris-spec/latest/)
+
+\[8\]:[https://wiki.archlinux.org/title/MPRIS](https://wiki.archlinux.org/title/MPRIS)
+
+\[9\]:[https://github.com/altdesktop/playerctl](https://github.com/altdesktop/playerctl)

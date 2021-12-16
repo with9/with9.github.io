@@ -63,7 +63,18 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=4937357&amp;auto=0&amp;he
       <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://with9.github.io/post/polybar_music/</guid>
-      <description>&lt;h2 id=&#34;polybar简单介绍&#34;&gt;polybar简单介绍&lt;/h2&gt;
+      <description>  &lt;iframe style=&#34;max-width: 100%&#34;
+      class=&#34;music163&#34;
+      frameborder=&#34;no&#34;
+      border=&#34;0&#34;
+      marginwidth=&#34;0&#34;
+      marginheight=&#34;0&#34;
+      width=&#34;330&#34;
+      height=&#34;86&#34;
+      src=&#34;//music.163.com/outchain/player?type=2&amp;id=28918133&amp;auto=0&amp;height=66&#34;&gt;
+    &lt;/iframe&gt;
+中森明菜的恶女,安利一下(
+&lt;h2 id=&#34;polybar简单介绍&#34;&gt;polybar简单介绍&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://polybar.github.io/&#34;&gt;polybar&lt;/a&gt;是一个可以简单进行自定义的状态栏工具,通过各模块进行组合,可定制性非常强.这是我东拼西凑的一个样子😁&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/polybar_music/Screenshot_20211216_205158.png&#34; alt=&#34;Screenshot_20211216_205158&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/polybar_music/image-20211216205419967.png&#34; alt=&#34;image-20211216205419967&#34;&gt;&lt;/p&gt;
@@ -129,7 +140,7 @@ click-right&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;....
 &lt;p&gt;而且不只是一两个程序,很多的软件播放音乐,甚至firefox观看视频,这里都会显示出来,说明背后应该有一套统一的协议.那我们如果了解kde connect是如何工作的,不就可以把这个模块完善的更棒吗?&lt;/p&gt;
 &lt;p&gt;又是一番搜索,看到ubuntu论坛的这个&lt;a href=&#34;https://askubuntu.com/questions/1046143/media-players-kde-connect-multimedia-control&#34;&gt;问题&lt;/a&gt;,题主本意是想知道如何让mpv播放的音乐被kde connect识别,第一个回答就很有帮助&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/polybar_music/image-20211216212629748.png&#34; alt=&#34;image-20211216212629748&#34;&gt;&lt;/p&gt;
-&lt;p&gt;原来只要是走MPRIS协议的程序就可以被KDE connect识别,&lt;a href=&#34;https://specifications.freedesktop.org/mpris-spec/latest/&#34;&gt;MPRIS&lt;/a&gt;希望提供一套统一的API接口来管理所有的媒体播放器. &lt;a href=&#34;https://wiki.archlinux.org/title/MPRIS&#34;&gt;ArchlinuxWiki&lt;/a&gt;上介绍了一些与MPRIS进行通讯的前端工具,一眼看中了&lt;a href=&#34;https://github.com/altdesktop/playerctl&#34;&gt;playerctrl&lt;/a&gt;,主要感觉他的操作简单直接.&lt;/p&gt;
+&lt;p&gt;原来只要是走MPRIS协议的程序就可以被KDE connect识别,&lt;a href=&#34;https://specifications.freedesktop.org/mpris-spec/latest/&#34;&gt;MPRIS&lt;/a&gt;希望提供一套统一的API接口来管理所有的媒体播放器. &lt;a href=&#34;https://wiki.archlinux.org/title/MPRIS&#34;&gt;ArchlinuxWiki&lt;/a&gt;上介绍了一些与MPRIS进行通讯的工具,一眼看中了&lt;a href=&#34;https://github.com/altdesktop/playerctl&#34;&gt;playerctrl&lt;/a&gt;,主要感觉他的操作简单直接.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -176,6 +187,16 @@ format-foreground&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#3
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;最后的效果是这样的&lt;img src=&#34;https://with9.github.io/img/polybar_music/image-20211216215156056.png&#34; alt=&#34;image-20211216215156056&#34;&gt;&lt;/p&gt;
+&lt;p&gt;参考链接&lt;/p&gt;
+&lt;p&gt;[1]:&lt;a href=&#34;https://polybar.github.io&#34;&gt;https://polybar.github.io/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[2]:&lt;a href=&#34;https://www.pixiv.net/artworks/89075761&#34;&gt;https://www.pixiv.net/artworks/89075761&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[3]:&lt;a href=&#34;https://github.com/polybar/polybar-scripts&#34;&gt;https://github.com/polybar/polybar-scripts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[4]:&lt;a href=&#34;https://unix.stackexchange.com/questions/342404/getting-just-the-application-name-from-wmctrl-l&#34;&gt;https://unix.stackexchange.com/questions/342404/getting-just-the-application-name-from-wmctrl-l&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[5]:&lt;a href=&#34;https://userbase.kde.org/KDEConnect/zh-hans&#34;&gt;https://userbase.kde.org/KDEConnect/zh-hans&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[6]:&lt;a href=&#34;https://askubuntu.com/questions/1046143/media-players-kde-connect-multimedia-control&#34;&gt;https://askubuntu.com/questions/1046143/media-players-kde-connect-multimedia-control&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[7]:&lt;a href=&#34;https://specifications.freedesktop.org/mpris-spec/latest/&#34;&gt;https://specifications.freedesktop.org/mpris-spec/latest/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[8]:&lt;a href=&#34;https://wiki.archlinux.org/title/MPRIS&#34;&gt;https://wiki.archlinux.org/title/MPRIS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[9]:&lt;a href=&#34;https://github.com/altdesktop/playerctl&#34;&gt;https://github.com/altdesktop/playerctl&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
