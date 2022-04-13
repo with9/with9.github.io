@@ -69,19 +69,9 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=4937357&amp;auto=0&amp;he
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;最近b站一直收到一个神秘歌姬视频的推送,歌曲多是各个地方的军歌(&lt;/p&gt;
-
-
-
-&lt;div class=&#34;embed video-player&#34;&gt;
-  &lt;iframe src=&#34;//xbeibeix.com/api/bilibili/biliplayer/?url=BV1eT4y1e7S6&#34; 
-  allowfullscreen=&#34;allowfullscreen&#34;
-   width=&#34;100%&#34; 
-   height=&#34;500&#34; 
-   scrolling=&#34;no&#34; 
-   frameborder=&#34;0&#34; sandbox=&#34;allow-top-navigation allow-same-origin allow-forms allow-scripts&#34;&gt;
-  &lt;/iframe&gt;
-  &lt;/div&gt;
-  
+&lt;div style=&#34;position: relative; padding: 30% 45%;&#34;&gt;
+&lt;iframe style=&#34;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&#34; src=&#34;https://player.bilibili.com/player.html?aid=937743992&amp;bvid=BV1eT4y1e7S6&amp;cid=562925051&amp;page=1&amp;high_quality=1&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34;&gt; &lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p&gt;声音非常好听,&lt;strong&gt;人设也蛮可爱的&lt;/strong&gt;,打算了解一下相关内容,身份好像蛮复杂的,可以去&lt;a href=&#34;&#34;&gt;萌娘百科&lt;/a&gt;进行详细了解.其中有个叫&lt;a href=&#34;https://zh.moegirl.org.cn/NEUTRINO&#34;&gt;NEUTRINO&lt;/a&gt;的项目,某日本神秘程序员开发,我们只要丢谱子过去,它就会通过神经网络进行调教并返回音频文件,很有意思,很多视频上的AIきりたん标签就是用的这个引擎制作的(有些是cevio AI制作的&lt;del&gt;天国的莎莎拉&lt;/del&gt;)&lt;/p&gt;
 &lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
 &lt;p&gt;进入官网点击download进行下载,会跳到谷歌云盘(记得科学上网),我是linux系统,因此下载NEUTRINO-Online,音源的话在Singer Library文件夹内,选择喜欢的歌姬下载即可,这里选择&lt;code&gt;東北きりたん（NEUTRINO-Library)&lt;/code&gt;&lt;/p&gt;

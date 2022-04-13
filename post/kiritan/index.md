@@ -6,7 +6,9 @@
 
 最近b站一直收到一个神秘歌姬视频的推送,歌曲多是各个地方的军歌(
 
-{{< bilibili "BV1eT4y1e7S6" >}}
+<div style="position: relative; padding: 30% 45%;">
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?aid=937743992&bvid=BV1eT4y1e7S6&cid=562925051&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
 
 
 声音非常好听,**人设也蛮可爱的**,打算了解一下相关内容,身份好像蛮复杂的,可以去[萌娘百科]()进行详细了解.其中有个叫[NEUTRINO](https://zh.moegirl.org.cn/NEUTRINO)的项目,某日本神秘程序员开发,我们只要丢谱子过去,它就会通过神经网络进行调教并返回音频文件,很有意思,很多视频上的AIきりたん标签就是用的这个引擎制作的(有些是cevio AI制作的~~天国的莎莎拉~~)
