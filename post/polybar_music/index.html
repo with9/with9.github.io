@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.89.4 with theme even" />
+<meta name="generator" content="Hugo 0.96.0 with theme even" />
 
 
 <link rel="canonical" href="https://with9.github.io/post/polybar_music/" />
@@ -49,7 +49,7 @@
 <meta itemprop="name" content="通过polybar控制多媒体">
 <meta itemprop="description" content="记录一次简单定制化polybar的折腾记录"><meta itemprop="datePublished" content="2021-12-16T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-12-20T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1522">
+<meta itemprop="wordCount" content="1521">
 <meta itemprop="keywords" content="guide,records," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="通过polybar控制多媒体"/>
 <meta name="twitter:description" content="记录一次简单定制化polybar的折腾记录"/>
@@ -130,7 +130,7 @@
         <div class="post-category">
             <a href="/categories/it/"> IT </a>
             </div>
-          <span class="more-meta"> 1522 words </span>
+          <span class="more-meta"> 1521 words </span>
           <span class="more-meta"> 4 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
@@ -182,12 +182,12 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">wmctrl -l <span class="p">|</span> sed <span class="s1">&#39;s/^[^ ]* *[^ ]* *[^ ]* //&#39;</span>
-
-wmctrl -l <span class="p">|</span> sed <span class="s1">&#39;s/^[^ ]* *[^ ]* *[^ ]* //&#39;</span> <span class="p">|</span>grep <span class="s1">&#39;Cloud Music$&#39;</span>
-
-恋ノ蟲 - 花たん — Cloud Music <span class="c1">#成功获取标题名</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wmctrl -l <span class="p">|</span> sed <span class="s1">&#39;s/^[^ ]* *[^ ]* *[^ ]* //&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">wmctrl -l <span class="p">|</span> sed <span class="s1">&#39;s/^[^ ]* *[^ ]* *[^ ]* //&#39;</span> <span class="p">|</span>grep <span class="s1">&#39;Cloud Music$&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">恋ノ蟲 - 花たん — Cloud Music <span class="c1">#成功获取标题名</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>接下来就是简单的模仿script模板了</p>
 <div class="highlight"><div class="chroma">
@@ -200,13 +200,13 @@ wmctrl -l <span class="p">|</span> sed <span class="s1">&#39;s/^[^ ]* *[^ ]* *[^
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="o">[</span>module/mymusic<span class="o">]</span>
-<span class="nv">type</span><span class="o">=</span>custom/script
-<span class="nv">exec</span><span class="o">=</span>bash -c <span class="s2">&#34;wmctrl -l | sed &#39;s/^[^ ]* *[^ ]* *[^ ]* //&#39; |grep &#39;Cloud Music</span>$<span class="s2">&#39;|sed &#39;s/— Cloud Music//&#39;&#34;</span>
-<span class="nv">format</span> <span class="o">=</span> &lt;label&gt;
-<span class="nv">label</span> <span class="o">=</span> %output:0:40:...%
-format-foreground<span class="o">=</span> <span class="c1">#3399ff</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="o">[</span>module/mymusic<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">type</span><span class="o">=</span>custom/script
+</span></span><span class="line"><span class="cl"><span class="nv">exec</span><span class="o">=</span>bash -c <span class="s2">&#34;wmctrl -l | sed &#39;s/^[^ ]* *[^ ]* *[^ ]* //&#39; |grep &#39;Cloud Music</span>$<span class="s2">&#39;|sed &#39;s/— Cloud Music//&#39;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">format</span> <span class="o">=</span> &lt;label&gt;
+</span></span><span class="line"><span class="cl"><span class="nv">label</span> <span class="o">=</span> %output:0:40:...%
+</span></span><span class="line"><span class="cl">format-foreground<span class="o">=</span> <span class="c1">#3399ff</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>效果还行,可以显示播放的曲目,但是除此之外就什么都做不了了(,可以加上点击动作,跳转到网易云音乐窗口什么的</p>
 <div class="highlight"><div class="chroma">
@@ -216,10 +216,10 @@ format-foreground<span class="o">=</span> <span class="c1">#3399ff</span>
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">.........
-click-left<span class="o">=</span>i3-msg -t <span class="nb">command</span> <span class="o">[</span><span class="s1">&#39;class=netease-cloud-music&#39;</span><span class="o">]</span> focus
-click-right<span class="o">=</span>....
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">.........
+</span></span><span class="line"><span class="cl">click-left<span class="o">=</span>i3-msg -t <span class="nb">command</span> <span class="o">[</span><span class="s1">&#39;class=netease-cloud-music&#39;</span><span class="o">]</span> focus
+</span></span><span class="line"><span class="cl">click-right<span class="o">=</span>....
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="从kde-connect得到的灵感">从KDE connect得到的灵感</h2>
 <p><a href="https://userbase.kde.org/KDEConnect/zh-hans">KDE connect</a>是一个可以实现手机和电脑互相接受通知的一个KDE工具,只需要在应用商店安装好并和电脑连在同一个网络的时候就可以进行消息互通,文件共传等.而且手机上还有个多媒体控制,大部分情况下可以显示现在正在播放的音乐,进行一些常规多媒体操作,包括切歌,暂停等. <img src="/img/polybar_music/Screenshot_2021-12-16-21-20-34-120_org.kde.kdeconnect_tp.jpg" alt="Screenshot_2021-12-16-21-20-34-120_org.kde.kdeconnect_tp"></p>
@@ -236,12 +236,12 @@ click-right<span class="o">=</span>....
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">~➜ playerctl metadata --format <span class="s1">&#39;{{artist}}-{{title}}---{{album}}&#39;</span>
-葉月ゆら-宵闇花火---宵闇恋想奇譚
-
-<span class="c1">#一次只会显示一个程序,通过-p参数可以指定显示的程序</span>
-playerctl -p netease-cloud-music,mpv,%any metadata <span class="c1">#首先选择网易云,没有再选择mpv,还是没有再选择其他</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">~➜ playerctl metadata --format <span class="s1">&#39;{{artist}}-{{title}}---{{album}}&#39;</span>
+</span></span><span class="line"><span class="cl">葉月ゆら-宵闇花火---宵闇恋想奇譚
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#一次只会显示一个程序,通过-p参数可以指定显示的程序</span>
+</span></span><span class="line"><span class="cl">playerctl -p netease-cloud-music,mpv,%any metadata <span class="c1">#首先选择网易云,没有再选择mpv,还是没有再选择其他</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>是不是命令非常简单直接,改进一下这是最后的版本.</p>
 <div class="highlight"><div class="chroma">
@@ -259,18 +259,18 @@ playerctl -p netease-cloud-music,mpv,%any metadata <span class="c1">#首先选�
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="o">[</span>module/mymusic<span class="o">]</span>
-<span class="nv">type</span><span class="o">=</span>custom/script
-exec-if<span class="o">=</span>playerctl status <span class="p">|</span>egrep <span class="s1">&#39;Playing|Paused&#39;</span> <span class="c1">#判断有没有媒体正在播放</span>
-<span class="nv">exec</span><span class="o">=</span>bash -c <span class="s2">&#34;playerctl -p netease-cloud-music,mpv,%any metadata --format &#39;{{artist}}-{{title}}--{{album}}&#39;&#34;</span>
-<span class="nv">format</span> <span class="o">=</span>  &lt;label&gt;
-<span class="nv">label</span> <span class="o">=</span> %output:0:40:...%
-click-left<span class="o">=</span>i3-msg -t <span class="nb">command</span> workspace <span class="m">8</span>
-click-right<span class="o">=</span>playerctl -p netease-cloud-music,mpv,%any play-pause#右键暂停
-scroll-up<span class="o">=</span>playerctl -p netease-cloud-music,mpv,%any previous#上划上一首
-scroll-down<span class="o">=</span>playerctl -p netease-cloud-music,mpv,%any next#下滑下一首
-format-foreground<span class="o">=</span> <span class="c1">#3399ff</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="o">[</span>module/mymusic<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">type</span><span class="o">=</span>custom/script
+</span></span><span class="line"><span class="cl">exec-if<span class="o">=</span>playerctl status <span class="p">|</span>egrep <span class="s1">&#39;Playing|Paused&#39;</span> <span class="c1">#判断有没有媒体正在播放</span>
+</span></span><span class="line"><span class="cl"><span class="nv">exec</span><span class="o">=</span>bash -c <span class="s2">&#34;playerctl -p netease-cloud-music,mpv,%any metadata --format &#39;{{artist}}-{{title}}--{{album}}&#39;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">format</span> <span class="o">=</span>  &lt;label&gt;
+</span></span><span class="line"><span class="cl"><span class="nv">label</span> <span class="o">=</span> %output:0:40:...%
+</span></span><span class="line"><span class="cl">click-left<span class="o">=</span>i3-msg -t <span class="nb">command</span> workspace <span class="m">8</span>
+</span></span><span class="line"><span class="cl">click-right<span class="o">=</span>playerctl -p netease-cloud-music,mpv,%any play-pause#右键暂停
+</span></span><span class="line"><span class="cl">scroll-up<span class="o">=</span>playerctl -p netease-cloud-music,mpv,%any previous#上划上一首
+</span></span><span class="line"><span class="cl">scroll-down<span class="o">=</span>playerctl -p netease-cloud-music,mpv,%any next#下滑下一首
+</span></span><span class="line"><span class="cl">format-foreground<span class="o">=</span> <span class="c1">#3399ff</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>最后的效果是这样的<img src="/img/polybar_music/image-20211216215156056.png" alt="image-20211216215156056"></p>
 <h2 id="补充">补充</h2>
@@ -313,47 +313,45 @@ format-foreground<span class="o">=</span> <span class="c1">#3399ff</span>
 </span><span class="lnt">34
 </span><span class="lnt">35
 </span><span class="lnt">36
-</span><span class="lnt">37
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ch">#!/usr/bin/python</span>
-<span class="c1">#author :  with &lt;dc198424601@outlook.com&gt;</span>
-
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">json</span>
-<span class="kn">import</span> <span class="nn">re</span>
-
-<span class="k">def</span> <span class="nf">get_windows</span><span class="p">():</span>
-    <span class="c1">#获得一个字典,键是工作区名字,值是一个列表,里面是程序的classname</span>
-    <span class="n">classPattern</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&#34;class&#39;: &#39;(.*?)&#39;,&#34;</span><span class="p">)</span><span class="c1">#获取class名称的正则</span>
-    <span class="n">tree_dict</span><span class="o">=</span><span class="p">{}</span>
-    <span class="n">p</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="s1">&#39;i3-msg -t get_tree&#39;</span><span class="p">)</span>
-    <span class="n">treeData</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">workspace</span> <span class="ow">in</span> <span class="n">treeData</span><span class="p">[</span><span class="s1">&#39;nodes&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;nodes&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;nodes&#39;</span><span class="p">]:</span>
-        <span class="n">tree_dict</span><span class="p">[</span><span class="n">workspace</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]]</span><span class="o">=</span><span class="p">[]</span>
-        <span class="n">windows</span><span class="o">=</span><span class="n">classPattern</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">workspace</span><span class="p">))</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">windows</span><span class="p">:</span>
-            <span class="n">tree_dict</span><span class="p">[</span><span class="n">workspace</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">tree_dict</span>
-
-
-<span class="k">def</span> <span class="nf">get_current_workspace</span><span class="p">():</span>
-    <span class="c1">#返回当前工作区的名字</span>
-    <span class="n">p</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="s1">&#39;i3-msg -t get_workspaces&#39;</span><span class="p">)</span>
-    <span class="n">treeData</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">treeData</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">i</span><span class="p">[</span><span class="s1">&#39;focused&#39;</span><span class="p">]</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">i</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
-    <span class="n">current_player</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="s2">&#34;playerctl -p netease-cloud-music,mpv,</span><span class="si">%a</span><span class="s2">ny metadata|cut -d&#39; &#39; -f1|uniq&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">current_player</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="n">get_windows</span><span class="p">()[</span><span class="n">get_current_workspace</span><span class="p">()]):</span>
-        <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&#34;i3-msg -t command [class=</span><span class="si">{}</span><span class="s2">] focus&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">current_player</span><span class="p">))</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&#34;i3-msg -t command workspace back_and_forth&#34;</span><span class="p">)</span>
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="ch">#!/usr/bin/python</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#author :  with &lt;dc198424601@outlook.com&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">json</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">re</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">get_windows</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#获得一个字典,键是工作区名字,值是一个列表,里面是程序的classname</span>
+</span></span><span class="line"><span class="cl">    <span class="n">classPattern</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&#34;class&#39;: &#39;(.*?)&#39;,&#34;</span><span class="p">)</span><span class="c1">#获取class名称的正则</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tree_dict</span><span class="o">=</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">p</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="s1">&#39;i3-msg -t get_tree&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">treeData</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">workspace</span> <span class="ow">in</span> <span class="n">treeData</span><span class="p">[</span><span class="s1">&#39;nodes&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;nodes&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;nodes&#39;</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">tree_dict</span><span class="p">[</span><span class="n">workspace</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]]</span><span class="o">=</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">windows</span><span class="o">=</span><span class="n">classPattern</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">workspace</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">windows</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">tree_dict</span><span class="p">[</span><span class="n">workspace</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">tree_dict</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">get_current_workspace</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#返回当前工作区的名字</span>
+</span></span><span class="line"><span class="cl">    <span class="n">p</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="s1">&#39;i3-msg -t get_workspaces&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">treeData</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">treeData</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">i</span><span class="p">[</span><span class="s1">&#39;focused&#39;</span><span class="p">]</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">i</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">current_player</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="s2">&#34;playerctl -p netease-cloud-music,mpv,</span><span class="si">%a</span><span class="s2">ny metadata|cut -d&#39; &#39; -f1|uniq&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">current_player</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="n">get_windows</span><span class="p">()[</span><span class="n">get_current_workspace</span><span class="p">()]):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&#34;i3-msg -t command [class=</span><span class="si">{}</span><span class="s2">] focus&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">current_player</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&#34;i3-msg -t command workspace back_and_forth&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
 <p>参考链接</p>
@@ -393,7 +391,11 @@ format-foreground<span class="o">=</span> <span class="c1">#3399ff</span>
           <a href="/tags/records/">records</a>
           </div>
       <nav class="post-nav">
-        
+        <a class="prev" href="/post/kiritan/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Ai歌姬东北切蒲英~</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
         <a class="next" href="/post/oneko/">
             <span class="next-text nav-default">oneko 一个小桌宠的折腾记录</span>
             <span class="next-text nav-mobile">Next</span>
@@ -457,7 +459,7 @@ format-foreground<span class="o">=</span> <span class="c1">#3399ff</span>
   <span class="copyright-year">
     &copy; 
     2020 - 
-    2021
+    2022
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

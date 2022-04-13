@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.89.4 with theme even" />
+<meta name="generator" content="Hugo 0.96.0 with theme even" />
 
 
 <link rel="canonical" href="https://with9.github.io/post/oneko/" />
@@ -49,7 +49,7 @@
 <meta itemprop="name" content="oneko 一个小桌宠的折腾记录">
 <meta itemprop="description" content="分享一个追击鼠标的小桌宠,及调整其显示大小的方法"><meta itemprop="datePublished" content="2021-11-10T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-11-11T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1618">
+<meta itemprop="wordCount" content="1617">
 <meta itemprop="keywords" content="guide,records," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="oneko 一个小桌宠的折腾记录"/>
 <meta name="twitter:description" content="分享一个追击鼠标的小桌宠,及调整其显示大小的方法"/>
@@ -130,7 +130,7 @@
         <div class="post-category">
             <a href="/categories/it/"> IT </a>
             </div>
-          <span class="more-meta"> 1618 words </span>
+          <span class="more-meta"> 1617 words </span>
           <span class="more-meta"> 4 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
@@ -173,11 +173,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">oneko 
-oneko -sakura <span class="c1">#用小樱代替原来的猫</span>
-oneko -sakura -bg white -tofocus <span class="c1">#颜色为白色，且不跟踪鼠标，而是在当前聚焦的窗口的上方</span>
-oneko -sakura -bg white -time <span class="m">100000</span> <span class="c1">#动作的时间设置为100000微秒，越小意味着反应越快，(足够小可以瞬移</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">oneko 
+</span></span><span class="line"><span class="cl">oneko -sakura <span class="c1">#用小樱代替原来的猫</span>
+</span></span><span class="line"><span class="cl">oneko -sakura -bg white -tofocus <span class="c1">#颜色为白色，且不跟踪鼠标，而是在当前聚焦的窗口的上方</span>
+</span></span><span class="line"><span class="cl">oneko -sakura -bg white -time <span class="m">100000</span> <span class="c1">#动作的时间设置为100000微秒，越小意味着反应越快，(足够小可以瞬移</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="调整大小">调整大小</h2>
 <p>一切正常，但是有个大问题，就是它太小了,对于现在动不动就是2k,4k分辨率的显示器来说,默认的32x32像素点的图片实在是太小了，有没有什么办法让它变得更大一点呢，下面分享一下我折腾的过程。</p>
@@ -191,10 +191,10 @@ oneko -sakura -bg white -time <span class="m">100000</span> <span class="c1">#�
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">makepkg -si <span class="c1">#编译并安装</span>
-makepkg -o <span class="c1">#仅解压缩源代码</span>
-makepkg -e <span class="c1">#仅编译并打包(不解压和下载源代码)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">makepkg -si <span class="c1">#编译并安装</span>
+</span></span><span class="line"><span class="cl">makepkg -o <span class="c1">#仅解压缩源代码</span>
+</span></span><span class="line"><span class="cl">makepkg -e <span class="c1">#仅编译并打包(不解压和下载源代码)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>遇到需要修改源代码的软件，我一般的流程是先解压，修改后编译并打包，测试没有问题后再利用 pacman 进行安装。</p>
 <h3 id="源代码获取并修改">源代码获取并修改</h3>
@@ -206,10 +206,10 @@ makepkg -e <span class="c1">#仅编译并打包(不解压和下载源代码)</sp
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="cp">#define BITMAP_WIDTH        32
-</span><span class="cp"></span>
-<span class="cp">#define BITMAP_HEIGHT       32
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#define BITMAP_WIDTH        32
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="cp">#define BITMAP_HEIGHT       32
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>先把其中的32都改为50，然后回到<code>PKGBUILD</code>所在目录，运行<code>makepkg -ef</code>进行编译，确实变大了，但是图片出大问题了。</p>
 <p><img src="/img/oneko/image-20211110160219235.png" alt="image-20211110160219235"></p>
@@ -230,19 +230,19 @@ makepkg -e <span class="c1">#仅编译并打包(不解压和下载源代码)</sp
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="cp">#define up1_bsd_mask_width 32
-</span><span class="cp">#define up1_bsd_mask_height 32
-</span><span class="cp"></span><span class="k">static</span> <span class="kt">char</span> <span class="n">up1_bsd_mask_bits</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
- <span class="mh">0x00</span><span class="p">,</span><span class="mh">0x06</span><span class="p">,</span><span class="mh">0x30</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x07</span><span class="p">,</span><span class="mh">0x70</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x80</span><span class="p">,</span><span class="mh">0x03</span><span class="p">,</span><span class="mh">0xe0</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xc0</span><span class="p">,</span><span class="mh">0x03</span><span class="p">,</span><span class="mh">0xe0</span><span class="p">,</span>
- <span class="mh">0x01</span><span class="p">,</span><span class="mh">0xc0</span><span class="p">,</span><span class="mh">0xfb</span><span class="p">,</span><span class="mh">0xef</span><span class="p">,</span><span class="mh">0x01</span><span class="p">,</span><span class="mh">0xc0</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x01</span><span class="p">,</span><span class="mh">0xc0</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x01</span><span class="p">,</span><span class="mh">0xc0</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span>
- <span class="mh">0xff</span><span class="p">,</span><span class="mh">0x01</span><span class="p">,</span><span class="mh">0x80</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x80</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x7f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span>
- <span class="mh">0xff</span><span class="p">,</span><span class="mh">0x7f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x7f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x7f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xfe</span><span class="p">,</span><span class="mh">0x3f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span>
- <span class="mh">0x00</span><span class="p">,</span><span class="mh">0xfc</span><span class="p">,</span><span class="mh">0x1f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xfc</span><span class="p">,</span><span class="mh">0x1f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xfe</span><span class="p">,</span><span class="mh">0x3f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x7f</span><span class="p">,</span>
- <span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x7f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x80</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x7f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x80</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0xbf</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x80</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span>
- <span class="mh">0x3f</span><span class="p">,</span><span class="mh">0x01</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x3f</span><span class="p">,</span><span class="mh">0x02</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xfc</span><span class="p">,</span><span class="mh">0x3f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xfc</span><span class="p">,</span><span class="mh">0x3f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span>
- <span class="mh">0xf8</span><span class="p">,</span><span class="mh">0x7f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x40</span><span class="p">,</span><span class="mh">0x7f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x40</span><span class="p">,</span><span class="mh">0x3e</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x28</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span>
- <span class="mh">0x00</span><span class="p">,</span><span class="mh">0x18</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x38</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">};</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#define up1_bsd_mask_width 32
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define up1_bsd_mask_height 32
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">static</span> <span class="kt">char</span> <span class="n">up1_bsd_mask_bits</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"> <span class="mh">0x00</span><span class="p">,</span><span class="mh">0x06</span><span class="p">,</span><span class="mh">0x30</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x07</span><span class="p">,</span><span class="mh">0x70</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x80</span><span class="p">,</span><span class="mh">0x03</span><span class="p">,</span><span class="mh">0xe0</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xc0</span><span class="p">,</span><span class="mh">0x03</span><span class="p">,</span><span class="mh">0xe0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"> <span class="mh">0x01</span><span class="p">,</span><span class="mh">0xc0</span><span class="p">,</span><span class="mh">0xfb</span><span class="p">,</span><span class="mh">0xef</span><span class="p">,</span><span class="mh">0x01</span><span class="p">,</span><span class="mh">0xc0</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x01</span><span class="p">,</span><span class="mh">0xc0</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x01</span><span class="p">,</span><span class="mh">0xc0</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"> <span class="mh">0xff</span><span class="p">,</span><span class="mh">0x01</span><span class="p">,</span><span class="mh">0x80</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x80</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x7f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"> <span class="mh">0xff</span><span class="p">,</span><span class="mh">0x7f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x7f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x7f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xfe</span><span class="p">,</span><span class="mh">0x3f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"> <span class="mh">0x00</span><span class="p">,</span><span class="mh">0xfc</span><span class="p">,</span><span class="mh">0x1f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xfc</span><span class="p">,</span><span class="mh">0x1f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xfe</span><span class="p">,</span><span class="mh">0x3f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x7f</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"> <span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x7f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x80</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x7f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x80</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0xbf</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x80</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"> <span class="mh">0x3f</span><span class="p">,</span><span class="mh">0x01</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xff</span><span class="p">,</span><span class="mh">0x3f</span><span class="p">,</span><span class="mh">0x02</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xfc</span><span class="p">,</span><span class="mh">0x3f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0xfc</span><span class="p">,</span><span class="mh">0x3f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"> <span class="mh">0xf8</span><span class="p">,</span><span class="mh">0x7f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x40</span><span class="p">,</span><span class="mh">0x7f</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x40</span><span class="p">,</span><span class="mh">0x3e</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x28</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"> <span class="mh">0x00</span><span class="p">,</span><span class="mh">0x18</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x38</span><span class="p">,</span><span class="mh">0x00</span><span class="p">,</span><span class="mh">0x00</span><span class="p">};</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以自己编写脚本进行缩放，也可以利用<a href="https://www.gimp.org/">GIMP</a>等图片编辑软件进行编辑后覆盖原文件，我选择后者。选择缩放到50像素后覆盖原文件。</p>
 <p><img src="/img/oneko/image-20211110160754713.png" alt="image-20211110160754713"></p>
@@ -268,44 +268,42 @@ makepkg -e <span class="c1">#仅编译并打包(不解压和下载源代码)</sp
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="c1">//导出后的格式
-</span><span class="c1"></span><span class="cp">#define _width 50
-</span><span class="cp">#define _height 50
-</span><span class="cp">#define _x_hot 0
-</span><span class="cp">#define _y_hot 0
-</span><span class="cp"></span><span class="k">static</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">_bits</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{.....};</span>
-<span class="n">___________________________________________</span>
-<span class="c1">//源文件内容
-</span><span class="c1"></span><span class="cp">#define up2_tomoyo_mask_width 32
-</span><span class="cp">#define up2_tomoyo_mask_height 32
-</span><span class="cp"></span><span class="k">static</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">up2_tomoyo_mask_bits</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{......}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">//导出后的格式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#define _width 50
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _height 50
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _x_hot 0
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _y_hot 0
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">static</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">_bits</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{.....};</span>
+</span></span><span class="line"><span class="cl"><span class="n">___________________________________________</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//源文件内容
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#define up2_tomoyo_mask_width 32
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define up2_tomoyo_mask_height 32
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">static</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">up2_tomoyo_mask_bits</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{......}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#! /usr/bin/fish
-</span><span class="cp"></span><span class="k">for</span> i in <span class="o">(</span>find -name <span class="s2">&#34;*.xbm&#34;</span><span class="o">)</span>
-	<span class="nb">set</span> filename <span class="o">(</span>basename <span class="nv">$i</span> .xbm<span class="o">)</span>
-	sed -i <span class="s2">&#34;s/define\ _height/define\ </span><span class="nv">$filename</span><span class="s2">\_height/g&#34;</span> <span class="nv">$i</span>
-	sed -i <span class="s2">&#34;s/define\ _width/define\ </span><span class="nv">$filename</span><span class="s2">\_width/g&#34;</span> <span class="nv">$i</span>
-	sed -i <span class="s1">&#39;/_x_hot/d&#39;</span> <span class="nv">$i</span>
-	sed -i <span class="s1">&#39;/_y_hot/d&#39;</span> <span class="nv">$i</span>
-	sed -i <span class="s2">&#34;s/char\ _bits/char\ </span><span class="nv">$filename</span><span class="s2">\_bits/g&#34;</span> <span class="nv">$i</span>
-end
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="cp">#! /usr/bin/fish
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">for</span> i in <span class="o">(</span>find -name <span class="s2">&#34;*.xbm&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">set</span> filename <span class="o">(</span>basename <span class="nv">$i</span> .xbm<span class="o">)</span>
+</span></span><span class="line"><span class="cl">	sed -i <span class="s2">&#34;s/define\ _height/define\ </span><span class="nv">$filename</span><span class="s2">\_height/g&#34;</span> <span class="nv">$i</span>
+</span></span><span class="line"><span class="cl">	sed -i <span class="s2">&#34;s/define\ _width/define\ </span><span class="nv">$filename</span><span class="s2">\_width/g&#34;</span> <span class="nv">$i</span>
+</span></span><span class="line"><span class="cl">	sed -i <span class="s1">&#39;/_x_hot/d&#39;</span> <span class="nv">$i</span>
+</span></span><span class="line"><span class="cl">	sed -i <span class="s1">&#39;/_y_hot/d&#39;</span> <span class="nv">$i</span>
+</span></span><span class="line"><span class="cl">	sed -i <span class="s2">&#34;s/char\ _bits/char\ </span><span class="nv">$filename</span><span class="s2">\_bits/g&#34;</span> <span class="nv">$i</span>
+</span></span><span class="line"><span class="cl">end
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>接着再进行编译<code>makepkg -ef</code> 并安装<code>pacman -U xxxxx.zst</code>后就可以开心的玩耍啦。</p>
 
@@ -403,7 +401,7 @@ end
   <span class="copyright-year">
     &copy; 
     2020 - 
-    2021
+    2022
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

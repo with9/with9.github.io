@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.89.4 with theme even" />
+<meta name="generator" content="Hugo 0.96.0 with theme even" />
 
 
 <link rel="canonical" href="https://with9.github.io/post/sl3-arch/" />
@@ -207,11 +207,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">    pacman-key --add surface.asc
-    pacman-key --finger 56C464BAAC421453
-    pacman-key --lsign-key 56C464BAAC421453
-    pacman -U linux-surface,linux-surface-headers相关文件
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">    pacman-key --add surface.asc
+</span></span><span class="line"><span class="cl">    pacman-key --finger 56C464BAAC421453
+</span></span><span class="line"><span class="cl">    pacman-key --lsign-key 56C464BAAC421453
+</span></span><span class="line"><span class="cl">    pacman -U linux-surface,linux-surface-headers相关文件
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>然后就可以愉快的挂载ext4分区了</li>
@@ -223,10 +223,10 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">    mount /dev/sda2 /mnt
-    mount /dev/sda1 /mnt/boot
-    mount /dev/sda3 /mnt/home
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    mount /dev/sda2 /mnt
+</span></span><span class="line"><span class="cl">    mount /dev/sda1 /mnt/boot
+</span></span><span class="line"><span class="cl">    mount /dev/sda3 /mnt/home
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>
@@ -280,18 +280,18 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#!/bin/sh
-</span><span class="cp"></span><span class="k">case</span> <span class="nv">$1</span> in
-  pre<span class="o">)</span>
-    modprobe -r mei
-    modprobe -r ipts
-    modprobe -r surface_sam_sid#可以防止touchpad无法双指右键
-  post<span class="o">)</span>
-    modprobe mei
-    modprobe ipts
-    modprobe surface_sam_sid
-<span class="k">esac</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="cp">#!/bin/sh
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">case</span> <span class="nv">$1</span> in
+</span></span><span class="line"><span class="cl">  pre<span class="o">)</span>
+</span></span><span class="line"><span class="cl">    modprobe -r mei
+</span></span><span class="line"><span class="cl">    modprobe -r ipts
+</span></span><span class="line"><span class="cl">    modprobe -r surface_sam_sid#可以防止touchpad无法双指右键
+</span></span><span class="line"><span class="cl">  post<span class="o">)</span>
+</span></span><span class="line"><span class="cl">    modprobe mei
+</span></span><span class="line"><span class="cl">    modprobe ipts
+</span></span><span class="line"><span class="cl">    modprobe surface_sam_sid
+</span></span><span class="line"><span class="cl"><span class="k">esac</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="双系统时间不同步">双系统时间不同步</h3>
 <div class="highlight"><div class="chroma">
@@ -300,9 +300,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo timedatectl set-local-rtc <span class="m">1</span>
-sudo hwclock --systohc --localtime
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo timedatectl set-local-rtc <span class="m">1</span>
+</span></span><span class="line"><span class="cl">sudo hwclock --systohc --localtime
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="disablewhiletyping-not-work">DisableWhileTyping not work</h3>
 <p>参考这个issue<a href="https://github.com/linux-surface/linux-surface/issues/67">Disable touchpad whilst typing does not work on SL3 Intel #67
@@ -317,12 +317,12 @@ sudo hwclock --systohc --localtime
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># Matches both Surface Laptop keyboards as well as type covers.</span>
-<span class="o">[</span>Microsoft Surface Keyboard<span class="o">]</span>
-<span class="nv">MatchName</span><span class="o">=</span>*Microsoft Surface * Keyboard*
-<span class="nv">MatchDMIModalias</span><span class="o">=</span>dmi:*svnMicrosoftCorporation:*
-<span class="nv">AttrKeyboardIntegration</span><span class="o">=</span>internal
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># Matches both Surface Laptop keyboards as well as type covers.</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>Microsoft Surface Keyboard<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">MatchName</span><span class="o">=</span>*Microsoft Surface * Keyboard*
+</span></span><span class="line"><span class="cl"><span class="nv">MatchDMIModalias</span><span class="o">=</span>dmi:*svnMicrosoftCorporation:*
+</span></span><span class="line"><span class="cl"><span class="nv">AttrKeyboardIntegration</span><span class="o">=</span>internal
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>libinput list-devices</code>找到Keyboard的event序号,比如/dev/input/event10<br>
 执行命令<code>libinput quirks list /dev/input/event10</code></p>
@@ -421,7 +421,7 @@ sudo hwclock --systohc --localtime
   <span class="copyright-year">
     &copy; 
     2020 - 
-    2021
+    2022
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
