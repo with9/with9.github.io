@@ -11,3 +11,8 @@
 Teeworlds认识的大佬, 用的是ArchLinux  
 ~~聊天群补番推荐小能手~~
 {{% /admonition %}}
+
+{{% admonition note "照夜白" true %}}
+[Imgaliren](https://imgaliren.com/)  
+ArchLinuxStudio认识的朋友, 用的是ArchLinux  
+{{% /admonition %}}
