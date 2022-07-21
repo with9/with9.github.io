@@ -21,7 +21,7 @@ ssh usename@B -p 4000 #这里用户名要填A服务器的用户名。
 
 ```shell
 qemu-img create -f qcow2 arch.qcow2 20G #建立虚拟磁盘
-qemu-system-x86_64 archlinux.iso - drive file=/home/with/qemu/arch.qcow2  -m 4G  -nic user,hostfwd=tcp::10022-:22 -vnc :0 -smp cores=2,threads=1,sockets=1 -monitor unix:arch-socket,server,nowait 
+qemu-system-x86_64 archlinux.iso -drive file=/home/with/qemu/arch.qcow2  -m 4G  -nic user,hostfwd=tcp::10022-:22 -vnc :0 -smp cores=2,threads=1,sockets=1 -monitor unix:arch-socket,server,nowait 
 # 一些参数说明
 # -monitor: 把控制台转发到一个文件,之后可以利用socat来发送命令
 # -nic    : 网络,并把虚拟机的22端口转发到10022上

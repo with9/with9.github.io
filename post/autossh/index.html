@@ -49,7 +49,7 @@
 <meta itemprop="name" content="通过autossh访问内网,进行远程办公 ">
 <meta itemprop="description" content="简单记录下通过在宿主机建立虚拟机,并利用autossh实现远程办公"><meta itemprop="datePublished" content="2022-07-21T16:33:39+08:00" />
 <meta itemprop="dateModified" content="2022-07-21T16:33:39+08:00" />
-<meta itemprop="wordCount" content="755">
+<meta itemprop="wordCount" content="754">
 <meta itemprop="keywords" content="IT,autossh,QEMU," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="通过autossh访问内网,进行远程办公 "/>
 <meta name="twitter:description" content="简单记录下通过在宿主机建立虚拟机,并利用autossh实现远程办公"/>
@@ -130,7 +130,7 @@
         <div class="post-category">
             <a href="/categories/it/"> IT </a>
             </div>
-          <span class="more-meta"> 755 words </span>
+          <span class="more-meta"> 754 words </span>
           <span class="more-meta"> 2 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
@@ -187,7 +187,7 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">qemu-img create -f qcow2 arch.qcow2 20G <span class="c1">#建立虚拟磁盘</span>
-</span></span><span class="line"><span class="cl">qemu-system-x86_64 archlinux.iso - drive <span class="nv">file</span><span class="o">=</span>/home/with/qemu/arch.qcow2  -m 4G  -nic user,hostfwd<span class="o">=</span>tcp::10022-:22 -vnc :0 -smp <span class="nv">cores</span><span class="o">=</span>2,threads<span class="o">=</span>1,sockets<span class="o">=</span><span class="m">1</span> -monitor unix:arch-socket,server,nowait 
+</span></span><span class="line"><span class="cl">qemu-system-x86_64 archlinux.iso -drive <span class="nv">file</span><span class="o">=</span>/home/with/qemu/arch.qcow2  -m 4G  -nic user,hostfwd<span class="o">=</span>tcp::10022-:22 -vnc :0 -smp <span class="nv">cores</span><span class="o">=</span>2,threads<span class="o">=</span>1,sockets<span class="o">=</span><span class="m">1</span> -monitor unix:arch-socket,server,nowait 
 </span></span><span class="line"><span class="cl"><span class="c1"># 一些参数说明</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># -monitor: 把控制台转发到一个文件,之后可以利用socat来发送命令</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># -nic    : 网络,并把虚拟机的22端口转发到10022上</span>
