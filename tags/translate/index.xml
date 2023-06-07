@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>translate on 生活和睡觉.</title>
+    <link>https://with9.github.io/tags/translate/</link>
+    <description>Recent content in translate on 生活和睡觉.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 03 Jun 2020 17:48:04 +0800</lastBuildDate><atom:link href="https://with9.github.io/tags/translate/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[译]Linux 桌面是如何发展的?</title>
+      <link>https://with9.github.io/post/how-linux-desktop-grown/</link>
+      <pubDate>Wed, 03 Jun 2020 17:48:04 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/how-linux-desktop-grown/</guid>
+      <description>翻译自opensource的一篇文章,作者是: Jim Hall ,非常有趣,介绍了Linux桌面的发展历史.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on 生活和睡觉.</title>
+    <link>https://with9.github.io/tags/linux/</link>
+    <description>Recent content in Linux on 生活和睡觉.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 14 Jul 2021 03:03:03 +0800</lastBuildDate><atom:link href="https://with9.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>纯文本写作，随写随引</title>
+      <link>https://with9.github.io/post/zotero-cite/</link>
+      <pubDate>Wed, 14 Jul 2021 03:03:03 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/zotero-cite/</guid>
+      <description>介绍一下如何利用zotero及其插件在纯文本写作下随写随引</description>
+    </item>
+    
+    <item>
+      <title>Surface-Laptop3 安装Archlinux折腾小记</title>
+      <link>https://with9.github.io/post/sl3-arch/</link>
+      <pubDate>Fri, 19 Jun 2020 15:34:00 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/sl3-arch/</guid>
+      <description>新的surface 到了，迫不及待的想着装上Arch，遇到了很多小问题，自己照着github上一个linux-surface项目勉强装上，现在作一个小记录。</description>
+    </item>
+    
+    <item>
+      <title>[译]Linux 桌面是如何发展的?</title>
+      <link>https://with9.github.io/post/how-linux-desktop-grown/</link>
+      <pubDate>Wed, 03 Jun 2020 17:48:04 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/how-linux-desktop-grown/</guid>
+      <description>翻译自opensource的一篇文章,作者是: Jim Hall ,非常有趣,介绍了Linux桌面的发展历史.</description>
+    </item>
+    
+    <item>
+      <title>Archlinux迁移到LVM</title>
+      <link>https://with9.github.io/post/hello/</link>
+      <pubDate>Thu, 16 Apr 2020 09:10:18 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/hello/</guid>
+      <description>由于一开始各种诡异的折腾电脑方式,导致我系统的根目录在最后一个分区,并且快满了,无法扩容,因此就打算移动到前面的位置,并且直接迁移到lvm,</description>
+    </item>
+    
+    <item>
+      <title>记一次arch升级图标滚挂的修复经历</title>
+      <link>https://with9.github.io/post/arch-icon-repair/</link>
+      <pubDate>Sun, 19 May 2019 16:08:21 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/arch-icon-repair/</guid>
+      <description>记录一下自己问题寻找和解决方法的过程</description>
+    </item>
+    
+    <item>
+      <title>linux下midi键盘的使用问题</title>
+      <link>https://with9.github.io/post/midi-config/</link>
+      <pubDate>Mon, 01 Oct 2018 15:50:28 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/midi-config/</guid>
+      <description>简单的记录一下里midi键盘的使用</description>
+    </item>
+    
+  </channel>
+</rss>

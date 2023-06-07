@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>通过polybar控制多媒体 - 生活和睡觉.</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="with" /><meta name="description" content="记录一次简单定制化polybar的折腾记录" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.111.3 with theme even" />
+
+
+<link rel="canonical" href="https://with9.github.io/post/polybar_music/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="https://with9.github.io/sass/main.min.59fa635b67756aca024504fc61290d3c91e6332e773ecac116201a132e599ac0.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="通过polybar控制多媒体" />
+<meta property="og:description" content="记录一次简单定制化polybar的折腾记录" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://with9.github.io/post/polybar_music/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-12-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-12-20T00:00:00+00:00" />
+<meta itemprop="name" content="通过polybar控制多媒体">
+<meta itemprop="description" content="记录一次简单定制化polybar的折腾记录"><meta itemprop="datePublished" content="2021-12-16T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-12-20T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1521">
+<meta itemprop="keywords" content="guide,records," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="通过polybar控制多媒体"/>
+<meta name="twitter:description" content="记录一次简单定制化polybar的折腾记录"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">With&#39;s Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a><a href="/friends/">
+        <li class="mobile-menu-item">Friends</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">With&#39;s Blog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/friends/">Friends</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">通过polybar控制多媒体</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-12-16 </span>
+        <div class="post-category">
+            <a href="/categories/it/"> IT </a>
+            </div>
+          <span class="more-meta"> 1521 words </span>
+          <span class="more-meta"> 4 mins read </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#polybar简单介绍">polybar简单介绍</a></li>
+    <li><a href="#初步尝试">初步尝试</a></li>
+    <li><a href="#从kde-connect得到的灵感">从KDE connect得到的灵感</a></li>
+    <li><a href="#补充">补充</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+        <iframe style="max-width: 100%"
+      class="music163"
+      frameborder="no"
+      border="0"
+      marginwidth="0"
+      marginheight="0"
+      width="330"
+      height="86"
+      src="//music.163.com/outchain/player?type=2&id=28918133&auto=0&height=66">
+    </iframe>
+<h2 id="polybar简单介绍">polybar简单介绍</h2>
+<p><a href="https://polybar.github.io/">polybar</a>是一个可以简单进行自定义的状态栏工具,通过各模块进行组合,可定制性非常强.这是我东拼西凑的一个样子😁</p>
+<p><img src="/img/polybar_music/Screenshot_20211216_205158.png" alt="Screenshot_20211216_205158"></p>
+<p><img src="/img/polybar_music/image-20211216205419967.png" alt="image-20211216205419967"></p>
+<p><a href="https://www.pixiv.net/artworks/89075761">桌面壁纸</a></p>
+<p>今天读polybar wiki的时候,发现有一个模块是script,可以自定义并执行一些脚本,好像很好玩,官方仓库也有很多的<a href="https://github.com/polybar/polybar-scripts">用户贡献的script例子</a>,其中有很多是和音乐有关的.</p>
+<p><img src="/img/polybar_music/image-20211216205720202.png" alt="image-20211216205720202"></p>
+<h2 id="初步尝试">初步尝试</h2>
+<p>但是以spotify为主,对我用处不是很大,就想自己写一个用来显示网易云正在播放的音乐的script模块,我发现<code>wmctrl</code>可以获取到窗口的标题,而网易云音乐的标题正好就是当前播放的曲目.</p>
+<p><img src="/img/polybar_music/image-20211216210039834.png" alt="image-20211216210039834"></p>
+<p>通过<code>grep</code>是把这行获取到了,但是前面有很多无用信息,一开始尝试<code>cut</code>,但效果很奇怪,网上搜索一番,有一个关于如何用<code>wmctrl</code>获取标题的<a href="https://unix.stackexchange.com/questions/342404/getting-just-the-application-name-from-wmctrl-l">讨论</a>,各种很奇怪的方式😂,为什么<code>wmctrl</code>不可以提供一个格式化输出的命令呢</p>
+<p><img src="/img/polybar_music/image-20211216210814223.png" alt="image-20211216210814223"></p>
+<p>一番尝试发现这条命令效果最好,copy过来(</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wmctrl -l <span class="p">|</span> sed <span class="s1">&#39;s/^[^ ]* *[^ ]* *[^ ]* //&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">wmctrl -l <span class="p">|</span> sed <span class="s1">&#39;s/^[^ ]* *[^ ]* *[^ ]* //&#39;</span> <span class="p">|</span>grep <span class="s1">&#39;Cloud Music$&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">恋ノ蟲 - 花たん — Cloud Music <span class="c1">#成功获取标题名</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>接下来就是简单的模仿script模板了</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="o">[</span>module/mymusic<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">type</span><span class="o">=</span>custom/script
+</span></span><span class="line"><span class="cl"><span class="nv">exec</span><span class="o">=</span>bash -c <span class="s2">&#34;wmctrl -l | sed &#39;s/^[^ ]* *[^ ]* *[^ ]* //&#39; |grep &#39;Cloud Music</span>$<span class="s2">&#39;|sed &#39;s/— Cloud Music//&#39;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">format</span> <span class="o">=</span> &lt;label&gt;
+</span></span><span class="line"><span class="cl"><span class="nv">label</span> <span class="o">=</span> %output:0:40:...%
+</span></span><span class="line"><span class="cl">format-foreground<span class="o">=</span> <span class="c1">#3399ff</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>效果还行,可以显示播放的曲目,但是除此之外就什么都做不了了(,可以加上点击动作,跳转到网易云音乐窗口什么的</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">.........
+</span></span><span class="line"><span class="cl">click-left<span class="o">=</span>i3-msg -t <span class="nb">command</span> <span class="o">[</span><span class="s1">&#39;class=netease-cloud-music&#39;</span><span class="o">]</span> focus
+</span></span><span class="line"><span class="cl">click-right<span class="o">=</span>....
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="从kde-connect得到的灵感">从KDE connect得到的灵感</h2>
+<p><a href="https://userbase.kde.org/KDEConnect/zh-hans">KDE connect</a>是一个可以实现手机和电脑互相接受通知的一个KDE工具,只需要在应用商店安装好并和电脑连在同一个网络的时候就可以进行消息互通,文件共传等.而且手机上还有个多媒体控制,大部分情况下可以显示现在正在播放的音乐,进行一些常规多媒体操作,包括切歌,暂停等. <img src="/img/polybar_music/Screenshot_2021-12-16-21-20-34-120_org.kde.kdeconnect_tp.jpg" alt="Screenshot_2021-12-16-21-20-34-120_org.kde.kdeconnect_tp"></p>
+<p>而且不只是一两个程序,很多的软件播放音乐,甚至firefox观看视频,这里都会显示出来,说明背后应该有一套统一的协议.那我们如果了解kde connect是如何工作的,不就可以把这个模块完善的更棒吗?</p>
+<p>又是一番搜索,看到ubuntu论坛的这个<a href="https://askubuntu.com/questions/1046143/media-players-kde-connect-multimedia-control">问题</a>,题主本意是想知道如何让mpv播放的音乐被kde connect识别,第一个回答就很有帮助</p>
+<p><img src="/img/polybar_music/image-20211216212629748.png" alt="image-20211216212629748"></p>
+<p>原来只要是走MPRIS协议的程序就可以被KDE connect识别,<a href="https://specifications.freedesktop.org/mpris-spec/latest/">MPRIS</a>希望提供一套统一的API接口来管理所有的媒体播放器. <a href="https://wiki.archlinux.org/title/MPRIS">ArchlinuxWiki</a>上介绍了一些与MPRIS进行通讯的工具,一眼看中了<a href="https://github.com/altdesktop/playerctl">playerctrl</a>,主要感觉他的操作简单直接.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">~➜ playerctl metadata --format <span class="s1">&#39;{{artist}}-{{title}}---{{album}}&#39;</span>
+</span></span><span class="line"><span class="cl">葉月ゆら-宵闇花火---宵闇恋想奇譚
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#一次只会显示一个程序,通过-p参数可以指定显示的程序</span>
+</span></span><span class="line"><span class="cl">playerctl -p netease-cloud-music,mpv,%any metadata <span class="c1">#首先选择网易云,没有再选择mpv,还是没有再选择其他</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>是不是命令非常简单直接,改进一下这是最后的版本.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="o">[</span>module/mymusic<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">type</span><span class="o">=</span>custom/script
+</span></span><span class="line"><span class="cl">exec-if<span class="o">=</span>playerctl status <span class="p">|</span>egrep <span class="s1">&#39;Playing|Paused&#39;</span> <span class="c1">#判断有没有媒体正在播放</span>
+</span></span><span class="line"><span class="cl"><span class="nv">exec</span><span class="o">=</span>bash -c <span class="s2">&#34;playerctl -p netease-cloud-music,mpv,%any metadata --format &#39;{{artist}}-{{title}}--{{album}}&#39;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">format</span> <span class="o">=</span>  &lt;label&gt;
+</span></span><span class="line"><span class="cl"><span class="nv">label</span> <span class="o">=</span> %output:0:40:...%
+</span></span><span class="line"><span class="cl">click-left<span class="o">=</span>i3-msg -t <span class="nb">command</span> workspace <span class="m">8</span>
+</span></span><span class="line"><span class="cl">click-right<span class="o">=</span>playerctl -p netease-cloud-music,mpv,%any play-pause#右键暂停
+</span></span><span class="line"><span class="cl">scroll-up<span class="o">=</span>playerctl -p netease-cloud-music,mpv,%any previous#上划上一首
+</span></span><span class="line"><span class="cl">scroll-down<span class="o">=</span>playerctl -p netease-cloud-music,mpv,%any next#下滑下一首
+</span></span><span class="line"><span class="cl">format-foreground<span class="o">=</span> <span class="c1">#3399ff</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>最后的效果是这样的<img src="/img/polybar_music/image-20211216215156056.png" alt="image-20211216215156056"></p>
+<h2 id="补充">补充</h2>
+<p>用python脚本实现了点击跳转到播放工作区的功能,如果已经在这个工作区的时候就执行<code>back_and_forth</code>跳回到之前工作区,<code>i3-msg -t get_tree</code>返回的数据确实有点乱&hellip;.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="ch">#!/usr/bin/python</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#author :  with &lt;dc198424601@outlook.com&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">json</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">re</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">get_windows</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#获得一个字典,键是工作区名字,值是一个列表,里面是程序的classname</span>
+</span></span><span class="line"><span class="cl">    <span class="n">classPattern</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&#34;class&#39;: &#39;(.*?)&#39;,&#34;</span><span class="p">)</span><span class="c1">#获取class名称的正则</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tree_dict</span><span class="o">=</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">p</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="s1">&#39;i3-msg -t get_tree&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">treeData</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">workspace</span> <span class="ow">in</span> <span class="n">treeData</span><span class="p">[</span><span class="s1">&#39;nodes&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;nodes&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;nodes&#39;</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">tree_dict</span><span class="p">[</span><span class="n">workspace</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]]</span><span class="o">=</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">windows</span><span class="o">=</span><span class="n">classPattern</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">workspace</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">windows</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">tree_dict</span><span class="p">[</span><span class="n">workspace</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">tree_dict</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">get_current_workspace</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#返回当前工作区的名字</span>
+</span></span><span class="line"><span class="cl">    <span class="n">p</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="s1">&#39;i3-msg -t get_workspaces&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">treeData</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">treeData</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">i</span><span class="p">[</span><span class="s1">&#39;focused&#39;</span><span class="p">]</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">i</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">current_player</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="s2">&#34;playerctl -p netease-cloud-music,mpv,</span><span class="si">%a</span><span class="s2">ny metadata|cut -d&#39; &#39; -f1|uniq&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">current_player</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="n">get_windows</span><span class="p">()[</span><span class="n">get_current_workspace</span><span class="p">()]):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&#34;i3-msg -t command [class=</span><span class="si">{}</span><span class="s2">] focus&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">current_player</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&#34;i3-msg -t command workspace back_and_forth&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>参考链接</p>
+<p>[1]:<a href="https://polybar.github.io">https://polybar.github.io/</a></p>
+<p>[2]:<a href="https://www.pixiv.net/artworks/89075761">https://www.pixiv.net/artworks/89075761</a></p>
+<p>[3]:<a href="https://github.com/polybar/polybar-scripts">https://github.com/polybar/polybar-scripts</a></p>
+<p>[4]:<a href="https://unix.stackexchange.com/questions/342404/getting-just-the-application-name-from-wmctrl-l">https://unix.stackexchange.com/questions/342404/getting-just-the-application-name-from-wmctrl-l</a></p>
+<p>[5]:<a href="https://userbase.kde.org/KDEConnect/zh-hans">https://userbase.kde.org/KDEConnect/zh-hans</a></p>
+<p>[6]:<a href="https://askubuntu.com/questions/1046143/media-players-kde-connect-multimedia-control">https://askubuntu.com/questions/1046143/media-players-kde-connect-multimedia-control</a></p>
+<p>[7]:<a href="https://specifications.freedesktop.org/mpris-spec/latest/">https://specifications.freedesktop.org/mpris-spec/latest/</a></p>
+<p>[8]:<a href="https://wiki.archlinux.org/title/MPRIS">https://wiki.archlinux.org/title/MPRIS</a></p>
+<p>[9]:<a href="https://github.com/altdesktop/playerctl">https://github.com/altdesktop/playerctl</a></p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">with</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2021-12-20
+        
+    </span>
+  </p>
+  <p class="copyright-item">
+      <span class="item-title">Markdown</span>
+      <span class="item-content"><a class="link-to-markdown" href="https://with9.github.io/post/polybar_music/index.md" target="_blank">The Markdown version »</a></span>
+    </p>
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/guide/">guide</a>
+          <a href="/tags/records/">records</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/kiritan/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Ai歌姬东北切蒲英~</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/oneko/">
+            <span class="next-text nav-default">oneko 一个小桌宠的折腾记录</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var gitalk = new Gitalk({
+        id: '2021-12-16 00:00:00 \u002b0000 UTC',
+        title: '通过polybar控制多媒体',
+        clientID: '27bf7867e6bf8c9bd64d',
+        clientSecret: '9892a31bd3d6e5ca6e0f255ae3c4b2c761b33595',
+        repo: 'with9.github.io',
+        owner: 'with9',
+        admin: ['with9'],
+        body: decodeURI(location.href)
+      });
+      gitalk.render('gitalk-container');
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:dc198424601@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/with9" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/u/2582158737" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="https://www.zhihu.com/people/yu-yuan-86-34" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://space.bilibili.com/9063101" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://with9.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> site pv: <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> site uv: <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2020 - 
+    2023
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">with</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="https://with9.github.io/js/main.4d21c1cefdf1cd0b77ef59bab2d1bbe3112fc9d6cc04710bb1f0b1fd7b891f11.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

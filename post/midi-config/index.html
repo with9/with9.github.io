@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>linux下midi键盘的使用问题 - 生活和睡觉.</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="old with" /><meta name="description" content="简单的记录一下里midi键盘的使用" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.111.3 with theme even" />
+
+
+<link rel="canonical" href="https://with9.github.io/post/midi-config/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="https://with9.github.io/sass/main.min.59fa635b67756aca024504fc61290d3c91e6332e773ecac116201a132e599ac0.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="linux下midi键盘的使用问题" />
+<meta property="og:description" content="简单的记录一下里midi键盘的使用" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://with9.github.io/post/midi-config/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-10-01T15:50:28+08:00" />
+<meta property="article:modified_time" content="2018-10-01T15:50:28+08:00" />
+<meta itemprop="name" content="linux下midi键盘的使用问题">
+<meta itemprop="description" content="简单的记录一下里midi键盘的使用"><meta itemprop="datePublished" content="2018-10-01T15:50:28+08:00" />
+<meta itemprop="dateModified" content="2018-10-01T15:50:28+08:00" />
+<meta itemprop="wordCount" content="722">
+<meta itemprop="keywords" content="records,midi,music,Linux," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="linux下midi键盘的使用问题"/>
+<meta name="twitter:description" content="简单的记录一下里midi键盘的使用"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">With&#39;s Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a><a href="/friends/">
+        <li class="mobile-menu-item">Friends</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">With&#39;s Blog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/friends/">Friends</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">linux下midi键盘的使用问题</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-10-01 </span>
+        <div class="post-category">
+            <a href="/categories/music/"> Music </a>
+            <a href="/categories/it/"> IT </a>
+            </div>
+          <span class="more-meta"> 722 words </span>
+          <span class="more-meta"> 2 mins read </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents"></nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>最近打算把封印了快一年的midi键盘拿出来练下,拿出来才发现,我的系统换成了debian,还不知道要怎么链接midi键盘,果断网上搜索 关键词midi键盘 linux系统,,果然没有想freepiano这样子的傻瓜软件&hellip;.结果看到一些教程,但是都不详细,就是说qsynth+jack+timidity+vmpk这几个配合起来,先不管了,首先先apt安装这些,发现大部分都是预装上的&hellip;</p>
+<p>下面讲一下我折腾了快两天得出来的经验教程,首先我们打开qjackctl软件,应该是一个控制音频接口的软件吧,一些教程讲这里直接点start,再打开vmpk就可以弹琴了,这是不行的,(我试过了,jack会报错..)</p>
+<p>我们先什都不用管,接着打开vmpk,编辑里面链接,midi输入为我们的midi键盘,然后上面的允许midi thru转发到midi输入点上钩钩,然后确认</p>
+<p><img src="/img/midi/1.png" alt=" "></p>
+<p>接着我们再回到qjckctl,点击connect,到标签的ALSA下面,将midi键盘的输入接到vmpk的输出(<strong>一定要在qsynth打开前接入,要不然会无法链接过去,原理不太清楚,我被这个坑了好久</strong>).</p>
+<p><img src="/img/midi/2.png" alt=" "></p>
+<p>接着打开qsynth,点击setup,soundfonts(音源)打开我们下载好的音源,我的是freepats上面的kawai钢琴音源(要求sf2格式的,诸如sfz这些格式好像不可以),</p>
+<p>然后保存设置,接着回到qjackctl,点击start,然后点击connect,标签切换到Audio,将fluidsynth链接到system的输入,再切换到ALSA,发现右边的输入接口多了一个fluidsynth,将它于vmpk的输出接口连在一起,</p>
+<p><img src="/img/midi/4.png" alt=" "></p>
+<p><img src="/img/midi/5.png" alt=" "></p>
+<p>大功告成,<del>可以开始练习啦</del>.附全家福(雾)</p>
+<p><img src="/img/midi/6.png" alt=" "></p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">old with</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2018-10-01
+        
+    </span>
+  </p>
+  <p class="copyright-item">
+      <span class="item-title">Markdown</span>
+      <span class="item-content"><a class="link-to-markdown" href="https://with9.github.io/post/midi-config/index.md" target="_blank">The Markdown version »</a></span>
+    </p>
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/records/">records</a>
+          <a href="/tags/midi/">midi</a>
+          <a href="/tags/music/">music</a>
+          <a href="/tags/linux/">Linux</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/arch-icon-repair/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">记一次arch升级图标滚挂的修复经历</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var gitalk = new Gitalk({
+        id: '2018-10-01 15:50:28 \u002b0800 CST',
+        title: 'linux下midi键盘的使用问题',
+        clientID: '27bf7867e6bf8c9bd64d',
+        clientSecret: '9892a31bd3d6e5ca6e0f255ae3c4b2c761b33595',
+        repo: 'with9.github.io',
+        owner: 'with9',
+        admin: ['with9'],
+        body: decodeURI(location.href)
+      });
+      gitalk.render('gitalk-container');
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:dc198424601@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/with9" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/u/2582158737" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="https://www.zhihu.com/people/yu-yuan-86-34" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://space.bilibili.com/9063101" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://with9.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> site pv: <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> site uv: <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2020 - 
+    2023
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">with</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="https://with9.github.io/js/main.4d21c1cefdf1cd0b77ef59bab2d1bbe3112fc9d6cc04710bb1f0b1fd7b891f11.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
