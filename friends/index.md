@@ -19,5 +19,6 @@ ArchLinuxStudio认识的朋友, 用的是ArchLinux
 
 {{% admonition note "FSpark" true %}}
 [FSpark](https://fspark.me)  
-来串门的朋友, 发现兴趣点还蛮相似的
+来串门的朋友, 发现兴趣点还蛮相似的, 折腾过きりたん, 也喜欢夏祭り  
+大概率应该也是东方厨
 {{% /admonition %}}
