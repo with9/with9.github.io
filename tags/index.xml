@@ -6,8 +6,29 @@
     <description>Recent content in Tags on 生活和睡觉.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 06 Aug 2023 16:33:39 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 13 Mar 2024 20:33:39 +0800</lastBuildDate>
     <atom:link href="https://with9.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IT</title>
+      <link>https://with9.github.io/tags/it/</link>
+      <pubDate>Wed, 13 Mar 2024 20:33:39 +0800</pubDate>
+      <guid>https://with9.github.io/tags/it/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://with9.github.io/tags/linux/</link>
+      <pubDate>Wed, 13 Mar 2024 20:33:39 +0800</pubDate>
+      <guid>https://with9.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wayland</title>
+      <link>https://with9.github.io/tags/wayland/</link>
+      <pubDate>Wed, 13 Mar 2024 20:33:39 +0800</pubDate>
+      <guid>https://with9.github.io/tags/wayland/</guid>
+      <description></description>
+    </item>
     <item>
       <title>德彪西</title>
       <link>https://with9.github.io/tags/%E5%BE%B7%E5%BD%AA%E8%A5%BF/</link>
@@ -30,17 +51,10 @@
       <description></description>
     </item>
     <item>
-      <title>autossh</title>
+      <title>Autossh</title>
       <link>https://with9.github.io/tags/autossh/</link>
       <pubDate>Thu, 21 Jul 2022 16:33:39 +0800</pubDate>
       <guid>https://with9.github.io/tags/autossh/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>IT</title>
-      <link>https://with9.github.io/tags/it/</link>
-      <pubDate>Thu, 21 Jul 2022 16:33:39 +0800</pubDate>
-      <guid>https://with9.github.io/tags/it/</guid>
       <description></description>
     </item>
     <item>
@@ -51,14 +65,14 @@
       <description></description>
     </item>
     <item>
-      <title>guide</title>
+      <title>Guide</title>
       <link>https://with9.github.io/tags/guide/</link>
       <pubDate>Wed, 13 Apr 2022 00:00:00 +0000</pubDate>
       <guid>https://with9.github.io/tags/guide/</guid>
       <description></description>
     </item>
     <item>
-      <title>records</title>
+      <title>Records</title>
       <link>https://with9.github.io/tags/records/</link>
       <pubDate>Wed, 13 Apr 2022 00:00:00 +0000</pubDate>
       <guid>https://with9.github.io/tags/records/</guid>
@@ -72,35 +86,28 @@
       <description></description>
     </item>
     <item>
-      <title>Linux</title>
-      <link>https://with9.github.io/tags/linux/</link>
-      <pubDate>Wed, 14 Jul 2021 03:03:03 +0800</pubDate>
-      <guid>https://with9.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pandoc</title>
+      <title>Pandoc</title>
       <link>https://with9.github.io/tags/pandoc/</link>
       <pubDate>Wed, 14 Jul 2021 03:03:03 +0800</pubDate>
       <guid>https://with9.github.io/tags/pandoc/</guid>
       <description></description>
     </item>
     <item>
-      <title>zotero</title>
+      <title>Zotero</title>
       <link>https://with9.github.io/tags/zotero/</link>
       <pubDate>Wed, 14 Jul 2021 03:03:03 +0800</pubDate>
       <guid>https://with9.github.io/tags/zotero/</guid>
       <description></description>
     </item>
     <item>
-      <title>translate</title>
+      <title>Translate</title>
       <link>https://with9.github.io/tags/translate/</link>
       <pubDate>Wed, 03 Jun 2020 17:48:04 +0800</pubDate>
       <guid>https://with9.github.io/tags/translate/</guid>
       <description></description>
     </item>
     <item>
-      <title>novel</title>
+      <title>Novel</title>
       <link>https://with9.github.io/tags/novel/</link>
       <pubDate>Fri, 17 Apr 2020 01:38:15 +0800</pubDate>
       <guid>https://with9.github.io/tags/novel/</guid>
@@ -121,14 +128,14 @@
       <description></description>
     </item>
     <item>
-      <title>midi</title>
+      <title>Midi</title>
       <link>https://with9.github.io/tags/midi/</link>
       <pubDate>Mon, 01 Oct 2018 15:50:28 +0800</pubDate>
       <guid>https://with9.github.io/tags/midi/</guid>
       <description></description>
     </item>
     <item>
-      <title>music</title>
+      <title>Music</title>
       <link>https://with9.github.io/tags/music/</link>
       <pubDate>Mon, 01 Oct 2018 15:50:28 +0800</pubDate>
       <guid>https://with9.github.io/tags/music/</guid>
