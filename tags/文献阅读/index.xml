@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>文献阅读 on 生活和睡觉.</title>
+    <link>https://with9.github.io/tags/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/</link>
+    <description>Recent content in 文献阅读 on 生活和睡觉.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 14 Mar 2024 11:33:39 +0800</lastBuildDate>
+    <atom:link href="https://with9.github.io/tags/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>文献阅读: 三倍体栽培香蕉的起源与进化</title>
+      <link>https://with9.github.io/post/triploid-banana/</link>
+      <pubDate>Thu, 14 Mar 2024 11:33:39 +0800</pubDate>
+      <guid>https://with9.github.io/post/triploid-banana/</guid>
+      <description>作者组装了两个三倍体品种香蕉(香芽蕉,大麦克香蕉)的基因组, 分析了三套亚基因组的来源, 抗病基因在其中的情况, 同时鉴定了香蕉果实成熟的关键基因, 最后简单探究了下这三套亚基因组的功能分化情况.</description>
+    </item>
+  </channel>
+</rss>

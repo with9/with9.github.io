@@ -49,7 +49,7 @@
 <meta itemprop="name" content="hyprland下实现用wofi切换窗口">
 <meta itemprop="description" content="hyprland大法好"><meta itemprop="datePublished" content="2024-03-13T20:33:39+08:00" />
 <meta itemprop="dateModified" content="2024-03-13T20:33:39+08:00" />
-<meta itemprop="wordCount" content="1611">
+<meta itemprop="wordCount" content="1690">
 <meta itemprop="keywords" content="IT,Linux,wayland," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="hyprland下实现用wofi切换窗口"/>
 <meta name="twitter:description" content="hyprland大法好"/>
 
@@ -129,7 +129,7 @@
         <div class="post-category">
             <a href="/categories/it/"> IT </a>
             </div>
-          <span class="more-meta"> 1611 words </span>
+          <span class="more-meta"> 1690 words </span>
           <span class="more-meta"> 4 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
@@ -149,7 +149,7 @@
     <div class="post-content">
       <h2 id="wofi介绍">wofi介绍</h2>
 <p><a href="https://hg.sr.ht/~scoopta/wofi">wofi</a>其实就是wayland下的<a href="https://github.com/davatorium/rofi">rofi</a>替代品, 对咱来说, rofi主要是一个窗口管理器和应用程序启动器, 可以轻松的切换程序和启动新的程序, 当然它还含有很多其他模块, 网上也有很多大佬自己编写的模块(<a href="https://github.com/marvinkreis/rofi-file-browser-extended">文件浏览</a>,<a href="https://github.com/blackhole89/rofi-tab-switcher">网页切换</a>,<a href="https://github.com/danrog303/rofi-screenshot">截图</a>等等), 最最方便的一点是可以把多个模块加在一起(-combi).</p>
-<p>wayland下的很多工具都追求只做好一件事情, 最经典的就是wayland下的截图了(用slurp选取位置, 返回给grim进行截图, 最后再用swappy进行后期标注), wofi相比于rofi来说轻量了许多, 自带模块只有run,drun,dmenu三者, 没法做到像rofi这样方便的同时切换程序和启动新程序, 看了下文档, 似乎是因为wayland下面无法切换窗口, 必须通过窗管自己来实现, 并且给了一个很离谱的sway下的例子.</p>
+<p>wayland下的很多工具都追求只做好一件事情, 最经典的就是wayland下的截图了(用slurp选取位置, 返回给grim进行截图, 最后再用swappy进行后期标注), wofi相比于rofi来说轻量了许多, 自带模块只有run,drun,dmenu三者, 虽然也可以一次运行多个模块(-show drun,run,demnu), 但是没法做到像rofi这样方便的切换程序, 看了下文档, 似乎是因为wofi在wayland下面无法切换窗口, 必须通过窗管自己来实现, 并且给了一个很离谱的sway下的示例.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -180,7 +180,7 @@
 </span></span><span class="line"><span class="cl">       <span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>稍微看了下,前面那些吓人的jq语法应该只是为了获取窗口的id和name, 然后返回给wofi的动态菜单(demnu), 用户选择好以后执行对应的命令切换窗口.</p>
+</div><p>乍一看有点吓人,其实前面那些吓人的jq语法应该只是为了获取窗口的id和name, 然后返回给wofi的动态菜单(demnu), 用户选择好以后执行对应的命令切换窗口.</p>
 <h2 id="hyprland下wofi-窗口切换的实现">hyprland下wofi 窗口切换的实现</h2>
 <p><a href="https://github.com/hyprwm/Hyprland">hyprland</a>是一个wayland下的平铺式窗口管理器, 目前使用体验很棒, 文档齐全, 开发者对新功能的issue也很上心(不像隔壁sway开发者, 一个禁止缩放<a href="https://github.com/swaywm/sway/issues/2966">xwayland的issue</a>开了五年多了, 更不要说什么<a href="https://github.com/swaywm/sway/issues/5998">圆角模糊</a>了). hyprland下可以<code>hyprctl clients</code>获取所有窗口信息, 加上<code>-j</code>还可以直接返回json格式, 比i3和sway的tree要简单不少.</p>
 <div class="highlight"><div class="chroma">
@@ -390,7 +390,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p><img src="/img/hyprland-wofi/01.png" alt=""></p>
-<p>一开始用着蛮顺利的, 直到运行obs等程序, 一退出就会崩图形界面, 调试发现是上面脚本写的有问题, <code>win_addr</code>在启动某些程序下会变成它所有的输出内容而不是空值, 于是<code>hyprctl dispatch focuswindow address</code>就会导致hyprland直接崩溃, 幸运的是调试发现传不存在或者不合规的字符串并不会引起崩溃, 只有传好几行的数据时才会, 那就好办了, 不然还要写地址匹配的正则, 想想就头疼. 这是最后的改进版, 顺便抄写了一个<a href="https://github.com/7KIR7/dots/blob/main/wofi/style.css">主题</a>, 也完善了下输出的信息.</p>
+<p>一开始用着蛮顺利的, 直到有一天咱想显摆一下, 遂用obs录了个屏, 运行很顺利, 但是一退出就会崩图形界面, 可以稳定复现, 除了obs外, DDNet下也存在同样问题, 调查发现是上面脚本写的有大问题, <code>win_addr</code>在启动某些程序下会变成它所有的输出内容而不是空值, 于是<code>focuswindow address</code>就会导致hyprland直接崩溃, 幸运的是调试发现传不存在的地址或者不合规的字符串并不会引起崩溃, 只有传好几行的数据时才会, 那就好办了, 不然还要写地址匹配的正则, 想想就头疼. 于是这是最后的改进版, 美化抄了一个<a href="https://github.com/7KIR7/dots/blob/main/wofi/style.css">主题</a>, 顺便也完善了下输出的信息.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -443,7 +443,11 @@
           <a href="/tags/wayland/">wayland</a>
           </div>
       <nav class="post-nav">
-        
+        <a class="prev" href="/post/triploid-banana/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">文献阅读: 三倍体栽培香蕉的起源与进化</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
         <a class="next" href="/post/lily-chouchou/">
             <span class="next-text nav-default">关于莉莉周的一切 </span>
             <span class="next-text nav-mobile">Next</span>

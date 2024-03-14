@@ -3,7 +3,7 @@
 
 [wofi](https://hg.sr.ht/~scoopta/wofi)其实就是wayland下的[rofi](https://github.com/davatorium/rofi)替代品, 对咱来说, rofi主要是一个窗口管理器和应用程序启动器, 可以轻松的切换程序和启动新的程序, 当然它还含有很多其他模块, 网上也有很多大佬自己编写的模块([文件浏览](https://github.com/marvinkreis/rofi-file-browser-extended),[网页切换](https://github.com/blackhole89/rofi-tab-switcher),[截图](https://github.com/danrog303/rofi-screenshot)等等), 最最方便的一点是可以把多个模块加在一起(-combi). 
 
-wayland下的很多工具都追求只做好一件事情, 最经典的就是wayland下的截图了(用slurp选取位置, 返回给grim进行截图, 最后再用swappy进行后期标注), wofi相比于rofi来说轻量了许多, 自带模块只有run,drun,dmenu三者, 没法做到像rofi这样方便的同时切换程序和启动新程序, 看了下文档, 似乎是因为wayland下面无法切换窗口, 必须通过窗管自己来实现, 并且给了一个很离谱的sway下的例子. 
+wayland下的很多工具都追求只做好一件事情, 最经典的就是wayland下的截图了(用slurp选取位置, 返回给grim进行截图, 最后再用swappy进行后期标注), wofi相比于rofi来说轻量了许多, 自带模块只有run,drun,dmenu三者, 虽然也可以一次运行多个模块(-show drun,run,demnu), 但是没法做到像rofi这样方便的切换程序, 看了下文档, 似乎是因为wofi在wayland下面无法切换窗口, 必须通过窗管自己来实现, 并且给了一个很离谱的sway下的示例. 
 ```bash
 WINDOW SWITCHER
        Wofi  does  not  have the ability to do window switching on its own as there is no way to do
@@ -19,7 +19,7 @@ WINDOW SWITCHER
        }
 ```
 
-稍微看了下,前面那些吓人的jq语法应该只是为了获取窗口的id和name, 然后返回给wofi的动态菜单(demnu), 用户选择好以后执行对应的命令切换窗口.
+乍一看有点吓人,其实前面那些吓人的jq语法应该只是为了获取窗口的id和name, 然后返回给wofi的动态菜单(demnu), 用户选择好以后执行对应的命令切换窗口. 
 
 ## hyprland下wofi 窗口切换的实现
 
@@ -133,7 +133,7 @@ end
 
 ![](/img/hyprland-wofi/01.png)
 
-一开始用着蛮顺利的, 直到运行obs等程序, 一退出就会崩图形界面, 调试发现是上面脚本写的有问题, `win_addr`在启动某些程序下会变成它所有的输出内容而不是空值, 于是`hyprctl dispatch focuswindow address`就会导致hyprland直接崩溃, 幸运的是调试发现传不存在或者不合规的字符串并不会引起崩溃, 只有传好几行的数据时才会, 那就好办了, 不然还要写地址匹配的正则, 想想就头疼. 这是最后的改进版, 顺便抄写了一个[主题](https://github.com/7KIR7/dots/blob/main/wofi/style.css), 也完善了下输出的信息.
+一开始用着蛮顺利的, 直到有一天咱想显摆一下, 遂用obs录了个屏, 运行很顺利, 但是一退出就会崩图形界面, 可以稳定复现, 除了obs外, DDNet下也存在同样问题, 调查发现是上面脚本写的有大问题, `win_addr`在启动某些程序下会变成它所有的输出内容而不是空值, 于是`focuswindow address`就会导致hyprland直接崩溃, 幸运的是调试发现传不存在的地址或者不合规的字符串并不会引起崩溃, 只有传好几行的数据时才会, 那就好办了, 不然还要写地址匹配的正则, 想想就头疼. 于是这是最后的改进版, 美化抄了一个[主题](https://github.com/7KIR7/dots/blob/main/wofi/style.css), 顺便也完善了下输出的信息.
 
 ```bash
 # !/usr/bin/fish
