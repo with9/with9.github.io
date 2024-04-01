@@ -111,7 +111,7 @@
   - B亚基因组对应基因中间插入了丝氨酸, 同时有两个碱基突变
 
 ### Effects of salinity stress on the three haploid genomes
-
+fang m
 作者测了六个时期的转录组, 每个转录组包含三个重复, 分析前面鉴定得到的等位基因中含有差异表达基因的情况, 发现4768个等位基因至少在这六个时期中包含有一个DEG. 同时作者分析了等位基因上游2kb的序列(启动子通常位于此), 发现多态性很高, 可能可以解释部分等位基因在盐胁迫情况下的特异性表达. 同时举了LEA7(LATE EMBRYOGENESIS ABUNDANT)的例子
 
 ![image-20240328165956574](/img/poplar_Populus/image-20240328165956574.png)
