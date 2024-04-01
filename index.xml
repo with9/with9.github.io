@@ -6,7 +6,7 @@
     <description>Recent content on 生活和睡觉.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 14 Mar 2024 11:33:39 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 31 Mar 2024 11:33:39 +0800</lastBuildDate>
     
 	<atom:link href="https://with9.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -56,6 +56,145 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=4937357&amp;auto=0&amp;he
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>文献阅读: 三倍体杨树银中杨的染色体级别基因组组装</title>
+      <link>https://with9.github.io/post/poplar-populus/</link>
+      <pubDate>Sun, 31 Mar 2024 11:33:39 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/poplar-populus/</guid>
+      <description>&lt;p&gt;文献链接:  &lt;a href=&#34;https://doi.org/10.1111/1755-0998.13770&#34;&gt;Chen, S.et al.Chromosome‐level genome assembly of a triploid poplar Populus alba ‘ Berolinensis ’.Molecular Ecology Resources 23, 1092–1107 (2023).&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;通讯作者简介&#34;&gt;通讯作者简介&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://tblab.nefu.edu.cn/info/1041/1443.htm&#34;&gt;陈肃&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;经历&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2006年于东北林业大学，获学士学位；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2009年于东北林业大学，获硕士学位；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2012年于东北林业大学，获博士学位。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2012年—2017年，东北林业大学，博士后&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2017年—至  今，东北林业大学，副教授。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;研究方向&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;林木遗传改良及林木基因工程育种&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://forestry.nefu.edu.cn/info/1035/1677.htm&#34;&gt;曲冠证&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;经历
+&lt;ul&gt;
+&lt;li&gt;1997年于东北林业大学林学专业获学士学位&lt;/li&gt;
+&lt;li&gt;2002年于东北林业大学林木遗传育种专业获硕士学位&lt;/li&gt;
+&lt;li&gt;2007年于韩国江原大学获博士学位&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;研究方向
+&lt;ul&gt;
+&lt;li&gt;从事林木遗传育种研究，近几年主要研究重点为杨树单倍体育种及杨树等基因工程改良研究。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccec.nefu.edu.cn/info/1057/1668.htm&#34;&gt;汪国华&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;经历
+&lt;ul&gt;
+&lt;li&gt;哈尔滨工业大学计算机应用技术专业博对来发现SNP和InDels, 是因为作者认为这三个亚基因组足够相似吗, 那为什么不直接进行全基因组士学位&lt;/li&gt;
+&lt;li&gt;约翰霍普金斯大学博士后&lt;/li&gt;
+&lt;li&gt;2009年起在哈尔滨工业大学计算机科学与技术学院历任副教授，教授，博士生导师&lt;/li&gt;
+&lt;li&gt;2019年调入东北林业大学信息与计算机工程学院任院长，林木遗传育种国家重点实验室PI&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;研究方向
+&lt;ul&gt;
+&lt;li&gt;生物信息学、人工智能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;多倍化的优势: 抗逆和适应极端环境(eg.多倍体拟南芥更加耐盐等..)&lt;/li&gt;
+&lt;li&gt;多倍体耐性假说之一: 特定基因家族的扩张引起的剂量效应是主要原因 &lt;a href=&#34;https://doi.org/10.1534/g3.119.400913&#34;&gt;https://doi.org/10.1534/g3.119.400913&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;杨树是分布最广泛的驯化森林品种, 多倍体品种均是通过种间杂交形成的. 银中杨属于中国典型的三倍体杨树, 由银白杨和中东杨经人工杂交选育而成, 生长快速, 抗旱抗寒且耐盐.&lt;/li&gt;
+&lt;li&gt;多倍体育种&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;方法&#34;&gt;方法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;流式细胞术测量倍型&lt;/li&gt;
+&lt;li&gt;基因组测序: PacBio Sequal II+ BGI + Hi-C(BGISEQ-500)&lt;/li&gt;
+&lt;li&gt;组装: CANU + ALLHIC + Juicebox&lt;/li&gt;
+&lt;li&gt;注释
+&lt;ul&gt;
+&lt;li&gt;重复序列: repeatmodeler, EDTA, repeatmasker&lt;/li&gt;
+&lt;li&gt;编码基因: MAKER&lt;/li&gt;
+&lt;li&gt;功能注释: eggnog-mapper, Plangregmap, AHRD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;共线性: Mcscanx, syri, nucmer&lt;/li&gt;
+&lt;li&gt;系统发育树: orthofinder, mafft, raxml-ng&lt;/li&gt;
+&lt;li&gt;SNPs和InDels: GATK, Snpeff&lt;/li&gt;
+&lt;li&gt;RNAseq: nextflow/rnaseq&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;结果&#34;&gt;结果&lt;/h2&gt;
+&lt;h3 id=&#34;triploid-populus-alba-berolinensis-has-a-growth-advantage&#34;&gt;Triploid Populus alba ‘Berolinensis’ has a growth advantage&lt;/h3&gt;
+&lt;p&gt;银中杨(YZY) 与其亲本相比存在显著的生长优势&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/poplar_Populus/image-20240321094653012.png&#34; alt=&#34;image-20240321094653012&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;de-novo-assembly-of-the-p-alba-berolinensis-genome&#34;&gt;De novo assembly of the &lt;em&gt;P. alba ‘Berolinensis’&lt;/em&gt; genome&lt;/h3&gt;
+&lt;p&gt;二代和三代数据分别做了kmer-survery, 判断其基因组大小, 杂合度等指标&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/poplar_Populus/image-20240321095222092.png&#34; alt=&#34;image-20240321095222092&#34;&gt;&lt;/p&gt;
+&lt;p&gt;基因组组装情况概览&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/poplar_Populus/image-20240321095509009.png&#34; alt=&#34;image-20240321095509009&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;annotation-of-the-p-alba-berolinensis-genome&#34;&gt;Annotation of the &lt;em&gt;P. alba ‘Berolinensis’&lt;/em&gt; genome&lt;/h3&gt;
+&lt;p&gt;结构注释表明其基因组内重复序列占比约为45.23%, 注释得到的编码基因为128,281个(43255,43076,41950), 其中80.35%得到了功能注释.&lt;/p&gt;
+&lt;h3 id=&#34;comparative-analysis-of-the-p-alba-berolinensis-genome&#34;&gt;Comparative analysis of the &lt;em&gt;P. alba ‘Berolinensis’&lt;/em&gt; genome&lt;/h3&gt;
+&lt;p&gt;亚基因组共线性和系统发育分析, 三套亚基因组分别和&lt;em&gt;P. alba&lt;/em&gt;, &lt;em&gt;P.bolleana&lt;/em&gt;及&lt;em&gt;P.tremula&lt;/em&gt;较近, 亚基因组内共线性较高. 同时作者也对每个亚基因组与其亲本的基因组做了共线性分析.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/poplar_Populus/image-20240321100708342.png&#34; alt=&#34;image-20240321100708342&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/poplar_Populus/image-20240321102518605.png&#34; alt=&#34;image-20240321102518605&#34;&gt;&lt;/p&gt;
+&lt;p&gt;接下来这里咱很困惑, 作者用二代基因组数据(不是重测序)分别和每个亚基因组比对来发现SNP和InDels, 是因为作者认为这三个亚基因组足够相似吗, 那为什么不直接进行全基因组比较, 是伪滑窗减少计算量吗? 为了发现等位基因吗? 但是这个材料不是单倍体吗&lt;/p&gt;
+&lt;p&gt;同时作者也从公共数据库选择了银白杨祖先二倍体的全基因组测序数据查找SNP和InDels, 其中有5.66%的变异位于外显子中, 平均23.59%的变异位于启动子区域.&lt;/p&gt;
+&lt;h3 id=&#34;allelic-variations-among-the-three-haploid-chromosomes&#34;&gt;Allelic variations among the three haploid chromosomes&lt;/h3&gt;
+&lt;p&gt;亚基因组间的等位基因鉴定: MCSCANX 得到的共线性块作为候选等位基因群&lt;/p&gt;
+&lt;p&gt;作者主要举例分析了以下两个基因在亚基因组内的情况&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RD22: 是脱甲酸信号传导(abscisic acid  signalling)和非生物应激(abiotic stress)的分子联系
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;https://with9.github.io/img/poplar_Populus/image-20240326151710734.png&#34; alt=&#34;image-20240326151710734&#34;&gt;&lt;/li&gt;
+&lt;li&gt;B亚基因组对应基因与A和C的相比, 存在21个SNP和63碱基的缺失.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CHI: 编码乙烯/茉莉酸介导途径(ethylene/jasmonic acidmediated signalling pathway)的几丁质酶
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;https://with9.github.io/img/poplar_Populus/image-20240326173110720.png&#34; alt=&#34;image-20240326173110720&#34;&gt;&lt;/li&gt;
+&lt;li&gt;B亚基因组对应基因中间插入了丝氨酸, 同时有两个碱基突变&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;effects-of-salinity-stress-on-the-three-haploid-genomes&#34;&gt;Effects of salinity stress on the three haploid genomes&lt;/h3&gt;
+&lt;p&gt;作者测了六个时期的转录组, 每个转录组包含三个重复, 分析前面鉴定得到的等位基因中含有差异表达基因的情况, 发现4768个等位基因至少在这六个时期中包含有一个DEG. 同时作者分析了等位基因上游2kb的序列(启动子通常位于此), 发现多态性很高, 可能可以解释部分等位基因在盐胁迫情况下的特异性表达. 同时举了LEA7(LATE EMBRYOGENESIS ABUNDANT)的例子&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/poplar_Populus/image-20240328165956574.png&#34; alt=&#34;image-20240328165956574&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;讨论&#34;&gt;讨论&lt;/h2&gt;
+&lt;p&gt;讨论大概包括一下三个方面&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;多倍体化的重要性, 同时银中杨高质量基因组的组装是研究多倍体的优秀模型&lt;/li&gt;
+&lt;li&gt;ABA途径中不同亚基因组基因的特异性表达可能是银中杨一些新特性形成的原因之一&lt;/li&gt;
+&lt;li&gt;长期营养繁殖产生的非编码突变促进其对各种环境的适应&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -1848,258 +1987,6 @@ src=&#34;//music.163.com/outchain/player?type=2&amp;id=4937357&amp;auto=0&amp;he
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>纯文本写作，随写随引</title>
-      <link>https://with9.github.io/post/zotero-cite/</link>
-      <pubDate>Wed, 14 Jul 2021 03:03:03 +0800</pubDate>
-      
-      <guid>https://with9.github.io/post/zotero-cite/</guid>
-      <description>&lt;p&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;  &lt;iframe style=&#34;max-width: 100%&#34;
-class=&#34;music163&#34;
-frameborder=&#34;no&#34;
-border=&#34;0&#34;
-marginwidth=&#34;0&#34;
-marginheight=&#34;0&#34;
-width=&#34;330&#34;
-height=&#34;86&#34;
-src=&#34;//music.163.com/outchain/player?type=2&amp;id=26111634&amp;auto=0&amp;height=66&#34;&gt;
-&lt;/iframe&gt;&lt;/p&gt;
-&lt;p&gt;之前介绍了一个文献管理软件(Zotero)，我们可以自由自在的在word中引用和写作。但是我们没有办法很好的在纯文本写作的情况下随写随引。作为一个markdown重度爱好者来说，什么都要在word上写是不可忍受的。&lt;/p&gt;
-&lt;h2 id=&#34;简单的引用&#34;&gt;简单的引用&lt;/h2&gt;
-&lt;p&gt;markdown写作中，我们可以在需要引用的地方加上&lt;code&gt;[^1]&lt;/code&gt;，然后在文章末尾添加&lt;code&gt;[^1]: 这是一个尾注&lt;/code&gt;，在zotero里面配置好引用样式，然后利用快捷键&lt;code&gt;Ctrl+Shift+C&lt;/code&gt;拷贝到剪贴板，然后粘贴到尾注部分就可以实现一条简单的引用了。&lt;/p&gt;
-&lt;!-- ![](/img/zotero_and_latex/Screenshot_20210714_010708.png)
-
-![](/img/zotero_and_latex/image-20210714011314627.png) --&gt;
-&lt;table&gt;&lt;tr&gt;
-&lt;td&gt;&lt;img src=https://with9.github.io/img/zotero_and_latex/Screenshot_20210714_010708.png &gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src=https://with9.github.io/img/zotero_and_latex/image-20210714011314627.png &gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;
-&lt;h2 id=&#34;bibtex文献管理库&#34;&gt;bibtex文献管理库&lt;/h2&gt;
-&lt;p&gt;随便写一些小随笔的时候这样进行文献引用还行，但是一旦涉及到较多文献，或者我们的文章需要反复修改的时候，这样的简单引用就会带来一些问题，比如无法自动编号，没有办法很方便的修改引用文献样式等等，这个时候就是pandoc的用武之地了。pandoc可以实现各种文档格式之间的转换，比如markdown转word，markdown转pdf等等，pandoc还可以支持bibtex文献库的引用。bibtex是latex写作中的文献管理库的文件，这是bibtex文件中的某一条文献的内容。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;@article&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;2018zhongguo2xingtangniaobingfangzhizhinan,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  title = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;中国2型糖尿病防治指南(2017年版)&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  date = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;2018&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  journaltitle = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;中国实用内科杂志&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  volume = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;38&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  pages = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;292--344&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  issn = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;1005-2194&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  abstract = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\&amp;amp;&lt;/span&gt;lt;正&lt;span class=&#34;k&#34;&gt;\&amp;amp;&lt;/span&gt;gt;1前言40年来,随着我国人口老龄化与生活方式的
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;变化,糖尿病从少见病变成一个流行病,糖尿病患病率从1980年的0.67&lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt;飙升至2013年的10.4&lt;span class=&#34;k&#34;&gt;\%&lt;/span&gt;。相应地,科学技术的发展也带来我们对糖尿病的认识和诊疗上
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;的进步,血糖监测方面从只能在医院检测血糖,发展到持续葡萄糖监测、甚至无
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;创血糖监测,治疗方面从只有磺脲类、双胍类和人胰岛素等种类很少的降糖药,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;到目前拥有二肽基肽酶IV(DPP-4)抑&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  file = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;/home/with9/Zotero/storage/TZ5DP3Q4/2018&lt;span class=&#34;nb&#34;&gt;_&lt;/span&gt;中国2型糖尿病防治
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;指南(2017年版).pdf&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  keywords = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;2型糖尿病,guideline,type 2 diabetes,指南&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  langid = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;中文;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  number = &lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;04&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;首先是&lt;code&gt;@article{key}&lt;/code&gt;说明了这是一篇论文，花括号里面是这条文献的citation-key。接下来是一些详细信息，比如标题，作者，摘要，发表年份等等。我们在需要引用的地方添加&lt;code&gt;[@2018zhongguo2xingtangniaobingfangzhizhinan]&lt;/code&gt;就行了，接着利用pandoc将markdown转换为word就行了。下面是一个具体的pandoc命令。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pandoc --cite --csl&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;/bib/nature.csl --bibliography&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;/bib/my.bib test4.md -o test4.docx
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#--cite --csl=后面接引用格式文件。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#--bibliography后面接我们的bibtex文献管理器&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#然后是mardkdown文件test4.md -o 接输出文件名称&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;大概效果是这样。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/zotero_and_latex/image-20210714013748389.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;better-bibtex-for-zotero&#34;&gt;better-bibtex for zotero&lt;/h2&gt;
-&lt;p&gt;是不是感觉更加麻烦了，bibtex文件要怎么获得，cls文件又是啥。这里就要zoteo的登场啦，首先我们要安装一个插件&lt;a href=&#34;https://retorque.re/zotero-better-bibtex/&#34;&gt;BETTER BIBTEX FOR ZOTERO&lt;/a&gt;，登录官网，下载zotero-better-bibtex-n.n.n.xpi文件到本地，然后打开zotero，点击工具，插件，从文件安装插件，选择下载好的xpi文件就好了。重启zotero后，可以看到每个文献都自动分配了一个citation-key。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://with9.github.io/img/zotero_and_latex/image-20210714015052778.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;打开首选项的better bibtex，可以对此插件进行一定的配置，推荐将key的格式改成和谷歌学术的一致。 &lt;code&gt;[auth:lower][year][veryshorttitle:lower]&lt;/code&gt;，接下来选择文献库，导出格式选择better-bibtex，勾选keep update，这就是我们的bib文献管理库文件啦。至于csl文件，可以网上找，也可以直接用zotero的，路径在zotero文件夹的style下面。然后对一开始的pandoc命令起个别名就可以开心的写作啦。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; pandocn &lt;span class=&#34;s1&#34;&gt;&amp;#39;pandoc --cite --csl=$HOME/bib/nature.csl --bibliography=$HOME/bib/my.bib&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#之后就可以这样调用啦&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pandocn A.md -o A.docx
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;!-- ![](/img/zotero_and_latex/image-20210714015412520.png)
-
-![](/img/zotero_and_latex/image-20210714015848499.png) --&gt;
-&lt;table&gt;&lt;tr&gt;
-&lt;td&gt;&lt;img src=https://with9.github.io/img/zotero_and_latex/image-20210714015412520.png &gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src=https://with9.github.io/img/zotero_and_latex/image-20210714015848499.png &gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;
-&lt;p&gt;我们现在写作是比之前方便了一丢丢，但是citation-key要怎么弄呢，难道我们要手动复制吗？当然不用。官网上有一个vim引用的脚本。我们简单的查看一下。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;function&lt;/span&gt;! ZoteroCite&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;s2&#34;&gt;&amp;#34; pick a format based on the filetype (customize at will)
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;  let format = &amp;amp;filetype =~ &amp;#39;.*tex&amp;#39; ? &amp;#39;citep&amp;#39; : &amp;#39;pandoc&amp;#39;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;  let api_call = &amp;#39;http://127.0.0.1:23119/better-bibtex/cayw?format=&amp;#39;.format.&amp;#39;&amp;amp;brackets=1&amp;#39;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;  let ref = system(&amp;#39;curl -s &amp;#39;.shellescape(api_call))
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;  return ref
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;endfunction
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;noremap &amp;lt;leader&amp;gt;z &amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;ZoteroCite&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt;&amp;lt;CR&amp;gt;p
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;inoremap &amp;lt;C-z&amp;gt; &amp;lt;C-r&amp;gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;ZoteroCite&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt;&amp;lt;CR&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;可以看到实际上执行的命令就是&lt;code&gt;curl -s 某个网站&lt;/code&gt;，我们直接在shell中运行一下，跳出一个框框，就和我们在word上面写作没有什么区别。选择好引用的文献后，点击ok。可以看到输出了一个文献的key，那么利用xdotool 和xclip就可以写一个随处引用的小脚本啦。&lt;/p&gt;
-&lt;!-- ![](/img/zotero_and_latex/image-20210714021119575.png)
-
-![](/img/zotero_and_latex/image-20210714021312563.png) --&gt;
-&lt;table&gt;&lt;tr&gt;
-&lt;td&gt;&lt;img src=https://with9.github.io/img/zotero_and_latex/image-20210714021119575.png &gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src=https://with9.github.io/img/zotero_and_latex/image-20210714021312563.png &gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash -e
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;chars&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -s &lt;span class=&#34;s1&#34;&gt;&amp;#39;http://127.0.0.1:23119/better-bibtex/cayw?format=pandoc&amp;amp;brackets=1&amp;#39;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -n &lt;span class=&#34;nv&#34;&gt;$chars&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; xclip -selection clipboard &lt;span class=&#34;c1&#34;&gt;#获取key并存在剪切板里面&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sleep 0.4
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# xdotool type  &amp;#34;$chars&amp;#34; #一开始试着直接打出来，如果目前是中文输入法的话就会出现一些糟糕的情况，比如「@溜018基于包大豆inzucexuk]，所以选择用粘贴版来处理&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;xdotool key ctrl+v &lt;span class=&#34;c1&#34;&gt;#进行粘贴&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;copyq remove &lt;span class=&#34;c1&#34;&gt;#我的剪切板管理器，可以无视&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;一些补充&#34;&gt;一些补充&lt;/h2&gt;
-&lt;p&gt;接着介绍一下typora的妙用，Typora是一个很不错的markdown文本编辑器，最近发现它的导出可以自定义命令，利用它我们可以实现一些简单的功能，比如自定义导出的pandoc命令。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pandoc --cite --csl&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;/bib/nature.csl --bibliography&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;/bib/my.bib &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;currentFileFullName&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; -o &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;currentFileName&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;.docx &lt;span class=&#34;c1&#34;&gt;#定义导出命令，导出到本地同名的docx文件&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bash &lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;/my_shell/typorashell/diary &lt;span class=&#34;c1&#34;&gt;#是复制模板md文件生成每天的日记模板，下面是diary脚本&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#!/bin/bash&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;cur_date&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;`date +%Y-%m-%d`&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;filename&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/Documents/Obsidian/Notes/Diary/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$cur_date&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;.md&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;dirayname&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$HOME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/Documents/Obsidian/Notes/模板/DiaryEx.md&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[[&lt;/span&gt; ! -e &lt;span class=&#34;nv&#34;&gt;$filename&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    cp &lt;span class=&#34;nv&#34;&gt;$dirayname&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$filename&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;最后是修改导出的docx模板，pandoc的文档中提到，pandoc导出成docx文件的时候默认会选择&lt;code&gt;$HOME/.pandoc/reference.docx &lt;/code&gt;文件作为模板，也就是说这里面定义的样式是什么，生成的文件就按什么样式，我们可以在这个文件里面定义好我们的样式，当然pandoc也支持&lt;code&gt;--reference-docx reference.docx &lt;/code&gt;参数来临时选择模板。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pandoc --print-default-data-file reference.docx &amp;gt; reference.docx &lt;span class=&#34;c1&#34;&gt;#在默认路径下没有看到 reference.docx时候可以通过这个命令来生成。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pandoc --reference-docx reference.docx A.md -o A.docx#临时调用模板
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;太长不看&#34;&gt;太长不看&lt;/h2&gt;
-&lt;p&gt;最后总结一下流程（致太长不看）——此脚本只适用于linux，win应该有类似的，没有研究过&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;下载安装better-bibtex插件，简单配置后导出文献库。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;找到style文件&lt;code&gt;Zotero/styles/*.csl&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;编写xclip，xdotool脚本，也可以直接复制我写的。并绑定桌面快捷键。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash -e
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;chars&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -s &lt;span class=&#34;s1&#34;&gt;&amp;#39;http://127.0.0.1:23119/better-bibtex/cayw?format=pandoc&amp;amp;brackets=1&amp;#39;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -n &lt;span class=&#34;nv&#34;&gt;$chars&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; xclip -selection clipboard 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sleep 0.4
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;xdotool key ctrl+v 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;copyq remove 
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;在需要引用的地方按快捷键，选择引用文献&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;用pandoc命令将markdown文件转换为docx文件&lt;code&gt;pandoc --cite --csl=你的csl文件路径.csl --bibliography=你的文献库路径.bib A.md -o A.docx&lt;/code&gt;(推荐定义一个别名，typora可以自定义导出命令)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;
-&lt;p&gt;蝉在叫，人坏掉(&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
     </item>
     
   </channel>
