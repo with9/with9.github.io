@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Autossh on 生活和睡觉.</title>
+    <title>Autossh on </title>
     <link>https://with9.github.io/tags/autossh/</link>
-    <description>Recent content in Autossh on 生活和睡觉.</description>
+    <description>Recent content in Autossh on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 21 Jul 2022 16:33:39 +0800</lastBuildDate>
-    <atom:link href="https://with9.github.io/tags/autossh/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2024 with Φ</copyright>
+    <lastBuildDate>Thu, 21 Jul 2022 16:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/tags/autossh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>通过autossh访问内网,进行远程办公 </title>
-      <link>https://with9.github.io/post/autossh/</link>
+      <link>https://with9.github.io/posts/autossh/</link>
       <pubDate>Thu, 21 Jul 2022 16:33:39 +0800</pubDate>
-      <guid>https://with9.github.io/post/autossh/</guid>
+      
+      <guid>https://with9.github.io/posts/autossh/</guid>
       <description>简单记录下通过在宿主机建立虚拟机,并利用autossh实现远程办公</description>
+      
     </item>
+    
   </channel>
 </rss>

@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Reflection on 生活和睡觉.</title>
+    <title>Reflection on </title>
     <link>https://with9.github.io/categories/reflection/</link>
-    <description>Recent content in Reflection on 生活和睡觉.</description>
+    <description>Recent content in Reflection on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 06 Aug 2023 16:33:39 +0800</lastBuildDate>
-    <atom:link href="https://with9.github.io/categories/reflection/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2024 with Φ</copyright>
+    <lastBuildDate>Sun, 06 Aug 2023 16:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/categories/reflection/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于莉莉周的一切 </title>
-      <link>https://with9.github.io/post/lily-chouchou/</link>
+      <link>https://with9.github.io/posts/lily-chouchou/</link>
       <pubDate>Sun, 06 Aug 2023 16:33:39 +0800</pubDate>
-      <guid>https://with9.github.io/post/lily-chouchou/</guid>
+      
+      <guid>https://with9.github.io/posts/lily-chouchou/</guid>
       <description>只是简单的随感</description>
+      
     </item>
+    
     <item>
       <title>川端康成的《岁岁年年》有感</title>
-      <link>https://with9.github.io/post/suisuiniannian/</link>
+      <link>https://with9.github.io/posts/suisuiniannian/</link>
       <pubDate>Fri, 17 Apr 2020 01:38:15 +0800</pubDate>
-      <guid>https://with9.github.io/post/suisuiniannian/</guid>
+      
+      <guid>https://with9.github.io/posts/suisuiniannian/</guid>
       <description>生死事大，无常迅速</description>
+      
     </item>
+    
   </channel>
 </rss>

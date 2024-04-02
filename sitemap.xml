@@ -1,361 +1,182 @@
-<?xml-stylesheet type="text/xsl" href="https://with9.github.io/sitemap.xsl"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
     <loc>https://with9.github.io/about/</loc>
     <lastmod>2020-04-16T21:38:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
-  <url>
-    <loc>https://with9.github.io/categories/</loc>
-    <lastmod>2024-03-31T11:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/post/</loc>
-    <lastmod>2024-04-01T21:38:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/tags/</loc>
-    <lastmod>2024-03-31T11:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/tags/%E5%9F%BA%E5%9B%A0%E7%BB%84%E5%AD%A6/</loc>
-    <lastmod>2024-03-31T11:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/tags/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/</loc>
-    <lastmod>2024-03-31T11:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/categories/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/</loc>
-    <lastmod>2024-03-31T11:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/post/poplar-populus/</loc>
-    <lastmod>2024-03-31T11:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
   <url>
     <loc>https://with9.github.io/</loc>
-    <lastmod>2024-04-01T21:38:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2020-04-16T21:38:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/post/triploid-banana/</loc>
+    <loc>https://with9.github.io/posts/</loc>
+    <lastmod>2024-04-01T21:38:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://with9.github.io/posts/poplar-populus/</loc>
+    <lastmod>2024-03-31T11:33:39+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://with9.github.io/posts/triploid-banana/</loc>
     <lastmod>2024-03-14T11:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/post/hyprland-wofi/</loc>
+    <loc>https://with9.github.io/posts/hyprland-wofi/</loc>
     <lastmod>2024-03-13T20:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/tags/it/</loc>
-    <lastmod>2024-03-13T20:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/categories/it/</loc>
-    <lastmod>2024-03-13T20:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/tags/linux/</loc>
-    <lastmod>2024-03-13T20:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/tags/wayland/</loc>
-    <lastmod>2024-03-13T20:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/categories/reflection/</loc>
+    <loc>https://with9.github.io/posts/lily-chouchou/</loc>
     <lastmod>2023-08-06T16:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/post/lily-chouchou/</loc>
-    <lastmod>2023-08-06T16:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/tags/%E5%BE%B7%E5%BD%AA%E8%A5%BF/</loc>
-    <lastmod>2023-08-06T16:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/tags/%E6%97%A5%E6%9C%AC/</loc>
-    <lastmod>2023-08-06T16:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/tags/%E7%94%B5%E5%BD%B1/</loc>
-    <lastmod>2023-08-06T16:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/tags/autossh/</loc>
+    <loc>https://with9.github.io/posts/autossh/</loc>
     <lastmod>2022-07-21T16:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/tags/qemu/</loc>
-    <lastmod>2022-07-21T16:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/post/autossh/</loc>
-    <lastmod>2022-07-21T16:33:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/post/kiritan/</loc>
+    <loc>https://with9.github.io/posts/kiritan/</loc>
     <lastmod>2022-04-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/tags/guide/</loc>
-    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/tags/records/</loc>
-    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/post/polybar_music/</loc>
+    <loc>https://with9.github.io/posts/polybar_music/</loc>
     <lastmod>2021-12-20T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/post/oneko/</loc>
+    <loc>https://with9.github.io/posts/oneko/</loc>
     <lastmod>2021-11-11T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/tags/bio/</loc>
+    <loc>https://with9.github.io/posts/blast_nt/</loc>
     <lastmod>2021-08-10T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/categories/bio/</loc>
-    <lastmod>2021-08-10T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/post/blast_nt/</loc>
-    <lastmod>2021-08-10T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/tags/pandoc/</loc>
+    <loc>https://with9.github.io/posts/zotero-cite/</loc>
     <lastmod>2021-07-14T03:03:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/tags/zotero/</loc>
-    <lastmod>2021-07-14T03:03:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/post/zotero-cite/</loc>
-    <lastmod>2021-07-14T03:03:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/post/read/</loc>
+    <loc>https://with9.github.io/posts/read/</loc>
     <lastmod>2024-04-01T21:38:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/temp/</loc>
-    <lastmod>2021-03-30T18:21:04+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/post/zotero-guide/</loc>
+    <loc>https://with9.github.io/posts/zotero-guide/</loc>
     <lastmod>2020-12-13T22:45:48+08:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/post/sl3-arch/</loc>
+    <loc>https://with9.github.io/posts/sl3-arch/</loc>
     <lastmod>2021-02-05T12:34:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/post/how-linux-desktop-grown/</loc>
+    <loc>https://with9.github.io/posts/how-linux-desktop-grown/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
-  <url>
-    <loc>https://with9.github.io/tags/translate/</loc>
-    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
   <url>
     <loc>https://with9.github.io/friends/</loc>
     <lastmod>2020-04-23T00:37:16+08:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/tags/novel/</loc>
+    <loc>https://with9.github.io/posts/suisuiniannian/</loc>
     <lastmod>2020-04-17T01:38:15+08:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/tags/%E5%B7%9D%E7%AB%AF%E5%BA%B7%E6%88%90/</loc>
-    <lastmod>2020-04-17T01:38:15+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/post/suisuiniannian/</loc>
-    <lastmod>2020-04-17T01:38:15+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/tags/%E6%97%A5%E6%9C%AC%E4%BD%9C%E5%AE%B6/</loc>
-    <lastmod>2020-04-17T01:38:15+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://with9.github.io/post/hello/</loc>
+    <loc>https://with9.github.io/posts/hello/</loc>
     <lastmod>2020-04-16T09:10:18+08:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/post/arch-icon-repair/</loc>
+    <loc>https://with9.github.io/posts/arch-icon-repair/</loc>
     <lastmod>2019-05-19T16:08:21+08:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/post/midi-config/</loc>
+    <loc>https://with9.github.io/posts/midi-config/</loc>
     <lastmod>2018-10-01T15:50:28+08:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/tags/midi/</loc>
-    <lastmod>2018-10-01T15:50:28+08:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://with9.github.io/authors/secondauthor/_index.ja/</loc>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/tags/music/</loc>
-    <lastmod>2018-10-01T15:50:28+08:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://with9.github.io/authors/secondauthor/_index.zh-cn/</loc>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
-    <loc>https://with9.github.io/categories/music/</loc>
-    <lastmod>2018-10-01T15:50:28+08:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://with9.github.io/authors/_index.it/</loc>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
-  
+  <url>
+    <loc>https://with9.github.io/authors/nunocoracao/_index.it/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://with9.github.io/authors/nunocoracao/_index.ja/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://with9.github.io/authors/nunocoracao/_index.zh-cn/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://with9.github.io/authors/secondauthor/_index.it/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://with9.github.io/authors/_index.zh-cn/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://with9.github.io/authors/_index.ja/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>

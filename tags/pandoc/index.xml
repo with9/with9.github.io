@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pandoc on 生活和睡觉.</title>
+    <title>Pandoc on </title>
     <link>https://with9.github.io/tags/pandoc/</link>
-    <description>Recent content in Pandoc on 生活和睡觉.</description>
+    <description>Recent content in Pandoc on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 14 Jul 2021 03:03:03 +0800</lastBuildDate>
-    <atom:link href="https://with9.github.io/tags/pandoc/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2024 with Φ</copyright>
+    <lastBuildDate>Wed, 14 Jul 2021 03:03:03 +0800</lastBuildDate><atom:link href="https://with9.github.io/tags/pandoc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>纯文本写作，随写随引</title>
-      <link>https://with9.github.io/post/zotero-cite/</link>
+      <link>https://with9.github.io/posts/zotero-cite/</link>
       <pubDate>Wed, 14 Jul 2021 03:03:03 +0800</pubDate>
-      <guid>https://with9.github.io/post/zotero-cite/</guid>
+      
+      <guid>https://with9.github.io/posts/zotero-cite/</guid>
       <description>介绍一下如何利用zotero及其插件在纯文本写作下随写随引</description>
+      
     </item>
+    
   </channel>
 </rss>

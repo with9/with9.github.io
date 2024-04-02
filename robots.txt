@@ -1,2 +1,3 @@
 User-agent: *
+Allow: /
 Sitemap: https://with9.github.io/sitemap.xml
