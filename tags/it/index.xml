@@ -15,7 +15,7 @@
       
       <guid>https://with9.github.io/posts/hyprland-wofi/</guid>
       <description>hyprland大法好</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/posts/hyprland-wofi/featured.png" />
     </item>
     
     <item>
@@ -25,7 +25,7 @@
       
       <guid>https://with9.github.io/posts/autossh/</guid>
       <description>简单记录下通过在宿主机建立虚拟机,并利用autossh实现远程办公</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/posts/autossh/featured.png" />
     </item>
     
   </channel>
