@@ -10,60 +10,60 @@
     <lastBuildDate>Wed, 13 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://with9.github.io/tags/guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ai歌姬东北切蒲英~</title>
-      <link>https://with9.github.io/posts/kiritan/</link>
+      <link>https://with9.github.io/post/kiritan/</link>
       <pubDate>Wed, 13 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://with9.github.io/posts/kiritan/</guid>
+      <guid>https://with9.github.io/post/kiritan/</guid>
       <description>对NEUTRINO的简单尝试</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/posts/kiritan/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/kiritan/featured.png" />
     </item>
     
     <item>
       <title>通过polybar控制多媒体</title>
-      <link>https://with9.github.io/posts/polybar_music/</link>
+      <link>https://with9.github.io/post/polybar_music/</link>
       <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://with9.github.io/posts/polybar_music/</guid>
+      <guid>https://with9.github.io/post/polybar_music/</guid>
       <description>记录一次简单定制化polybar的折腾记录</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/posts/polybar_music/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/polybar_music/featured.png" />
     </item>
     
     <item>
       <title>oneko 一个小桌宠的折腾记录</title>
-      <link>https://with9.github.io/posts/oneko/</link>
+      <link>https://with9.github.io/post/oneko/</link>
       <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://with9.github.io/posts/oneko/</guid>
+      <guid>https://with9.github.io/post/oneko/</guid>
       <description>分享一个追击鼠标的小桌宠,及调整其显示大小的方法</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/posts/oneko/featured.gif" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/oneko/featured.gif" />
     </item>
     
     <item>
       <title>利用blast对测序数据进行污染情况估计</title>
-      <link>https://with9.github.io/posts/blast_nt/</link>
+      <link>https://with9.github.io/post/blast_nt/</link>
       <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://with9.github.io/posts/blast_nt/</guid>
+      <guid>https://with9.github.io/post/blast_nt/</guid>
       <description>一个简单的小流程,利用blast来统计测序数据的污染情况。</description>
       
     </item>
     
     <item>
       <title>纯文本写作，随写随引</title>
-      <link>https://with9.github.io/posts/zotero-cite/</link>
+      <link>https://with9.github.io/post/zotero-cite/</link>
       <pubDate>Wed, 14 Jul 2021 03:03:03 +0800</pubDate>
       
-      <guid>https://with9.github.io/posts/zotero-cite/</guid>
+      <guid>https://with9.github.io/post/zotero-cite/</guid>
       <description>介绍一下如何利用zotero及其插件在纯文本写作下随写随引</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/posts/zotero-cite/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/zotero-cite/featured.png" />
     </item>
     
     <item>
       <title>zotero 写作小教程</title>
-      <link>https://with9.github.io/posts/zotero-guide/</link>
+      <link>https://with9.github.io/post/zotero-guide/</link>
       <pubDate>Sun, 13 Dec 2020 22:45:48 +0800</pubDate>
       
-      <guid>https://with9.github.io/posts/zotero-guide/</guid>
+      <guid>https://with9.github.io/post/zotero-guide/</guid>
       <description>简单介绍一下zotero这个工具的使用方法</description>
       
     </item>

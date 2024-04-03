@@ -10,12 +10,12 @@
     <lastBuildDate>Wed, 14 Jul 2021 03:03:03 +0800</lastBuildDate><atom:link href="https://with9.github.io/tags/zotero/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>纯文本写作，随写随引</title>
-      <link>https://with9.github.io/posts/zotero-cite/</link>
+      <link>https://with9.github.io/post/zotero-cite/</link>
       <pubDate>Wed, 14 Jul 2021 03:03:03 +0800</pubDate>
       
-      <guid>https://with9.github.io/posts/zotero-cite/</guid>
+      <guid>https://with9.github.io/post/zotero-cite/</guid>
       <description>介绍一下如何利用zotero及其插件在纯文本写作下随写随引</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/posts/zotero-cite/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/zotero-cite/featured.png" />
     </item>
     
   </channel>

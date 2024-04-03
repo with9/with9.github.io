@@ -10,22 +10,22 @@
     <lastBuildDate>Sun, 31 Mar 2024 11:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/tags/%E5%9F%BA%E5%9B%A0%E7%BB%84%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>文献阅读: 三倍体杨树银中杨的染色体级别基因组组装</title>
-      <link>https://with9.github.io/posts/poplar-populus/</link>
+      <link>https://with9.github.io/post/poplar-populus/</link>
       <pubDate>Sun, 31 Mar 2024 11:33:39 +0800</pubDate>
       
-      <guid>https://with9.github.io/posts/poplar-populus/</guid>
+      <guid>https://with9.github.io/post/poplar-populus/</guid>
       <description>作者组装了三倍体的银中杨基因组,与亲本(银白杨,中东杨)基因组进行比较分析,同时鉴定亚基因组间的等位基因,并探究了该品种的耐盐性.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/posts/poplar-populus/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/poplar-populus/featured.png" />
     </item>
     
     <item>
       <title>文献阅读: 三倍体栽培香蕉的起源与进化</title>
-      <link>https://with9.github.io/posts/triploid-banana/</link>
+      <link>https://with9.github.io/post/triploid-banana/</link>
       <pubDate>Thu, 14 Mar 2024 11:33:39 +0800</pubDate>
       
-      <guid>https://with9.github.io/posts/triploid-banana/</guid>
+      <guid>https://with9.github.io/post/triploid-banana/</guid>
       <description>作者组装了两个三倍体品种香蕉(香芽蕉,大麦克香蕉)的基因组, 分析了三套亚基因组的来源, 抗病基因在其中的情况, 同时鉴定了香蕉果实成熟的关键基因, 最后简单探究了下这三套亚基因组的功能分化情况.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/posts/triploid-banana/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/triploid-banana/featured.png" />
     </item>
     
   </channel>

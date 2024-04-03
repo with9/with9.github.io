@@ -10,10 +10,10 @@
     <lastBuildDate>Tue, 10 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://with9.github.io/categories/bio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>利用blast对测序数据进行污染情况估计</title>
-      <link>https://with9.github.io/posts/blast_nt/</link>
+      <link>https://with9.github.io/post/blast_nt/</link>
       <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://with9.github.io/posts/blast_nt/</guid>
+      <guid>https://with9.github.io/post/blast_nt/</guid>
       <description>一个简单的小流程,利用blast来统计测序数据的污染情况。</description>
       
     </item>
