@@ -99,7 +99,7 @@
     "keywords": ["Linux","translate"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2477"
+    "wordCount": "2489"
   }]
   </script>
 
@@ -148,6 +148,29 @@
   
   
   <meta name="theme-color"/>
+  
+  
+  
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script>
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCbyF5sSrwDj4NXHJwZ0VkWJtBLI4aIrwc",
+      authDomain: "AIzaSyCbyF5sSrwDj4NXHJwZ0VkWJtBLI4aIrwc",
+      projectId: "web-firebase-f8b18",
+      storageBucket: "web-firebase-f8b18.appspot.com",
+      messagingSenderId: "532704544245",
+      appId: "1:532704544245:web:1b1f2d15d4fb7ff6c78cbc",
+      measurementId: "G-0FJXQKW8XJ"
+    };
+
+    var app = firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
+    var auth = firebase.auth();
+
+  </script>
   
   
 </head>
@@ -818,7 +841,9 @@
   </figure>
 
 </p>
+<div class='align-center'>
 <p><strong>TWM on SLS 1.05 showing xterm, xclock, and the Emacs editor</strong></p>
+</div>
 <blockquote>
 <p>Yet another early window manager was the OpenLook Virtual Window Manager (OLVWM). OpenLook was a graphical user interface developed by Sun Microsystems in the 1980s and later ported to other Unix platforms. As a <em>virtual</em> window manager, OLVWM supported multiple workspaces.</p>
 </blockquote>
@@ -835,7 +860,9 @@
   </figure>
 
 </p>
+<div class='align-center'>
 <p><strong>OLVWM on SLS 1.05 showing xterm and the Virtual Workspaces selector</strong></p>
+</div>
 <blockquote>
 <p>When Linux began to grow in popularity, it didn&rsquo;t take long for others to create new window managers with smoother performance and improved interfaces. The first of these new window managers was FVWM, a virtual window manager. FVWM sported a more modern look than TWM or OLVWM. But we didn&rsquo;t yet have a desktop.</p>
 </blockquote>
@@ -851,7 +878,9 @@
   </figure>
 
 </p>
+<div class='align-center'>
 <p><strong>FVWM on SLS 1.05 showing xterm and a file manager</strong></p>
+</div>
 <blockquote>
 <p>To modern eyes, TWM and FVWM may look pretty plain. But it&rsquo;s important to remember what other graphical environments looked like at the time. The then-current version of Windows looked rather simple. Windows versions 1 through 3 used a plain launcher called the Program Manager.</p>
 </blockquote>
@@ -867,12 +896,23 @@
   </figure>
 
 </p>
+<div class='align-center'>
 <p><strong>Windows 3.11 showing the Program Manager and the Notepad editor</strong></p>
+</div>
 <blockquote>
 <p>In August 1995, Microsoft released Windows 95 and changed the modern PC desktop landscape. Certainly, I was impressed. I thought Windows 3.x was ungainly and ugly, but Windows 95 was smooth and pretty. More importantly, Windows 95 was what we now consider a desktop. The new desktop metaphor was a huge step forward. You could put icons on the desktop—and in fact, Windows 95 presented two default desktop icons, for My Computer (to open a file manager) and the Recycle Bin (where you put files to be deleted later).</p>
 </blockquote>
 <p>1995年8月，微软发布了Windows95，它改变当时的电脑桌面布局。我认为Windows 3.X是不够优雅或者说是丑陋的，但是我认为Windows95是优雅并且美丽的。更重要的是，Windows95就是我们现在所认为的桌面应该的样子。新的<a href="https://zh.wikipedia.org/wiki/%E6%A1%8C%E9%9D%A2%E6%AF%94%E6%93%AC"   target="_blank">
-    桌面比拟</a>(<em>Desktop Metaphor</em>)向前迈进了一大步。你可以把图标放在桌面上，Windows95预先放置了两个默认的桌面图标和里面放置你稍后将删除的文件。</p>
+    桌面比拟</a>(<em>Desktop Metaphor</em>)向前迈进了一大步。你可以把图标放在桌面上，Windows95预先放置了两个默认的桌面图标  <ruby>
+    <rb>我的电脑</rb>
+    <rt>My Computer</rt>
+    </ruby>(打开  <ruby>
+    <rb>文件管理器</rb>
+    <rt>file manager</rt>
+    </ruby>)和  <ruby>
+    <rb>回收站</rb>
+    <rt>Recycle bin</rt>
+    </ruby>(里面放置你稍后将删除的文件)。</p>
 <blockquote>
 <p>But more importantly, the Windows 95 desktop meant <em>integration</em>. The Program Manager was gone, replaced by a Taskbar at the bottom of the screen that let you launch new programs using a simpler Start menu. The Taskbar was multifunctional and also showed your running programs via a series of buttons and a dock showing the time, speaker volume, and other simple controls. You could right-click on any object on the new desktop, and Windows 95 would present you with a context-sensitive menu with actions you could perform.</p>
 </blockquote>
@@ -888,7 +928,9 @@
   </figure>
 
 </p>
+<div class='align-center'>
 <p><strong>Windows 95 showing the Notepad editor</strong></p>
+</div>
 <blockquote>
 <p>The Windows 95 interface was slick and much easier to use than previous versions of Windows—and even other Linux window managers. Not to be outdone, Linux developers created a new version of FVWM that mimicked the Windows 95 interface. Called FVWM95, the new window manager still wasn&rsquo;t a desktop, but it looked very nice. The new taskbar let you start new X programs using the Start menu. The taskbar also showed your running programs using buttons similar to Windows 95&rsquo;s.</p>
 </blockquote>
@@ -904,7 +946,9 @@
   </figure>
 
 </p>
+<div class='align-center'>
 <p><strong>FVWM95 on Red Hat Linux 5.2 showing xterm and a quick-access program launcher with icons for xterm, the file manager, and other programs</strong></p>
+</div>
 <blockquote>
 <p>While FVWM95 and other window managers were improving, the core problem remained: Linux didn&rsquo;t really have a desktop. It had a collection of window managers, and that was about it. Linux applications that used a graphical user interface (GUI, pretty much meaning they were X applications) all looked different and worked differently. You couldn&rsquo;t copy and paste from one application to another, except the simple text-only copy/paste provided by the X Window System. What Linux really needed was a complete redo in its GUI to create the first desktop.</p>
 </blockquote>
@@ -941,8 +985,10 @@
   </figure>
 
 </p>
+<div class='align-center'>
 <p><strong>K Desktop Environment (KDE) version 1.0</strong></p>
 <p><strong>Image credit: Paul Brown / KDE</strong></p>
+</div>
 <blockquote>
 <p>KDE was a big step forward for Linux. Finally, Linux had a true desktop with application integration and more modern desktop icons. KDE&rsquo;s design was not dissimilar from Windows 95. You had a kind-of taskbar along the bottom of the screen that provided the equivalent of Windows 95&rsquo;s Start menu as well as several application shortcuts. KDE also supported virtual desktops, which were cleverly labeled One, Two, Three, and Four. Running applications were represented via buttons in a separate taskbar at the top of the screen.</p>
 </blockquote>
@@ -966,8 +1012,10 @@
   </figure>
 
 </p>
+<div class='align-center'>
 <p><strong>GNOME version 1.0</strong><br>
 <strong>Image credit: GNOME Documentation Project</strong></p>
+</div>
 <blockquote>
 <p>While it was great to have two desktop environments for Linux, the &ldquo;KDE versus GNOME&rdquo; rivalry continued for some time. By 1999, Trolltech re-released the Qt library under a new public license, the Q Public License (QPL). But the new license carried its own baggage—the QPL only applied to Qt&rsquo;s use in open source software projects, not commercial projects. Thus the Free Software Foundation deemed the QPL not compatible with the GNU General Public License (GNU GPL). This licensing issue would remain until Trolltech re-re-released the Qt library under the GNU GPL version 2 in 2000.</p>
 </blockquote>
@@ -1003,8 +1051,10 @@
   </figure>
 
 </p>
+<div class='align-center'>
 <p><strong>KDE 2.2.2 (2001) showing the Konqueror browser</strong><br>
 <strong>Image credit: Paul Brown / KDE</strong></p>
+</div>
 <p>
 
 
@@ -1016,7 +1066,9 @@
   </figure>
 
 </p>
+<div class='align-center'>
 <p><strong>KDE 3.2.2 (2004) on Fedora Core 2 showing the Konqueror file manager (using a Fedora Core 2 theme)</strong></p>
+</div>
 <blockquote>
 <p>GNOME 2 also used a taskbar concept but split the bar into two: a taskbar at the top of the screen to launch applications and respond to desktop alerts, and a taskbar at the bottom of the page to show running applications. On my own, I referred to the two taskbars as &ldquo;things you can do&rdquo; (top) and &ldquo;things are you doing&rdquo; (bottom). In addition to the streamlined user interface, GNOME also added an updated file manager called Nautilus, developed by Eazel.</p>
 </blockquote>
@@ -1032,7 +1084,9 @@
   </figure>
 
 </p>
+<div class='align-center'>
 <p><strong>GNOME 2.6.0 (2004) on Fedora Core 2 showing the Nautilus file manager (using a Fedora Core 2 theme)</strong></p>
+</div>
 <blockquote>
 <p>Over time, KDE and GNOME have taken different paths. Both provide a feature-rich, robust, and modern desktop environment—but with different user interface goals. In 2011, there was a major deviation between how GNOME and KDE approached the desktop interface. KDE 4.6 (January 2011) and KDE 4.7 (July 2011) provided a more traditional desktop metaphor while continuing to rely on the taskbar concept familiar to many users. Of course, KDE saw lots of changes under the hood, but the familiar look and feel remained.</p>
 </blockquote>
@@ -1049,8 +1103,10 @@
   </figure>
 
 </p>
+<div class='align-center'>
 <p>KDE 4.6 showing the Gwenview image viewer<br>
 Image credit: KDE</p>
+</div>
 <blockquote>
 <p>In 2011, GNOME completely changed gears with a new desktop concept. GNOME 3 aimed to create a simpler, more streamlined desktop experience, allowing users to focus on what they were working on. The taskbar disappeared, replaced by a black status bar at the top of the screen that included volume and network controls, displayed the time and battery status, and allowed users to launch new programs via a redesigned menu.</p>
 </blockquote>
@@ -1070,8 +1126,10 @@ Image credit: KDE</p>
   </figure>
 
 </p>
+<div class='align-center'>
 <p>GNOME 3.0 showing the GNOME Pictures application<br>
 Image credit: GNOME</p>
+</div>
 <p>
 
 
@@ -1083,8 +1141,10 @@ Image credit: GNOME</p>
   </figure>
 
 </p>
+<div class='align-center'>
 <p>GNOME 3.0 showing the Activities Overview<br>
 Image credit: GNOME</p>
+</div>
 
 
 <h1 class="relative group">Your Choice of desktop 
@@ -1126,8 +1186,10 @@ Image credit: GNOME</p>
   </figure>
 
 </p>
+<div class='align-center'>
 <p>KDE 5.16 Plasma<br>
 Image credit: KDE</p>
+</div>
 <p>
 
 
@@ -1139,8 +1201,10 @@ Image credit: KDE</p>
   </figure>
 
 </p>
+<div class='align-center'>
 <p>GNOME 3.32<br>
 Image credit: GNOME</p>
+</div>
 <blockquote>
 <p>At the same time, you don&rsquo;t completely lose out on compatibility. Every major Linux distribution provides compatibility libraries, so you can run applications from, say, KDE while running GNOME. This is immensely useful when an application you really want to use is written for the other desktop environment—not a problem; you can run KDE applications on GNOME and vice versa.</p>
 </blockquote>

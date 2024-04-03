@@ -150,6 +150,29 @@
   <meta name="theme-color"/>
   
   
+  
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script>
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCbyF5sSrwDj4NXHJwZ0VkWJtBLI4aIrwc",
+      authDomain: "AIzaSyCbyF5sSrwDj4NXHJwZ0VkWJtBLI4aIrwc",
+      projectId: "web-firebase-f8b18",
+      storageBucket: "web-firebase-f8b18.appspot.com",
+      messagingSenderId: "532704544245",
+      appId: "1:532704544245:web:1b1f2d15d4fb7ff6c78cbc",
+      measurementId: "G-0FJXQKW8XJ"
+    };
+
+    var app = firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
+    var auth = firebase.auth();
+
+  </script>
+  
+  
 </head>
 <body
   class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
@@ -754,7 +777,17 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>近期，我对电影《关于莉莉周的一切》产生了浓厚的兴趣，观看了三四遍不止。但实际上，后两次的“观看”更像是在“聆听”，我将其作为背景音乐，边进行那些枯燥乏味的种子取样工作。这部影片是由岩井俊二执导，我之前就听闻过这位导演的名字，曾经被朋友极力推荐过他的另一部作品《情书》。岩井俊二是一位个人风格鲜明的导演，同时也是一名作家。上面提到的两部电影便都是根据他亲自撰写的小说改编而来。在这部电影中，岩井采用了许多独特的拍摄手法。从冲绳之旅中采用的手持DV摄影，到一些不太寻常的手电筒光源照明，还有频繁出现的画面晃动等等。我对摄影技术了解甚少，因此不太深入探讨这些手法，不过作为一个外行观众，感觉好看就行了。另外，影片中许多特别唯美的镜头也令人难以忘怀。</p>
+            <iframe style="max-width: 100%"
+      class="music163"
+      frameborder="no"
+      border="0"
+      marginwidth="0"
+      marginheight="0"
+      width="330"
+      height="86"
+      src="//music.163.com/outchain/player?type=2&id=441936&auto=0&height=66">
+    </iframe>
+<p>近期，我对电影《关于莉莉周的一切》产生了浓厚的兴趣，观看了三四遍不止。但实际上，后两次的“观看”更像是在“聆听”，我将其作为背景音乐，边进行那些枯燥乏味的种子取样工作。这部影片是由岩井俊二执导，我之前就听闻过这位导演的名字，曾经被朋友极力推荐过他的另一部作品《情书》。岩井俊二是一位个人风格鲜明的导演，同时也是一名作家。上面提到的两部电影便都是根据他亲自撰写的小说改编而来。在这部电影中，岩井采用了许多独特的拍摄手法。从冲绳之旅中采用的手持DV摄影，到一些不太寻常的手电筒光源照明，还有频繁出现的画面晃动等等。我对摄影技术了解甚少，因此不太深入探讨这些手法，不过作为一个外行观众，感觉好看就行了。另外，影片中许多特别唯美的镜头也令人难以忘怀。</p>
 
 
   
