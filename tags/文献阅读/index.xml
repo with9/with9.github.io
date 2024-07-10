@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 with Φ</copyright>
-    <lastBuildDate>Sun, 31 Mar 2024 11:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/tags/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Jun 2024 11:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/tags/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>文献阅读: 小麦中TE对基因组结构和进化的影响</title>
+      <link>https://with9.github.io/post/te-triticum/</link>
+      <pubDate>Fri, 14 Jun 2024 11:33:39 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/te-triticum/</guid>
+      <description>作者分析TE在不同亚基因组中的分布情况, 利用vmatch对TE进行聚类, 分析亚基因组特有家族的插入时间, 对基因山下游的TE偏好性进行分析, 同时作者还利用转录组数据分析了基因表达与启动子中特异TE家族的关系</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/te-triticum/featured.png" />
+    </item>
+    
     <item>
       <title>文献阅读: 三倍体杨树银中杨的染色体级别基因组组装</title>
       <link>https://with9.github.io/post/poplar-populus/</link>
