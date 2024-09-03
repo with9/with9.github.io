@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 with Φ</copyright>
-    <lastBuildDate>Fri, 14 Jun 2024 11:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Sep 2024 21:38:52 +0800</lastBuildDate><atom:link href="https://with9.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Read</title>
+      <link>https://with9.github.io/post/read/</link>
+      <pubDate>Sun, 01 Sep 2024 21:38:52 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/read/</guid>
+      <description>之前看过的一些动画片作品和书籍未记录于此,动画片的话bgm也有 部分记录</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/read/featured.jpg" />
+    </item>
+    
     <item>
       <title>文献阅读: 小麦中TE对基因组结构和进化的影响</title>
       <link>https://with9.github.io/post/te-triticum/</link>
@@ -116,16 +126,6 @@
       <guid>https://with9.github.io/post/zotero-cite/</guid>
       <description>介绍一下如何利用zotero及其插件在纯文本写作下随写随引</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/zotero-cite/featured.png" />
-    </item>
-    
-    <item>
-      <title>Read</title>
-      <link>https://with9.github.io/post/read/</link>
-      <pubDate>Sun, 30 May 2021 21:38:52 +0800</pubDate>
-      
-      <guid>https://with9.github.io/post/read/</guid>
-      <description>之前看过的一些动画片作品和书籍未记录于此,动画片的话bgm也有 部分记录</description>
-      
     </item>
     
     <item>
