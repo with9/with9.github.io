@@ -21,6 +21,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://with9.github.io/post/read/</loc>
+    <lastmod>2024-11-19T21:38:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://with9.github.io/categories/</loc>
     <lastmod>2024-06-14T11:33:39+08:00</lastmod>
     <changefreq>daily</changefreq>
