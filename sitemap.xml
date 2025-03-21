@@ -16,13 +16,13 @@
   </url>
   <url>
     <loc>https://with9.github.io/post/</loc>
-    <lastmod>2025-02-20T00:00:52+08:00</lastmod>
+    <lastmod>2025-03-21T00:00:52+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://with9.github.io/post/read/</loc>
-    <lastmod>2025-02-20T00:00:52+08:00</lastmod>
+    <lastmod>2025-03-21T00:00:52+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -45,13 +45,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://with9.github.io/tags/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/</loc>
+    <loc>https://with9.github.io/categories/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/</loc>
     <lastmod>2024-06-14T11:33:39+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://with9.github.io/categories/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/</loc>
+    <loc>https://with9.github.io/tags/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/</loc>
     <lastmod>2024-06-14T11:33:39+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -81,13 +81,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://with9.github.io/tags/it/</loc>
+    <loc>https://with9.github.io/categories/it/</loc>
     <lastmod>2024-03-13T20:33:39+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://with9.github.io/categories/it/</loc>
+    <loc>https://with9.github.io/tags/it/</loc>
     <lastmod>2024-03-13T20:33:39+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -183,13 +183,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://with9.github.io/tags/bio/</loc>
+    <loc>https://with9.github.io/categories/bio/</loc>
     <lastmod>2021-08-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://with9.github.io/categories/bio/</loc>
+    <loc>https://with9.github.io/tags/bio/</loc>
     <lastmod>2021-08-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -309,13 +309,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://with9.github.io/tags/music/</loc>
+    <loc>https://with9.github.io/categories/music/</loc>
     <lastmod>2018-10-01T15:50:28+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://with9.github.io/categories/music/</loc>
+    <loc>https://with9.github.io/tags/music/</loc>
     <lastmod>2018-10-01T15:50:28+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
