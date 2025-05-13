@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Fri, 14 Jun 2024 11:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/tags/%E5%9F%BA%E5%9B%A0%E7%BB%84%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 May 2025 11:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/tags/%E5%9F%BA%E5%9B%A0%E7%BB%84%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>文献阅读: 烟草基因组</title>
+      <link>https://with9.github.io/post/nicotiana-tabacum/</link>
+      <pubDate>Mon, 12 May 2025 11:33:39 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/nicotiana-tabacum/</guid>
+      <description>作者绘制了栽培烟草及其祖先种的基因组图谱，分析亚基因组间的差异性，同时结合GBS进行性状关联分析，构建QTL连锁图谱</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/nicotiana-tabacum/featured.png" />
+    </item>
+    
     <item>
       <title>文献阅读: 小麦中TE对基因组结构和进化的影响</title>
       <link>https://with9.github.io/post/te-triticum/</link>

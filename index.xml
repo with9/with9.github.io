@@ -88,6 +88,553 @@
     </item>
     
     <item>
+      <title>文献阅读: 烟草基因组</title>
+      <link>https://with9.github.io/post/nicotiana-tabacum/</link>
+      <pubDate>Mon, 12 May 2025 11:33:39 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/nicotiana-tabacum/</guid>
+      <description>&lt;p&gt;论文链接: &lt;a href=&#34;https://doi.org/10.1038/s41588-025-02126-0&#34;   target=&#34;_blank&#34;&gt;
+    Zan, Y.et al.The genome and GeneBank genomics of allotetraploid Nicotiana tabacum provide insights into genome evolution and complex trait regulation.Nat Genet 1–11 (2025) doi:10.1038/s41588-025-02126-0.&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;背景 
+    &lt;div id=&#34;%E8%83%8C%E6%99%AF&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E8%83%8C%E6%99%AF&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/Nicotiana-tabacum/image-20250415102357069.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;烟草（&lt;em&gt;Nicotiana tabacum&lt;/em&gt;）是一种异源四倍体杂交种，由林烟草（&lt;em&gt;Nicotiana sylvestris&lt;/em&gt;）和拟绒毛烟草（&lt;em&gt;Nicotiana tomentosiformis&lt;/em&gt;）杂交而成. 烟草的不同品种差异非常大，远超祖先种，按照农业用途划分为：烤烟（flue-cured，卷烟）晒烟（sun-cured，烟斗）白肋烟（burley，混合烟）雪茄烟（cigar）东方烟（oriental）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;多倍化的最常见命运是fractionation和二倍化，可能涉及的机制包括homoeologous&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;染色体交换、转做元件的重新激活、DNA甲基化&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;结果与讨论 
+    &lt;div id=&#34;%E7%BB%93%E6%9E%9C%E4%B8%8E%E8%AE%A8%E8%AE%BA&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E7%BB%93%E6%9E%9C%E4%B8%8E%E8%AE%A8%E8%AE%BA&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;Genome evolution highlighted by chromosome-scale assemblies 
+    &lt;div id=&#34;genome-evolution-highlighted-by-chromosome-scale-assemblies&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#genome-evolution-highlighted-by-chromosome-scale-assemblies&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;作者分别对栽培种（ZY300）及两种祖先种进行了高质量的染色体级基因组组装：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;Nicotiana tabacum L.var ZY300&lt;/th&gt;
+          &lt;th&gt;Nicotiana sylvestris&lt;/th&gt;
+          &lt;th&gt;Nicotiana tomentosiformis&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Number of chromosomes&lt;/td&gt;
+          &lt;td&gt;24&lt;/td&gt;
+          &lt;td&gt;12&lt;/td&gt;
+          &lt;td&gt;12&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Size of genome&lt;/td&gt;
+          &lt;td&gt;4174803700&lt;/td&gt;
+          &lt;td&gt;2379017988&lt;/td&gt;
+          &lt;td&gt;2244010975&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;GC content (%)&lt;/td&gt;
+          &lt;td&gt;39.01&lt;/td&gt;
+          &lt;td&gt;39.21&lt;/td&gt;
+          &lt;td&gt;39.18&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Number of contigs&lt;/td&gt;
+          &lt;td&gt;2070&lt;/td&gt;
+          &lt;td&gt;18&lt;/td&gt;
+          &lt;td&gt;20&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Contig NG50 (bp)&lt;/td&gt;
+          &lt;td&gt;27168399&lt;/td&gt;
+          &lt;td&gt;190035529&lt;/td&gt;
+          &lt;td&gt;170533715&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Number of scaffolds&lt;/td&gt;
+          &lt;td&gt;1448&lt;/td&gt;
+          &lt;td&gt;15&lt;/td&gt;
+          &lt;td&gt;15&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Scaffolds NG50 (bp)&lt;/td&gt;
+          &lt;td&gt;169642138&lt;/td&gt;
+          &lt;td&gt;192385001&lt;/td&gt;
+          &lt;td&gt;189532187&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Gap number&lt;/td&gt;
+          &lt;td&gt;57.505&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;5&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Gap size (bp)&lt;/td&gt;
+          &lt;td&gt;3423090&lt;/td&gt;
+          &lt;td&gt;300&lt;/td&gt;
+          &lt;td&gt;500&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Hi-C anchoring rate (%)&lt;/td&gt;
+          &lt;td&gt;97.03&lt;/td&gt;
+          &lt;td&gt;99.97&lt;/td&gt;
+          &lt;td&gt;99.98&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&amp;hellip;&lt;/td&gt;
+          &lt;td&gt;&amp;hellip;&lt;/td&gt;
+          &lt;td&gt;&amp;hellip;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;Number&lt;/th&gt;
+          &lt;th&gt;Average gene length (bp)&lt;/th&gt;
+          &lt;th&gt;Average CDS length per gene (bp)&lt;/th&gt;
+          &lt;th&gt;Average exon number per gene&lt;/th&gt;
+          &lt;th&gt;Average exon length (bp)&lt;/th&gt;
+          &lt;th&gt;Average intron length (bp)&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Nicotiana tabacum L. var ZY300&lt;/td&gt;
+          &lt;td&gt;80433&lt;/td&gt;
+          &lt;td&gt;4142.953&lt;/td&gt;
+          &lt;td&gt;1089.597&lt;/td&gt;
+          &lt;td&gt;4.481&lt;/td&gt;
+          &lt;td&gt;1285.125&lt;/td&gt;
+          &lt;td&gt;820.9767&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Nicotiana sylvestris&lt;/td&gt;
+          &lt;td&gt;40290&lt;/td&gt;
+          &lt;td&gt;4360.859&lt;/td&gt;
+          &lt;td&gt;1088.196&lt;/td&gt;
+          &lt;td&gt;4.314&lt;/td&gt;
+          &lt;td&gt;1531.958&lt;/td&gt;
+          &lt;td&gt;616.7752&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Nicotiana tomentosiformis&lt;/td&gt;
+          &lt;td&gt;37862&lt;/td&gt;
+          &lt;td&gt;4068.097&lt;/td&gt;
+          &lt;td&gt;1151.372&lt;/td&gt;
+          &lt;td&gt;4.262&lt;/td&gt;
+          &lt;td&gt;1313.867&lt;/td&gt;
+          &lt;td&gt;657.3184&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;此外，他们还注释了基因结构和重复序列。LTR类转座子（特别是Gypsy）在T亚基因组中更为丰富，尤其集中于2、17和19号染色体。&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/Nicotiana-tabacum/image-20250415102522015.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+
+通过ChIP-seq和quarTeT预测了着丝粒区域，两个方法结果高度一致，支持其准确性。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/Nicotiana-tabacum/image-20250415102656007.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+&lt;/td&gt;
+          &lt;td&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/Nicotiana-tabacum/image-20250415102954330.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+&lt;/td&gt;
+          &lt;td&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/Nicotiana-tabacum/image-20250415103017951.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;共线性分析和LTR分析发现:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;四倍体中存在大量&amp;gt;1Mb的结构变异，包括1420个倒位、539个重复及725个缺失。&lt;/li&gt;
+&lt;li&gt;T亚基因组相较S亚基因组表现出更频繁的遗传变化。&lt;/li&gt;
+&lt;li&gt;仅有7.56%的LTR插入事件发生在多倍化之后，说明多倍化不必然激活大量LTR。&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;Subgenome expression divergence and epigenetic modification 
+    &lt;div id=&#34;subgenome-expression-divergence-and-epigenetic-modification&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#subgenome-expression-divergence-and-epigenetic-modification&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/Nicotiana-tabacum/image-20250415104629953.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+&lt;/td&gt;
+          &lt;td&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/Nicotiana-tabacum/image-20250422150829190.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;仅小部分基因在亚基因组与祖先种之间存在显著表达差异。&lt;/li&gt;
+&lt;li&gt;多倍体中，表达上调的基因往往甲基化水平较低。&lt;/li&gt;
+&lt;li&gt;存在66对同源基因在不同亚基因组中表达方向相反。&lt;/li&gt;
+&lt;li&gt;S/T偏好表达基因富集的功能不同。&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;Genetic diversity of a global collection of 5,196 lines 
+    &lt;div id=&#34;genetic-diversity-of-a-global-collection-of-5196-lines&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#genetic-diversity-of-a-global-collection-of-5196-lines&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;通过对全球5196份材料中的2582份进行GBS测序，作者获得了9.5万个SNP标记，覆盖了约98%的基因组区域。&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/Nicotiana-tabacum/image-20250422152625131.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/Nicotiana-tabacum/image-20250422152821231.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+&lt;/td&gt;
+          &lt;td&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/Nicotiana-tabacum/image-20250422160513242.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;PCA将晒烟和烤烟区分明显&lt;/li&gt;
+&lt;li&gt;PCA第二主成分与纬度相关&lt;/li&gt;
+&lt;li&gt;白肋烟(&amp;ldquo;White Burley”的突变品种，该品种具有叶绿素缺失的表型，由YB1和YB2两个隐性等位基因控制,)起源明确，聚集于北美谱系&lt;/li&gt;
+&lt;li&gt;IBS值在0.75-0.88之间，说明整体育种基因库较窄&lt;/li&gt;
+&lt;li&gt;虽然栽培烟草表型差异显著，但遗传分化指数显示其遗传分化仍然有限&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;Subgenome divergence and regulation of complex traits 
+    &lt;div id=&#34;subgenome-divergence-and-regulation-of-complex-traits&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#subgenome-divergence-and-regulation-of-complex-traits&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/Nicotiana-tabacum/image-20250423091335852.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+
+
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/Nicotiana-tabacum/image-20250423091456059.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+
+
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/Nicotiana-tabacum/image-20250427085006940.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+&lt;/p&gt;
+&lt;p&gt;通过对43个性状进行GWAS，筛选出39个性状的178个显著关联标记：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LD(连锁不平衡)衰减很慢，500bk内关联依然很高，难以确定具体的基因，但还是在八个关联峰附近找到了先前已报道的QTLs，同时构建了遗传图谱&lt;/li&gt;
+&lt;li&gt;大多数QTL只存在于单一亚基因组&lt;/li&gt;
+&lt;li&gt;T亚基因组对大多数抗病性状的贡献更大&lt;/li&gt;
+&lt;li&gt;HEB区域（同源表达偏倚区域）虽然SNP比例低，却对某些性状（如白粉病抗性）影响巨大&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;Arf9 is associated with leaf width variation 
+    &lt;div id=&#34;arf9-is-associated-with-leaf-width-variation&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#arf9-is-associated-with-leaf-width-variation&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/Nicotiana-tabacum/image-20250427154913654.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+&lt;/p&gt;
+&lt;p&gt;作者构建近等基因系定位叶片形态关键基因&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将候选基因定位到134 kb区间，该区间包含一个基因和2个snp标记&lt;/li&gt;
+&lt;li&gt;在XHJ品种中敲除该基因后，叶宽增加了6cm&lt;/li&gt;
+&lt;li&gt;致因突变定位于第8外显子的Ala258→Pro258变化&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;Signatures of positive selection and polygenic selection 
+    &lt;div id=&#34;signatures-of-positive-selection-and-polygenic-selection&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#signatures-of-positive-selection-and-polygenic-selection&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/Nicotiana-tabacum/image-20250507093056708.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+&lt;/p&gt;
+&lt;p&gt;研究发现：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;多数性状变化是通过多个微效QTL积累实现&lt;/li&gt;
+&lt;li&gt;这些位点尚未在群体中固定&lt;/li&gt;
+&lt;li&gt;暗示育种仍具提升空间，同时也强调了polygenic adaptation在作物演化中的重要作用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Homologous genes resulting from allopolyploidy are commonly referred to as ‘homoeologs’,&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Read</title>
       <link>https://with9.github.io/post/read/</link>
       <pubDate>Wed, 07 May 2025 00:00:52 +0800</pubDate>
@@ -4462,301 +5009,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;ModelDir&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;KIRITAN &lt;span class=&#34;c1&#34;&gt;#歌姬声源文件夹&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;StyleShift&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后运行即可,(PS 后面歌词有点问题,拗音还要研究下,就截取前面15秒吧.)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>通过polybar控制多媒体</title>
-      <link>https://with9.github.io/post/polybar_music/</link>
-      <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://with9.github.io/post/polybar_music/</guid>
-      <description>  &lt;iframe style=&#34;max-width: 100%&#34;
-      class=&#34;music163&#34;
-      frameborder=&#34;no&#34;
-      border=&#34;0&#34;
-      marginwidth=&#34;0&#34;
-      marginheight=&#34;0&#34;
-      width=&#34;330&#34;
-      height=&#34;86&#34;
-      src=&#34;//music.163.com/outchain/player?type=2&amp;id=28918133&amp;auto=0&amp;height=66&#34;&gt;
-    &lt;/iframe&gt;
-
-
-&lt;h2 class=&#34;relative group&#34;&gt;polybar简单介绍 
-    &lt;div id=&#34;polybar%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#polybar%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://polybar.github.io/&#34;   target=&#34;_blank&#34;&gt;
-    polybar&lt;/a&gt;是一个可以简单进行自定义的状态栏工具,通过各模块进行组合,可定制性非常强.这是我东拼西凑的一个样子😁&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-  
-    &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/polybar_music/Screenshot_20211216_205158.png&#34; alt=&#34;Screenshot_20211216_205158&#34; /&gt;
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-  
-    &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/polybar_music/image-20211216205419967.png&#34; alt=&#34;image-20211216205419967&#34; /&gt;
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.pixiv.net/artworks/89075761&#34;   target=&#34;_blank&#34;&gt;
-    桌面壁纸&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;今天读polybar wiki的时候,发现有一个模块是script,可以自定义并执行一些脚本,好像很好玩,官方仓库也有很多的&lt;a href=&#34;https://github.com/polybar/polybar-scripts&#34;   target=&#34;_blank&#34;&gt;
-    用户贡献的script例子&lt;/a&gt;,其中有很多是和音乐有关的.&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-  
-    &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/polybar_music/image-20211216205720202.png&#34; alt=&#34;image-20211216205720202&#34; /&gt;
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-
-
-&lt;h2 class=&#34;relative group&#34;&gt;初步尝试 
-    &lt;div id=&#34;%E5%88%9D%E6%AD%A5%E5%B0%9D%E8%AF%95&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%88%9D%E6%AD%A5%E5%B0%9D%E8%AF%95&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;p&gt;但是以spotify为主,对我用处不是很大,就想自己写一个用来显示网易云正在播放的音乐的script模块,我发现&lt;code&gt;wmctrl&lt;/code&gt;可以获取到窗口的标题,而网易云音乐的标题正好就是当前播放的曲目.&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-  
-    &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/polybar_music/image-20211216210039834.png&#34; alt=&#34;image-20211216210039834&#34; /&gt;
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-&lt;p&gt;通过&lt;code&gt;grep&lt;/code&gt;是把这行获取到了,但是前面有很多无用信息,一开始尝试&lt;code&gt;cut&lt;/code&gt;,但效果很奇怪,网上搜索一番,有一个关于如何用&lt;code&gt;wmctrl&lt;/code&gt;获取标题的&lt;a href=&#34;https://unix.stackexchange.com/questions/342404/getting-just-the-application-name-from-wmctrl-l&#34;   target=&#34;_blank&#34;&gt;
-    讨论&lt;/a&gt;,各种很奇怪的方式😂,为什么&lt;code&gt;wmctrl&lt;/code&gt;不可以提供一个格式化输出的命令呢&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-  
-    &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/polybar_music/image-20211216210814223.png&#34; alt=&#34;image-20211216210814223&#34; /&gt;
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-&lt;p&gt;一番尝试发现这条命令效果最好,copy过来(&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wmctrl -l &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sed &lt;span class=&#34;s1&#34;&gt;&amp;#39;s/^[^ ]* *[^ ]* *[^ ]* //&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wmctrl -l &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sed &lt;span class=&#34;s1&#34;&gt;&amp;#39;s/^[^ ]* *[^ ]* *[^ ]* //&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;grep &lt;span class=&#34;s1&#34;&gt;&amp;#39;Cloud Music$&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;恋ノ蟲 - 花たん — Cloud Music &lt;span class=&#34;c1&#34;&gt;#成功获取标题名&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;接下来就是简单的模仿script模板了&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;module/mymusic&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;custom/script
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;exec&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;bash -c &lt;span class=&#34;s2&#34;&gt;&amp;#34;wmctrl -l | sed &amp;#39;s/^[^ ]* *[^ ]* *[^ ]* //&amp;#39; |grep &amp;#39;Cloud Music&lt;/span&gt;$&lt;span class=&#34;s2&#34;&gt;&amp;#39;|sed &amp;#39;s/— Cloud Music//&amp;#39;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;format&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &amp;lt;label&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;label&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; %output:0:40:...%
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;format-foreground&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#3399ff&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;效果还行,可以显示播放的曲目,但是除此之外就什么都做不了了(,可以加上点击动作,跳转到网易云音乐窗口什么的&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.........
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;click-left&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;i3-msg -t &lt;span class=&#34;nb&#34;&gt;command&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;class=netease-cloud-music&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; focus
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;click-right&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;....
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2 class=&#34;relative group&#34;&gt;从KDE connect得到的灵感 
-    &lt;div id=&#34;%E4%BB%8Ekde-connect%E5%BE%97%E5%88%B0%E7%9A%84%E7%81%B5%E6%84%9F&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E4%BB%8Ekde-connect%E5%BE%97%E5%88%B0%E7%9A%84%E7%81%B5%E6%84%9F&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://userbase.kde.org/KDEConnect/zh-hans&#34;   target=&#34;_blank&#34;&gt;
-    KDE connect&lt;/a&gt;是一个可以实现手机和电脑互相接受通知的一个KDE工具,只需要在应用商店安装好并和电脑连在同一个网络的时候就可以进行消息互通,文件共传等.而且手机上还有个多媒体控制,大部分情况下可以显示现在正在播放的音乐,进行一些常规多媒体操作,包括切歌,暂停等. 
-
-
-
-
-  
-  
-  
-    &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/polybar_music/Screenshot_2021-12-16-21-20-34-120_org.kde.kdeconnect_tp.jpg&#34; alt=&#34;Screenshot_2021-12-16-21-20-34-120_org.kde.kdeconnect_tp&#34; /&gt;
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-&lt;p&gt;而且不只是一两个程序,很多的软件播放音乐,甚至firefox观看视频,这里都会显示出来,说明背后应该有一套统一的协议.那我们如果了解kde connect是如何工作的,不就可以把这个模块完善的更棒吗?&lt;/p&gt;
-&lt;p&gt;又是一番搜索,看到ubuntu论坛的这个&lt;a href=&#34;https://askubuntu.com/questions/1046143/media-players-kde-connect-multimedia-control&#34;   target=&#34;_blank&#34;&gt;
-    问题&lt;/a&gt;,题主本意是想知道如何让mpv播放的音乐被kde connect识别,第一个回答就很有帮助&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-  
-    &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/polybar_music/image-20211216212629748.png&#34; alt=&#34;image-20211216212629748&#34; /&gt;
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-&lt;p&gt;原来只要是走MPRIS协议的程序就可以被KDE connect识别,&lt;a href=&#34;https://specifications.freedesktop.org/mpris-spec/latest/&#34;   target=&#34;_blank&#34;&gt;
-    MPRIS&lt;/a&gt;希望提供一套统一的API接口来管理所有的媒体播放器. &lt;a href=&#34;https://wiki.archlinux.org/title/MPRIS&#34;   target=&#34;_blank&#34;&gt;
-    ArchlinuxWiki&lt;/a&gt;上介绍了一些与MPRIS进行通讯的工具,一眼看中了&lt;a href=&#34;https://github.com/altdesktop/playerctl&#34;   target=&#34;_blank&#34;&gt;
-    playerctrl&lt;/a&gt;,主要感觉他的操作简单直接.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~➜ playerctl metadata --format &lt;span class=&#34;s1&#34;&gt;&amp;#39;{{artist}}-{{title}}---{{album}}&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;葉月ゆら-宵闇花火---宵闇恋想奇譚
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#一次只会显示一个程序,通过-p参数可以指定显示的程序&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;playerctl -p netease-cloud-music,mpv,%any metadata &lt;span class=&#34;c1&#34;&gt;#首先选择网易云,没有再选择mpv,还是没有再选择其他&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;是不是命令非常简单直接,改进一下这是最后的版本.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;module/mymusic&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;custom/script
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;exec-if&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;playerctl status &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;egrep &lt;span class=&#34;s1&#34;&gt;&amp;#39;Playing|Paused&amp;#39;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#判断有没有媒体正在播放&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;exec&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;bash -c &lt;span class=&#34;s2&#34;&gt;&amp;#34;playerctl -p netease-cloud-music,mpv,%any metadata --format &amp;#39;{{artist}}-{{title}}--{{album}}&amp;#39;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;format&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;  &amp;lt;label&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;label&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; %output:0:40:...%
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;click-left&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;i3-msg -t &lt;span class=&#34;nb&#34;&gt;command&lt;/span&gt; workspace &lt;span class=&#34;m&#34;&gt;8&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;click-right&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;playerctl -p netease-cloud-music,mpv,%any play-pause#右键暂停
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;scroll-up&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;playerctl -p netease-cloud-music,mpv,%any previous#上划上一首
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;scroll-down&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;playerctl -p netease-cloud-music,mpv,%any next#下滑下一首
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;format-foreground&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#3399ff&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;最后的效果是这样的
-
-
-
-
-  
-  
-  
-    &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/polybar_music/image-20211216215156056.png&#34; alt=&#34;image-20211216215156056&#34; /&gt;
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
-
-
-&lt;h2 class=&#34;relative group&#34;&gt;补充 
-    &lt;div id=&#34;%E8%A1%A5%E5%85%85&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E8%A1%A5%E5%85%85&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;p&gt;用python脚本实现了点击跳转到播放工作区的功能,如果已经在这个工作区的时候就执行&lt;code&gt;back_and_forth&lt;/code&gt;跳回到之前工作区,&lt;code&gt;i3-msg -t get_tree&lt;/code&gt;返回的数据确实有点乱&amp;hellip;.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;ch&#34;&gt;#!/usr/bin/python&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#author :  with &amp;lt;dc198424601@outlook.com&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;os&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;json&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;re&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;get_windows&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;#获得一个字典,键是工作区名字,值是一个列表,里面是程序的classname&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;classPattern&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;re&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;compile&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;class&amp;#39;: &amp;#39;(.*?)&amp;#39;,&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#获取class名称的正则&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;tree_dict&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;os&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;popen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;i3-msg -t get_tree&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;treeData&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;json&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;load&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;workspace&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;treeData&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;nodes&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;][&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;][&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;nodes&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;][&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;][&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;nodes&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;tree_dict&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;workspace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;windows&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;classPattern&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;findall&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;workspace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;windows&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;tree_dict&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;workspace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;tree_dict&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;get_current_workspace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;#返回当前工作区的名字&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;os&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;popen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;i3-msg -t get_workspaces&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;treeData&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;json&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;load&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;treeData&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;focused&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;vm&#34;&gt;__name__&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;__main__&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;current_player&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;os&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;popen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;playerctl -p netease-cloud-music,mpv,&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;%a&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;ny metadata|cut -d&amp;#39; &amp;#39; -f1|uniq&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;read&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;replace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;current_player&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;not&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get_windows&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get_current_workspace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()]):&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;os&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;system&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;i3-msg -t command [class=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;] focus&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;current_player&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;os&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;system&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;i3-msg -t command workspace back_and_forth&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;p&gt;参考链接&lt;/p&gt;
-&lt;p&gt;[1]:&lt;a href=&#34;https://polybar.github.io&#34;   target=&#34;_blank&#34;&gt;
-    https://polybar.github.io/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[2]:&lt;a href=&#34;https://www.pixiv.net/artworks/89075761&#34;   target=&#34;_blank&#34;&gt;
-    https://www.pixiv.net/artworks/89075761&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[3]:&lt;a href=&#34;https://github.com/polybar/polybar-scripts&#34;   target=&#34;_blank&#34;&gt;
-    https://github.com/polybar/polybar-scripts&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[4]:&lt;a href=&#34;https://unix.stackexchange.com/questions/342404/getting-just-the-application-name-from-wmctrl-l&#34;   target=&#34;_blank&#34;&gt;
-    https://unix.stackexchange.com/questions/342404/getting-just-the-application-name-from-wmctrl-l&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[5]:&lt;a href=&#34;https://userbase.kde.org/KDEConnect/zh-hans&#34;   target=&#34;_blank&#34;&gt;
-    https://userbase.kde.org/KDEConnect/zh-hans&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[6]:&lt;a href=&#34;https://askubuntu.com/questions/1046143/media-players-kde-connect-multimedia-control&#34;   target=&#34;_blank&#34;&gt;
-    https://askubuntu.com/questions/1046143/media-players-kde-connect-multimedia-control&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[7]:&lt;a href=&#34;https://specifications.freedesktop.org/mpris-spec/latest/&#34;   target=&#34;_blank&#34;&gt;
-    https://specifications.freedesktop.org/mpris-spec/latest/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[8]:&lt;a href=&#34;https://wiki.archlinux.org/title/MPRIS&#34;   target=&#34;_blank&#34;&gt;
-    https://wiki.archlinux.org/title/MPRIS&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[9]:&lt;a href=&#34;https://github.com/altdesktop/playerctl&#34;   target=&#34;_blank&#34;&gt;
-    https://github.com/altdesktop/playerctl&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
