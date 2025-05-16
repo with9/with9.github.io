@@ -623,6 +623,122 @@
 &lt;li&gt;这些位点尚未在群体中固定&lt;/li&gt;
 &lt;li&gt;暗示育种仍具提升空间，同时也强调了polygenic adaptation在作物演化中的重要作用&lt;/li&gt;
 &lt;/ul&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;一些小概念的补充 
+    &lt;div id=&#34;%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%A6%82%E5%BF%B5%E7%9A%84%E8%A1%A5%E5%85%85&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%A6%82%E5%BF%B5%E7%9A%84%E8%A1%A5%E5%85%85&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;常见遗传群体&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;类型&lt;/th&gt;
+          &lt;th&gt;全称&lt;/th&gt;
+          &lt;th&gt;特点&lt;/th&gt;
+          &lt;th&gt;用途&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;BC&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Backcross（回交群体）&lt;/td&gt;
+          &lt;td&gt;F1与亲本之一回交得到，如F1 × P1&lt;/td&gt;
+          &lt;td&gt;遗传图谱构建，单基因定位&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;NIL&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Near-Isogenic Line（近等基因系）&lt;/td&gt;
+          &lt;td&gt;与亲本基因组高度一致，仅差一个或几个基因片段&lt;/td&gt;
+          &lt;td&gt;精准定位，功能验证&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RIL&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Recombinant Inbred Line（重组自交系）&lt;/td&gt;
+          &lt;td&gt;F2之后连续自交（多代），达到高度纯合&lt;/td&gt;
+          &lt;td&gt;QTL定位，群体结构分析&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;DH&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Double Haploid（双单倍体）&lt;/td&gt;
+          &lt;td&gt;通过花药培养等方法诱导获得纯合个体&lt;/td&gt;
+          &lt;td&gt;快速获得纯合材料&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/Nicotiana-tabacum/2025-05-09-16-24-23.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.omicsclass.com/article/814&#34;   target=&#34;_blank&#34;&gt;
+    https://www.omicsclass.com/article/814&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;状态同源 / 血缘同源 IBS / IBD
+&lt;ul&gt;
+&lt;li&gt;血缘同源（Identity By Descent，IBD），子代中共有的等位基因来源于同一祖先。&lt;/li&gt;
+&lt;li&gt;状态同源（identical by state ，IBS），两个个体拥有相同的等位基因（不一定来源以同一祖先）。&lt;/li&gt;
+&lt;li&gt;IBD可以让我们了解两个体间的亲缘关系，虽然无法直接测得，但可以根据IBS以及等位基因频率的分布来推定。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/Nicotiana-tabacum/2025-05-11-14-13-38.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://gwaslab.org/2020/04/11/%E7%8A%B6%E6%80%81%E5%90%8C%E6%BA%90-%E8%A1%80%E7%BC%98%E5%90%8C%E6%BA%90-ibs-ibd-%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AE%A1%E7%AE%97%EF%BC%88plink%EF%BC%89/&#34;   target=&#34;_blank&#34;&gt;
+    https://gwaslab.org/2020/04/11/%E7%8A%B6%E6%80%81%E5%90%8C%E6%BA%90-%E8%A1%80%E7%BC%98%E5%90%8C%E6%BA%90-ibs-ibd-%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AE%A1%E7%AE%97%EF%BC%88plink%EF%BC%89/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;群体分化遗传指数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;F&lt;sub&gt;ST&lt;/sub&gt; (Fixation index)是衡量群体间&lt;strong&gt;遗传分化程度&lt;/strong&gt;的指标，广泛应用于群体遗传学研究。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;范围&lt;/strong&gt;：0（无分化） ~ 1（完全分化）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;公式&lt;/strong&gt;：
+$$
+F_{ST} = \frac{H_T - H_S}{H_T}
+$$&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;H&lt;sub&gt;T&lt;/sub&gt;&lt;/em&gt;：总群体的期望杂合度&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;H&lt;sub&gt;S&lt;/sub&gt;&lt;/em&gt;：亚群体的平均期望杂合度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://gwaslab.org/2021/04/25/fst/&#34;   target=&#34;_blank&#34;&gt;
+    https://gwaslab.org/2021/04/25/fst/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
