@@ -16,19 +16,55 @@
   </url>
   <url>
     <loc>https://with9.github.io/post/</loc>
-    <lastmod>2025-05-12T11:33:39+08:00</lastmod>
+    <lastmod>2025-11-28T00:00:52+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://with9.github.io/post/read/</loc>
+    <lastmod>2025-11-28T00:00:52+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://with9.github.io/categories/</loc>
-    <lastmod>2025-05-12T11:33:39+08:00</lastmod>
+    <lastmod>2025-11-27T20:33:39+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://with9.github.io/tags/guide/</loc>
+    <lastmod>2025-11-27T20:33:39+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://with9.github.io/categories/it/</loc>
+    <lastmod>2025-11-27T20:33:39+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://with9.github.io/tags/it/</loc>
+    <lastmod>2025-11-27T20:33:39+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://with9.github.io/tags/linux/</loc>
+    <lastmod>2025-11-27T20:33:39+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://with9.github.io/post/sl3-throttle/</loc>
+    <lastmod>2025-11-27T20:33:39+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://with9.github.io/tags/</loc>
-    <lastmod>2025-05-12T11:33:39+08:00</lastmod>
+    <lastmod>2025-11-27T20:33:39+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -57,12 +93,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://with9.github.io/post/read/</loc>
-    <lastmod>2025-05-07T00:00:52+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://with9.github.io/post/te-triticum/</loc>
     <lastmod>2024-06-14T11:33:39+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -82,24 +112,6 @@
   </url>
   <url>
     <loc>https://with9.github.io/post/hyprland-wofi/</loc>
-    <lastmod>2024-03-13T20:33:39+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://with9.github.io/categories/it/</loc>
-    <lastmod>2024-03-13T20:33:39+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://with9.github.io/tags/it/</loc>
-    <lastmod>2024-03-13T20:33:39+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://with9.github.io/tags/linux/</loc>
     <lastmod>2024-03-13T20:33:39+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -160,12 +172,6 @@
   </url>
   <url>
     <loc>https://with9.github.io/post/kiritan/</loc>
-    <lastmod>2022-04-13T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://with9.github.io/tags/guide/</loc>
     <lastmod>2022-04-13T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Wed, 13 Mar 2024 20:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Nov 2025 20:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Surface laptop3 Linux 使用中的离奇降频问题分析</title>
+      <link>https://with9.github.io/post/sl3-throttle/</link>
+      <pubDate>Thu, 27 Nov 2025 20:33:39 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/sl3-throttle/</guid>
+      <description>Surface Laptop 3 在 Linux 下出现突然掉到 200 MHz 的原因，似乎是系统默认把 PL1（长时功率）设得远高于 CPU 的 TDP（例如 TDP 15W，但 Linux 下 PL1 被设成 25W）。这会导致长时间负载时温度压不下去，最终触发固件的保护机制而极限降频。把 PL1 调回 TDP 附近（如 12.5W），并在高温时自动切换到 performance profile 后，问题基本得到解决。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/sl3-throttle/featured.png" />
+    </item>
+    
     <item>
       <title>hyprland下实现用wofi切换窗口</title>
       <link>https://with9.github.io/post/hyprland-wofi/</link>

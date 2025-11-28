@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Mon, 12 May 2025 11:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Nov 2025 00:00:52 +0800</lastBuildDate><atom:link href="https://with9.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Read</title>
+      <link>https://with9.github.io/post/read/</link>
+      <pubDate>Fri, 28 Nov 2025 00:00:52 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/read/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/read/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>Surface laptop3 Linux 使用中的离奇降频问题分析</title>
+      <link>https://with9.github.io/post/sl3-throttle/</link>
+      <pubDate>Thu, 27 Nov 2025 20:33:39 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/sl3-throttle/</guid>
+      <description>Surface Laptop 3 在 Linux 下出现突然掉到 200 MHz 的原因，似乎是系统默认把 PL1（长时功率）设得远高于 CPU 的 TDP（例如 TDP 15W，但 Linux 下 PL1 被设成 25W）。这会导致长时间负载时温度压不下去，最终触发固件的保护机制而极限降频。把 PL1 调回 TDP 附近（如 12.5W），并在高温时自动切换到 performance profile 后，问题基本得到解决。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/sl3-throttle/featured.png" />
+    </item>
+    
     <item>
       <title>文献阅读: 烟草基因组</title>
       <link>https://with9.github.io/post/nicotiana-tabacum/</link>
@@ -16,16 +36,6 @@
       <guid>https://with9.github.io/post/nicotiana-tabacum/</guid>
       <description>作者绘制了栽培烟草及其祖先种的基因组图谱，分析亚基因组间的差异性，同时结合GBS进行性状关联分析，构建QTL连锁图谱</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/nicotiana-tabacum/featured.png" />
-    </item>
-    
-    <item>
-      <title>Read</title>
-      <link>https://with9.github.io/post/read/</link>
-      <pubDate>Wed, 07 May 2025 00:00:52 +0800</pubDate>
-      
-      <guid>https://with9.github.io/post/read/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/read/featured.jpg" />
     </item>
     
     <item>
