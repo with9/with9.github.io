@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Thu, 27 Nov 2025 20:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/tags/it/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Nov 2025 00:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/tags/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用九宫格来刷B站耶</title>
+      <link>https://with9.github.io/post/9bilibili/</link>
+      <pubDate>Sun, 30 Nov 2025 00:33:39 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/9bilibili/</guid>
+      <description>利用 Hyprscroller + dmlive + parallel，一次性刷 n 个视频不是梦。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/9bilibili/featured.png" />
+    </item>
+    
     <item>
       <title>Surface laptop3 Linux 使用中的离奇降频问题分析</title>
       <link>https://with9.github.io/post/sl3-throttle/</link>

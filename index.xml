@@ -88,6 +88,198 @@
     </item>
     
     <item>
+      <title>用九宫格来刷B站耶</title>
+      <link>https://with9.github.io/post/9bilibili/</link>
+      <pubDate>Sun, 30 Nov 2025 00:33:39 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/9bilibili/</guid>
+      <description>
+
+&lt;h2 class=&#34;relative group&#34;&gt;效果展示 
+    &lt;div id=&#34;%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;设备边播放边录制有点吃力，所以看起来有丝丝卡顿。效果就是可以同时刷n个视频。
+&lt;video width=100% controls&gt;
+&lt;source src=&#34;https://with9.github.io/img/9bilibili/9bilibili.mp4&#34; type=&#34;video/webm&#34;&gt;&lt;br&gt;
+&lt;/video&gt;&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;准备工作 
+    &lt;div id=&#34;%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;要实现“九宫格刷 B 站”，我们需要准备以下工具：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;视频地址列表&lt;/li&gt;
+&lt;li&gt;播放器：推荐用 &lt;a href=&#34;https://github.com/THMonster/Revda&#34;   target=&#34;_blank&#34;&gt;
+    revda&lt;/a&gt; 的 dmlive，直接用 mpv 的 yt-dlp 也可以，后者看不到弹幕。&lt;/li&gt;
+&lt;li&gt;并行工具，推荐用 &lt;a href=&#34;https://www.gnu.org/software/parallel&#34;   target=&#34;_blank&#34;&gt;
+    parallel&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;mpv 需要配置自动退出脚本，不然会同一个视频循环播放。&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;获取视频播放列表 
+    &lt;div id=&#34;%E8%8E%B7%E5%8F%96%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%88%97%E8%A1%A8&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E8%8E%B7%E5%8F%96%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%88%97%E8%A1%A8&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;推荐使用这个优秀的插件导出收藏夹列表：&lt;br&gt;
+👉 &lt;a href=&#34;https://github.com/AHCorn/Bilibili-Favlist-Export&#34;   target=&#34;_blank&#34;&gt;
+    AHCorn / Bilibili-Favlist-Export&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;该插件导出的文件是 CSV，其中第二列就是我们所需的视频 URL。&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/9bilibili/bilibiliFavlistExport.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+&lt;/p&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;hyprscroller配置 
+    &lt;div id=&#34;hyprscroller%E9%85%8D%E7%BD%AE&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#hyprscroller%E9%85%8D%E7%BD%AE&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;我们需要用到该hyprland插件提供的&lt;a href=&#34;https://github.com/dawsers/hyprscroller/issues/5&#34;   target=&#34;_blank&#34;&gt;
+    grid模式&lt;/a&gt;，虽然作者已经不再维护该插件，但咱找到了个还在&lt;a href=&#34;https://github.com/cpiber/hyprscroller&#34;   target=&#34;_blank&#34;&gt;
+    活跃的分支&lt;/a&gt;，通过以下命令可以设定 grid 模式的行为，使窗口按下图顺序出现，且不会自动抢焦点：&lt;br&gt;
+&lt;code&gt;hyprctl dispatch scroller:setmodemodifier end,nofocus,auto:3&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/9bilibili/hyprgrid.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+&lt;/p&gt;
+&lt;p&gt;同时推荐下两项配置：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;plugin:scroller:overview_scale_content 0&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;缩放会带来额外性能消耗，建议临时关闭。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;windowrulev2 = plugin:scroller:columnwidth one,workspace:2&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;让窗口自动填满宽度。可以全局设置，也可以像咱一样为特定工作区单独设置。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;mpv自动退出 
+    &lt;div id=&#34;mpv%E8%87%AA%E5%8A%A8%E9%80%80%E5%87%BA&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#mpv%E8%87%AA%E5%8A%A8%E9%80%80%E5%87%BA&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;~&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;➜&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cat&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;~/&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;config&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mpv&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;scripts&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;quit_d.lua&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;mp.register_event&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;end-file&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kr&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;event&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kr&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;event.reason&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;eof&amp;#34;&lt;/span&gt; &lt;span class=&#34;kr&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kd&#34;&gt;local&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pos&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;mp.get_property_number&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;playlist-pos&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kd&#34;&gt;local&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;count&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;mp.get_property_number&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;playlist-count&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kr&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pos&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;count&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;kr&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;mp.msg&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;info&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Last file finished, quitting mpv&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;mp.command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;quit&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kr&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kr&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;end&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 class=&#34;relative group&#34;&gt;Play耶 
+    &lt;div id=&#34;play%E8%80%B6&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#play%E8%80%B6&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;准备完成后，就可以开始一次性刷多个视频啦。&lt;br&gt;
+下面是一个简单的流程：先根据 CSV 生成可执行的 fish 脚本，在播放后自动记录已看视频。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fish&#34; data-lang=&#34;fish&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# played记录看完的视频, 避免每次重新跑
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;csvtk&lt;/span&gt; cut &lt;span class=&#34;na&#34;&gt;-f&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; 稍后.csv&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; dmlive &lt;span class=&#34;na&#34;&gt;-u&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\&amp;#34;\;\;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\&amp;#34;&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\&amp;gt;\&amp;gt;&lt;/span&gt; played &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt; play.&lt;span class=&#34;nb&#34;&gt;fish
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; head play.&lt;span class=&#34;nb&#34;&gt;fish
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;dmlive&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;-u&lt;/span&gt; url&lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; url &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt; played
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;dmlive&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;-u&lt;/span&gt; https://www.bilibili.com/video/BV1am5vzMEtH&lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; https://www.bilibili.com/video/BV1am5vzMEtH &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt; played
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;dmlive&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;-u&lt;/span&gt; https://www.bilibili.com/video/BV1xQCxBdEUW&lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; https://www.bilibili.com/video/BV1xQCxBdEUW &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt; played
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;dmlive&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;-u&lt;/span&gt; https://www.bilibili.com/video/BV1XpBgYHE1i&lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; https://www.bilibili.com/video/BV1XpBgYHE1i &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt; played
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;dmlive&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;-u&lt;/span&gt; https://www.bilibili.com/video/BV1hYWnz9E3u&lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; https://www.bilibili.com/video/BV1hYWnz9E3u &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt; played
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;dmlive&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;-u&lt;/span&gt; https://www.bilibili.com/video/BV1S7C1BSEmq&lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; https://www.bilibili.com/video/BV1S7C1BSEmq &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt; played
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;dmlive&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;-u&lt;/span&gt; https://www.bilibili.com/video/BV13kSoYLE8H&lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; https://www.bilibili.com/video/BV13kSoYLE8H &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt; played
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;dmlive&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;-u&lt;/span&gt; https://www.bilibili.com/video/BV1UEtdzREai&lt;span class=&#34;p&#34;&gt;;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; https://www.bilibili.com/video/BV1UEtdzREai &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt; played
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#播放
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;grep&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;-v&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;-F&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;-f&lt;/span&gt; played play.&lt;span class=&#34;nb&#34;&gt;fish&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;parallel&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;-j&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;8&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;小建议：最好保持聚焦在最上面的窗口，不然新生成的窗口会有点怪，会变成类似这样的情况。&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/9bilibili/wrongplace.png&#34; alt=&#34;&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Read</title>
       <link>https://with9.github.io/post/read/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:52 +0800</pubDate>
@@ -5275,150 +5467,6 @@ $$&lt;/li&gt;
 &lt;hr&gt;
 &lt;p&gt;[1]:  郭瑾&amp;amp;李玮.在《关于莉莉周的一切》中听德彪西音乐.电影文学 133–134 (2010).&lt;/p&gt;
 &lt;p&gt;[2]:  逯杉楠.青春其实并不残酷——读解《关于莉莉周的一切》的青春主题.绥化学院学报 31, 137–138 (2011).&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>通过autossh访问内网,进行远程办公 </title>
-      <link>https://with9.github.io/post/autossh/</link>
-      <pubDate>Thu, 21 Jul 2022 16:33:39 +0800</pubDate>
-      
-      <guid>https://with9.github.io/post/autossh/</guid>
-      <description>
-
-&lt;h2 class=&#34;relative group&#34;&gt;起因 
-    &lt;div id=&#34;%E8%B5%B7%E5%9B%A0&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E8%B5%B7%E5%9B%A0&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;p&gt;所里为了确保安全，是禁止服务器开放对外部访问的，为了可以在宿舍也能登陆服务器进行办公，尝试了各种奇怪方法，之前一直是利用tmate这个灵车方案的，很不稳定，无意看到autossh可以端口转发，就打算试一下，非常简单，把公钥传送给远程服务器，然后运行autossh就可以啦。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#A 是所内服务器地址&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#B 是我租的腾讯云学生服务器地址&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;auautossh -M &lt;span class=&#34;m&#34;&gt;4010&lt;/span&gt; -fNR 4000:A:22 usename@B &lt;span class=&#34;c1&#34;&gt;#就可以把A服务器的22端口转发到B服务器啦&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh usename@B -p &lt;span class=&#34;m&#34;&gt;4000&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#这里用户名要填A服务器的用户名。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2 class=&#34;relative group&#34;&gt;二 
-    &lt;div id=&#34;%E4%BA%8C&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E4%BA%8C&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;p&gt;一切都满顺利的,但是有个问题,这个服务器不是我一个人在用,大家也不接受只可以密钥登陆的方式,暴露在公网还允许密码登陆就非常危险了,于是我就打算在这里面跑一台虚拟机,把虚拟机的ssh端口转发到B服务器上.&lt;/p&gt;
-
-
-&lt;h3 class=&#34;relative group&#34;&gt;建立虚拟机 
-    &lt;div id=&#34;%E5%BB%BA%E7%AB%8B%E8%99%9A%E6%8B%9F%E6%9C%BA&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%BB%BA%E7%AB%8B%E8%99%9A%E6%8B%9F%E6%9C%BA&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;qemu-img create -f qcow2 arch.qcow2 20G &lt;span class=&#34;c1&#34;&gt;#建立虚拟磁盘&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;qemu-system-x86_64 archlinux.iso -drive &lt;span class=&#34;nv&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/home/with/qemu/arch.qcow2  -m 4G  -nic user,hostfwd&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;tcp::10022-:22 -vnc :0 -smp &lt;span class=&#34;nv&#34;&gt;cores&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;2,threads&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;1,sockets&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; -monitor unix:arch-socket,server,nowait 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 一些参数说明&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# -monitor: 把控制台转发到一个文件,之后可以利用socat来发送命令&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# -nic    : 网络,并把虚拟机的22端口转发到10022上&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 然后vnc登陆进去照着wiki安装一下就行,安装sshd服务,并启用,配置禁止密码登陆&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 class=&#34;relative group&#34;&gt;端口转发 
-    &lt;div id=&#34;%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#回到宿主机&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;auautossh -M &lt;span class=&#34;m&#34;&gt;4010&lt;/span&gt; -fNR 4000:A:10022 usename@B &lt;span class=&#34;c1&#34;&gt;#把虚拟机的22端口转发到B服务器的4000上&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh usename@B -p &lt;span class=&#34;m&#34;&gt;4000&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#这里用户名要填虚拟机的用户名。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 class=&#34;relative group&#34;&gt;补充 
-    &lt;div id=&#34;%E8%A1%A5%E5%85%85&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E8%A1%A5%E5%85%85&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h3&gt;
-
-
-&lt;h4 class=&#34;relative group&#34;&gt;文件传送 
-    &lt;div id=&#34;%E6%96%87%E4%BB%B6%E4%BC%A0%E9%80%81&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E6%96%87%E4%BB%B6%E4%BC%A0%E9%80%81&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h4&gt;
-&lt;p&gt;为了传送文件,打算搞一个&lt;a href=&#34;https://wiki.qemu.org/Documentation/9psetup&#34;   target=&#34;_blank&#34;&gt;
-    virtfs&lt;/a&gt;,也很简单&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#加上-virtfs 参数就行&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;qemu-system-x86_64 ...... -virtfs local,path&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/data2/qemu_temp,mount_tag&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;temp,security_model&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;none 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 进入虚拟机&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo mount -t 9p -o &lt;span class=&#34;nv&#34;&gt;trans&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;virtio,access&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;any temp /temp_qemu &lt;span class=&#34;c1&#34;&gt;#挂载上,之后就可以rsync或者scp把文件传上去了&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h4 class=&#34;relative group&#34;&gt;tmux管理 
-    &lt;div id=&#34;tmux%E7%AE%A1%E7%90%86&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#tmux%E7%AE%A1%E7%90%86&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h4&gt;
-&lt;p&gt;首先连接不是太稳定,然后要访问的服务器也有点点多,所以打算用tmux来管理.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; cat .tmux.conf
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;unbind C-b 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; -g prefix C-a &lt;span class=&#34;c1&#34;&gt;#修改prefix,避免冲突&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; cat .bashrc
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;...
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;...
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux attach &lt;span class=&#34;c1&#34;&gt;# 一登陆就打开tmux,避免重链&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;autossh -M &lt;span class=&#34;m&#34;&gt;5100&lt;/span&gt; usename@B -p &lt;span class=&#34;m&#34;&gt;4000&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 通过autossh来链接,会自动重连,比较方便&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;最后附上截图&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-  
-    &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/autossh/Screenshot_20220721_164330.png&#34; alt=&#34;image-20220409124541099&#34; /&gt;
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
 </description>
     </item>
     
