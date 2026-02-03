@@ -107,7 +107,7 @@
     "keywords": ["IT","Linux","guide"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "189"
+    "wordCount": "220"
   }]
   </script>
 
@@ -834,6 +834,7 @@
       </ul>
     </li>
     <li><a href="#play耶">Play耶</a></li>
+    <li><a href="#番外1获取特定up的所有视频">番外1：获取特定up的所有视频</a></li>
   </ul>
 </nav>
   </div>
@@ -856,6 +857,7 @@
       </ul>
     </li>
     <li><a href="#play耶">Play耶</a></li>
+    <li><a href="#番外1获取特定up的所有视频">番外1：获取特定up的所有视频</a></li>
   </ul>
 </nav>
   </div>
@@ -1078,7 +1080,27 @@
 </span></span><span class="line"><span class="cl"><span class="c">#播放
 </span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="nf">grep</span> <span class="na">-v</span> <span class="na">-F</span> <span class="na">-f</span> played play.<span class="nb">fish</span><span class="o">|</span><span class="nf">parallel</span> <span class="na">-j</span> <span class="m">8</span>
 </span></span></code></pre></div><p>小建议：最好保持聚焦在最上面的窗口，不然新生成的窗口会有点怪，会变成类似这样的情况。</p>
-<p>
+
+
+<h2 class="relative group">番外1：获取特定up的所有视频 
+    <div id="%E7%95%AA%E5%A4%961%E8%8E%B7%E5%8F%96%E7%89%B9%E5%AE%9Aup%E7%9A%84%E6%89%80%E6%9C%89%E8%A7%86%E9%A2%91" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%95%AA%E5%A4%961%E8%8E%B7%E5%8F%96%E7%89%B9%E5%AE%9Aup%E7%9A%84%E6%89%80%E6%9C%89%E8%A7%86%E9%A2%91" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fish" data-lang="fish"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">yt-dlp</span> <span class="s2">&#34;https://space.bilibili.com/3546394455443750&#34;</span> <span class="na">--cookies-from-browser</span> firefox <span class="na">--dump-single-json</span><span class="o">|</span><span class="nf">jq</span> <span class="na">-r</span> <span class="s1">&#39;.entries[] | [.title, .webpage_url] | @csv&#39;</span> <span class="o">&gt;</span> out.csv
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">&gt;</span> head out.csv
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;多多理财 | 我们都渴望一个新的主人，但我们并不承认&#34;</span>,<span class="s2">&#34;https://www.bilibili.com/video/BV1pJ2vBJEEB&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;天鹅之歌 | 缺乏主体性是最恶毒的指责，禁忌享乐隐藏其后&#34;</span>,<span class="s2">&#34;https://www.bilibili.com/video/BV1bcCGBpEMQ&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;八号出口 | 鬼怪、异常、中式怪核与千禧梦核，为什么不可能的才是最真实的？&#34;</span>,<span class="s2">&#34;https://www.bilibili.com/video/BV19z1MBoETW&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;星之梦 | 宏伟计划与世界精神的骗局，你总是不受控制地走向失败&#34;</span>,<span class="s2">&#34;https://www.bilibili.com/video/BV1g5WhzmEoN&#34;</span>
+</span></span></code></pre></div><p>
 
 
 
@@ -1131,7 +1153,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/post/read/">
+            <a class="flex group mr-3" href="/post/scroll-grid/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1143,11 +1165,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Read</span
+                  >scroll实现grid布局</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2025-11-28 00:00:52 &#43;0800 CST">2025-11-28</time>
+                    <time datetime="2025-11-27 20:33:39 &#43;0800 CST">2025-11-27</time>
                   
                 </span>
               </span>
@@ -1155,6 +1177,28 @@
           
         </span>
         <span>
+          
+            <a class="flex text-right group ml-3" href="/post/cool_tools/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >安利一些非常酷的小工具</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-12-04 20:33:39 &#43;0800 CST">2025-12-04</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
           
         </span>
       </div>
@@ -1244,7 +1288,7 @@
     
     <p class="text-sm text-neutral-500 dark:text-neutral-400">
       &copy;
-      2025
+      2026
       
     </p>
     

@@ -6,8 +6,18 @@
     <description>Recent content in IT on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2025 </copyright>
-    <lastBuildDate>Sun, 30 Nov 2025 00:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2026 </copyright>
+    <lastBuildDate>Thu, 04 Dec 2025 20:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>安利一些非常酷的小工具</title>
+      <link>https://with9.github.io/post/cool_tools/</link>
+      <pubDate>Thu, 04 Dec 2025 20:33:39 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/cool_tools/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>用九宫格来刷B站耶</title>
       <link>https://with9.github.io/post/9bilibili/</link>
@@ -16,6 +26,16 @@
       <guid>https://with9.github.io/post/9bilibili/</guid>
       <description>利用 Hyprscroller + dmlive + parallel，一次性刷 n 个视频不是梦。</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/9bilibili/featured.png" />
+    </item>
+    
+    <item>
+      <title>scroll实现grid布局</title>
+      <link>https://with9.github.io/post/scroll-grid/</link>
+      <pubDate>Thu, 27 Nov 2025 20:33:39 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/scroll-grid/</guid>
+      <description></description>
+      
     </item>
     
     <item>

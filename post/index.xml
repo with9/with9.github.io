@@ -6,8 +6,18 @@
     <description>Recent content in Blog on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2025 </copyright>
-    <lastBuildDate>Sun, 30 Nov 2025 00:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2026 </copyright>
+    <lastBuildDate>Thu, 04 Dec 2025 20:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>安利一些非常酷的小工具</title>
+      <link>https://with9.github.io/post/cool_tools/</link>
+      <pubDate>Thu, 04 Dec 2025 20:33:39 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/cool_tools/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>用九宫格来刷B站耶</title>
       <link>https://with9.github.io/post/9bilibili/</link>
@@ -19,13 +29,13 @@
     </item>
     
     <item>
-      <title>Read</title>
-      <link>https://with9.github.io/post/read/</link>
-      <pubDate>Fri, 28 Nov 2025 00:00:52 +0800</pubDate>
+      <title>scroll实现grid布局</title>
+      <link>https://with9.github.io/post/scroll-grid/</link>
+      <pubDate>Thu, 27 Nov 2025 20:33:39 +0800</pubDate>
       
-      <guid>https://with9.github.io/post/read/</guid>
+      <guid>https://with9.github.io/post/scroll-grid/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/read/featured.jpg" />
+      
     </item>
     
     <item>
@@ -156,6 +166,16 @@
       <guid>https://with9.github.io/post/zotero-cite/</guid>
       <description>介绍一下如何利用zotero及其插件在纯文本写作下随写随引</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/zotero-cite/featured.png" />
+    </item>
+    
+    <item>
+      <title>Read</title>
+      <link>https://with9.github.io/post/read/</link>
+      <pubDate>Sun, 30 May 2021 00:00:52 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/read/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/read/featured.jpg" />
     </item>
     
     <item>
