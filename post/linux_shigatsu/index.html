@@ -107,7 +107,7 @@
     "keywords": ["IT","Linux","game"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "97"
+    "wordCount": "80"
   }]
   </script>
 
@@ -822,39 +822,18 @@
         <div class="article-content max-w-prose mb-20">
           
 
-<h1 class="relative group">2026-03-09补充 
-    <div id="2026-03-09%E8%A1%A5%E5%85%85" class="anchor"></div>
+<h1 class="relative group">运行原版 
+    <div id="%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%89%88" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#2026-03-09%E8%A1%A5%E5%85%85" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%89%88" aria-label="Anchor">#</a>
     </span>        
     
 </h1>
-<p>玩不了, 完全玩不了(#`Д´)ﾉ, 咒杀篇前有个动画, 无法播放会直接卡死.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">winegstreamer error: asfdemux5: Internal data stream error.
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">winegstreamer error: asfdemux5: ../gst/asfdemux/gstasfdemux.c<span class="o">(</span>2214<span class="o">)</span>: gst_asf_demux_loop <span class="o">()</span>: /GstBin:bin5/GstDecodeBin:decodebin15/GstASFDemux:asfdemux5:
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">streaming stopped, reason not-negotiated <span class="o">(</span>-4<span class="o">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">winegstreamer error: asfdemux5: Internal data stream error. 
-</span></span></code></pre></div>
-
-<h1 class="relative group">游戏安装与配置 
-    <div id="%E6%B8%B8%E6%88%8F%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%B8%B8%E6%88%8F%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE" aria-label="Anchor">#</a>
-    </span>        
-    
-</h1>
-<p>本体和汉化补丁下载参考该专栏: <a href="https://www.bilibili.com/opus/974061242350043142"   target="_blank">
-    死月妖花～四月八日～ AI汉化补丁</a>, 先将补丁内文件复制到本体游戏文件夹内.</p>
+<p>游戏下载: <a href="https://www.freem.ne.jp/dl/win/19917"   target="_blank">
+    死月妖花～四月八日～</a></p>
 <p>安装配置bottles, 必须用flatpak版本的, 非flatpak安装会无法运行游戏, 咱目前不清楚具体原因.</p>
 <ul>
 <li><code>flatpak install com.usebottles.bottles </code></li>
@@ -863,7 +842,43 @@
 </ul>
 <p>新建bottles</p>
 <ul>
-<li>选择自定义32位架构, 运行器选择soda, 咱这里是<code>soda-9.0-1</code>.</li>
+<li>选择自定义32位架构, 运行器选择soda-7.0.</li>
+<li>安装cjkfonts.</li>
+<li>环境变量: LC_ALL=ja_JP.UTF-8.</li>
+</ul>
+<p>
+
+
+
+
+  
+  
+  
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/img/linux_shigatsu/final.png" alt="image-orignal" />
+      
+    </figure>
+  
+
+</p>
+
+
+<h1 class="relative group">汉化安装与配置 
+    <div id="%E6%B1%89%E5%8C%96%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%B1%89%E5%8C%96%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE" aria-label="Anchor">#</a>
+    </span>        
+    
+</h1>
+<p>!!汉化版目前只能过完序章, 无法进入呪殺編, 如果不介意字体中部分乱码的话, 可以直接用运行原版的方式跑加入补丁的版本. 也许我们可以用补丁带的字体替换原版字体, 但咱目前不清楚要如何做.</p>
+<p>汉化补丁下载参考该专栏: <a href="https://www.bilibili.com/opus/974061242350043142"   target="_blank">
+    死月妖花～四月八日～ AI汉化补丁</a>, 先将补丁内文件复制到本体游戏文件夹内.</p>
+<p>新建bottles</p>
+<ul>
+<li>选择自定义32位架构, 运行器选择soda-9.0.</li>
 </ul>
 <p>安装字体、依赖及配置</p>
 <ul>

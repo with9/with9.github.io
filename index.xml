@@ -95,39 +95,18 @@
       <guid>https://with9.github.io/post/linux_shigatsu/</guid>
       <description>
 
-&lt;h1 class=&#34;relative group&#34;&gt;2026-03-09补充 
-    &lt;div id=&#34;2026-03-09%E8%A1%A5%E5%85%85&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+&lt;h1 class=&#34;relative group&#34;&gt;运行原版 
+    &lt;div id=&#34;%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%89%88&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
     
     &lt;span
         class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
         &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#2026-03-09%E8%A1%A5%E5%85%85&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%89%88&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
     &lt;/span&gt;        
     
 &lt;/h1&gt;
-&lt;p&gt;玩不了, 完全玩不了(#`Д´)ﾉ, 咒杀篇前有个动画, 无法播放会直接卡死.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;winegstreamer error: asfdemux5: Internal data stream error.
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;winegstreamer error: asfdemux5: ../gst/asfdemux/gstasfdemux.c&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;2214&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;: gst_asf_demux_loop &lt;span class=&#34;o&#34;&gt;()&lt;/span&gt;: /GstBin:bin5/GstDecodeBin:decodebin15/GstASFDemux:asfdemux5:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;streaming stopped, reason not-negotiated &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;-4&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;winegstreamer error: asfdemux5: Internal data stream error. 
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h1 class=&#34;relative group&#34;&gt;游戏安装与配置 
-    &lt;div id=&#34;%E6%B8%B8%E6%88%8F%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E6%B8%B8%E6%88%8F%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h1&gt;
-&lt;p&gt;本体和汉化补丁下载参考该专栏: &lt;a href=&#34;https://www.bilibili.com/opus/974061242350043142&#34;   target=&#34;_blank&#34;&gt;
-    死月妖花～四月八日～ AI汉化补丁&lt;/a&gt;, 先将补丁内文件复制到本体游戏文件夹内.&lt;/p&gt;
+&lt;p&gt;游戏下载: &lt;a href=&#34;https://www.freem.ne.jp/dl/win/19917&#34;   target=&#34;_blank&#34;&gt;
+    死月妖花～四月八日～&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;安装配置bottles, 必须用flatpak版本的, 非flatpak安装会无法运行游戏, 咱目前不清楚具体原因.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;flatpak install com.usebottles.bottles &lt;/code&gt;&lt;/li&gt;
@@ -136,7 +115,43 @@
 &lt;/ul&gt;
 &lt;p&gt;新建bottles&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;选择自定义32位架构, 运行器选择soda, 咱这里是&lt;code&gt;soda-9.0-1&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;选择自定义32位架构, 运行器选择soda-7.0.&lt;/li&gt;
+&lt;li&gt;安装cjkfonts.&lt;/li&gt;
+&lt;li&gt;环境变量: LC_ALL=ja_JP.UTF-8.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+  
+  
+  
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/linux_shigatsu/final.png&#34; alt=&#34;image-orignal&#34; /&gt;
+      
+    &lt;/figure&gt;
+  
+
+&lt;/p&gt;
+
+
+&lt;h1 class=&#34;relative group&#34;&gt;汉化安装与配置 
+    &lt;div id=&#34;%E6%B1%89%E5%8C%96%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E6%B1%89%E5%8C%96%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+&lt;p&gt;!!汉化版目前只能过完序章, 无法进入呪殺編, 如果不介意字体中部分乱码的话, 可以直接用运行原版的方式跑加入补丁的版本. 也许我们可以用补丁带的字体替换原版字体, 但咱目前不清楚要如何做.&lt;/p&gt;
+&lt;p&gt;汉化补丁下载参考该专栏: &lt;a href=&#34;https://www.bilibili.com/opus/974061242350043142&#34;   target=&#34;_blank&#34;&gt;
+    死月妖花～四月八日～ AI汉化补丁&lt;/a&gt;, 先将补丁内文件复制到本体游戏文件夹内.&lt;/p&gt;
+&lt;p&gt;新建bottles&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;选择自定义32位架构, 运行器选择soda-9.0.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;安装字体、依赖及配置&lt;/p&gt;
 &lt;ul&gt;
