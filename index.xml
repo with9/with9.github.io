@@ -88,7 +88,7 @@
     </item>
     
     <item>
-      <title>Linux下用bottles运行悬疑民俗大作 死月妖花～四月八日 汉化版的方法</title>
+      <title>Linux下用bottles运行悬疑民俗大作 死月妖花～四月八日 汉化版的初探</title>
       <link>https://with9.github.io/post/linux_shigatsu/</link>
       <pubDate>Thu, 05 Mar 2026 00:33:39 +0800</pubDate>
       
@@ -146,8 +146,10 @@
     &lt;/span&gt;        
     
 &lt;/h1&gt;
-&lt;p&gt;!!汉化版目前只能过完序章, 无法进入呪殺編, 如果不介意字体中部分乱码的话, 可以直接用运行原版的方式跑加入补丁的版本. 也许我们可以用补丁带的字体替换原版字体, 但咱目前不清楚要如何做.&lt;/p&gt;
-&lt;p&gt;汉化补丁下载参考该专栏: &lt;a href=&#34;https://www.bilibili.com/opus/974061242350043142&#34;   target=&#34;_blank&#34;&gt;
+&lt;p&gt;!!汉化版目前只能过完序章, 无法进入呪殺編, 如果不介意字体中部分乱码的话倒是可以跑, 可以直接用运行原版的方式跑加入补丁的版本. 也许我们可以用补丁带的字体替换原版字体, 但咱目前不清楚要如何做. 下面做个简单的记录, 也许有朋友可以解决这个问题.&lt;/p&gt;
+&lt;p&gt;目前有个纯方法, 按照下面流程配置soda9.0的汉化补丁, 遇到有问题的地方换成soda7.0, 存档后再切回去[捂脸]&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ln users/steamuser/AppData/Local/死月妖花～四月八日～&lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;Ver2.0.0.4/save.dat users/with9/AppData/Local/死月妖花～四月八日～&lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;Ver2.0.0.4/save.dat  &lt;span class=&#34;c1&#34;&gt;#通过硬链接公用一个存档&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;汉化补丁下载参考该专栏: &lt;a href=&#34;https://www.bilibili.com/opus/974061242350043142&#34;   target=&#34;_blank&#34;&gt;
     死月妖花～四月八日～ AI汉化补丁&lt;/a&gt;, 先将补丁内文件复制到本体游戏文件夹内.&lt;/p&gt;
 &lt;p&gt;新建bottles&lt;/p&gt;
 &lt;ul&gt;
@@ -166,7 +168,7 @@
 &lt;li&gt;
 &lt;p&gt;依赖&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;dotnet48 补丁所用的方式是StringReloads, 通过dsound.dll进行注入, 所以需要安装.NET&lt;/li&gt;
+&lt;li&gt;dotnet40 补丁所用的方式是StringReloads, 通过dsound.dll进行注入, 所以需要安装.NET&lt;/li&gt;
 &lt;li&gt;quartz 播放开头动画所需, 切勿安装dsound, 可能会导致开头黑屏.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
