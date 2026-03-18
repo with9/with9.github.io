@@ -88,7 +88,7 @@
     </item>
     
     <item>
-      <title>Linux下用bottles运行悬疑民俗大作 死月妖花～四月八日 汉化版的初探</title>
+      <title>Linux下用bottles运行悬疑民俗大作 死月妖花～四月八日 汉化版的方法</title>
       <link>https://with9.github.io/post/linux_shigatsu/</link>
       <pubDate>Thu, 05 Mar 2026 00:33:39 +0800</pubDate>
       
@@ -107,17 +107,17 @@
 &lt;/h1&gt;
 &lt;p&gt;游戏下载: &lt;a href=&#34;https://www.freem.ne.jp/dl/win/19917&#34;   target=&#34;_blank&#34;&gt;
     死月妖花～四月八日～&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;安装配置bottles, 必须用flatpak版本的, 非flatpak安装会无法运行游戏, 咱目前不清楚具体原因.&lt;/p&gt;
+&lt;p&gt;安装配置bottles，必须用flatpak版本的，非flatpak安装会无法运行游戏，咱目前不清楚具体原因。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;flatpak install com.usebottles.bottles &lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;flatpak config --set extra-languages ja&lt;/code&gt; 与之后配置的LC_ALL环境变量有关.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;flatpak update&lt;/code&gt; 会自动安装一些locale相关的包.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;flatpak config --set extra-languages ja&lt;/code&gt; 与之后配置的LC_ALL环境变量有关&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;flatpak update&lt;/code&gt; 会自动安装一些locale相关的包&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;新建bottles&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;选择自定义32位架构, 运行器选择soda-7.0.&lt;/li&gt;
-&lt;li&gt;安装cjkfonts.&lt;/li&gt;
-&lt;li&gt;环境变量: LC_ALL=ja_JP.UTF-8.&lt;/li&gt;
+&lt;li&gt;选择自定义32位架构，运行器选择 &lt;code&gt;soda-7.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;安装&lt;code&gt;cjkfonts&lt;/code&gt; 或复制 &lt;code&gt;msgothic.ttc&lt;/code&gt; 到环境的 &lt;code&gt;drive_c/windows/Fonts/&lt;/code&gt; 下&lt;/li&gt;
+&lt;li&gt;环境变量: &lt;code&gt;LC_ALL=ja_JP.UTF-8&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 
@@ -146,44 +146,59 @@
     &lt;/span&gt;        
     
 &lt;/h1&gt;
-&lt;p&gt;!!汉化版目前只能过完序章, 无法进入呪殺編, 如果不介意字体中部分乱码的话倒是可以跑, 可以直接用运行原版的方式跑加入补丁的版本. 也许我们可以用补丁带的字体替换原版字体, 但咱目前不清楚要如何做. 下面做个简单的记录, 也许有朋友可以解决这个问题.&lt;/p&gt;
-&lt;p&gt;目前有个纯方法, 按照下面流程配置soda9.0的汉化补丁, 遇到有问题的地方换成soda7.0, 存档后再切回去[捂脸]&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ln users/steamuser/AppData/Local/死月妖花～四月八日～&lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;Ver2.0.0.4/save.dat users/with9/AppData/Local/死月妖花～四月八日～&lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;Ver2.0.0.4/save.dat  &lt;span class=&#34;c1&#34;&gt;#通过硬链接公用一个存档&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;汉化补丁下载参考该专栏: &lt;a href=&#34;https://www.bilibili.com/opus/974061242350043142&#34;   target=&#34;_blank&#34;&gt;
-    死月妖花～四月八日～ AI汉化补丁&lt;/a&gt;, 先将补丁内文件复制到本体游戏文件夹内.&lt;/p&gt;
-&lt;p&gt;新建bottles&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;选择自定义32位架构, 运行器选择soda-9.0.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;安装字体、依赖及配置&lt;/p&gt;
+&lt;p&gt;汉化补丁下载参考该专栏: &lt;a href=&#34;https://www.bilibili.com/opus/974061242350043142&#34;   target=&#34;_blank&#34;&gt;
+    死月妖花～四月八日～ AI汉化补丁&lt;/a&gt;，先将补丁内文件复制到本体游戏文件夹内。&lt;/p&gt;
+&lt;p&gt;伪装字体&lt;/p&gt;
+&lt;p&gt;该汉化补丁通过 StringReloads 劫持游戏的 DSOUND.dll 实现字体替换。折腾过程中发现：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;字体文件复制到环境的&lt;code&gt;drive_c/windows/Fonts/&lt;/code&gt;下&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/FSKiller/Microsoft-Fonts/raw/refs/heads/main/msgothic.ttc&#34;   target=&#34;_blank&#34;&gt;
-    msgothic.ttc&lt;/a&gt; 用cjkfonts不行, 可能和汉化补丁有关系.&lt;/li&gt;
-&lt;li&gt;MSPGothic.otf 汉化补丁中的字体文件.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Soda 9.0 (32-bit) 环境下，配合 dotnet48 与 quartz，通过配置 dsound (n,b) 可以成功加载汉化补丁并实现字体替换。但由于 quartz 与游戏过场动画存在兼容性问题，导致序章结束时卡死。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;依赖&lt;/p&gt;
+&lt;p&gt;Soda 7.0 (32-bit) 虽然能绕过卡死，却无法正常加载汉化字体。在尝试注册表替换等多种手段均告失败（表现为加载补丁字体即黑屏）后，发现利用 FontForge 脚本将原版 MS UI Gothic 的元数据注入到补丁字体中就可以正常运行了，下面的代码是gemini帮忙写的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# by gemini&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;fontforge&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;fontTools.ttLib&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;TTCollection&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 1. 打开母本&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;collection&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;TTCollection&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;msgothic.ttc&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#https://github.com/FSKiller/Microsoft-Fonts/raw/refs/heads/main/msgothic.ttc&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;base_font&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;collection&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fonts&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#MS UI Gothic&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;base_font&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;save&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;MSUIGothic.ttf&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;base&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;fontforge&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;open&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;MSUIGothic.ttf&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 2. 打开字形来源&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;source&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;fontforge&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;open&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;MSPGothic.otf&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 2. 劫持基础标识信息&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;source&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fontname&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;base&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fontname&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;source&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fullname&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;base&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fullname&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;source&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;familyname&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;base&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;familyname&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;source&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;version&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;base&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;version&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;source&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;copyright&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;base&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;copyright&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 3. 深度劫持 OS/2 表和头信息&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 拷贝 Ascent/Descent 确保排版一致&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;source&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ascent&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;base&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ascent&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;source&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;descent&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;base&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;descent&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;source&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;upos&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;base&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;upos&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;source&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;uwidth&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;base&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;uwidth&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 4. 劫持所有的 Name Records&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;source&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sfnt_names&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;base&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sfnt_names&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;source&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;generate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;msgothic_patched.ttf&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;base&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;close&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;source&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;close&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;配置 bottles 环境&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;dotnet40 补丁所用的方式是StringReloads, 通过dsound.dll进行注入, 所以需要安装.NET&lt;/li&gt;
-&lt;li&gt;quartz 播放开头动画所需, 切勿安装dsound, 可能会导致开头黑屏.&lt;/li&gt;
+&lt;li&gt;选择自定义32位架构，运行器选择 &lt;code&gt;soda-7.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;msgothic_patched.ttf&lt;/code&gt; 字体文件复制到环境的 &lt;code&gt;drive_c/windows/Fonts/&lt;/code&gt; 下&lt;/li&gt;
+&lt;li&gt;环境变量: &lt;code&gt;LC_ALL=ja_JP.UTF-8&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;配置&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;dll覆盖: dsound(n,b) (原生先于内置)用上汉化补丁所带的dsound.dll.&lt;/li&gt;
-&lt;li&gt;环境变量: LC_ALL=ja_JP.UTF-8.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;修改补丁中的SRL.ini文件, 将&lt;code&gt;Charset=CP932&lt;/code&gt;替换为 &lt;code&gt;Charset=128&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;点击bottles内的浏览, 将包含补丁文件在内的游戏目录移动到bottle内的&lt;code&gt;drive_c/Program Files&lt;/code&gt;下, 并添加快捷方式, 不出意外应该就可以正常运行了.&lt;/p&gt;
+&lt;p&gt;点击 bottles 内的浏览，将包含补丁文件在内的游戏目录移动到 bottle 内的 &lt;code&gt;drive_c/Program Files&lt;/code&gt; 下，并添加快捷方式，不出意外应该就可以正常运行了。&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -199,6 +214,7 @@
   
 
 &lt;/p&gt;
+&lt;p&gt;因为是通过伪装字体的形式实现的字体替换，建议本bottles环境只运行此游戏就好。&lt;/p&gt;
 
 
 &lt;h1 class=&#34;relative group&#34;&gt;已知可能问题 
@@ -213,25 +229,10 @@
 &lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;完全乱码: 大概率是没有修改SRL.ini文件导致的.&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-  
-    &lt;figure&gt;
-      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;https://with9.github.io/img/linux_shigatsu/image-20260305095512902.png&#34; alt=&#34;image-SRL&#34; /&gt;
-      
-    &lt;/figure&gt;
-  
-
-&lt;/p&gt;
+&lt;p&gt;咒杀篇前卡死: 可能是用了较高版本的soda或未正确选择32位环境.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;字体中部分乱码: dsound.dll未加载成功, 或者是只安装了cjkfonts而没有安装原版的msgothic.ttc.&lt;/p&gt;
+&lt;p&gt;字体中部分乱码: 字体未伪装成功&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -247,9 +248,6 @@
   
 
 &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;过完用户同意书后黑屏: 可能是安装了dsound.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
