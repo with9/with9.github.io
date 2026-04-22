@@ -7,15 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 </copyright>
-    <lastBuildDate>Thu, 05 Mar 2026 00:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Mar 2026 20:33:39 +0800</lastBuildDate><atom:link href="https://with9.github.io/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>scroll实现带缩放的master（一步/台前调度）布局</title>
+      <link>https://with9.github.io/post/scroll-scale-master/</link>
+      <pubDate>Fri, 27 Mar 2026 20:33:39 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/scroll-scale-master/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/scroll-scale-master/feature.jpg" />
+    </item>
+    
     <item>
       <title>Linux下用bottles运行悬疑民俗大作 死月妖花～四月八日 汉化版的方法</title>
       <link>https://with9.github.io/post/linux_shigatsu/</link>
       <pubDate>Thu, 05 Mar 2026 00:33:39 +0800</pubDate>
       
       <guid>https://with9.github.io/post/linux_shigatsu/</guid>
-      <description>本文记录如何通过“伪装系统原装字体”的方式，实现了在不依赖不稳定 DLL 注入的前提下使用汉化补丁字体，达到无乱码、无卡死的汉化运行体验。</description>
+      <description>本文记录如何通过“伪装系统原装字体”的方式，实现了在不依赖 DLL 注入的前提下使用汉化补丁字体，达到无乱码、无卡死的汉化运行体验。</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/linux_shigatsu/featured.png" />
+    </item>
+    
+    <item>
+      <title>scroll实现grid布局</title>
+      <link>https://with9.github.io/post/scroll-grid/</link>
+      <pubDate>Thu, 22 Jan 2026 20:33:39 +0800</pubDate>
+      
+      <guid>https://with9.github.io/post/scroll-grid/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://with9.github.io/post/scroll-grid/feature.jpg" />
     </item>
     
     <item>
